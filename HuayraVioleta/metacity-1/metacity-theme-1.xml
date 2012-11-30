@@ -248,55 +248,55 @@
 
   <button function="close" state="normal">
     <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="cerrar-inactivo.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="close" state="pressed">
     <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="cerrar-inactivo.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="close" state="prelight">
     <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="cerrar-inactivo.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="normal">
     <draw_ops>
-      <image filename="minimizar-inactivo.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="minimizar-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="prelight">
     <draw_ops>
-      <image filename="minimizar-inactivo.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="minimizar-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="pressed">
     <draw_ops>
-      <image filename="minimizar-inactivo.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="minimizar-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="normal">
     <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_A.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="prelight">
     <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_A.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="0" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_A.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -320,19 +320,19 @@
 <frame_style name="sinfoco_maximizado" geometry="normal" parent="sinfoco">
   <button function="maximize" state="normal">
     <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_B.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="prelight">
     <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_B.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-inactivo_B.png" x="3" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
