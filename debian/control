@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.3
 
 Package: gnome-themes-huayra
-Depends: ${misc:Depends}, gtk2-engines (>= 1:2.15.3), librsvg2-common, clearlooks-phenix-theme
+Depends: ${misc:Depends}, gtk2-engines (>= 1:2.15.3), librsvg2-common, clearlooks-phenix-theme, metacity
 Recommends: dmz-cursor-theme
 Architecture: all
 Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
