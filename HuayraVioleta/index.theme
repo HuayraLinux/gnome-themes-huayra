@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Huayra
+Type=X-GNOME-Metatheme
+Comment=El tema violeta de Huayra
+Encoding=UTF-8
+GtkTheme=HuayraVioleta
+MetacityTheme=HuayraVioleta
+IconTheme=huayra
+CursorTheme=Adwaita
+CursorSize=24
