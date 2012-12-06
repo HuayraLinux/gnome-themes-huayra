@@ -514,9 +514,7 @@ StScrollBar StButton#vhandle:hover
     background-gradient-direction: vertical;
     /*border-image: url("overview.png") 0 0 0 0; */
     /* spacing: 0.001em;  */
-    spacing: 0px;
-    /*margin-top:-10px;*/
-    
+    spacing: 0.001em;
 }
 
 .window-caption {
@@ -696,13 +694,12 @@ StScrollBar StButton#vhandle:hover
 
 .view-tab-title:selected {
     color: rgba(254,254,254,0.99);
-
-
 }
 
 #searchResults {
     padding: 20px 10px 10px 10px;
     spacing: 18px;
+    border-image: url("search-fondo.png");
 }
 
 #searchResultsContent {
@@ -717,17 +714,23 @@ StScrollBar StButton#vhandle:hover
 
 .search-statustext,
 .search-section-header {
-    border-radius: 0px;
+    background-color: rgba(10,10,10,0.75);
+    border-radius: 8px 8px 0px 0px;
+    border: 1px;
     padding: 4px 12px;
     width: 5px;
     text-align: center;
     color: white;
     text-shadow: black 0px 2px 4px;
-    font-size: .8em;
+    font-size: 12pt;
 }
 
 .search-section-results {
-
+    background-gradient-start: rgba(10,10,10,0.1);
+    background-gradient-end: rgba(10,10,10,0.5);
+    background-gradient-direction: vertical;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px;
     color: #ffffff;
     padding: 6px;
 }
@@ -848,7 +851,7 @@ StScrollBar StButton#vhandle:hover
     color: rgba(255,255,255,0.7);
     padding-left: 10px;
     padding-right: 0px;
-    spacing: 30px;
+    spacing: 20px;
     height: 1.9em;
 }
 
@@ -901,9 +904,9 @@ StScrollBar StButton#vhandle:hover
 .search-result-content > .overview-icon {
     border-radius: 3px;
     padding: 3px;
-    background-color: rgba(85, 85, 85, 0.00001);
-    border: 1px solid rgba(255, 255, 255, 0.0001);
-    font-size: 8.5pt;
+    background-color: rgba(85, 85, 85, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 10pt;
     font-weight: normal;
     color: rgba(255, 255, 255, 0.8);
     transition-duration: 100;
@@ -923,10 +926,8 @@ StScrollBar StButton#vhandle:hover
 .search-result-content:hover > .overview-icon {
     text-shadow: black 0px 2px 2px;
     font-weight: bold;
- 
     border: 1px solid rgba(242,242,242,0.15);
     border-radius: 4px;
-
     transition-duration: 100;
 }
 
@@ -984,7 +985,7 @@ StScrollBar StButton#vhandle:hover
 .contact:selected,
 .app-well-app:selected > .overview-icon,
 .search-result-content:selected > .overview-icon {
-    background-color: rgba(255,255,255,0.001);
+    background-color: rgba(255,255,255,0.1);
 }
 
 /* LookingGlass */
@@ -1190,7 +1191,7 @@ StScrollBar StButton#vhandle:hover
 
 #calendarArea {
     /* this is the width of the entire popup */
-    min-width: 600px;
+    min-width: 400px;
 }
 
 .calendar-vertical-separator {
