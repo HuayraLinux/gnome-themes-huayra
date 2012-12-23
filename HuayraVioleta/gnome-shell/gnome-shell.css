@@ -2614,17 +2614,16 @@ border-image: url("dock2.png") 0 0 0 0;
 
 /*axemenu*/
 
+/* Menu de Aplicaciones Favoritas, aparece cuando se pulsa boton "Favoritos" */
 .applications-menu-favorites-box {
     border-radius: 10px;
-    color: rgba(100,100,100,1.0); /* texto en Favorites */
-
+    color: rgba(255,255,255,1.0); 
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 2px;
     padding-bottom: 2px;
 }
 .axemenu-icon {
-
     padding-right: 10px;
 }
 .applications-menu-favorites-button {
@@ -2632,6 +2631,7 @@ border-image: url("dock2.png") 0 0 0 0;
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 0px;
+    color:rgba(255,255,255,1.0);
 }
 
 .applications-menu-favorites-button:hover {
@@ -2640,21 +2640,18 @@ border-image: url("dock2.png") 0 0 0 0;
     font-weight: bold;
     background-gradient-direction: vertical;
     background-gradient-start: rgba(137,199,36,0.7);
-    background-gradient-end: rgba(137,199,36,0.7);
-
+    background-gradient-end: rgba(137,199,36,0.1);
     border-radius: 4px;
 }
 
+/* Lugares */
 .places-box {
-
-
     padding-top: 2px;
     padding-left: 15px;
     padding-right: 2px;
     padding-bottom: 0px;
 }
 .places-button {
-
     padding-top: 2px;
     padding-left: 15px;
     padding-right: 2px;
@@ -2685,8 +2682,6 @@ border-image: url("dock2.png") 0 0 0 0;
 
 }
 .rightpane-box {
-
-
     padding: 10px;
 
 }
@@ -2719,17 +2714,17 @@ border-image: url("dock2.png") 0 0 0 0;
 .favorites-button-box {
     padding-left: 0px;
 }
+
+/* application-button son los Botones de Lugares y Bookmarks */
 .application-button {
     padding-top: 2px;
     padding-left: 2px;
     padding-right: 2px;
     padding-bottom: 2px;
-    color:rgba(255,255,255,1.0); /* Esta definicion no estaba */
+    color:rgba(240,240,240,0.9); /* Esta definicion no estaba */
 }
 
-/* Botones de los Bookmarks */
-.application-button:hover,.category-button:hover,
-.application-button-selected {
+.application-button:hover,.application-button-selected {
     padding-top: 2px;
     padding-left: 2px;
     padding-right: 2px;
@@ -2738,9 +2733,8 @@ border-image: url("dock2.png") 0 0 0 0;
     color: rgba(255,255,255,0.99);
     font-weight: normal;
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(137,199,36,0.7);
-    background-gradient-end: rgba(137,199,36,0.7);
-
+    background-gradient-start: rgba(137,199,36,0.7); /* Verde Huayra */
+    background-gradient-end: rgba(137,199,36,0.1);
     border-radius: 8px;
 }
 
@@ -2754,7 +2748,6 @@ border-image: url("dock2.png") 0 0 0 0;
     padding-right: 2px;
     padding-bottom: 2px; 
     font-weight: normal;
-    color: rgba(255,255,255,0.5);/* Esta definicion no estaba */
 }
 
 .category-button-selected,.category-button:hover {
@@ -2765,25 +2758,23 @@ border-image: url("dock2.png") 0 0 0 0;
     text-shadow: black 0px 2px 3px;
     color: rgba(255,255,255,1.0);
     font-weight: bold;
-    background-gradient-direction: horizontal;
-    background-gradient-start: rgba(145,104,162,0.6);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(145,104,162,0.6); /* Violeta Huayra */
     background-gradient-end: rgba(145,104,162,0.3);
-
     border-radius: 8px;
 }
+/* boton Favoritos */
 .favswich-button {
     width: 150px;
     font-weight: bold;
+    color:rgb(255,255,255);
 }
+
+/* Panel Izquierdo del AxeMenu donde están Lugares y Marcadores*/
 .leftpane-box {
     border-radius: 0px;
-    color: rgba(200,200,200,1.0); /* Color texto Bookmarks */
-/*
-    background-gradient-start: rgba(0,0,243,0.65);
-    background-gradient-end: rgba(243,243,243,0.65);
-    background-gradient-direction: vertical;
-*/
-    background-color:rgba(0,0,0,0);
+    color: rgba(0,0,0,1.0); 
+    background-color:rgba(0,0,0,0.000001);
     border: 0px solid rgba(255,255,255,0.0001);
     border-right: 0px;
     padding: 8px;
@@ -2791,10 +2782,7 @@ border-image: url("dock2.png") 0 0 0 0;
 .category-button-label { 
     padding-left: 5px;
 }
-.category-button-button:hover {
-    background-color: #969696;
-    border-radius: 0px;
-}
+
 .selected-app-box {
     padding-top: 0px;
     padding-left: 28px;
@@ -2813,22 +2801,18 @@ border-image: url("dock2.png") 0 0 0 0;
 }
 .search_box {
     border-radius: 0px;
-    color: rgba(54,54,54,0.7);
-    background-gradient-start: rgba(243,243,243,0.0001);
-    background-gradient-end: rgba(243,243,243,0.0001);
-    background-gradient-direction: vertical;
+    color: rgba(54,54,54,0.7);   
+    background-color: rgba(243,243,243,0.0001);
     border: 1px solid rgba(255,255,255,0.0001);
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
-
-
-
 }
 
+/* Titulos de panel ("Lugares", "Marcadores") */
 .pane-title {
     font-weight: bold;
-    color: rgba(54,54,54,0.9);
+    color: rgba(254,254,254,0.9);
     border: 1px solid rgba(0,0,0,0.25);
     border-left: 0px;
     border-right: 0px;
