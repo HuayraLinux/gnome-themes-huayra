@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.0-1) UNRELEASED; urgency=low
+
+  * Nuevo release de los themes de Huayra.
+
+ -- Mauro Lizaur <mauro@debian.org>  Thu, 27 Dec 2012 00:07:12 -0300
+
 gnome-themes-huayra (1.5-1) testing; urgency=low
 
   * Nuevo release de los themes de Huayra.
