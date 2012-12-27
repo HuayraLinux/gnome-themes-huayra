@@ -34,38 +34,38 @@ StScrollView.vfade
 
 StScrollView StScrollBar
 {
-    min-width: 5px;
+    min-width: 10px;
     min-height: 5px;
 }
 
 
 StScrollBar StBin#trough {
-    background-color: rgba(0,0,0,0.0001);
-    border: 1px solid rgba(205,201,201,0.0001); 
-    border-radius: 0px;
+    background-color: rgba(145,104,162,0.2);
+    border: 1px solid rgba(145,104,162,0.6); 
+    border-radius: 4px;
 }
 
 StScrollBar StButton#vhandle
 {
 
 
-    background-color: rgba(242,242,242,0.10);
-    border: 1px solid rgba(242,242,242,0.0001);
+    background-color: rgba(137,199,36,0.40);
+    border: 1px solid rgba(242,242,242,0.2);
     border-radius: 3px;
 }
 
 StScrollBar StButton#hhandle
 {
 
-    background-color: rgba(242,242,242,0.10);
-    border: 1px solid rgba(242,242,242,0.0001);
+    background-color: rgba(137,199,36,0.40);
+    border: 1px solid rgba(242,242,242,0.2);
     border-radius: 3px;
 }
 
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover
 {
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(137,199,36,0.70);
 }
 
 
@@ -164,11 +164,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-menu-item:active {
-    background-color: rgba(80,80,80,1.0); /* color de fondo de los menues del panel */
+    background-color: rgba(105,64,122,0.5); /* color de fondo de los menues del panel */
 }
 
 .popup-menu-item:insensitive {
-    color: #ff0000; /* color de texto en estado de conexion: Unavailable por ejemplo */
+    color: rgb(145,104,162); /* color de texto en estado de conexion: "Unavailable" por ejemplo */
 }
 
 .popup-image-menu-item {
@@ -179,11 +179,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-separator-menu-item {
-    -gradient-height: 2px;
-    -gradient-start: rgba(8,8,8,0);
-    -gradient-end: #333333;
-    -margin-horizontal: 1.5em;
-    height: 1em;
+    -gradient-height: 1px;
+    -gradient-start: rgba(105,64,122,0.5);
+    -gradient-end: rgba(145,104,162,0.5);
+    -margin-horizontal: 0.1em;
+    height: 0.5em;
 }
 
 .popup-alternating-menu-item:alternate {
@@ -193,12 +193,12 @@ StScrollBar StButton#vhandle:hover
 .popup-slider-menu-item {
     height: 1em;
     min-width: 15em;
-    -slider-height: 0.1em;
-    -slider-background-color: #202020; /*fondo del slider usado en control de volumen*/
+    -slider-height: 0.3em;
+    -slider-background-color: rgba(105,64,122,0.5); /*fondo del slider usado en control de volumen*/
     -slider-border-color: #5f5f5f;
-    -slider-active-background-color: #505050;
+    -slider-active-background-color: rgba(137,199,36,0.5);
     -slider-active-border-color: #1f6dbc;
-    -slider-border-width: 1px;
+    -slider-border-width: 0px;
     -slider-handle-radius: 0.2em;
 }
 
@@ -1422,7 +1422,7 @@ StScrollBar StButton#vhandle:hover
     border-top: 0px;
     border-bottom: 0px;
     border-radius: 0px;
-    height: 3.1em; /*40px;*/
+    height: 38px; /*3.1em;*/
     padding-right: 6px;
     padding-left: 6px;
     
@@ -2890,6 +2890,7 @@ border-image: url("dock2.png") 0 0 0 0;
     border-image: none;
     font-size: 9pt;
     height: 1.5em;
+    border:0px;
 }
 
 .message-button {
@@ -2898,6 +2899,7 @@ border-image: url("dock2.png") 0 0 0 0;
     color: #00ff00;
     background-color: rgba(5,5,5,0.75); /* fondo de smiley */
     transition-duration: 100;
+    border:0px;
     width:16px;
     background-image: url("imagenes/face-smile-symbolic_v2.svg");
 }
@@ -2947,33 +2949,34 @@ border-image: url("dock2.png") 0 0 0 0;
     spacing: 6px;
 }
 
+/* Cada boton con una aplicacion en ejecucion en la barra inferior */
 .window-list-item-box {
     spacing: 3px;
-    border-radius: 2px;
-    border-width: 1px;
+    border-radius: 0px;
+    border-width: 0px;
     border-color: #2d2d2d;
     color: #bbb;
-    padding: 0px 2px;
+    padding: 2px 1px 1px 8px;
 }
 
 .window-list-item-box:focused {
     color: white;
-    background: #555;
+    background-color: rgba(85,44,102,.75); /* Violeta */
 }
 
 .window-list-item-label {
-    width: 15em;
+    width: 12em;
     min-width: 5px;
 }
 
 .bottom-panel-tooltip {
-    border-radius: 7px;
+    border-radius: 4px;
     padding: 4px 12px;
-    background-color: rgba(80,150,10,0.9);
+    background-color: rgba(45,100,0,0.75);
     text-align: center;
     color: white;
     font-size: 9pt;
-    font-weight: bold;
+    font-weight: normal;
     -y-offset: 4px;
 }
 
