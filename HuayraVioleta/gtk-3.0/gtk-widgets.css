@@ -10,7 +10,7 @@
 
     -GtkPaned-handle-size: 5;
 
-    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckButton-indicator-size: 16; /* Aumenta el tamaño de los checkbox y repite la imagen usada */
     -GtkCheckMenuItem-indicator-size: 12;
 
     /* The size for scrollbars. The slider is 2px smaller, but we keep it
@@ -19,16 +19,17 @@
      * only in the width
      */
 
-    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkScrolledWindow-scrollbar-spacing: 0; /* Espacio entre la barra de scroll y el contenido*/
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
 
     -GtkToolItemGroup-expander-size: 11;
-    -GtkExpander-expander-size: 11;
+    -GtkExpander-expander-size: 11; /* Tamaño de la flecha de expansión de contenido */
 
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;
+    -GtkMenu-horizontal-padding: 0; /* Relleno lateral del menú */
+    -GtkMenu-vertical-padding: 0; /* Relleno superior e inferior del menú */
 
-    -GtkWidget-link-color: @link_color;
+	 /* Link button */
+    -GtkWidget-link-color: @link_color; 
     -GtkWidget-visited-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkHTML-link-color: @link_color;

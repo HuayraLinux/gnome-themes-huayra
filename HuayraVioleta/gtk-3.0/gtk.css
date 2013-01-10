@@ -9,8 +9,8 @@
 @define-color bg_color #ededed;
 @define-color selected_bg_color #6F448A; /* color de fondo de elemento seleccionado */
 @define-color selected_fg_color #ffffff; /* color de frente de elemento seleccionado */
-@define-color text_color #2e3436;
-@define-color fg_color #2e3436;
+@define-color text_color #2e3436; /* color del texto escrito */
+@define-color fg_color #2e3436; /* color del texto de labels, menúes, widgets */
 @define-color tooltip_bg_color #72911E; /* color de fondo de los tooltips */ 
 @define-color tooltip_fg_color #ffffff; /* color de texto de los tooltips */ 
 /*@define-color unfocused_bg_color #f8f8f8;*/
