@@ -226,8 +226,8 @@ StScrollBar StButton#vhandle:hover
 }
 
 .toggle-switch-us {
-    background-gradient-start: rgba(243,243,243,0.55);
-    background-gradient-end: rgba(243,243,243,0.05); /* probando */
+    background-gradient-start: rgba(40,40,40,0.55);
+    background-gradient-end: rgba(90,90,90,0.55);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(0,0,0,0.55);
@@ -235,8 +235,8 @@ StScrollBar StButton#vhandle:hover
 
 }
 .toggle-switch-us:checked {
-    background-gradient-start: rgba(0,0,0,0.45);
-    background-gradient-end: rgba(0,0,0,0.45);
+    background-gradient-start: rgba(137,199,36,0.65);
+    background-gradient-end: rgba(137,199,36,0.2);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(243,243,243,0.55);
@@ -244,8 +244,8 @@ StScrollBar StButton#vhandle:hover
 }
 
 .toggle-switch-intl {
-    background-gradient-start: rgba(243,243,243,0.55);
-    background-gradient-end: rgba(243,243,243,0.55);
+    background-gradient-start: rgba(40,40,40,0.55);
+    background-gradient-end: rgba(90,90,90,0.55);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(0,0,0,0.55);
@@ -253,8 +253,8 @@ StScrollBar StButton#vhandle:hover
 
 }
 .toggle-switch-intl:checked {
-    background-gradient-start: rgba(0,0,0,0.45);
-    background-gradient-end: rgba(0,0,0,0.45);
+    background-gradient-start: rgba(137,199,36,0.65);
+    background-gradient-end: rgba(137,199,36,0.2);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(243,243,243,0.55);
@@ -935,13 +935,13 @@ StScrollBar StButton#vhandle:hover
 
 .contact-grid {
     spacing: 36px;
-    -shell-grid-horizontal-item-size: 272px; /* 2 * -shell-grid-horizontal-item-size + spacing */
+    -shell-grid-horizontal-item-size: 190px; /* 2 * -shell-grid-horizontal-item-size + spacing */
     -shell-grid-vertical-item-size: 118px;
 }
 
 .contact {
-    width: 272px; /* Same width as two normal results + spacing */
-    height: 118px; /* Aspect ratio = 1.75. Normal US business card ratio */
+    width: 180px; /* Same width as two normal results + spacing */
+    height: 120px; /* Aspect ratio = 1.75. Normal US business card ratio */
     border-radius: 0px;
     padding: 3px;
     border: 1px solid rgba(242,242,242,0.15);
@@ -950,9 +950,9 @@ StScrollBar StButton#vhandle:hover
 
 .contact-content {
     border-radius: 0px;
-    padding: 8px;
-    width: 232px;
-    height: 84px;
+    padding: 4px;
+    width: 180px;
+    height: 120px;
     background-color: rgba(242,242,242,0.001);
     color: white;
 }
@@ -962,11 +962,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .contact-details {
-    padding: 0px 6px 22px 10px;
+    padding: 0px 6px 22px 5px;
 }
 
 .contact-details-alias {
-    font-size: 18px;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
@@ -1617,7 +1617,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .chat-log-message {
-    color: #525252;
+    color: #707070;
 }
 
 .chat-group-sent, .chat-group-meta {
@@ -1635,7 +1635,7 @@ StScrollBar StButton#vhandle:hover
 
 .chat-sent {
     padding-left: 18pt;
-    color: #525252;
+    color: #a0a0a0;
 }
 
 .chat-sent:rtl {
@@ -1646,7 +1646,7 @@ StScrollBar StButton#vhandle:hover
 .chat-meta-message {
     padding-left: 4px;
     font-size: 9pt;
-    color: #363636;
+    color: #858585;
 }
 
 .chat-meta-message:rtl {
