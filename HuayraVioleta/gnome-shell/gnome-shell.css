@@ -1846,7 +1846,11 @@ StScrollBar StButton#vhandle:hover
 }
 .switcher-list .item-box:selected {
 
+    border: 1px solid rgba(242,242,242,0.85);
 
+    background-gradient-start: rgba(242,242,242,1.0);
+    background-gradient-end: rgba(242,242,242,0.5);
+    background-gradient-direction: vertical;
 
 }
 
@@ -2619,8 +2623,8 @@ border-image: url("dock2.png") 0 0 0 0;
     border-radius: 10px;
     color: rgba(255,255,255,1.0); 
     padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 2px;
 }
 .axemenu-icon {
@@ -2629,7 +2633,7 @@ border-image: url("dock2.png") 0 0 0 0;
 .applications-menu-favorites-button {
     padding-top: 0px;
     padding-left: 2px;
-    padding-right: 2px;
+    padding-right: 5px;
     padding-bottom: 0px;
     color:rgba(255,255,255,1.0);
 }
@@ -2647,27 +2651,27 @@ border-image: url("dock2.png") 0 0 0 0;
 /* Lugares */
 .places-box {
     padding-top: 2px;
-    padding-left: 15px;
-    padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 0px;
 }
 .places-button {
     padding-top: 2px;
-    padding-left: 15px;
+    padding-left: 5px;
     padding-right: 2px;
     padding-bottom: 0px;
 }
 
 .categories-box {
     padding-top: 2px;
-    padding-left: 15px;
-    padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 0px;
 }
 .main-box {
     padding-top: 2px;
-    padding-left: 15px;
-    padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 0px;
 }
 .applications-box {
@@ -2682,7 +2686,7 @@ border-image: url("dock2.png") 0 0 0 0;
 
 }
 .rightpane-box {
-    padding: 10px;
+    padding: 5px;
 
 }
 .applications-title {
@@ -2785,8 +2789,8 @@ border-image: url("dock2.png") 0 0 0 0;
 
 .selected-app-box {
     padding-top: 0px;
-    padding-left: 28px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 15px; 
     height: 10px;
     text-align: right;
@@ -2797,7 +2801,7 @@ border-image: url("dock2.png") 0 0 0 0;
 }
 
 .selected-app-description {
-    max-width: 220px;
+    max-width: 200px;
 }
 .search_box {
     border-radius: 0px;
