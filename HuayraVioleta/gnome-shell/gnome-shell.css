@@ -1465,7 +1465,7 @@ StScrollBar StButton#vhandle:hover
     -arrow-border-color: rgba(219,219,219,0.75);
     -arrow-base: 10px;
     -arrow-rise: 8px;
-    color: rgba(54,54,54,0.9);
+    color: rgba(254,254,254,0.9);
 }
 
 .summary-boxpointer #notification {
