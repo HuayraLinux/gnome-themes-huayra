@@ -1,9 +1,16 @@
-/* ..::Huayra Violeta GnomeShell::.. - 2012 04/26 -- licence GPLv3 -
+/* ..::Huayra Mayo GnomeShell::.. - 2012 04/26 -- licence GPLv3 -
  * Este tema de Gnome-Shell está pensado para funcionar armónicamente con el tema
- * de iconos y ventanas Huayra-Violeta
+ * de iconos y ventanas Huayra-Mayo
  */
 /*  Verde Huayra es rgb(137,199,36)    */
-/*  Violeta Huayra es rgb(145,104,162) */
+/*  Violeta Huayra es rgb(145,104,162) 
+gris celeste ##DBE0E3  219,224,227
+gris inferior #B8B8CC  184,184,204
+azulado superior #A4C4D1 
+164,196,209
+azulado inferior #739CB1  
+115,156,177
+*/
 
 stage {
     font-family: "bahamas", ubuntu, cantarell, sans-serif;
@@ -40,16 +47,19 @@ StScrollView StScrollBar
 
 
 StScrollBar StBin#trough {
-    background-color: rgba(145,104,162,0.2);
-    border: 1px solid rgba(145,104,162,0.6); 
+    background-gradient-start: rgba(219,224,227,0.2);
+    background-gradient-end: rgba(184,184,204,0.2);
+    background-gradient-direction: vertical;
+    border: 1px solid rgba(115,156,177,0.6); 
     border-radius: 4px;
 }
 
 StScrollBar StButton#vhandle
 {
 
-
-    background-color: rgba(137,199,36,0.40);
+    background-gradient-start: rgba(219,224,227,0.6);
+    background-gradient-end: rgba(184,184,204,0.6);
+    background-gradient-direction: vertical;
     border: 1px solid rgba(242,242,242,0.2);
     border-radius: 3px;
 }
@@ -57,7 +67,9 @@ StScrollBar StButton#vhandle
 StScrollBar StButton#hhandle
 {
 
-    background-color: rgba(137,199,36,0.40);
+    background-gradient-start: rgba(219,224,227,0.2);
+    background-gradient-end: rgba(184,184,204,0.2);
+    background-gradient-direction: horizontal;
     border: 1px solid rgba(242,242,242,0.2);
     border-radius: 3px;
 }
@@ -65,7 +77,7 @@ StScrollBar StButton#hhandle
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover
 {
-    background-color: rgba(137,199,36,0.70);
+    background-color: rgba(164,196,209,0.70);
 }
 
 
@@ -145,7 +157,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-combo-menu {
-    background-color: rgba(145,104,162,1.0);
+    background-color: rgba(115,156,177,1.0);
     padding: 1em 0em;
     border: 1px solid #5f5f5f;
     border-radius: 9px;
@@ -164,11 +176,11 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-menu-item:active {
-    background-color: rgba(105,64,122,0.5); /* color de fondo de los menues del panel */
+    background-color: rgba(115,156,177,0.5); /* color de fondo de los menues del panel */
 }
 
 .popup-menu-item:insensitive {
-    color: rgb(145,104,162); /* color de texto en estado de conexion: "Unavailable" por ejemplo */
+    color: rgb(115,156,177); /* color de texto en estado de conexion: "Unavailable" por ejemplo */
 }
 
 .popup-image-menu-item {
@@ -180,8 +192,8 @@ StScrollBar StButton#vhandle:hover
 
 .popup-separator-menu-item {
     -gradient-height: 1px;
-    -gradient-start: rgba(105,64,122,0.5);
-    -gradient-end: rgba(145,104,162,0.5);
+    -gradient-start: rgba(115,156,177,0.75);
+    -gradient-end: rgba(115,156,177,0.5);
     -margin-horizontal: 0.1em;
     height: 0.5em;
 }
@@ -194,9 +206,9 @@ StScrollBar StButton#vhandle:hover
     height: 1em;
     min-width: 15em;
     -slider-height: 0.3em;
-    -slider-background-color: rgba(105,64,122,0.5); /*fondo del slider usado en control de volumen*/
+    -slider-background-color: rgba(115,156,177,0.5); /*fondo del slider usado en control de volumen*/
     -slider-border-color: #5f5f5f;
-    -slider-active-background-color: rgba(137,199,36,0.5);
+    -slider-active-background-color: rgba(164,196,209,0.5);
     -slider-active-border-color: #1f6dbc;
     -slider-border-width: 0px;
     -slider-handle-radius: 0.2em;
@@ -235,8 +247,8 @@ StScrollBar StButton#vhandle:hover
 
 }
 .toggle-switch-us:checked {
-    background-gradient-start: rgba(137,199,36,0.65);
-    background-gradient-end: rgba(137,199,36,0.2);
+    background-gradient-start: rgba(164,196,209,0.65);
+    background-gradient-end: rgba(164,196,209,0.2);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(243,243,243,0.55);
@@ -253,8 +265,8 @@ StScrollBar StButton#vhandle:hover
 
 }
 .toggle-switch-intl:checked {
-    background-gradient-start: rgba(137,199,36,0.65);
-    background-gradient-end: rgba(137,199,36,0.2);
+    background-gradient-start: rgba(164,196,209,0.65);
+    background-gradient-end: rgba(164,196,209,0.2);
     background-gradient-direction: vertical;
     border-radius: 200px;
     border: 1px solid rgba(243,243,243,0.55);
@@ -415,7 +427,7 @@ StScrollBar StButton#vhandle:hover
 .panel-button:active,
 .panel-button:overview,
 .panel-button:focus {
-      color: rgba(137,199,36,1.0); /* Color cuando se presiona el menu */
+      color: rgba(164,196,209,1.0); /* Color cuando se presiona el menu */
                                    
 
 
@@ -425,7 +437,7 @@ StScrollBar StButton#vhandle:hover
 .panel-status-button:checked,
 .panel-status-button:focus {
 
-      color: rgba(145,104,162,1.0); /* Violeta sobre los iconos de la zona de status del panel (volumen, wifi, bateria)) */
+      color: rgba(164,196,209,1.0); /* color sobre los iconos de la zona de status del panel (volumen, wifi, bateria)) */
 }
 .panel-button:hover > .system-status-icon,
 .panel-button:active > .system-status-icon,
@@ -454,7 +466,7 @@ StScrollBar StButton#vhandle:hover
 
 #panelActivities:hover {
       color: rgba(255,255,255,1.0);
-      background-color: rgba(145,104,162,0.5);
+      background-color: rgba(115,156,177,0.5);
 
 }
 .status-chooser {
@@ -1276,13 +1288,13 @@ StScrollBar StButton#vhandle:hover
 }
 
 .calendar-day-base:hover {
-    background-color: rgba(145,104,162,0.9);
+    background-color: rgba(115,156,177,0.9);
         border: 1px solid rgba(242,242,242,0.65);
     color: rgba(255,255,255,0.9);
 }
 
 .calendar-day-base:active {
-    background-color: rgba(145,104,162,0.4);
+    background-color: rgba(115,156,177,0.4);
         border: 1px solid rgba(242,242,242,0.65);
     color: rgba(255,255,255,0.9);
 }
@@ -1323,7 +1335,7 @@ StScrollBar StButton#vhandle:hover
 
 .calendar-today {
 
-    background-color: rgba(145,104,162,0.9);
+    background-color: rgba(115,156,177,0.9);
         border: 1px solid rgba(242,242,242,0.65);
     color: rgba(255,255,255,0.9);
     font-weight: bold;
@@ -2015,8 +2027,8 @@ StScrollBar StButton#vhandle:hover
 }
 
 .modal-dialog-button:focus {
-    background-gradient-start: rgba(145,104,162,0.5);
-    background-gradient-end: rgba(145,104,162,0.15);
+    background-gradient-start: rgba(115,156,177,0.5);
+    background-gradient-end: rgba(115,156,177,0.15);
     background-gradient-direction: vertical;
     border: 1px solid rgba(219,219,219,0.45);
       color: rgba(255,255,255,1.0);
@@ -2505,7 +2517,7 @@ StScrollBar StButton#vhandle:hover
     padding: 4px 14px 4px;
     color: rgba(54,54,54,0.9);
     background-gradient-start: rgba(166,166,166,0.75);
-    background-gradient-end: rgba(166,166,166,0.75);
+    background-gradient-end: rgba(166,166,166,0.2);
     background-gradient-direction: vertical;
     border: 1px solid rgba(243,243,243,0.65);
     border-radius: 6px;
@@ -2642,9 +2654,9 @@ border-image: url("dock2.png") 0 0 0 0;
     text-shadow: black 0px 2px 3px;
     color: rgba(255,255,255,0.99);
     font-weight: bold;
+    background-gradient-start: rgba(219,224,227,0.6);
+    background-gradient-end: rgba(184,184,204,0.6);
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(137,199,36,0.7);
-    background-gradient-end: rgba(137,199,36,0.1);
     border-radius: 4px;
 }
 
@@ -2737,8 +2749,8 @@ border-image: url("dock2.png") 0 0 0 0;
     color: rgba(255,255,255,0.99);
     font-weight: normal;
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(137,199,36,0.7); /* Verde Huayra */
-    background-gradient-end: rgba(137,199,36,0.1);
+    background-gradient-start: rgba(164,196,209,0.9); 
+    background-gradient-end: rgba(115,156,177,0.7);
     border-radius: 8px;
 }
 
@@ -2763,8 +2775,8 @@ border-image: url("dock2.png") 0 0 0 0;
     color: rgba(255,255,255,1.0);
     font-weight: bold;
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(145,104,162,0.6); /* Violeta Huayra */
-    background-gradient-end: rgba(145,104,162,0.3);
+    background-gradient-start: rgba(164,196,209,0.9); 
+    background-gradient-end: rgba(115,156,177,0.7);
     border-radius: 8px;
 }
 /* boton Favoritos */
@@ -2965,7 +2977,7 @@ border-image: url("dock2.png") 0 0 0 0;
 
 .window-list-item-box:focused {
     color: white;
-    background-color: rgba(85,44,102,.75); /* Violeta */
+    background-color: rgba(115,156,177,.75); /* Azulado */
 }
 
 .window-list-item-label {
@@ -2976,7 +2988,7 @@ border-image: url("dock2.png") 0 0 0 0;
 .bottom-panel-tooltip {
     border-radius: 4px;
     padding: 4px 12px;
-    background-color: rgba(45,100,0,0.75);
+    background-color: rgba(164,196,209,0.75); /* azul */
     text-align: center;
     color: white;
     font-size: 9pt;
