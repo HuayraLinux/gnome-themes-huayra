@@ -1440,8 +1440,8 @@ StScrollBar StButton#vhandle:hover
     border-right: 1px;
     border-top: 1px;
     border-radius: 9px 9px 0px 0px;
-    padding: 8px 8px 4px 8px;
-    spacing-rows: 10px;
+    padding: 10px 8px 4px 8px;
+    spacing-rows: 18px;
     spacing-columns: 10px;
     width: 34em;
 }

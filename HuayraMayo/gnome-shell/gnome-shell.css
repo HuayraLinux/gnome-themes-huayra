@@ -1437,6 +1437,7 @@ StScrollBar StButton#vhandle:hover
     height: 38px; /*3.1em;*/
     padding-right: 6px;
     padding-left: 6px;
+    padding-bottom: 0px;
     
 
 
@@ -1451,9 +1452,9 @@ StScrollBar StButton#vhandle:hover
     border-left: 1px;
     border-right: 1px;
     border-top: 1px;
-    border-radius: 9px 9px 0px 0px;
-    padding: 8px 8px 4px 8px;
-    spacing-rows: 10px;
+    border-radius: 9px 9px 9px 9px;
+    padding: 10px 8px 4px 8px;
+    spacing-rows: 18px;
     spacing-columns: 10px;
     width: 34em;
 }
@@ -1713,7 +1714,7 @@ StScrollBar StButton#vhandle:hover
  */
 #summary-mode {
     padding: 2px 0px 0px 4px;
-    height: 36px;
+    height: 38px;
 }
 
 #summary-mode:rtl {
@@ -2008,9 +2009,9 @@ StScrollBar StButton#vhandle:hover
 }
 /* Texto en botones de dialogo modal (Power off por ejemplo) */
 .modal-dialog-button:hover {
-    background-color: rgba(137,199,36,1.0);
-    background-gradient-start: rgba(137,199,36,0.60);
-    background-gradient-end: rgba(137,199,36,0.20);
+    background-color: rgba(219,224,227,1.0);
+    background-gradient-start: rgba(219,224,227,0.60);
+    background-gradient-end: rgba(219,224,227,0.20);
     background-gradient-direction: vertical; 
     color: rgba(255,255,255,1.0);
     border: 1px solid rgba(219,219,219,0.55);
