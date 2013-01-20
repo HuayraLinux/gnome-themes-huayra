@@ -2470,7 +2470,7 @@ PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
 
 PanelApplet .button,
 PanelApplet .button:hover {
-    padding: 4px;
+    padding: 14px;
 
     border-image: none;
     border-width: 0;
