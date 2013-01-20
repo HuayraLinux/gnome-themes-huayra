@@ -1437,7 +1437,7 @@ StScrollBar StButton#vhandle:hover
     height: 38px; /*3.1em;*/
     padding-right: 6px;
     padding-left: 6px;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
     
 
 
