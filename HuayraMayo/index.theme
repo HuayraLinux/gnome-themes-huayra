@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Huayra Mayo
+Type=X-GNOME-Metatheme
+Comment=El tema Bicentenario de Huayra
+Encoding=UTF-8
+GtkTheme=HuayraMayo
+MetacityTheme=HuayraMayo
+IconTheme=huayra-mayo
+CursorTheme=Adwaita
+CursorSize=24
