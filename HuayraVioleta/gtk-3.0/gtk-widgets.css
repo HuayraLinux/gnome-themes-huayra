@@ -2450,27 +2450,27 @@ PanelApplet {
 
 ClockBox,
 .gnome-panel-menu-bar,
-PanelApplet > GtkMenuBar.menubar {
+PanelApplet > GtkMenuBar.menubar { /* botones del panel */
     font: bold;
 }
 
 .gnome-panel-menu-bar .menuitem:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem:hover,
 .gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
-    background-color: @os_chrome_selected_bg_color;
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover { /* hover y active */
+    background-color: @os_chrome_selected_bg_color; 
     color: @os_chrome_selected_fg_color;
 }
 
 .gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover { 
     color: @os_chrome_selected_fg_color;
     text-shadow: @os_chrome_bg_color 0 1;
 }
 
 PanelApplet .button,
 PanelApplet .button:hover {
-    padding: 14px;
+    padding: 4px;
 
     border-image: none;
     border-width: 0;
@@ -2483,7 +2483,7 @@ PanelApplet .button:hover {
 }
 
 PanelApplet .button:active:hover,
-PanelApplet .button:active {
+PanelApplet .button:active { /* boton active */
     border-image: none;
     background-image: none;
     background-color: @os_chrome_selected_bg_color;
@@ -2492,7 +2492,7 @@ PanelApplet .button:active {
 }
 
 PanelApplet *:hover {
-    color: @os_chrome_selected_fg_color;
+    color: #ffffff; 
 }
 
 PanelApplet *:active,
@@ -2502,11 +2502,11 @@ PanelApplet *:hover:active {
 }
 
 NaTrayApplet {
-    -NaTrayApplet-icon-padding: 12;
-    -NaTrayApplet-icon-size: 16;
+    -NaTrayApplet-icon-padding: 0;
+    -NaTrayApplet-icon-size: 8;
 }
 
-WnckPager, WnckTasklist {
+WnckPager, WnckTasklist { /* botones de seleccion de escritorio */
     background-color: @os_chrome_selected_bg_color;
     background-image: none;
     color: @os_chrome_fg_color;
