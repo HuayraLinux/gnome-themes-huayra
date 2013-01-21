@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.2) testing; urgency=low
+
+  * nuevo theme huayra-mayo 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 21 Jan 2013 10:37:35 -0300
+
 gnome-themes-huayra (2.1) testing; urgency=low
 
   * Nuevas correcciones de scroll y colores
