@@ -2446,33 +2446,43 @@ PanelToplevel,
 PanelWidget,
 PanelAppletFrame,
 PanelApplet {
-    background-color: @os_chrome_bg_color;
-    background-image: none;
-    color: @os_chrome_fg_color;
+    /*background-color: #d4dbe5;  /*@os_chrome_bg_color;*/
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (rgb(240,244,245)),
+                                     to (rgb(181,202,209)));
+    /*background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (@progressbar_background_a),
+                                     to (shade(@progressbar_background_a, 0.85))); */
+    /*background-image: url('assets/grad-fondo.png');*/ 
+    color: #606060; /*@os_chrome_fg_color;*/
+    border-radius:0px;
 }
 
 ClockBox,
 .gnome-panel-menu-bar,
 PanelApplet > GtkMenuBar.menubar { /* botones del panel */
-    font: bold;
+    font-weight: normal;
+    border-radius:4px;
 }
 
 .gnome-panel-menu-bar .menuitem:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem:hover,
 .gnome-panel-menu-bar .menuitem *:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem *:hover { /* hover y active */
-    background-color: @os_chrome_selected_bg_color; 
-    color: @os_chrome_selected_fg_color;
+    background-color: @os_chrome_selected_bg_color;  
+    color: #505050; /* @os_chrome_selected_fg_color; */
+    border-radius: 4px;
 }
 
 .gnome-panel-menu-bar .menuitem *:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem *:hover { /* Color del texto de los elementos de menúes y submenúes del panel */
-    /*
-    color: @os_chrome_selected_fg_color;
+    
+    color: #909090; /* @os_chrome_selected_fg_color; */
     text-shadow: @os_chrome_bg_color 0 1;
-    */    
-    color: #000;
-    text-shadow: #fff 0 1;
+    
+    /*text-shadow: #fff 0 1;*/
 }
 
 PanelApplet .button,
@@ -2481,28 +2491,27 @@ PanelApplet .button:hover {
 
     border-image: none;
     border-width: 0;
-    border-radius: 0;
-
-    background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
-
-    color: @os_chrome_fg_color;
+    border-radius: 4px;
+    background-image: url('assets/grad-fondo.png');
+    /* background-color: alpha(@theme_base_color, 0.0); */
+    background-color: rgba(10,10,10,0.3);
+    color: #606060; /*@os_chrome_fg_color;*/
 }
 
 PanelApplet .button:active:hover,
 PanelApplet .button:active { /* boton active */
     border-image: none;
-    background-image: none;
-    /*background-color: @os_chrome_selected_bg_color;*/
+    background-image: url('assets/grad-fondo.png'); 
+    /* background-color: @os_chrome_selected_bg_color; */
     border-width: 0;
-    border-radius: 0;
+    border-radius: 5;
     
-	background-color: #6D97AD;
-    color: #fff;
+    background-color: rgba(10,10,10,0.2);
+    color: #606060;
 }
 
 PanelApplet *:hover {
-    color: #ffffff; 
+    color: #909090; 
 }
 
 PanelApplet *:active,
