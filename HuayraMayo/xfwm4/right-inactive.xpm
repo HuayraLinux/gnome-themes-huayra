@@ -1,7 +1,7 @@
 /* XPM */
-static char * right_active_xpm[] = {
+static char * right_inactive_xpm[] = {
 "1 16 1 1",
-" 	c #ACACCB",
+" 	c #6D97AD",
 " ",
 " ",
 " ",
