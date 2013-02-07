@@ -2439,79 +2439,73 @@ GtkInfoBar:last-child,
 /**********************
  * Fallback Mode Panel
  **********************/
-
+/*
 .gnome-panel-menu-bar,
 PanelApplet > GtkMenuBar.menubar,
 PanelToplevel,
 PanelWidget,
 PanelAppletFrame,
 PanelApplet {
-    /*background-color: #d4dbe5;  /*@os_chrome_bg_color;*/
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (rgb(240,244,245)),
-                                     to (rgb(181,202,209)));
-    /*background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@progressbar_background_a),
-                                     to (shade(@progressbar_background_a, 0.85))); */
-    /*background-image: url('assets/grad-fondo.png');*/ 
-    color: #606060; /*@os_chrome_fg_color;*/
-    border-radius:0px;
+    background-color: @os_chrome_bg_color;
+    background-image: none;
+    color: @os_chrome_fg_color;
 }
-
+*/
+/* botones del panel */
+/*  
 ClockBox,
 .gnome-panel-menu-bar,
-PanelApplet > GtkMenuBar.menubar { /* botones del panel */
-    font-weight: normal;
-    border-radius:4px;
+PanelApplet > GtkMenuBar.menubar {
+    font: bold;
 }
-
+*/
+/* hover y active */
+/* 
 .gnome-panel-menu-bar .menuitem:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem:hover,
 .gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover { /* hover y active */
-    background-color: @os_chrome_selected_bg_color;  
-    color: #505050; /* @os_chrome_selected_fg_color; */
-    border-radius: 4px;
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover { 
+    background-color: @os_chrome_selected_bg_color; 
+    color: @os_chrome_selected_fg_color;
 }
-
+*/ 
+/* Color del texto de los elementos de menúes y submenúes del panel */
+/* 
 .gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover { /* Color del texto de los elementos de menúes y submenúes del panel */
-    
-    color: #909090; /* @os_chrome_selected_fg_color; */
-    text-shadow: @os_chrome_bg_color 0 1;
-    
-    /*text-shadow: #fff 0 1;*/
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover { 
+    color: #000;
+    text-shadow: #fff 0 1;
 }
-
 PanelApplet .button,
 PanelApplet .button:hover {
     padding: 4px;
 
     border-image: none;
     border-width: 0;
-    border-radius: 4px;
-    background-image: url('assets/grad-fondo.png');
-    /* background-color: alpha(@theme_base_color, 0.0); */
-    background-color: rgba(10,10,10,0.3);
-    color: #606060; /*@os_chrome_fg_color;*/
-}
+    border-radius: 0;
 
+    background-image: none;
+    background-color: alpha(@theme_base_color, 0.0);
+
+    color: @os_chrome_fg_color;
+}
+*/
+/* boton active */
+/* 
 PanelApplet .button:active:hover,
-PanelApplet .button:active { /* boton active */
+PanelApplet .button:active { 
     border-image: none;
-    background-image: url('assets/grad-fondo.png'); 
-    /* background-color: @os_chrome_selected_bg_color; */
+    background-image: none;
+    background-color: @os_chrome_selected_bg_color;
     border-width: 0;
-    border-radius: 5;
+    border-radius: 0;
     
-    background-color: rgba(10,10,10,0.2);
-    color: #606060;
+	background-color: #6D97AD;
+    color: #fff;
 }
 
 PanelApplet *:hover {
-    color: #909090; 
+    color: #ffffff; 
 }
 
 PanelApplet *:active,
@@ -2524,8 +2518,10 @@ NaTrayApplet {
     -NaTrayApplet-icon-padding: 0;
     -NaTrayApplet-icon-size: 8;
 }
-
-WnckPager, WnckTasklist { /* botones de seleccion de escritorio */
+*/
+/* botones de seleccion de escritorio */
+/* 
+WnckPager, WnckTasklist { 
     background-color: @os_chrome_selected_bg_color;
     background-image: none;
     color: @os_chrome_fg_color;
@@ -2541,11 +2537,35 @@ GsmFailWhaleDialog * {
     background-color: @os_chrome_bg_color;
     background-image: none;
 }
-
+*/
 /* gnome-screensaver lock dialog */
+/* 
 GSLockPlug .frame {
     border-color: @borders;
     border-width: 1px;
     border-style: solid;
     border-radius: 0;
+} 
+*/
+/*
+ *
+ *=
+ *
+ */
+ 
+ 
+PanelMenuBar {
+}
+.gnome-panel-menu-bar {
+}
+PanelApplet {
+}
+PanelAppletFrame {
+}
+PanelApplet .button{
+}
+NaTrayApplet{
+}
+GsmFailWhaleDialog {
+	background-color: #f00;	
 }
