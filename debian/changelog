@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.3) testing; urgency=low
+
+  * Mejoras en temas GTK y XFCE 
+
+ -- Miguel Angel Garcia <miguel.garcia@gmail.com>  Tue, 12 Feb 2013 02:48:39 -0300
+
 gnome-themes-huayra (2.2) testing; urgency=low
 
   * nuevo theme huayra-mayo 
