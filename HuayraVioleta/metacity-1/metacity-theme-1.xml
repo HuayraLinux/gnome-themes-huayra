@@ -174,15 +174,22 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="active-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-activo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="active-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-presionado.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
+
+  <button function="menu" state="prelight">
+    <draw_ops>
+      <image filename="menu-prelight.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+    </draw_ops>
+  </button>
+
 
 </frame_style>
 
@@ -302,13 +309,13 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="inactive-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="inactive-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
