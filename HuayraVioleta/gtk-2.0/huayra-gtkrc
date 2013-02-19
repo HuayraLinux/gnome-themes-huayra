@@ -1,14 +1,9 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#000000\nselected_bg_color:#4d2e5f\nselected_fg_color:#ffffff\ntext_color:#3c3c3c\nbg_color:#c5c5c5\ntooltip_bg_color:#dee2e2"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4d2e5f\ntooltip_fg_color:#000000\nselected_bg_color:#c5c5c5\nselected_fg_color:#000000\ntext_color:#000000\nbg_color:#c5c5c5\ntooltip_bg_color:#dee2e2"
 
 gtk-auto-mnemonics = 1
-
-##########
-# PANELS 
-##########
-include "panel.rc" # This includes the file that handles panel theming. Gradient panel backgrounds are enabled by default for this setting. Please edit panel.rc if you don't want gradient backgrounds in your panels, or plan to use transparent/custom panels.
 
 style "default" {
 	xthickness = 1
