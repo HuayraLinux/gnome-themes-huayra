@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.4) testing; urgency=low
+
+  * themas para gtk2 (mate) 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 21 Feb 2013 15:25:20 -0300
+
 gnome-themes-huayra (2.3) testing; urgency=low
 
   * Mejoras en temas GTK y XFCE 
