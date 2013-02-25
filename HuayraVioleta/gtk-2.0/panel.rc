@@ -6,7 +6,7 @@
 
 style "theme-panel"
 {
-	bg_pixmap[NORMAL]	= "/panel.png" # Disable for normal panel backgrounds.
+	#bg_pixmap[NORMAL]	= "/panel.png" # Disable for normal panel backgrounds.
 
 	bg[SELECTED]	= shade (0.85, @selected_bg_color) # Makes selected items dark.
 	bg[NORMAL]	= "#3c3c3c" # Makes panel background dark.
@@ -41,6 +41,8 @@ widget "*fast-user-switch*"	style "theme-panel"
 widget "*gdm-user-switch*"	style "theme-panel"
 widget "*CPUFreq*Applet*"	style "theme-panel"
 widget "*indicator-applet*"	style "theme-panel"
+widget "*gnome-menu*"	style "theme-panel" #prueba de colorear menu
+
 class "PanelApp*"		style "theme-panel"
 class "PanelToplevel*"		style "theme-panel"
 widget_class "*PanelToplevel*"	style "theme-panel"

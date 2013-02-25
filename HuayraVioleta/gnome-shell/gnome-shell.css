@@ -325,8 +325,8 @@ StScrollBar StButton#vhandle:hover
     border-right: 0px;
     border-bottom: 0px;
     border-radius: 0px;
-    font-size: 9pt;
-    height: 1.4em;
+    font-size: 10pt;
+    height: 2.1em;
 }
 
 #panelCenter, #panelRight {

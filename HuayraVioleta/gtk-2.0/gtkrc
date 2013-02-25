@@ -1,9 +1,19 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#000000\nselected_bg_color:#4d2e5f\nselected_fg_color:#ffffff\ntext_color:#3c3c3c\nbg_color:#c5c5c5\ntooltip_bg_color:#dee2e2"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#4d2e5f\nselected_fg_color:#ffffff\ntext_color:#3c3c3c\nbg_color:#c5c5c5\ntooltip_bg_color:#65891a"
 
 gtk-auto-mnemonics = 1
+
+#########
+# ICONS 
+#########
+#gtk-icon-sizes    = "gtk-button=16,16" # This makes button icons smaller.
+gtk-icon-sizes    = "gtk-large-toolbar=16,16:gtk-small-toolbar=16,16:panel-menu=16,16:gtk-button=16,16" # This enables "compact-mode".
+gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
+#gtk-menu-popup-delay    = 1 # Makes menus pop up faster! Set to 1 instead of 0 to avoid Banshee 1 bug.
+
+##########
 
 ##########
 # PANELS 
