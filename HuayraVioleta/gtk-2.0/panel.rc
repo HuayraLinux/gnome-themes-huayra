@@ -6,13 +6,11 @@
 
 style "theme-panel"
 {
-	#bg_pixmap[NORMAL]	= "/panel.png" # Disable for normal panel backgrounds.
-
-	bg[SELECTED]	= shade (0.85, @selected_bg_color) # Makes selected items dark.
+	bg[SELECTED]	= shade (0.85, @tooltip_bg_color) # Makes selected items dark.
 	bg[NORMAL]	= "#3c3c3c" # Makes panel background dark.
-	bg[PRELIGHT]	= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
+	bg[PRELIGHT]	= shade (0.65, @selected_bg_color) # Makes panel button prelight dark.
 	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
-	bg[INSENSITIVE]	= "#3C3C3C"
+	bg[INSENSITIVE]	= "#5c3C3C"
 	fg[NORMAL]	= "#E6E6E6" # Makes panel text light.
 	fg[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
 	fg[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
@@ -24,8 +22,8 @@ style "theme-panel"
 	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	text[INSENSITIVE]	= "#666666"
 
-	engine "murrine" {
-#		roundness = 0 # This sets the roundness of panel items.
+	engine "clearlooks" {
+		radius = 2.1 # This sets the roundness of panel items.
 	}
 }
 
@@ -41,7 +39,6 @@ widget "*fast-user-switch*"	style "theme-panel"
 widget "*gdm-user-switch*"	style "theme-panel"
 widget "*CPUFreq*Applet*"	style "theme-panel"
 widget "*indicator-applet*"	style "theme-panel"
-widget "*gnome-menu*"	style "theme-panel" #prueba de colorear menu
 
 class "PanelApp*"		style "theme-panel"
 class "PanelToplevel*"		style "theme-panel"
