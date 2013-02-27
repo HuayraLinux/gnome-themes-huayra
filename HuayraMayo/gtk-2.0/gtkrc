@@ -4,6 +4,18 @@
 gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#c5c5c5\nselected_fg_color:#000000\ntext_color:#000000\nbg_color:#c5c5c5\ntooltip_bg_color:#dee2e2"
 
 gtk-auto-mnemonics = 1
+#########
+
+gtk-icon-sizes    = "gtk-large-toolbar=12,12 : gtk-small-toolbar=10,10 : panel-menu=16,16 : panel-applet=12,12 : gtk-button=16,16 : gtk-dialog=64,64" # This enables "compact-mode".
+gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
+#gtk-menu-popup-delay    = 1 # Makes menus pop up faster! Set to 1 instead of 0 to avoid Banshee 1 bug.
+
+##########
+
+##########
+# PANELS 
+##########
+include "panel.rc" # This includes the file that handles panel theming. Gradient panel backgrounds are enabled by default for this setting. Please edit panel.rc if you don't want gradient backgrounds in your panels, or plan to use transparent/custom panels.
 
 style "default" {
 	xthickness = 1
@@ -213,21 +225,33 @@ style "menubar" {
 }
 
 style "menu" {
-	xthickness = 0
-	ythickness = 10
+	xthickness = 8
+	ythickness = 8
 
-	bg[NORMAL]        = shade (1.08, @bg_color)
+	bg[NORMAL]        = shade (0.25, @bg_color)
+	bg[PRELIGHT]      = shade(0.1, @tooltip_bg_color)
+	bg[SELECTED]      = shade(0.9, @tooltip_bg_color)
+    bg[ACTIVE]      = @tooltip_bg_color
+
+	fg[NORMAL]		= shade(0.75, @selected_fg_color)
+	fg[SELECTED]      = shade( 1.5, @selected_fg_color)
+    fg[ACTIVE]      = shade (1.5, @selected_fg_color)
+	fg[PRELIGHT] 	= shade (1.5, @selected_fg_color)
 
 	engine "clearlooks" {
-		radius = 0.0
+		radius = 2.1
 	}
+
 }
 
 style "menu_item" {
 	xthickness = 2
-	ythickness = 3
-
-	fg[PRELIGHT]      = @selected_fg_color
+	ythickness = 1
+	bg[PRELIGHT]        = shade (0.4, @tooltip_bg_color)
+	
+	fg[PRELIGHT]      = shade(1.25, @bg_color)
+	fg[SELECTED]      = shade(1.5, @selected_fg_color)
+    fg[ACTIVE]        = shade (1.5, @selected_fg_color)
 }
 
 # This style is there to modify the separator menu items. The goals are:
