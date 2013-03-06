@@ -1,7 +1,7 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#c5c5c5\nselected_fg_color:#000000\ntext_color:#000000\nbg_color:#c5c5c5\ntooltip_bg_color:#dee2e2"
+gtk-color-scheme = "base_color:#fcfcfc\nfg_color:#000000\ntooltip_fg_color:#ffffff\nselected_bg_color:#6D97AD\nselected_fg_color:#ffffff\ntext_color:#202030\nbg_color:#fcfcfc\ntooltip_bg_color:#6D97AD"
 
 gtk-auto-mnemonics = 1
 #########
@@ -117,7 +117,7 @@ style "entry" {
 	ythickness = 3
 
 	bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
-	fg[SELECTED] = @text_color
+	fg[SELECTED] = "#ff0000"#@text_color
 
 	engine "clearlooks" {
 		focus_color = shade (0.65, @selected_bg_color)
@@ -183,8 +183,8 @@ style "notebook_bg" {
 }
 
 style "button" {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 2
+	ythickness = 2
 
 	bg[NORMAL]        = shade (1.04, @bg_color)
 	bg[PRELIGHT]      = shade (1.06, @bg_color)
@@ -229,7 +229,7 @@ style "menu" {
 	ythickness = 8
 
 	bg[NORMAL]        = shade (0.25, @bg_color)
-	bg[PRELIGHT]      = shade(0.1, @tooltip_bg_color)
+	bg[PRELIGHT]      = shade(0.7, @tooltip_bg_color)
 	bg[SELECTED]      = shade(0.9, @tooltip_bg_color)
     bg[ACTIVE]      = @tooltip_bg_color
 
@@ -239,7 +239,7 @@ style "menu" {
 	fg[PRELIGHT] 	= shade (1.5, @selected_fg_color)
 
 	engine "clearlooks" {
-		radius = 2.1
+		radius = 0.0
 	}
 
 }
@@ -252,6 +252,7 @@ style "menu_item" {
 	fg[PRELIGHT]      = shade(1.25, @bg_color)
 	fg[SELECTED]      = shade(1.5, @selected_fg_color)
     fg[ACTIVE]        = shade (1.5, @selected_fg_color)
+	fg[INSENSITIVE]   = "#ff0000"
 }
 
 # This style is there to modify the separator menu items. The goals are:
@@ -333,7 +334,7 @@ style "text_is_fg_color_workaround" {
 # Workaround style for menus where the text color is used instead of the fg color.
 style "menuitem_text_is_fg_color_workaround" {
 
-	text[NORMAL]      = @fg_color
+	text[NORMAL]      = shade(0.6,@selected_fg_color)
 	text[PRELIGHT]    = @selected_fg_color
 	text[SELECTED]    = @selected_fg_color
 	text[ACTIVE]      = @fg_color
