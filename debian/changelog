@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.6) testing; urgency=low
+
+  * correcciones de temas gtk2 para mate 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Wed, 06 Mar 2013 12:52:27 -0300
+
 gnome-themes-huayra (2.5) testing; urgency=low
 
   * nuevos temas para gtk2
