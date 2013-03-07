@@ -251,6 +251,7 @@ style "menu" {
 	fg[SELECTED]      = shade( 1.5, @selected_fg_color)
     fg[ACTIVE]      = shade (1.5, @selected_fg_color)
 	fg[PRELIGHT] 	= shade (1.5, @selected_fg_color)
+	fg[INSENSITIVE] 	= "#FF0000"
 
 	engine "clearlooks" {
 		radius = 0.0
@@ -273,6 +274,7 @@ style "menu_item" {
 	fg[PRELIGHT]      = shade(1.25, @bg_color)
 	fg[SELECTED]      = shade(1.5, @selected_fg_color)
     fg[ACTIVE]        = shade (1.5, @selected_fg_color)
+fg[INSENSITIVE] 	= shade(0.5, @selected_fg_color)
 }
 
 # This style is there to modify the separator menu items. The goals are:
@@ -354,11 +356,11 @@ style "text_is_fg_color_workaround" {
 # Workaround style for menus where the text color is used instead of the fg color.
 style "menuitem_text_is_fg_color_workaround" {
 
-	text[NORMAL]      = @fg_color
+	text[NORMAL]      = shade(0.6,@selected_fg_color)
 	text[PRELIGHT]    = @selected_fg_color
 	text[SELECTED]    = @selected_fg_color
 	text[ACTIVE]      = @fg_color
-	text[INSENSITIVE] = darker (@bg_color)
+	text[INSENSITIVE] = shade (1.2, @bg_color)
 }
 
 # Workaround style for places where the fg color is used instead of the text color.

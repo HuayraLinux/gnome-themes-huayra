@@ -1578,8 +1578,8 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu {
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
+    background-color: #101010;
+    color: #ebebeb;
     padding: 0;
     border-style: none;
 }
@@ -1627,18 +1627,20 @@ GtkTreeMenu .menuitem * {
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
     background-image: none;
-    background-color: @menu_bg_color;
+/*    background-color: @menu_bg_color;*/
+    background-color: #4d2e5f; /* color de fondo del menubar ativo */
 
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 0 0;
 }
 
-.menubar .menuitem *:hover {
-    color: @menu_fg_color;
+.menubar .menuitem *:hover { /* color del texto del menubar activo */
+    color: #ebebeb;
 }
 
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.4;
     padding: 4px;
+	color: alpha(@menu_fg_color, 0.75);
 }
 
 .menu .menuitem:hover {
@@ -1649,26 +1651,30 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
+    background-color: #65891a; /* verde */
+    color: #ffffff;
 }
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
-    color: mix (@menu_fg_color, @menu_bg_color, 0.6);
+/*    color: mix (@menu_fg_color, @menu_bg_color, 0.6);*/
+	color: alpha(@menu_fg_color, 0.5);
 }
 
 .menu .menuitem .accelerator:insensitive {
-    color: mix (@menu_fg_color, @menu_bg_color, 0.7);
+    /*color: mix (@menu_fg_color, @menu_bg_color, 0.7);*/
+	color: alpha(@menu_fg_color, 0.5);
 }
 
 .menuitem .accelerator {
-    color: alpha (@menu_fg_color, 0.4);
+    /*color: alpha (@menu_fg_color, 0.4);*/
+	color: alpha(@menu_fg_color, 0.75);
 }
 
 .menuitem .accelerator:hover,
 .menuitem .accelerator:active {
-    color: alpha (@menu_fg_color, 0.3);
+    /*color: alpha (@menu_fg_color, 0.3);*/
+	color: #ffffff;
 }
 
 .menuitem.arrow {
