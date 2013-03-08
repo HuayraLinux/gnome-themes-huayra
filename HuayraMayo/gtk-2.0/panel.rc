@@ -16,7 +16,7 @@ style "theme-panel"
 	fg[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
 	fg[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	fg[INSENSITIVE]	= "#666666" # Color for insensitive text.
-	text[NORMAL]	= "#E6E6E6"
+	text[NORMAL]	= "#101010"
 	text[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
 	text[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
 	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
