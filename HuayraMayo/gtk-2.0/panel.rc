@@ -22,8 +22,10 @@ style "theme-panel"
 	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	text[INSENSITIVE]	= "#666666"
 
+	xthickness = 2
+	ythickness = 3
 	engine "clearlooks" {
-		radius = 2.1 # This sets the roundness of panel items.
+		radius = 0.0 # This sets the roundness of panel items.
 	}
 }
 
