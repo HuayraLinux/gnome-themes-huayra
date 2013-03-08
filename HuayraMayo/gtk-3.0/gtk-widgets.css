@@ -1581,8 +1581,8 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu {
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
+    background-color: #3c3c3c;
+    color: #ebebeb;
     padding: 0;
     border-style: none;
 }
@@ -1630,9 +1630,10 @@ GtkTreeMenu .menuitem * {
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
     background-image: none;
-    background-color: @menu_bg_color;
+    /* background-color: @menu_bg_color; */
+	background-color: #6D97AD /* celeste mayo */
 
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 0 0;
 }
 
 .menubar .menuitem *:hover {
