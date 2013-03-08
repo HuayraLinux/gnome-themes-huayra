@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.7) testing; urgency=low
+
+  * correcion de iconos en el panel 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Fri, 08 Mar 2013 17:18:35 -0300
+
 gnome-themes-huayra (2.6) testing; urgency=low
 
   * correcciones de temas gtk2 para mate 
