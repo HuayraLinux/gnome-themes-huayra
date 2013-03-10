@@ -489,7 +489,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .status-chooser-combo.popup-combo-menu {
-    background-color: rgba(0,255,0,1.0);
+    background-color: rgba(10,10,10,1.0);
     padding: .4em 0em;
     border-radius: 4px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -509,11 +509,10 @@ StScrollBar StButton#vhandle:hover
 /* Overview */
 
 #overview {
-    background-gradient-start: rgba(7,45,60,0.3);
+    background-gradient-start: rgba(7,45,60,0.9);
     background-gradient-end: rgba(195,230,243,0.05);
     background-gradient-direction: vertical;
-    /*border-image: url("overview.png") 0 0 0 0; */
-    /* spacing: 0.001em;  */
+    /* Overview es el area que muestra miniaturas de todas las aplicaciones abiertas cuando pulsamos la tecla SUPER_L */
     spacing: 0.001em;
     
 }
@@ -810,17 +809,13 @@ StScrollBar StButton#vhandle:hover
 /* Lanzadores de Aplicaciones */
 
 .icon-grid {
-
-    /*border-image: url("app-fondo.png") 0 0 stretch ;*/
- /*   border-radius:8px; 
- icon-size: 100px;*/
-    
     border: 0px solid rgba(242,242,242,0.15);
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px 20px 20px;
     spacing: 0px 0px 0px 0px;
+    
 
 /* Espaciado entre iconos */
-    -shell-grid-horizontal-item-size: 120px;
+    -shell-grid-horizontal-item-size: 100px;
     -shell-grid-vertical-item-size: 120px;
    
 }
@@ -834,16 +829,18 @@ StScrollBar StButton#vhandle:hover
 .all-app {
     border-radius: 20px;
     padding: 40px 20px 70px 10px;
-    spacing: 10px;
-    /*border-image: url("app-fondo2.png") 1 1 stretch;*/
+    spacing: 5px;
+   
 }
 
 .all-app StScrollBar {
-    padding: 0 0 0 40px;
+/* Le damos un poco de margen a la barra de scroll en la vista de iconos de aplicaciones */
+    padding: 0 0 0 5px;
 }
 
 .all-app .icon-grid{
-    background-color: rgba(10,30,30,0.4);
+
+/* Bajo los iconos de aplicaciones dibujamos un panel semitransparente de color verdoso */
     background-gradient-start: rgba(10,30,30,0.8);
     background-gradient-end: rgba(10,30,30,0.2);
     background-gradient-direction: vertical; 
@@ -858,7 +855,7 @@ StScrollBar StButton#vhandle:hover
 /* .app-filter es el menu de categorias de aplicaciones */
 
 .app-filter {
-    width: 20em;
+    width: 15em;
     border: 0px solid rgba(255, 255, 255, 0.00001);
     background-color: rgba(85, 85, 85, 0.00001);
     color: rgba(255,255,255,0.7);
@@ -1005,14 +1002,14 @@ StScrollBar StButton#vhandle:hover
 
 #LookingGlassDialog
 {
-    border-radius: 0px;
-    background-gradient-start: rgba(243,243,243,0.95);
-    background-gradient-end: rgba(243,243,243,0.75);
+    border-radius: 10px;
+    background-gradient-start: rgba(10,10,10,0.95);
+    background-gradient-end: rgba(10,10,10,0.70);
     background-gradient-direction: vertical;
-    border: 3px solid rgba(255,255,255,0.25);
-    color: rgba(54,54,54,0.9);
+    border: 0px solid rgba(255,255,255,0.25);
+    color: rgba(154,154,154,0.9);
     spacing: 4px;
-    padding: 4px;
+    padding: 10px;
 
 
 }
@@ -1024,7 +1021,7 @@ StScrollBar StButton#vhandle:hover
     background-gradient-end: rgba(166,166,166,0.85);
     background-gradient-direction: vertical;
     border: 3px solid rgba(166,166,166,0.85);
-    color: rgba(54,54,54,0.9);
+    color: rgba(154,54,54,0.9);
 
     font-weight: bold;
     padding: 0px;
@@ -1043,14 +1040,12 @@ StScrollBar StButton#vhandle:hover
     background-gradient-end: rgba(243,243,243,0.75);
     background-gradient-direction: vertical;
     border: 1px solid rgba(166,166,166,0.85);
-    color: rgba(54,54,54,0.5);
-  padding: 8px;
+    color: rgba(54,154,54,0.9);
+    padding: 8px;
 }
 
 #LookingGlassDialog .notebook-tab:hover {
     border-radius: 0px;
-
-
     color: rgba(54,54,54,0.9);
     padding: 8px;
 
@@ -1074,7 +1069,7 @@ StScrollBar StButton#vhandle:hover
 .lg-dialog StLabel
 {
 
-    color: rgba(54,54,54,0.9);
+    color: rgba(154,154,154,0.9);
 }
 
 .lg-dialog StEntry
@@ -1082,7 +1077,7 @@ StScrollBar StButton#vhandle:hover
     background-color: rgba(255,255,255,0.4);
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 0px;
-    color: rgba(0,0,0,0.5);
+    color: rgba(100,100,100,0.8);
     spacing: 4px;
 }
 
