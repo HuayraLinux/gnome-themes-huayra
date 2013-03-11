@@ -1,3 +1,11 @@
+gnome-themes-huayra (2.8) testing; urgency=low
+
+  * Fix fondo en combo de status del usuario era verde 100%
+  * Fix en checkbox de panel no visible
+  * Fixeando espaiado en panel 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 11 Mar 2013 12:48:03 -0300
+
 gnome-themes-huayra (2.7) testing; urgency=low
 
   * correcion de iconos en el panel 
