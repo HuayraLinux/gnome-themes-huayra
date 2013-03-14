@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.9) testing; urgency=low
+
+  * correcciones en huayra mayo (espaciado de iconos) 
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 14 Mar 2013 13:22:26 -0300
+
 gnome-themes-huayra (2.8) testing; urgency=low
 
   * Fix fondo en combo de status del usuario era verde 100%
