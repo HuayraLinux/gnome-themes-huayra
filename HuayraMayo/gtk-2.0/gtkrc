@@ -27,26 +27,26 @@ style "default" {
 	GtkButton::child-displacement-x = 1
 	GtkButton::child-displacement-y = 1
 	GtkButton::default-border = { 0, 0, 0, 0 }
-	GtkButton::image-spacing = 4
-	GtkToolButton::icon-spacing = 4
+	GtkButton::image-spacing = 3
+	GtkToolButton::icon-spacing = 3
 
 	GtkCheckButton::indicator-size = 14
 
 	GtkEntry::invisible-char = 0x2022
 
-	GtkPaned::handle-size = 6
+	GtkPaned::handle-size = 4
 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 15
-	GtkRange::stepper-size = 15
+	GtkRange::slider-width = 10
+	GtkRange::stepper-size = 10
 
-	GtkScale::slider-length = 23
-	GtkScale::trough-side-details = 1
+	GtkScale::slider-length = 10
+	GtkScale::trough-side-details = 2
 
 	GtkScrollbar::min-slider-length = 30
-	GtkMenuBar::internal-padding = 0
+	GtkMenuBar::internal-padding = 2
 	GtkExpander::expander-size = 16
-	GtkToolbar::internal-padding = 1
+	GtkToolbar::internal-padding = 0
 	GtkTreeView::expander-size = 14
 	GtkTreeView::vertical-separator = 0
 
@@ -59,7 +59,7 @@ style "default" {
 	# Without this, gecko will fill in the background of the entry.
 	GtkEntry::honors-transparent-bg-hint = 1
 
-	GtkEntry::progress-border = { 2, 2, 2, 2 }
+	GtkEntry::progress-border = { 1, 1, 1, 1 }
 
 	####################
 	# Color Definitions
@@ -90,11 +90,11 @@ style "default" {
 
 	engine "clearlooks" {
 		colorize_scrollbar = TRUE
-		reliefstyle = 1
-		menubarstyle = 2
+		reliefstyle = 2
+		menubarstyle = 0
 		toolbarstyle = 0
 		animation = FALSE
-		radius = 3.0
+		radius = 0.0
 		style = GUMMY
 
 		# Set a hint to disable backward compatibility fallbacks.
@@ -194,8 +194,8 @@ style "button" {
 # The color is changed by the notebook_bg style, this style
 # changes the x/ythickness
 style "notebook" {
-	xthickness = 3
-	ythickness = 3
+	xthickness = 2
+	ythickness = 2
 }
 
 style "statusbar" {
