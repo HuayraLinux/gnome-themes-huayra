@@ -9,7 +9,7 @@ gtk-auto-mnemonics = 1
 # ICONS 
 #########
 
-#gtk-icon-sizes    = "gtk-large-toolbar=16,16:gtk-small-toolbar=10,10:panel-menu=32,32:panel-applet=24,10:gtk-button=16,16:gtk-dialog=64,64" # This enables "compact-mode".
+#gtk-icon-sizes    = "gtk-large-toolbar=12,12 : gtk-small-toolbar=10,10 : panel-menu=16,16 : panel-applet=12,12 : gtk-button=16,16 : gtk-dialog=64,64" # This enables "compact-mode".
 gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
 #gtk-menu-popup-delay    = 1 # Makes menus pop up faster! Set to 1 instead of 0 to avoid Banshee 1 bug.
 
@@ -21,7 +21,7 @@ gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
 include "panel.rc" # This includes the file that handles panel theming. Gradient panel backgrounds are enabled by default for this setting. Please edit panel.rc if you don't want gradient backgrounds in your panels, or plan to use transparent/custom panels.
 
 style "default" {
-	xthickness = 0
+	xthickness = 1
 	ythickness = 1
 
 	#######################
@@ -271,11 +271,10 @@ style "menu_item" {
 	ythickness = 1
 	bg[PRELIGHT]        = shade (0.4, @tooltip_bg_color)
 	
-	fg[NORMAL]		= shade(1.85, @selected_fg_color)
 	fg[PRELIGHT]      = shade(1.25, @bg_color)
 	fg[SELECTED]      = shade(1.5, @selected_fg_color)
     fg[ACTIVE]        = shade (1.5, @selected_fg_color)
-	fg[INSENSITIVE] 	= shade(1.25, @selected_fg_color)
+fg[INSENSITIVE] 	= shade(0.5, @selected_fg_color)
 }
 
 # This style is there to modify the separator menu items. The goals are:
