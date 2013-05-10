@@ -127,7 +127,7 @@ engine "murrine"
 		sliderstyle         = 1 # 0 = nothing added, 1 = handles
 		separatorstyle	    = 1
 		stepperstyle        = 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
-		toolbarstyle	    = 0 # 0 = flat, 1 = glassy, 2 = gradient
+		toolbarstyle	    = 2 # 0 = flat, 1 = glassy, 2 = gradient
 		spinbuttonstyle     = 0
 		comboboxstyle	    = 0
 		arrowstyle 	    = 1
@@ -264,7 +264,36 @@ style "comboboxentry" {
 style "toolbar" {
 	bg[NORMAL] = @fg_color
 
-}
+	bg[NORMAL] = @bg_color
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = "#000000"
+	fg[ACTIVE] = @fg_color
+
+	GtkToolbar::internal-padding = 3
+
+	engine "pixmap" 
+	{
+
+	image
+	{function = BOX
+	recolorable = TRUE
+	stretch = TRUE
+	file = "imagenes/toolbarbg2.png"
+	border = { 0, 0, 0, 2 }}
+	
+	}
+  
+#	engine "murrine" {
+#		gradient_shades     = {1.0,0.98,0.98,0.93} 
+#		#gradient_shades     = {1.0,0.98,0.92,0.88}
+#		highlight_shade     = 1.0
+#		glow_shade	    = 1.0
+#		contrast            = 1.0
+#		lightborder_shade   = 0.0
+#		glazestyle          = 4
+#		reliefstyle 	    = 3
+#	} 
+} 
 
 style "menubar" {
 	bg[NORMAL]        = shade (0.9, @bg_color)
@@ -274,22 +303,55 @@ style "menubar" {
 	fg[INSENSITIVE] = shade (0.6, @selected_fg_color)
 
         GtkWidget::window-dragging = 1
-	engine "murrine" {
-		roundness = 1
-		reliefstyle = 1
-		gradient_shades		= {0.97,0.92,0.99,1.0} 
+
+	engine "pixmap"
+  {
+        image
+     {function = BOX
+      file = "imagenes/menubarbg2.png"
+      border = {0, 0, 0, 2}
+      detail = "menubar"}
+   }
+
+#	engine "murrine" {
+#		roundness = 1
+#		reliefstyle = 1
+#		gradient_shades		= {0.97,0.92,0.99,1.0} 
 		#glazestyle 		= 1
 		#highlight_shade		= 1.0 
 		#contrast		= 0.4
 		#lightborder_shade	= 0.9
 		#lightborderstyle 	= 1
 		#glow_shade              = 1.0
-	}
+#	}
 #	engine "clearlooks" {
 #		hint = "menubar"
 #	}
 }
 
+style "gradient-menubar"
+{
+
+GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
+
+	xthickness = 2
+	ythickness = 2
+
+	engine "pixmap"
+  {
+        image
+     {function = BOX
+      file = "imagenes/menubarbg2.png"
+      border = {0, 0, 0, 2}
+      detail = "menubar"}
+   }
+	
+#	engine "murrine" {
+#		menubarstyle        = 2
+#		contrast = 0.8
+#	}
+
+}
 
 style "menu" {
 	xthickness = 8
@@ -451,6 +513,7 @@ class "GtkHScale" style "hscale"
 class "GtkScrollbar" style "scrollbar"
 class "GtkHScrollbar" style "hscrollbar"
 class "GtkVScrollbar" style "vscrollbar"
+class "GtkToolbar"   				style "toolbar" 
 
 # General matching follows. The order is choosen so that the right styles override
 # each other. EG. progressbar needs to be more important than the menu match.

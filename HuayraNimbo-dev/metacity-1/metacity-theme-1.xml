@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Huayra Nimbo</name>
+  <name>Huayra Limbo</name>
   <author>Claudio "malefico" Andaur &lt;malefico3d@huayra.conectarigualdad.gob.ar&gt; </author>
   <copyright>&#194; CENITAL 2013 - ConectarIgualdad</copyright>
   <date>Diciembre 25, 2012</date>
-  <description>Tema Huayra Nimbo. Conectar Igualdad. http://huayra.conectarigualdad.gob.ar</description>
+  <description>Tema Huayra Limbo. Conectar Igualdad. http://huayra.conectarigualdad.gob.ar</description>
 </info>
 
 <!-- define constants -->
@@ -60,7 +60,11 @@
   <piece position="title">
     <draw_ops>
 	<!-- Escribimos dos veces el titulo de la ventana para lograr un efecto de "tallado" pseudo-tridimensional --> 
-      <title color="#666666" x="IconTitleSpacing" y="0"/>
+	<title color="#ffffff" x="3 `max` (width-title_width)/2" y="1 `max` ((height-title_height)/2)+1"/>
+	<title color="#787878" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+
+
+<!--      <title color="#666666" x="IconTitleSpacing" y="0"/> -->
 
     </draw_ops>
   </piece>
@@ -204,7 +208,10 @@
 
   <piece position="title">
     <draw_ops>
-      <title color="#808090" x="IconTitleSpacing" y="0"/>
+	<title color="#ffffff" x="4 `max` (width-title_width)/2+1" y="1 `max` ((height-title_height)/2)+1"/>
+	<title color="#969696" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+
+<!--      <title color="#808090" x="IconTitleSpacing" y="0"/> -->
     </draw_ops>
   </piece>
 
@@ -212,9 +219,9 @@
     <draw_ops>
 	<!-- se define un gradiente vertical de dos tonos de violeta, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="#efefef" />
+		<color value="#e7e7e7" />
 		<color value="#e1e1e1" />
-		<color value="#d4d4d4" />
-		<color value="#c1c1c1" />
 		
 	</gradient>
 	
@@ -222,12 +229,20 @@
   </piece>
   <piece position="left_edge">
 	<draw_ops>
-	<tint color="#c1c1c1" alpha="1.0" x="0" y="0" width="3" height="height"/>
+	<gradient type="vertical" x="0" y="0" width="3" height="height">
+		<color value="#e1e1e1" />
+		<color value="#efefef" />
+		<color value="#fafafa" />
+	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
-	<tint color="#c1c1c1" alpha="1.0" x="0" y="0" width="3" height="height"/>
+	<gradient type="vertical" x="0" y="0" width="3" height="height">
+		<color value="#e1e1e1" />
+		<color value="#efefef" />
+		<color value="#fafafa" />
+	</gradient>
 	</draw_ops>
   </piece>
   <piece position="bottom_edge">
