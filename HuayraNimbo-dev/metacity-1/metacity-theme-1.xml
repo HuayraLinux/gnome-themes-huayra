@@ -78,12 +78,20 @@
 
   <piece position="left_edge">
 	<draw_ops>
-		<tint color="#fafafa" alpha="1.0" x="0" y="0" width="3" height="height"/>
+	<gradient type="vertical" x="0" y="0" width="3" height="height">
+		<color value="#e1e1e1" />
+		<color value="#efefef" />
+		<color value="#fafafa" />
+ 	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
-		<tint color="#fafafa" alpha="1.0" x="0" y="0" width="3" height="height"/>
+	<gradient type="vertical" x="0" y="0" width="3" height="height">
+		<color value="#e1e1e1" />
+		<color value="#efefef" />
+		<color value="#fafafa" />
+ 	</gradient>
 	</draw_ops>
   </piece>
   <piece position="bottom_edge">
