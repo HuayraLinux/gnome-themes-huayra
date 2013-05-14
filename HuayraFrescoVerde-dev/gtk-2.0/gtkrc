@@ -14,8 +14,13 @@ gtk-color-scheme = "base_color:#d7dbd0\nfg_color:#e4edd3\ntooltip_fg_color:#0000
 #link_color: (original 0000ee) color de links (ejemplo: "obtener mas fondos en linea")
 #visited_link_color: (original 551a8b) enlaces visitados.
 
+#gtk-icon-sizes    = "gtk-large-toolbar=12,12 : gtk-small-toolbar=10,10 : panel-menu=16,16 : panel-applet=12,12 : gtk-button=16,16 : gtk-dialog=64,64" # This
+
 
 style "default" {
+
+	font_name = "Asap Regular 10"
+	
 	xthickness = 1
 	ythickness = 1
 
@@ -182,12 +187,14 @@ style "notebook_bg" {
 }
 
 style "button" {
+
 	xthickness = 3
 	ythickness = 3
 
 	bg[NORMAL]        = shade (1.04, @bg_color)
-	bg[PRELIGHT]      = shade (1.06, @bg_color)
+	bg[PRELIGHT]      = shade (1.16, @bg_color)
 	bg[ACTIVE]        = shade (0.85, @bg_color)
+
 }
 
 # The color is changed by the notebook_bg style, this style
@@ -202,6 +209,8 @@ style "statusbar" {
 	engine "clearlooks" {
 		hint = "statusbar"
 	}
+
+	font_name = "Asap Regular 8"
 }
 
 style "comboboxentry" {
@@ -219,6 +228,8 @@ style "menubar" {
 	engine "clearlooks" {
 		hint = "menubar"
 	}
+	bg[NORMAL] = @bg_color #"#00923F"
+	fg[NORMAL] = @fg_color
 }
 
 style "menu" {
@@ -236,7 +247,9 @@ style "menu_item" {
 	xthickness = 2
 	ythickness = 3
 
-	fg[PRELIGHT]      = @selected_fg_color
+	fg[PRELIGHT]      = shade (1.5, @selected_fg_color)
+	bg[SELECTED] = @selected_bg_color #"#B8DB7C"
+	font_name = "Asap regular 10"
 }
 
 # This style is there to modify the separator menu items. The goals are:
@@ -250,6 +263,7 @@ style "separator_menu_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 7
+
 }
 
 style "frame_title" {
@@ -288,6 +302,7 @@ style "treeview_header" = "default" {
 	engine "clearlooks" {
 		hint = "treeview-header"
 	}
+
 }
 
 style "tooltips" {
