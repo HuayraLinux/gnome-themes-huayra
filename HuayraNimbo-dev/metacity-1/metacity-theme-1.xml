@@ -74,8 +74,8 @@
 	<!-- se define un gradiente vertical de dos tonos de azul, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
 		<color value="#fafafa" />
-		<color value="#efefef" />
-		<color value="#e1e1e1" />
+		<color value="#f7f7f7" />
+		<color value="#f4f3f3" />
  	</gradient>
     </draw_ops>
   </piece>
@@ -83,24 +83,24 @@
   <piece position="left_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#e1e1e1" />
+		<color value="#f4f3f3" />
 		<color value="#efefef" />
-		<color value="#fafafa" />
+		<color value="#e7e7e7" />
  	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#e1e1e1" />
+		<color value="#f4f3f3" />
 		<color value="#efefef" />
-		<color value="#fafafa" />
+		<color value="#e7e7e7" />
  	</gradient>
 	</draw_ops>
   </piece>
   <piece position="bottom_edge">
 	<draw_ops>
-		<tint color="#fafafa" alpha="1.0" x="0" y="0" width="width" height="2"/>
+		<tint color="#e7e7e7" alpha="1.0" x="0" y="0" width="width" height="2"/>
 	</draw_ops>
   </piece>
 
@@ -221,7 +221,7 @@
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
 		<color value="#efefef" />
 		<color value="#e7e7e7" />
-		<color value="#e1e1e1" />
+		<color value="#dfdfdf" />
 		
 	</gradient>
 	
@@ -230,18 +230,18 @@
   <piece position="left_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#e1e1e1" />
-		<color value="#efefef" />
-		<color value="#fafafa" />
+		<color value="#dfdfdf" />
+		<color value="#d7d7d7" />
+		<color value="#d0d0d0" />
 	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#e1e1e1" />
-		<color value="#efefef" />
-		<color value="#fafafa" />
+		<color value="#dfdfdf" />
+		<color value="#d7d7d7" />
+		<color value="#d0d0d0" />
 	</gradient>
 	</draw_ops>
   </piece>
