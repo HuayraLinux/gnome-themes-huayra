@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Huayra Limbo
+Type=X-GNOME-Metatheme
+Comment=Tema OSX-Friendly para ayudar a la transición
+Encoding=UTF-8
+GtkTheme=HuayraLimbo
+MetacityTheme=HuayraLimbo
+IconTheme=huayra
+CursorTheme=Mate
+CursorSize=24
