@@ -140,6 +140,7 @@ engine "murrine"
 }
 
 style "wide" {
+	font_name = "Asap regular 10"
 	xthickness = 2
 	ythickness = 2
 	bg[NORMAL]        = shade (1.07, @bg_color)
