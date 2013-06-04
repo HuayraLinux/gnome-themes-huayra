@@ -25,8 +25,8 @@
     -GtkToolItemGroup-expander-size: 11;
     -GtkExpander-expander-size: 11; /* Tamaño de la flecha de expansión de contenido */
 
-    -GtkMenu-horizontal-padding: 0; /* Relleno lateral del menú */
-    -GtkMenu-vertical-padding: 0; /* Relleno superior e inferior del menú */
+    -GtkMenu-horizontal-padding: 3; /* Relleno lateral del menú */
+    -GtkMenu-vertical-padding: 3; /* Relleno superior e inferior del menú */
 
 	 /* Link button */
     -GtkWidget-link-color: @link_color; 
@@ -113,7 +113,7 @@ GtkWindow:backdrop {
     color: @theme_tooltip_fg_color;
     text-shadow: 1 1 #000;
         
-    background-color: #6D97AD;
+    background-color: #69aef5;
     color: #fff;
 
 }
@@ -1581,10 +1581,11 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu {
-    background-color: #3c3c3c;
-    color: #ebebeb;
-    padding: 0;
+    background-color: @theme_base_color;
+    color: @theme_fg_color;
+    padding: 4;
     border-style: none;
+	border-radius: 4;
 }
 
 .menu.button {
@@ -1617,7 +1618,8 @@ GtkTreeMenu .menuitem * {
 .menubar {
     border-style: none;
     padding: 4px;
-
+	background-image: url("imagenes/menubarbg3.png");
+	background-color: #ff0000;
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
 }
@@ -1629,11 +1631,10 @@ GtkTreeMenu .menuitem * {
 
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
-    background-image: none;
+    /*background-image: none; */
     /* background-color: @menu_bg_color; */
 	background-color: #6D97AD /* celeste mayo */
-
-    border-radius: 0 0 0 0;
+    border-radius: 3 3 3 3;
 }
 
 .menubar .menuitem *:hover {
@@ -1642,11 +1643,11 @@ GtkTreeMenu .menuitem * {
 
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.4;
-    padding: 4px;
+    padding: 6px;
 }
 
 .menu .menuitem:hover {
-    border-radius: 0;
+    border-radius: 3;
 }
 
 .menu .menuitem:active,
