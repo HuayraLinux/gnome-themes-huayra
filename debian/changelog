@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.11) testing; urgency=low
+
+  * Fix en botones de menu, y flecha maximizar en Limbo
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 06 Jun 2013 17:41:39 -0300
+
 gnome-themes-huayra (2.10) testing; urgency=low
 
   * temas nuevos
