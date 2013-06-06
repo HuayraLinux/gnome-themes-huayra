@@ -171,7 +171,7 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="active-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-activo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
