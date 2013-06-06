@@ -396,7 +396,7 @@
 
 <menu_icon function="maximize" state="normal">
   <draw_ops>
-    <image filename="active-maximize-menu-icon.png" 
+    <image filename="menu-activo.png" 
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>
@@ -415,7 +415,7 @@
 
 <menu_icon function="minimize" state="normal">
   <draw_ops>
-    <image filename="active-minimize-menu-icon.png" 
+    <image filename="menu-activo.png" 
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>

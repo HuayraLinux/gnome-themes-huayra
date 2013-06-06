@@ -171,13 +171,13 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="active-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-activo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="active-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-activo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -308,13 +308,13 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="inactive-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="inactive-menu-button.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="menu-inactivo.png" x="0" y="0" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -395,7 +395,7 @@
 
 <menu_icon function="maximize" state="normal">
   <draw_ops>
-    <image filename="active-maximize-menu-icon.png" 
+    <image filename="menu-activo.png" 
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>
@@ -414,7 +414,7 @@
 
 <menu_icon function="minimize" state="normal">
   <draw_ops>
-    <image filename="active-minimize-menu-icon.png" 
+    <image filename="menu-activo.png" 
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>
