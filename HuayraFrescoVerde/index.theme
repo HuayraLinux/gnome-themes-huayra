@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=Huayra Fresco Verde
+Type=X-GNOME-Metatheme
+Comment=El tema verde de Huayra
+Encoding=UTF-8
+GtkTheme=HuayraFrescoVerde
+MetacityTheme=HuayraFrescoVerde
+IconTheme=huayra-fresco-verde
+CursorTheme=Adwaita
+CursorSize=24
