@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.14) testing; urgency=low
+
+  * correccion theme de iconos en Limbo
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Fri, 14 Jun 2013 15:29:39 -0300
+
 gnome-themes-huayra (2.13) testing; urgency=low
 
   * correcciones de Limbo y FrescoVerde
