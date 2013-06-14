@@ -1,3 +1,16 @@
+gnome-themes-huayra (2.13) testing; urgency=low
+
+  * correcciones de Limbo y FrescoVerde
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Thu, 13 Jun 2013 12:53:50 -0300
+
+gnome-themes-huayra (2.12) testing; urgency=low
+
+  * Ajuste en index.theme del tema Huayra Violeta, para que use el tema de iconos huayra-violeta-v2
+
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Fri, 07 Jun 2013 11:21:15 -0300
+
 gnome-themes-huayra (2.11) testing; urgency=low
 
   * Fix en botones de menu, y flecha maximizar en Limbo
