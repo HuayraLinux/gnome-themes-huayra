@@ -34,7 +34,7 @@
   <aspect_ratio name="button" value="1.0"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="15" right="0" top="4" bottom="0"/>
-  <border name="button_border" left="1" right="1" top="0" bottom="0"/>
+  <border name="button_border" left="3" right="3" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
@@ -132,7 +132,7 @@
   </button>
   <button function="close" state="pressed">
     <draw_ops>
-      <image filename="cerrar-presionado.png" x="3" y="2" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="cerrar-presionado.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -149,7 +149,7 @@
 
   <button function="minimize" state="pressed">
     <draw_ops>
-      <image filename="minimizar-presionado.png" x="3" y="2" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="minimizar-presionado.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -165,7 +165,7 @@
   </button>
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="maximizar-presionado_A.png" x="3" y="2" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-presionado_A.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
@@ -199,12 +199,12 @@
   </button>
   <button function="maximize" state="prelight">
     <draw_ops>
-      <image filename="maximizar-highlight_B.png" x="3" y="1" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-highlight_B.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="maximizar-presionado_B.png" x="3" y="2" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="maximizar-presionado_B.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 </frame_style>
@@ -290,7 +290,7 @@
 
   <button function="minimize" state="pressed">
     <draw_ops>
-      <image filename="minimizar-inactivo.png" x="3" y="2" width="ButtonWidth" height="ButtonWidth"/>
+      <image filename="minimizar-inactivo.png" x="3" y="4" width="ButtonWidth" height="ButtonWidth"/>
     </draw_ops>
   </button>
 
