@@ -38,8 +38,8 @@ style "default" {
 	#######################
 	# Style Properties
 	#######################
-	GtkButton::child-displacement-x = 1
-	GtkButton::child-displacement-y = 1
+	GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 0
 	GtkButton::default-border = { 1, 1, 1, 1 }
 	GtkButton::image-spacing = 3
 	GtkToolButton::icon-spacing = 3
@@ -48,16 +48,16 @@ style "default" {
 
 	GtkEntry::invisible-char = 0x2022
 
-	GtkPaned::handle-size = 4
+	GtkPaned::handle-size = 2
 
 	GtkRange::trough-border = 0
-	GtkRange::slider-width = 2
-	GtkRange::stepper-size = 2
+	GtkRange::slider-width = 10
+	GtkRange::stepper-size = 10
 
-	GtkScale::slider-length = 3
+	GtkScale::slider-length = 10
 	GtkScale::trough-side-details = 2
 
-	GtkScrollbar::min-slider-length = 30
+	GtkScrollbar::min-slider-length = 25
 	GtkMenuBar::internal-padding = 2
 	GtkExpander::expander-size = 8
 	GtkToolbar::internal-padding = 0
@@ -86,13 +86,13 @@ style "default" {
 	bg[PRELIGHT]      = shade (1.02, @bg_color)
 	bg[SELECTED]      = @selected_bg_color
 	bg[INSENSITIVE]   = shade (0.8, @bg_color)
-	bg[ACTIVE]        = shade (0.9, @bg_color)
+	bg[ACTIVE]        = shade (1.2, @bg_color)
 
 	fg[NORMAL]        = @fg_color
-	fg[PRELIGHT]      = @fg_color
+	fg[PRELIGHT]      = shade (1.3, @fg_color)
 	fg[SELECTED]      = @selected_fg_color
 	fg[INSENSITIVE]   = darker (@bg_color)
-	fg[ACTIVE]        = @fg_color
+	fg[ACTIVE]        = shade (1.2, @fg_color)
 
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
@@ -106,22 +106,25 @@ style "default" {
 	base[INSENSITIVE] = @bg_color
 	base[ACTIVE]      = shade (0.9, @selected_bg_color)
 
+
+
 engine "murrine" 
 	{
 		animation           = TRUE
 		colorize_scrollbar  = TRUE
 		contrast            = 0.8
+		cellstyle = 0
 		glazestyle          = 4 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,0.99,0.96, 0.94} 
-		progressbarstyle    = 1
+		progressbarstyle    = 2
 		focus_color         = "#69aef5"
 		glowstyle	    	= 1
 		glow_shade          = 1.4
 		highlight_shade     = 1.07
 		lightborder_shade   = 1.3
-		lightborderstyle    = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
+		lightborderstyle    = 0 # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 2 # 0 = flat, 1 = glassy, 2 = raised
-		listviewstyle       = 1 # 0 = nothing, 1 = dotted
+		listviewstyle       = 0 # 0 = nothing, 1 = dotted
 		menubaritemstyle    = 0 # 0 = menuitem look, 1 = button look
 		menubarstyle        = 2 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle       = 0 # 0 = flat, 1 = glassy, 2 = striped
@@ -129,16 +132,15 @@ engine "murrine"
 		reliefstyle	    	= 1 # 0 = flat, 1 = inset, 2 = shadow
 		rgba		    	= TRUE
 		roundness           = 4
-		scrollbarstyle      = 2 # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, blablabla..
-		sliderstyle         = 0 # 0 = nothing added, 1 = handles
+		scrollbarstyle      = 0 # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, blablabla..
+		sliderstyle         = 1 # 0 = nothing added, 1 = handles
 		separatorstyle	    = 1
 		stepperstyle        = 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
 		toolbarstyle	    = 2 # 0 = flat, 1 = glassy, 2 = gradient
 		spinbuttonstyle     = 0
-		comboboxstyle	    = 0
+		comboboxstyle	    = 1
 		arrowstyle 	    	= 1
 		
-
 	}
 
 }
@@ -442,11 +444,53 @@ style "menu_item" {
 
 }
 
-style "caja-location"
+style "sliders-limbo"
 {
 
 #border-width = 2
-GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
+#GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
+
+	xthickness = 2
+	ythickness = 2
+	bg[NORMAL] = shade (1.2, @selected_fg_color) # flecha o area movil rectangular del slider
+#	bg[INSENSITIVE] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(0.9, @bg_color) #fondo del slider
+
+	bg[SELECTED] = shade(0.9, @selected_fg_color)
+	bg[PRELIGHT] = shade(1.2, @selected_bg_color) #mouseover
+
+	fg[NORMAL] = @fg_color # color de flecha
+#	fg[ACTIVE] = @selected_fg_color
+#	fg[ACTIVE] = shade(1.2, @selected_fg_color)
+#	fg[INSENSITIVE] = shade(0.9, @selected_bg_color)
+
+#	base[NORMAL] = @fg_color
+#	base[ACTIVE] = @selected_fg_color
+#	base[ACTIVE] = shade(1.2, @selected_fg_color)
+#	base[INSENSITIVE] = shade(0.9, @selected_bg_color)
+
+	engine "murrine" {
+		roundness = 4
+		reliefstyle = 4
+		gradient_shades		= {1.0,0.9,0.82,0.9} 
+		glazestyle 		= 4
+		highlight_shade		= 1.0 
+		#contrast		= 0.4
+		lightborder_shade	= 1.2
+		lightborderstyle 	= 1
+		glowstyle              = 4
+		handlestyle	= 2
+		scrollbarstyle = 6
+	
+	}
+
+}
+
+style "botones-redondeados"
+{
+
+#border-width = 2
+#GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
 
 	xthickness = 2
 	ythickness = 2
@@ -463,7 +507,7 @@ GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
 		highlight_shade		= 1.0 
 		#contrast		= 0.4
 		lightborder_shade	= 1.2
-		#lightborderstyle 	= 1
+		lightborderstyle 	= 1
 		#glow_shade              = 1.0
 	}
 
@@ -563,7 +607,7 @@ style "menuitem_text_is_fg_color_workaround" {
 	text[NORMAL]      = shade(0.6,@selected_fg_color)
 	text[PRELIGHT]    = @selected_fg_color
 	text[SELECTED]    = @selected_fg_color
-	text[ACTIVE]      = @fg_color
+	text[ACTIVE]      = shade(0.5, @fg_color)
 	text[INSENSITIVE] = darker (@bg_color)
 }
 
@@ -603,12 +647,12 @@ class "GtkEntry" style "entry"
 class "GtkList" style "list"
 
 class "GtkSpinButton" style "spinbutton"
-class "GtkScale" style "scale"
-class "GtkVScale" style "vscale"
-class "GtkHScale" style "hscale"
-class "GtkScrollbar" style "scrollbar"
-class "GtkHScrollbar" style "hscrollbar"
-class "GtkVScrollbar" style "vscrollbar"
+class "GtkScale" style "botones-redondeados" #"scale"
+class "GtkVScale" style "sliders-limbo" #"vscale"
+class "GtkHScale" style "sliders-limbo" #"hscale"
+class "GtkScrollbar" style "botones-redondeados" #"scrollbar"
+class "GtkHScrollbar" style "botones-redondeados" #"hscrollbar"
+class "GtkVScrollbar" style "botones-redondeados" #"vscrollbar"
 class "GtkToolbar"   style "toolbar" 
 
 #class "GtkHandleBox" style "toolbar" #Agregué para fixear Synaptic
@@ -617,7 +661,7 @@ class "GtkToolbar"   style "toolbar"
 # General matching follows. The order is choosen so that the right styles override
 # each other. EG. progressbar needs to be more important than the menu match.
 #widget_class "*<GtkNotebook>" style "notebook_bg"
-widget_class "*<GtkNotebook>" style "caja-location"
+widget_class "*<GtkNotebook>" style "botones-redondeados"
 # This is not perfect, it could be done better.
 # (That is modify *every* widget in the notebook, and change those back that
 # we really don't want changed)
@@ -628,18 +672,19 @@ widget_class "*<GtkNotebook>*<GtkLayout>" style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkViewport>" style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>" style "notebook_bg"
 
-widget_class "*<GtkButton>" style "caja-location" #Botones redondeados
+widget_class "*<GtkButton>" style "botones-redondeados" #Botones redondeados
 widget_class "*<GtkNotebook>" style "notebook_bg"
 widget_class "*<GtkStatusbar>*" style "statusbar"
 
 widget_class "*<GtkComboBoxEntry>*" style "comboboxentry"
-widget_class "*<GtkCombo>*" style "caja-location"
+widget_class "*<GtkCombo>*" style "wide"
 
 widget_class "*<GtkMenuBar>*" style "menubar"
 widget_class "*<GtkMenu>*" style "menu"
 widget_class "*<GtkMenuItem>*" style "menu_item"
 widget_class "*<GtkSeparatorMenuItem>*" style "separator_menu_item"
 
+widget_class "*.<GtkFrame>" style "botones-redondeados"
 widget_class "*.<GtkFrame>.<GtkLabel>" style "frame_title"
 widget_class "*.<GtkTreeView>*" style "treeview"
 
@@ -672,14 +717,14 @@ widget_class "*.ETree.ECanvas" style "treeview_header"
 
 # Special case the nautilus-extra-view-widget
 # ToDo: A more generic approach for all applications that have a widget like this.
-widget "*.nautilus-extra-view-widget" style : highest "caja-location"
+widget "*.nautilus-extra-view-widget" style : highest "botones-redondeados"
 
 widget "*.CajaHorizontalSplitter.GtkVBox.GtkHPaned.GtkVBox.GtkHBox" style "caja-path"
 
 
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
-widget_class "*.<GtkComboBox>.<GtkCellView>" style "text_is_fg_color_workaround"
+widget_class "*.<GtkComboBox>.<GtkCellView>" style "comboboxentry" #"text_is_fg_color_workaround"
 # This is the part of the workaround that fixes the menus
 widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround"
 
