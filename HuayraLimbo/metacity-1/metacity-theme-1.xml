@@ -40,13 +40,13 @@
 <frame_geometry name="border" has_title="false">
   <distance name="left_width" value="3"/>
   <distance name="right_width" value="3"/>
-  <distance name="bottom_height" value="2"/>
-  <distance name="left_titlebar_edge" value="3"/>
-  <distance name="right_titlebar_edge" value="3"/>
+  <distance name="bottom_height" value="3"/>
+  <distance name="left_titlebar_edge" value="4"/>
+  <distance name="right_titlebar_edge" value="4"/>
   <distance name="button_width" value="4"/>
   <distance name="button_height" value="4"/>
   <distance name="title_vertical_pad" value="4"/>
-  <border name="title_border" left="15" right="0" top="0" bottom="0"/>
+  <border name="title_border" left="15" right="0" top="4" bottom="0"/>
   <border name="button_border" left="3" right="3" top="0" bottom="0"/>
 </frame_geometry>
 
