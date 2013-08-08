@@ -46,3 +46,5 @@ style "chromium_toolbar_button" {
 
 widget_class "*Chrom*Button*" style "chromium_toolbar_button"
 
+widget_class "*ApplicationTile*" style "control-center"
+widget_class "*Filtro*" style "control-center-label"
