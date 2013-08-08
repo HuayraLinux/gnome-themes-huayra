@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=HuayraAccesible
+Comment=Tema de alto contraste
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=HuayraAccesible
+IconTheme=HuayraAccesible
+MetacityTheme=HuayraAccesible
