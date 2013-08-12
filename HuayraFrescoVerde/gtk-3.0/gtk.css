@@ -33,9 +33,9 @@
 
 /* hover */
 
-@define-color button_hover_gradient_a @theme_base_color;
-@define-color button_hover_gradient_b shade(@core_color_b, 1.05);
-@define-color button_hover_gradient_c @core_color_b;
+@define-color button_hover_gradient_a shade(@core_color_b, 1.2);
+@define-color button_hover_gradient_b shade(@core_color_b, 1.0);
+@define-color button_hover_gradient_c shade(@core_color_b, 0.9);
 
 /* active */
 
@@ -391,7 +391,9 @@
  * imports 2 of 2 *
  ******************/
 
+
 @import url("gtk-widgets-img.css");
 @import url("gtk-widgets.css");
 @import url("applications.css");
+
 
