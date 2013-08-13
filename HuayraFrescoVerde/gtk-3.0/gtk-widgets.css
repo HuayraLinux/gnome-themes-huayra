@@ -440,8 +440,17 @@ GtkScrolledWindow GtkViewport.frame {
 
 .button,
 .button.menuitem.menubar,
+GtkComboBox.combobox-entry,
 GtkComboBox.combobox-entry .button {
 	padding: 1px 4px;
+	color: @red_color;
+}
+GtkToggleButton * {
+	color: @theme_fg_color;
+}
+
+GtkArrow {
+	color: shade(@theme_selected_bg_color, 0.5);
 }
 
 .button {
@@ -498,18 +507,22 @@ GtkComboBox.combobox-entry .button {
  *****************/
 
 .spinbutton .button,
+.spinbutton .button:active,
+.spinbutton .button:hover,
 .spinbutton .button:focus {
-	color: @internal_element_color;
+	color: shade(@theme_selected_bg_color, 0.5);
 	padding: 2px 6px;
-	border-width: 0 0 0 1px;
+	border-width: 1px 1px 1px 1px;
 	border-radius: 0;
 	border-style: solid;
-	border-color: @spinbutton_border_color;
+	border-color: shade(@theme_bg_color, 0.65);
 	border-image: none;
+
 }
 
 .spinbutton .button {
 	background-color: transparent;
+
 }
 
 .spinbutton .button:insensitive {
@@ -519,7 +532,9 @@ GtkComboBox.combobox-entry .button {
 .spinbutton .button:active,
 .spinbutton .button:active:focus,
 .spinbutton .button:hover {
-	color: @internal_element_hover_color;
+	color: shade(@theme_fg_color, 0.8);
+	border-width: 1px 1px 1px 1px;
+	border-color: shade(@theme_bg_color, 0.65);
 }
 
 .spinbutton .button:first-child {
@@ -528,6 +543,13 @@ GtkComboBox.combobox-entry .button {
 
 .spinbutton .button:last-child {
 	border-radius: 0 2px 2px 0;
+}
+
+.GtkSpinButton * {
+	border-width: 1px 1px 1px 1px;
+	border-radius: 0;
+	border-style: solid;
+	border-color: shade(@theme_bg_color, 0.65);
 }
 
 /*********************
@@ -618,6 +640,7 @@ GtkColorChooserWidget #add-color-button:hover {
 	                  @button_hover_gradient_b 95%,
 	                  @button_hover_gradient_c);
 }
+
 
 /* Insensitive button background */
 .button:insensitive,
@@ -822,6 +845,7 @@ GtkComboBox {
 	padding: 0;
 	-GtkComboBox-arrow-scaling: 0.5;
 	-GtkComboBox-shadow-type: none;
+	
 }
 
 GtkComboBox *:insensitive {
@@ -1508,6 +1532,10 @@ GtkTreeView:insensitive {
 GtkTreeView:selected:focus {
 }
 
+GtkTreeView * {
+	color: @theme_fg_color;
+}
+
 column-header.button,
 column-header .button {
 	color: @internal_element_color;
@@ -1771,4 +1799,7 @@ GtkInfoBar:last-child,
 .grip {
 	background-color: transparent;
 }
+
+
+
 
