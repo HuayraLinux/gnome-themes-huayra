@@ -366,7 +366,7 @@
  ***********/
 
 @define-color toolbar_border_top_color shade(@core_color_b, 0.82);
-@define-color toolbar_inner_border_color @theme_base_color;
+@define-color toolbar_inner_border_color shade(@core_color_b, 1.04);
 @define-color toolbar_border_bottom_color @toolbar_border_top_color;
 
 @define-color toolbar_gradient_a shade(@core_color_b, 1.04);
@@ -395,5 +395,4 @@
 @import url("gtk-widgets-img.css");
 @import url("gtk-widgets.css");
 @import url("applications.css");
-
 
