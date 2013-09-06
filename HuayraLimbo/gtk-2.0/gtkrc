@@ -16,7 +16,7 @@ gtk-color-scheme = "base_color:#f9f9f9\nfg_color:#202020\ntooltip_fg_color:#ffff
 #visited_link_color: (original 551a8b) enlaces visitados.
 
 
-gtk-auto-mnemonics = 1
+#gtk-auto-mnemonics = 1
 #########
 
 #gtk-icon-sizes    = "gtk-large-toolbar=18,18 : gtk-small-toolbar=12,12 : panel-menu=16,16 : panel-applet=16,16 : gtk-button=16,16 : gtk-dialog=64,64" # This enables "compact-mode".

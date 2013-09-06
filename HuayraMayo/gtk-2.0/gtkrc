@@ -3,14 +3,10 @@
 
 gtk-color-scheme = "base_color:#fcfcfc\nfg_color:#000000\ntooltip_fg_color:#ffffff\nselected_bg_color:#6D97AD\nselected_fg_color:#ffffff\ntext_color:#202030\nbg_color:#fcfcfc\ntooltip_bg_color:#6D97AD"
 
-gtk-auto-mnemonics = 1
+#gtk-auto-mnemonics = 1
 #########
 
-#gtk-icon-sizes    = "gtk-large-toolbar=18,18 : gtk-small-toolbar=12,12 : panel-menu=16,16 : panel-applet=16,16 : gtk-button=16,16 : gtk-dialog=64,64" # This enables "compact-mode".
 gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
-#gtk-menu-popup-delay    = 1 # Makes menus pop up faster! Set to 1 instead of 0 to avoid Banshee 1 bug.
-
-##########
 
 ##########
 # PANELS 
