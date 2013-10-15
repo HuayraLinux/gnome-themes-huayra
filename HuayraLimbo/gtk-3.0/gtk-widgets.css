@@ -1,7 +1,7 @@
 * {
     engine: adwaita;
     padding: 0;
-
+	gtk-font-name = Asap 11
     background-clip: padding-box;
 
     -GtkToolButton-icon-spacing: 4;
@@ -1583,9 +1583,9 @@ GtkTreeMenu .menuitem * {
 .menu {
     background-color: @theme_base_color;
     color: @theme_fg_color;
-    padding: 4;
+    padding: 4px;
     border-style: none;
-	border-radius: 4;
+	border-radius: 4px;
 }
 
 .menu.button {
@@ -1616,10 +1616,11 @@ GtkTreeMenu .menuitem * {
 
 /* this controls the general appearance of the menubar */
 .menubar {
+	/* font_name = "Asap Regular 10"; */
     border-style: none;
     padding: 4px;
-	background-image: url("imagenes/menubarbg3.png");
-	background-color: #ff0000;
+	/*background-image: url("imagenes/menubarbg3.png");*/
+	background-color: #f4f4f4;
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
 }
@@ -1634,7 +1635,7 @@ GtkTreeMenu .menuitem * {
     /*background-image: none; */
     /* background-color: @menu_bg_color; */
 	background-color: #6D97AD /* celeste mayo */
-    border-radius: 3 3 3 3;
+	border-radius: 3 3 3 3;
 }
 
 .menubar .menuitem *:hover {
@@ -1647,7 +1648,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu .menuitem:hover {
-    border-radius: 3;
+    border-radius: 3px;
 }
 
 .menu .menuitem:active,
@@ -1748,7 +1749,7 @@ GtkTreeMenu .menuitem * {
 .button.menuitem.menubar *:active {
     color: @theme_text_color;
     background-image: none;
-    background-color: @menu_bg_color;
+    background-color: #ff0000; /* @menu_bg_color;*/
 
     border-radius: 5px 5px 0 0;
     border-image: none;
@@ -1799,10 +1800,11 @@ GtkCheckButton:selected:focus {
  * Menubar Toolbars *
  ********************/
 .toolbar.menubar {
-    /*background-image: -gtk-gradient (linear,
+	/*background-image: url("imagenes/menubarbg3.png");*/
+    /* background-color: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from(@theme_bg_color),
-                                     to(shade(@theme_bg_color, 0.96)));*/
+                                     from("#ffff00"),
+                                     to("#ff0000")); */
     border-style: none;
 
     -GtkToolbar-button-relief: normal;
@@ -1819,8 +1821,8 @@ GtkCheckButton:selected:focus {
  */
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
-    border-width: 1px 0 1px 0;
-    border-radius: 0;
+    border-width: 1px 0px 1px 0px;
+    border-radius: 0px;
     border-style: solid;
     border-top-color: @toolbar_border_top;
     border-bottom-color: @toolbar_border_bottom;

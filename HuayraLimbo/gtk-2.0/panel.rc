@@ -8,8 +8,8 @@ style "theme-panel"
 {
 
 	font_name = "Asap regular 10"
-	bg[SELECTED]	= shade (0.85, @tooltip_bg_color) # Makes selected items dark.
-	bg[NORMAL]	= "#e0e0e0" # Makes panel background dark.
+	bg[SELECTED]	= shade (1.1, @tooltip_bg_color) # Makes selected items dark.
+	bg[NORMAL]	= "#f8f8f8" # Color de fondo del panel
 	bg[PRELIGHT]	= shade (0.65, @selected_bg_color) # Makes panel button prelight dark.
 	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
 	bg[INSENSITIVE]	= "#5c3C3C"
@@ -24,8 +24,39 @@ style "theme-panel"
 	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	text[INSENSITIVE]	= "#666666"
 
+	bg_pixmap[NORMAL]	= "imagenes/panel_bg.png" # Disable for normal panel backgrounds.
+	
 	engine "murrine" {
-		roundness = 4 # This sets the roundness of panel items.
+		animation           = TRUE
+		colorize_scrollbar  = TRUE
+		contrast            = 0.4
+		cellstyle = 0
+		glazestyle          = 4 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		gradient_shades     = {1.2,0.99,0.96, 0.94} 
+		progressbarstyle    = 2
+		focus_color         = "#f0f0f0" #"#69aef5"
+		glowstyle	    	= 2
+		glow_shade          = 1.8
+		highlight_shade     = 1.07
+		lightborder_shade   = 1.3
+		lightborderstyle    = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
+		listviewheaderstyle = 2 # 0 = flat, 1 = glassy, 2 = raised
+		listviewstyle       = 0 # 0 = nothing, 1 = dotted
+		menubaritemstyle    = 0 # 0 = menuitem look, 1 = button look
+		menubarstyle        = 2 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menuitemstyle       = 0 # 0 = flat, 1 = glassy, 2 = striped
+		menustyle           = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+		reliefstyle	    	= 1 # 0 = flat, 1 = inset, 2 = shadow
+		rgba		    	= TRUE
+		roundness           = 2 # Redondeado de bordes en los botones
+		scrollbarstyle      = 0 # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, blablabla..
+		sliderstyle         = 1 # 0 = nothing added, 1 = handles
+		separatorstyle	    = 1
+		stepperstyle        = 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+		toolbarstyle	    = 2 # 0 = flat, 1 = glassy, 2 = gradient
+		spinbuttonstyle     = 0
+		comboboxstyle	    = 1
+		arrowstyle 	    	= 1
 	}
 }
 

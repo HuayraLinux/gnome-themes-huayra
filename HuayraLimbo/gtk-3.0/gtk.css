@@ -41,7 +41,7 @@
 @define-color unfocused_insensitive_bg_color mix(@theme_unfocused_bg_color, @theme_unfocused_base_color, 0.5);
 @define-color unfocused_dark_bg mix(@theme_unfocused_bg_color, @unfocused_borders, 0.3);
 
-@define-color menu_bg_color shade (@theme_bg_color, 1.1);
+@define-color menu_bg_color shade (@theme_bg_color, 1.2);
 @define-color menu_fg_color @theme_fg_color;
 
 @define-color menu_controls_color shade (@theme_fg_color, 0.9);
@@ -228,4 +228,4 @@
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");
 @import url("gtk-widgets.css");
-@import url("gnome-applications.css");
+/* @import url("gnome-applications.css"); */
