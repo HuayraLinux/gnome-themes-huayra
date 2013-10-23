@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.19) unstable; urgency=low
+
+  * Fondo para panel superior
+  * Update en Huayra Limbo, usando PNG para panel y fixes en colores de menu para mejorar legibilidad
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Wed, 23 Oct 2013 11:59:58 -0300
+
 gnome-themes-huayra (2.18) testing; urgency=low
 
   * fix gtk-auto-mnemonics en los themes  
