@@ -6,12 +6,12 @@
  
 /* Default color scheme */
 @define-color base_color #f9f9f9;
-@define-color bg_color #d0d0d0;
+@define-color bg_color #f0f0f0;
 @define-color selected_bg_color #69aef5; /* color de fondo de elemento seleccionado */
 @define-color selected_fg_color #ffffff; /* color de frente de elemento seleccionado */
 @define-color text_color #202030; /* color del texto escrito */
 @define-color fg_color #202020; /* color del texto de labels, menúes, widgets */
-@define-color tooltip_bg_color #69aef5; /* color de fondo de los tooltips */ 
+@define-color tooltip_bg_color #ff0000; /*#69aef5;  color de fondo de los tooltips */ 
 @define-color tooltip_fg_color #ffffff; /* color de texto de los tooltips */ 
 /*@define-color unfocused_bg_color #f8f8f8;*/
 @define-color unfocused_bg_color @bg_color;
@@ -180,8 +180,8 @@
 @define-color toolbar_gradient_step2 #babdb6;
 @define-color toolbar_gradient_final shade(@toolbar_gradient_step2, 1.15);*/
 
-@define-color toolbar_gradient_a shade(@borders, 1.15);
-@define-color toolbar_gradient_b shade(@borders, 1.25);
+@define-color toolbar_gradient_a #ff0000; /*shade(@borders, 1.5);*/
+@define-color toolbar_gradient_b shade(@borders, 1.65);
 @define-color toolbar_gradient_c shade(@borders, 1.3);
 
 @define-color toolbar_border_top shade(@borders, 0.9);
@@ -225,7 +225,7 @@
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
 @import url("gtk-widgets-backgrounds.css");
-@import url("gtk-widgets-borders.css");
+@import url("gtk-widgets-borders.css"); 
 @import url("gtk-widgets-assets.css");
 @import url("gtk-widgets.css");
-/* @import url("gnome-applications.css"); */
+@import url("gnome-applications.css");

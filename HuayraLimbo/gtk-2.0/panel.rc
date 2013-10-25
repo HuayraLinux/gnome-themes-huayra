@@ -9,8 +9,8 @@ style "theme-panel"
 
 	font_name = "Asap regular 10"
 	bg[SELECTED]	= shade (1.1, @tooltip_bg_color) # Makes selected items dark.
-	bg[NORMAL]	= "#f8f8f8" # Color de fondo del panel
-	bg[PRELIGHT]	= shade (0.65, @selected_bg_color) # Makes panel button prelight dark.
+	bg[NORMAL]	= "#efefef" # Color de fondo del panel
+	bg[PRELIGHT]	= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
 	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
 	bg[INSENSITIVE]	= "#5c3C3C"
 	fg[NORMAL]	= "#202020" # Makes panel text light.
@@ -29,16 +29,16 @@ style "theme-panel"
 	engine "murrine" {
 		animation           = TRUE
 		colorize_scrollbar  = TRUE
-		contrast            = 0.4
-		cellstyle = 0
-		glazestyle          = 4 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
-		gradient_shades     = {1.2,0.99,0.96, 0.94} 
+		contrast            = 0.8
+		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		gradient_shades     = {1.01,1.0,0.99, 0.97} 
 		progressbarstyle    = 2
-		focus_color         = "#f0f0f0" #"#69aef5"
-		glowstyle	    	= 2
+		#focus_color         = "#f0f0f0" #"#69aef5"
+		glowstyle	    	= 3
 		glow_shade          = 1.8
+		handlestyle			= 1
 		highlight_shade     = 1.07
-		lightborder_shade   = 1.3
+		lightborder_shade   = 1.8
 		lightborderstyle    = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
 		listviewheaderstyle = 2 # 0 = flat, 1 = glassy, 2 = raised
 		listviewstyle       = 0 # 0 = nothing, 1 = dotted
@@ -60,6 +60,12 @@ style "theme-panel"
 	}
 }
 
+style "applet"
+{
+	fg[NORMAL] = "#ff0000"
+	bg_pixmap[NORMAL] = "imagenes/panel_bg2.png"
+}
+
 style "theme-panel-light"
 {
 	fg[NORMAL]	= @fg_color
@@ -67,17 +73,21 @@ style "theme-panel-light"
 
 # Panel settings. Do not change.
 widget "*PanelWidget*"		style "theme-panel"
-widget "*PanelApplet*"		style "theme-panel"
+widget "PanelWidget" style "theme-panel"
+
+#widget "*PanelApplet*"		style "theme-panel"
 widget "*fast-user-switch*"	style "theme-panel"
 widget "*gdm-user-switch*"	style "theme-panel"
 widget "*CPUFreq*Applet*"	style "theme-panel"
 widget "*indicator-applet*"	style "theme-panel"
 
-class "PanelApp*"		style "theme-panel"
+#class "PanelApp*"		style "theme-panel"
 class "PanelToplevel*"		style "theme-panel"
+#widget_class "*<PanelMenuBar>*" style "theme-panel"
+widget_class "*<MatePanelAppletFrameDBus>*" style "applet"
 widget_class "*PanelToplevel*"	style "theme-panel"
 #widget_class "*Mail*"		style "theme-panel" # Disabled to fix Evolution bug.
-#class "*Panel*"		style "theme-panel" # Disabled to fix bug.
+class "*Panel*"		style "theme-panel" # Disabled to fix bug.
 widget_class "*notif*"		style "theme-panel"
 widget_class "*Notif*"		style "theme-panel"
 widget_class "*Tray*"		style "theme-panel" 

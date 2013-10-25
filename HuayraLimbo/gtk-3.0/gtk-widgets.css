@@ -1,7 +1,6 @@
 * {
-    engine: adwaita;
+    engine: none;
     padding: 0;
-	gtk-font-name = Asap 11
     background-clip: padding-box;
 
     -GtkToolButton-icon-spacing: 4;
@@ -1133,12 +1132,13 @@ GtkLinkButton.button *:active {
     /* we draw our own custom border here for now */
     border-width: 0;
 
-    background-image: linear-gradient(to bottom,
+    /*background-image: linear-gradient(to bottom,
                                       @notebook_tab_hilight 2px,
                                       @notebook_tab_gradient_a 2px,
                                       @notebook_tab_gradient_a 7px,
                                       @notebook_tab_gradient_b);
 
+*/
     -adwaita-focus-border-radius: 2;
 }
 
@@ -1616,10 +1616,10 @@ GtkTreeMenu .menuitem * {
 
 /* this controls the general appearance of the menubar */
 .menubar {
-	/* font_name = "Asap Regular 10"; */
+	gtk-font-name: asap 10; 
     border-style: none;
     padding: 4px;
-	/*background-image: url("imagenes/menubarbg3.png");*/
+	/* background-image: url("imagenes/menubarbg3.png");*/
 	background-color: #f4f4f4;
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
@@ -1633,14 +1633,12 @@ GtkTreeMenu .menuitem * {
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
     /*background-image: none; */
-    /* background-color: @menu_bg_color; */
-	background-color: #6D97AD /* celeste mayo */
+    /*background-color: @menu_bg_color; */
+	background-color: #ff0000 /* celeste mayo */
 	border-radius: 3 3 3 3;
-}
-
-.menubar .menuitem *:hover {
     color: @menu_fg_color;
 }
+
 
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.4;
@@ -1781,11 +1779,21 @@ GtkCheckButton:selected:focus {
 /************
  * Toolbars *
  ************/
+
 .toolbar {
-    border-style: none;
-    border-color: darker (@theme_bg_color);
-/*    border-width: 1 0 1px 0; */
-    padding: 4px;
+
+	background-image: linear-gradient(to bottom,
+	                                  @toolbar_gradient_base,
+	                                  @toolbar_gradient_bottom);/* shade(@theme_bg_color, 1.6) or
+	                                                                     shade(@theme_bg_color, 1.7) = #5F5F67 */
+	border-style: none;
+	border-width: 0;
+	border-radius: 3px;
+	padding: 0px;
+
+	-GtkWidget-window-dragging: true;
+	-GtkToolbar-button-relief: normal;
+
 }
 
 .toolbar .button {
@@ -1800,16 +1808,15 @@ GtkCheckButton:selected:focus {
  * Menubar Toolbars *
  ********************/
 .toolbar.menubar {
+	background-color: #ff0000;
 	/*background-image: url("imagenes/menubarbg3.png");*/
-    /* background-color: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from("#ffff00"),
-                                     to("#ff0000")); */
+    /*background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);*/
     border-style: none;
 
-    -GtkToolbar-button-relief: normal;
-    padding-left: 6px;
-    padding-right: 6px;
+    -GtkToolbar-button-relief: inset;
+	border-width: 0;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /********************
@@ -1821,7 +1828,7 @@ GtkCheckButton:selected:focus {
  */
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
-    border-width: 1px 0px 1px 0px;
+    border-width: 0px 0px 0px 0px; /* 0 1 0 1*/
     border-radius: 0px;
     border-style: solid;
     border-top-color: @toolbar_border_top;
@@ -1835,8 +1842,8 @@ GtkCheckButton:selected:focus {
 
 .primary-toolbar .toolbar:insensitive,
 .primary-toolbar.toolbar:insensitive {
-    background-image: none;
-    background-color: shade (@theme_bg_color, 0.97);
+    background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);
+    /* background-color: shade (@theme_bg_color, 0.97); */
 
     border-color: shade (@theme_bg_color, 0.91);
     text-shadow: none;
