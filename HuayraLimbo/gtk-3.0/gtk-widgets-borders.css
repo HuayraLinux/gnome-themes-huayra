@@ -94,11 +94,11 @@ GtkSwitch.trough:active {
 .primary-toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar GtkComboBox .button:active,
 .primary-toolbar GtkComboBox .button:insensitive {
-    border-image: url("borders/primary-toolbar-generic-border.svg") 4 / 4 stretch;
+    /* border-image: url("borders/primary-toolbar-generic-border.svg") 4 / 4 stretch; */
     border-radius: 3px;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: "#ff0000"; /* transparent; */
 }
 
 /* primary toolbar - focused element borders */
@@ -113,7 +113,7 @@ GtkSwitch.trough:active {
 .inline-toolbar.toolbar .button:focus:active,
 .inline-toolbar.toolbar .button.default:active,
 .primary-toolbar GtkComboBox .button:active:focus { 
-    border-image: url("borders/primary-toolbar-generic-border-focused.svg") 4 / 4 stretch;
+/*    border-image: url("borders/primary-toolbar-generic-border-focused.svg") 4 / 4 */ stretch;
     border-radius: 3px;
     border-width: 2px;
     border-style: solid;
@@ -247,7 +247,7 @@ GtkSwitch.trough:backdrop,
 .primary-toolbar GtkComboBox *:backdrop,
 .primary-toolbar GtkComboBox *:backdrop:insensitive { 
     border-image: url("borders/primary-toolbar-generic-border-unfocused.svg") 4 / 4 stretch;
-    border-radius: 3px;
+    border-radius: 6px;
     border-width: 2px;
     border-style: solid;
     border-color: transparent;

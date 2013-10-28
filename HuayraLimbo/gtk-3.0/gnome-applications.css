@@ -51,12 +51,12 @@ TerminalWindow GtkNotebook.notebook {
 }
 
 .nautilus-inactive-pane .view {
-    background-color: @theme_unfocused_base_color;
+    background-color: #ff0000 /*@theme_unfocused_base_color;*/
 }
 
 .nautilus-inactive-pane .view:selected,
 .nautilus-inactive-pane .nautilus-canvas-item:selected {
-    background-color: @theme_unfocused_selected_bg_color;
+    background-color: #ff0000 /* @theme_unfocused_selected_bg_color; */
     color: @theme_unfocused_selected_fg_color;
 }
 
@@ -174,7 +174,7 @@ NautilusNotebook.notebook {
 
 GeditWindow .pane-separator, 
 GeditWindow .pane-separator:hover {
-    border-width: 0 1px 1px 1px;
+    border-width: 0 0px 0px 0px;
     border-style: solid;
     border-color: @borders;
     background-color: shade(@theme_bg_color, 0.95);
@@ -200,16 +200,17 @@ GeditDocumentsPanel .view:backdrop {
 
 GeditPanel .notebook {
     padding: 0px;
-    border-width: 1px 0;
+    border-width: 0px 0px;
 }
 
 GeditWindow .notebook {
-    border-width: 1px 0;
+    border-width: 1px 1px;
 }
 
 GeditPanel .notebook tab,
 GeditWindow .notebook tab {
-    border-width: 0;
+    border-width: 1px;
+	border-radius: 6px;
 }
 
 GeditFloatingSlider .not-found {

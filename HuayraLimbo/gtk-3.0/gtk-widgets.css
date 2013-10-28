@@ -26,6 +26,7 @@
 
     -GtkMenu-horizontal-padding: 3; /* Relleno lateral del menú */
     -GtkMenu-vertical-padding: 3; /* Relleno superior e inferior del menú */
+	
 
 	 /* Link button */
     -GtkWidget-link-color: @link_color; 
@@ -1111,7 +1112,7 @@ GtkLinkButton.button *:active {
     background-color: @theme_base_color;
 
     -GtkNotebook-tab-overlap: 8;
-    -GtkNotebook-tab-curvature: 6;
+    -GtkNotebook-tab-curvature: 3;
     /* FIXME - the gap should be applied only to top or bottom tabs */
     -GtkNotebook-initial-gap: 8;
 }
@@ -1129,8 +1130,9 @@ GtkLinkButton.button *:active {
 .notebook tab {
     padding: 3px;
     border-style: solid;
+	border-radius: 6px;
     /* we draw our own custom border here for now */
-    border-width: 0;
+    border-width: 1;
 
     /*background-image: linear-gradient(to bottom,
                                       @notebook_tab_hilight 2px,
@@ -1616,13 +1618,14 @@ GtkTreeMenu .menuitem * {
 
 /* this controls the general appearance of the menubar */
 .menubar {
-	gtk-font-name: asap 10; 
+	font: "Asap 10"; 
     border-style: none;
-    padding: 4px;
+    padding: 0px;
 	/* background-image: url("imagenes/menubarbg3.png");*/
 	background-color: #f4f4f4;
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
+	-GtkMenuBar-shadow-type= none;
 }
 
 .menubar .menuitem {
@@ -1782,18 +1785,18 @@ GtkCheckButton:selected:focus {
 
 .toolbar {
 
-	background-image: linear-gradient(to bottom,
+	/*background-image: linear-gradient(to bottom,
 	                                  @toolbar_gradient_base,
-	                                  @toolbar_gradient_bottom);/* shade(@theme_bg_color, 1.6) or
+	                                  @toolbar_gradient_bottom); shade(@theme_bg_color, 1.6) or 
 	                                                                     shade(@theme_bg_color, 1.7) = #5F5F67 */
-	border-style: none;
-	border-width: 0;
+	border-style: solid;
+	border-width: 2;
 	border-radius: 3px;
-	padding: 0px;
+	padding: 1px;
 
 	-GtkWidget-window-dragging: true;
 	-GtkToolbar-button-relief: normal;
-
+	-GtkMenuBar-shadow-type: none;
 }
 
 .toolbar .button {
@@ -1807,16 +1810,20 @@ GtkCheckButton:selected:focus {
 /********************
  * Menubar Toolbars *
  ********************/
+
+
 .toolbar.menubar {
-	background-color: #ff0000;
 	/*background-image: url("imagenes/menubarbg3.png");*/
     /*background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);*/
-    border-style: none;
+	border-style: solid;
+/*	border-radius: 3px;
+	border-width: 2px; */
 
-    -GtkToolbar-button-relief: inset;
-	border-width: 0;
+    -GtkToolbar-button-relief: normal;
+	border-width: 1;
     padding-left: 0px;
     padding-right: 0px;
+	shadow-type: none;
 }
 
 /********************
@@ -1825,27 +1832,30 @@ GtkCheckButton:selected:focus {
 
 /* applications using EggEditableToolbar usually set the primary-toolbar
  * hint on the containing vbox, so we need to handle both these cases here.
- */
+ 
+NOTA:incluye la MenuBar de Gedit por ejemplo
+*/
+
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
     border-width: 0px 0px 0px 0px; /* 0 1 0 1*/
-    border-radius: 0px;
+    border-radius: 3px;
     border-style: solid;
     border-top-color: @toolbar_border_top;
     border-bottom-color: @toolbar_border_bottom;
 
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
-    box-shadow: 0 3 inset alpha(black, 0.02), 0 2 inset alpha(black, 0.02), 0 1 inset alpha(black, 0.02);
+    /* box-shadow: 0 3 inset alpha(black, 0.02), 0 2 inset alpha(black, 0.02), 0 1 inset alpha(black, 0.02); */
     text-shadow: @primary_toolbar_button_text_shadow 0 1;
 }
 
 .primary-toolbar .toolbar:insensitive,
 .primary-toolbar.toolbar:insensitive {
-    background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);
+    /* background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);*/
     /* background-color: shade (@theme_bg_color, 0.97); */
 
-    border-color: shade (@theme_bg_color, 0.91);
+/*    border-color: shade (@theme_bg_color, 0.91); */
     text-shadow: none;
 }
 
@@ -1859,10 +1869,10 @@ GtkCheckButton:selected:focus {
 /* progressbars on primary toolbar entries are special */
 .primary-toolbar .toolbar .entry.progressbar,
 .primary-toolbar.toolbar .entry.progressbar {
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (@trough_bg_color_a),
-                                     to (@trough_bg_color_b));
+                                     to (@trough_bg_color_b));*/
 
     border-width: 1px;
     border-radius: 2px;
@@ -1881,7 +1891,7 @@ GtkCheckButton:selected:focus {
 
 .inline-toolbar.toolbar {
     border-width: 1px;
-    border-radius: 0;
+    border-radius: 4;
     border-style: solid;
 
     -GtkToolbar-button-relief: normal;

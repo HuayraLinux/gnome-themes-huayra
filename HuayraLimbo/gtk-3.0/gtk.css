@@ -6,7 +6,7 @@
  
 /* Default color scheme */
 @define-color base_color #f9f9f9;
-@define-color bg_color #f0f0f0;
+@define-color bg_color #f4f4f4; /* color de fondo de las toolbars */
 @define-color selected_bg_color #69aef5; /* color de fondo de elemento seleccionado */
 @define-color selected_fg_color #ffffff; /* color de frente de elemento seleccionado */
 @define-color text_color #202030; /* color del texto escrito */
