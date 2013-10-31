@@ -236,7 +236,7 @@
   <piece position="left_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#dfdfdf" />
+		<color value="#f4f3f3" />
 		<color value="#d7d7d7" />
 		<color value="#d0d0d0" />
 	</gradient>
@@ -245,7 +245,7 @@
   <piece position="right_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#dfdfdf" />
+		<color value="#f4f3f3" />
 		<color value="#d7d7d7" />
 		<color value="#d0d0d0" />
 	</gradient>

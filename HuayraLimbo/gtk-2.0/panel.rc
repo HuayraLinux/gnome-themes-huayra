@@ -8,7 +8,7 @@ style "theme-panel"
 {
 
 	font_name = "Asap regular 10"
-	bg[SELECTED]	= shade (1.1, @tooltip_bg_color) # Makes selected items dark.
+	bg[SELECTED]	= shade (1.1, @selected_bg_color) # Makes selected items dark.
 	bg[NORMAL]	= "#efefef" # Color de fondo del panel
 	bg[PRELIGHT]	= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
 	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
