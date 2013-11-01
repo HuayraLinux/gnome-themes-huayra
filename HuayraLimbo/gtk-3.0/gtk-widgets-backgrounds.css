@@ -6,13 +6,13 @@
 .toolbar .raised .button:focus,
 .toolbar GtkComboBox .button,
 .toolbar GtkComboBox .button:focus {
-    /*background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                                      from (@button_gradient_color_a),
                                      color-stop (0.4, @button_gradient_color_b),
                                      to (@button_gradient_color_c));
-*/
-    background-color: transparent;
+
+    /* background-color: transparent; */
 }
 
 /* Pushed button background */
@@ -48,11 +48,11 @@
 .primary-toolbar .button:active:hover,
 .inline-toolbar .button:active,
 .inline-toolbar .button:active:hover {
-    /* background-image: -gtk-gradient (linear,
+     background-image: -gtk-gradient (linear,
     				     left top, left bottom,
                                      from (shade(@borders, 0.95)),
-				     to (shade(@theme_bg_color, 0.88)));*/
-    background-color: transparent;
+				     to (shade(@theme_bg_color, 0.88)));
+/*    background-color: transparent; */
 }
 
 /* Prelit button background */
@@ -62,20 +62,20 @@
 .toolbar .raised .button:hover,
 .toolbar GtkComboBox .button:hover {
     background-color: transparent;
-    /*background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
 				     left top, left bottom,
 				     from (@button_hover_gradient_color_a),
-				     to (@button_hover_gradient_color_b)); */
+				     to (@button_hover_gradient_color_b)); 
 }
 
 /* Prelit button on primary toolbar background */
 .primary-toolbar .button:hover {
-    background-color: transparent; /*
+    background-color: transparent; 
     background-image: -gtk-gradient (linear,
 				     left top, left bottom,
 				     from (alpha (@toolbar_button_prelight, 0)),
 				     color-stop (0.54, @toolbar_button_prelight),
-			             to (alpha (@toolbar_button_prelight, 0))); */
+			             to (alpha (@toolbar_button_prelight, 0))); 
 }
 
 /* Insensitive button background */
@@ -104,7 +104,7 @@
 .toolbar .button:backdrop:hover,
 .primary-toolbar .raised .button:backdrop:hover {
     background-image: none;
-    background-color: @unfocused_button_background;
+    background-color: "#ff0000"; /* @unfocused_button_background; */
 }
 
 /* Unfocused window pushed button background */

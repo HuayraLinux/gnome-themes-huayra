@@ -6,12 +6,12 @@
  
 /* Default color scheme */
 @define-color base_color #f9f9f9;
-@define-color bg_color #f4f4f4; /* color de fondo de las toolbars */
-@define-color selected_bg_color #69aef5; /* color de fondo de elemento seleccionado */
+@define-color bg_color #f4f3f3; /* color de fondo de las toolbars */
+@define-color selected_bg_color #158994; /* color de fondo de elemento seleccionado */
 @define-color selected_fg_color #ffffff; /* color de frente de elemento seleccionado */
 @define-color text_color #202030; /* color del texto escrito */
 @define-color fg_color #202020; /* color del texto de labels, menúes, widgets */
-@define-color tooltip_bg_color #ff0000; /*#69aef5;  color de fondo de los tooltips */ 
+@define-color tooltip_bg_color #6Ae7ea; /*#69aef5;  color de fondo de los tooltips */ 
 @define-color tooltip_fg_color #ffffff; /* color de texto de los tooltips */ 
 /*@define-color unfocused_bg_color #f8f8f8;*/
 @define-color unfocused_bg_color @bg_color;
@@ -41,7 +41,7 @@
 @define-color unfocused_insensitive_bg_color mix(@theme_unfocused_bg_color, @theme_unfocused_base_color, 0.5);
 @define-color unfocused_dark_bg mix(@theme_unfocused_bg_color, @unfocused_borders, 0.3);
 
-@define-color menu_bg_color shade (@theme_bg_color, 1.2);
+@define-color menu_bg_color shade (@selected_bg_color, 1.2);
 @define-color menu_fg_color @theme_fg_color;
 
 @define-color menu_controls_color shade (@theme_fg_color, 0.9);

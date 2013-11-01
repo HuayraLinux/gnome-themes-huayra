@@ -1,0 +1,17 @@
+style "mate-control-center" {
+
+	font_name = "Asap regular 10"
+	xthickness = 2
+	ythickness = 2
+	bg[NORMAL]        = shade (0.5, @bg_color)
+	bg[SELECTED]        = shade (1.6, @bg_color)
+	bg[ACTIVE]        = shade (1.2, @bg_color)
+	bg[PRELIGHT]        = shade (1.07, @bg_color)
+	bg[INSENSITIVE]   = @bg_color
+
+}
+
+widget_class "*<GtkNotebook>*<GtkLabel>" style "mate-control-center"
+widget_class "*.<GtkFrame>.<GtkLabel>" style "mate-control-center"
+
+
