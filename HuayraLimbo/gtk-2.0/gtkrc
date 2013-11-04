@@ -125,7 +125,7 @@ engine "murrine"
 		contrast            = 0.8
 		cellstyle = 0
 		glazestyle          = 5 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
-		gradient_shades     = {1.01,1.0,1.0, 0.99} 
+		gradient_shades     = {1.1,1.0,1.0, 0.99} 
 		progressbarstyle    = 2
 		#focus_color         = "#69aef5"
 		glowstyle	    	= 1
@@ -202,6 +202,28 @@ style "limbo-notebook-bg" {
        	gradient_shades = {1.5, 0.5, 1.0, 1.1}  #Colores para el control de la barra de scroll
         trough_border_shades = {0.9, 0.98} #
   }
+}
+
+style "limbo-notebook-layout" {
+  bg[NORMAL]   = shade (1.4, @bg_color)
+  bg[ACTIVE]   = shade (1.2, @bg_color)
+  fg[NORMAL] = shade(1.4, @bg_color)
+
+#  engine "murrine" {
+#		roundness = 6
+#		reliefstyle = 1
+#		border_shades = {1.1, 1.0}
+		#gradient_shades		= {1.0,0.96,0.92,0.90} 
+#		glazestyle 		= 4
+#		highlight_shade		= 1.5 
+#		contrast		= 1.0
+#		lightborder_shade	= 1.0
+#		lightborderstyle 	= 1
+#		glow_shade          = 1.02
+#		trough_shades = {0.85, 0.99}
+#       	gradient_shades = {1.5, 0.5, 1.0, 1.1}  #Colores para el control de la barra de scroll
+#        trough_border_shades = {0.9, 0.98} #
+ # }
 }
 
 style "limbo-notebook" = "limbo-notebook-bg" {
@@ -492,6 +514,44 @@ style "botones-limbo" {
     }
 }
 
+style "botones-combobox" {
+#Estilo para todos los botones de la interfaz
+    xthickness = 3
+    ythickness = 3
+
+	bg[NORMAL] = shade(1.0, @bg_color) #F1F1F1"
+	bg[INSENSITIVE] = shade(1.1, @bg_color)
+	bg[ACTIVE] = shade(1.0, @bg_color)
+	bg[SELECTED] = shade(1.1, @bg_color)
+	bg[PRELIGHT] = shade(1.4, @bg_color)
+
+	fg[NORMAL] = shade(0.5, @fg_color)
+	fg[ACTIVE] = shade(0.6, @fg_color)
+	fg[PRELIGHT] = shade(0.9, @fg_color)
+	fg[SELECTED] = shade(0.7, @fg_color)
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+	text[ACTIVE]      = @selected_fg_color
+
+
+    engine "murrine"
+    {
+        border_shades = {0.95, 0.90}
+        roundness = 6
+        contrast = 1.0 #resalta el borde de losbotones, oscureciendolo o aclarandolo
+        trough_shades = {0.92, 0.98}
+        lightborder_shade = 1.6
+		glazestyle = 5
+        #glowstyle = 4
+        glow_shade = 1.02
+        gradient_shades = {1.1, 0.99, 0.98, 0.97}
+        trough_border_shades = {0.9, 0.98}
+    }
+}
+
 # This style is there to modify the separator menu items. The goals are:
 # 1. Get a specific height.
 # 2. The line should go to the edges (ie. no border at the left/right)
@@ -677,6 +737,8 @@ widget_class "*.<GtkCTree>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
 
+widget_class "*.<gtkmm__GtkFrame>.<gtkmm__GtkLabel>" style "botones-limbo"
+
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
 # FIXME:
@@ -706,6 +768,11 @@ widget "*.nautilus-extra-view-widget" style : highest "botones-limbo"
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
 widget_class "*.<GtkComboBox>.<GtkCellView>" style "comboboxentry" #"text_is_fg_color_workaround"
+
+widget_class "*.<GtkComboBox>.<GtkToggleButton>" style "botones-combobox" # Color para boton de listas desplegables ComboBox
+widget_class "*<GtkTable>" style "default" # inkscape 
+widget_class "*<gtkmm__GtkFrame>.*"	style "botones-combobox" #"default" # inkscape label de objetos
+
 # This is the part of the workaround that fixes the menus
 widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround"
 
@@ -722,13 +789,13 @@ widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
 # See the documentation of the style.
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
-style "inkscape-dock-fix" {
+#style "inkscape-dock-fix" {
 
-	bg[NORMAL] = shade(2.0, @selected_fg_color)
+#	bg[NORMAL] = shade(2.0, @selected_fg_color)
 	#fg[NORMAL] = shade(1.5, @bg_color)
 #	text[SELECTED] = "#ff0000"
 #	text[ACTIVE] = "#ff0000"
-	text[NORMAL] = shade(0.9, @fg_color)
+#	text[NORMAL] = shade(0.9, @fg_color)
 #	text[INSENSITIVE] = "#ff0000"
 #	engine "murrine" {
 #		roundness = 4
@@ -741,37 +808,37 @@ style "inkscape-dock-fix" {
 		#lightborderstyle 	= 1
 		#glow_shade              = 1.0
 #	}
-}
+#}
 
-style "inkscape-toolbar-fix" {
+#style "inkscape-toolbar-fix" {
 	#engine "murrine" {
     #            gradient_shades = { 0.9, 0.9, 0.9, 0.9 }
     #            highlight_shade = 1.0
 	#}
-}
+#}
 
-widget "*GdlDockItemGrip*" style "inkscape-dock-fix"
+#widget "*GdlDockItemGrip*" style "inkscape-dock-fix"
 
-widget "*GtkHandleBox" style "inkscape-toolbar-fix"
+#widget "*GtkHandleBox" style "inkscape-toolbar-fix"
 #widget "*HandleBox*CommandsToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*SelectToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*NodeToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*TweakToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*ZoomToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*StarToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*RectToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*3DBoxToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*ArcToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*SpiralToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*PencilToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*PenToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*CalligraphyToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*EraserToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*LPEToolToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*DropperToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*ConnectorToolbar*" style "inkscape-toolbar-fix"
-widget "*HandleBox*PaintbucketToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*SelectToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*NodeToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*TweakToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*ZoomToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*StarToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*RectToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*3DBoxToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*ArcToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*SpiralToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*PencilToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*PenToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*CalligraphyToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*EraserToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*LPEToolToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*DropperToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*ConnectorToolbar*" style "inkscape-toolbar-fix"
+#widget "*HandleBox*PaintbucketToolbar*" style "inkscape-toolbar-fix"
 
 # Performance Fixes
 
