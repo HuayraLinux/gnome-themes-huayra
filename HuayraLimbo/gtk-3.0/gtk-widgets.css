@@ -106,15 +106,16 @@ GtkWindow:backdrop {
  ************/
 .tooltip {
     padding: 4px;
-    border-style: none;
-    border-radius: 5px;
+    border-style: solid;
+	border-width: 1;
+	border-color: @insensitive_borders;
+
+    border-radius: 0px;
 
     background-color: alpha(@theme_tooltip_bg_color, 0.90);
     color: @theme_tooltip_fg_color;
     text-shadow: 1 1 #000;
         
-    background-color: #69aef5;
-    color: #fff;
 
 }
 
@@ -1393,26 +1394,45 @@ GtkComboBox .button *:hover {
  **************/
 
 .scrollbar {
-    background-image: none;
+    background-image: none; 
+	
     border-style: solid;
-    -GtkRange-trough-border: 0;
+    -GtkRange-trough-border: 2;
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false;
-    -GtkRange-slider-width: 13;
+    -GtkRange-slider-width: 10;
     -GtkScrollbar-min-slider-length: 42; /* minimum size for the slider. sadly can't be in '.slider' where it belongs */
 
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-under-steppers: 1;
 }
 
-.scrollbars-junction, /* the small square between scrollbars!!! */
-.scrollbar.trough {
-    background-image: none;
+.scrollbars-junction { 
+/* the small square between scrollbars!!! */
+	background-color: transparent;
+}
+
+.scrollbar.trough.horizontal {
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@bg_color, 0.8)),
+                                     to (@bg_color)); 
     background-color: @scrollbar_trough;
-    border-width: 0;
-    border-radius: 0;
+    border-width: 1;
+    border-radius: 8;
     border-image: none;
 }
+.scrollbar.trough.vertical {
+    background-image: -gtk-gradient (linear,
+                                     left top, right top,
+                                     from (shade(@bg_color, 0.8)),
+                                     to (@bg_color)); 
+    background-color: @scrollbar_trough;
+    border-width: 1;
+    border-radius: 8;
+    border-image: none;
+}
+
 
 .scrollbar.button,
 .scrollbar.button:active,
@@ -1420,11 +1440,11 @@ GtkComboBox .button *:hover {
 .scrollbar.button:insensitive,
 .scrollbar.button:hover:backdrop,
 .scrollbar.button:active:hover:backdrop {
-    border-style: none;
+    border-style: solid;
     border-image: none;
-    border-radius: 0;
+    border-radius: 8;
     background-image: none;
-    background-color: transparent;
+    background-color: @bg_color;
 }
 
 .scrollbar.button:active,
@@ -1517,33 +1537,67 @@ GtkComboBox .button *:hover {
 }
 
 
-.scrollbar.slider {
-    background-image: none;
+.scrollbar.slider.horizontal {
+	background-image: url("imagenes/boton-cyan-horizontal.png"); /* -gtk-gradient(linear, left top, left bottom, from (shade(shade(@selected_bg_color, 1.5), 0.5)),to (shade(shade(@selected_bg_color, 1.0), 1.1))); */
+
     background-color: @scrollbar_slider;
-    border-radius: 20px;
+    border-radius: 8px;
     border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+    border-image: none;;
+    border-color: shade(@selected_bg_color, 0.8);
+    border-width: 1px;
 }
 
-.scrollbar.slider:hover {
+.scrollbar.slider.vertical {
+	background-image: url("imagenes/boton-cyan-vertical.png"); /*-gtk-gradient(linear, left top, right top,
+from (shade(shade(@selected_bg_color, 1.5), 0.5)),
+to (shade(shade(@selected_bg_color, 1.0), 1.1)));*/
+
+    background-color: @scrollbar_slider;
+    border-radius: 8px;
+    border-style: solid;
+    border-image: none;;
+    border-color: shade(@selected_bg_color, 0.8);
+    border-width: 1px;
+}
+
+
+.scrollbar.slider.vertical:hover {
     transition: 1000ms linear; /* doesn't work */
-    background-image: none;
+    background-image: url("imagenes/boton-cyan-vertical.png");
     background-color: @scrollbar_slider_prelight;
     border-style: solid;
     border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+    border-color: shade(@selected_bg_color, 1.2);
+    border-width: 1px;
 }
 
-.scrollbar.slider:prelight:active {
-    background-image: none;
+.scrollbar.slider.horizontal:hover {
+    transition: 1000ms linear; /* doesn't work */
+    background-image: url("imagenes/boton-cyan-horizontal.png");
+    background-color: @scrollbar_slider_prelight;
+    border-style: solid;
+    border-image: none;
+    border-color: shade(@selected_bg_color, 1.2);
+    border-width: 1px;
+}
+
+.scrollbar.slider.vertical:prelight:active {
+    background-image: url("imagenes/boton-fucsia-vertical.png");
     background-color: @scrollbar_slider_active;
     border-style: solid;
     border-image: none;
     border-color: transparent;
-    border-width: 3px;
+    border-width: 1px;
+}
+
+.scrollbar.slider.horizontal:prelight:active {
+    background-image: url("imagenes/boton-fucsia-horizontal.png");
+    background-color: @scrollbar_slider_active;
+    border-style: solid;
+    border-image: none;
+    border-color: transparent;
+    border-width: 1px;
 }
 
 .scrollbar.slider:insensitive {
