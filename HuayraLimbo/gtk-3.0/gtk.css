@@ -163,8 +163,8 @@
 
 @define-color highlighted_border #8a8f8a;
 
-@define-color notebook_active_tab_border #1372d3;
-@define-color notebook_selected_tab_color #8dc0f3;
+@define-color notebook_active_tab_border shade(@selected_fg_color, 1.1);
+@define-color notebook_selected_tab_color shade(@selected_bg_color, 1.05);
 
 @define-color notebook_tab_gradient_a shade(@theme_bg_color, 0.97);
 @define-color notebook_tab_gradient_b shade(@theme_bg_color, 0.85);
@@ -180,7 +180,7 @@
 @define-color toolbar_gradient_step2 #babdb6;
 @define-color toolbar_gradient_final shade(@toolbar_gradient_step2, 1.15);*/
 
-@define-color toolbar_gradient_a #ff0000; /*shade(@borders, 1.5);*/
+@define-color toolbar_gradient_a shade(@borders, 1.5);
 @define-color toolbar_gradient_b shade(@borders, 1.65);
 @define-color toolbar_gradient_c shade(@borders, 1.3);
 
@@ -225,7 +225,7 @@
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
 @import url("gtk-widgets-backgrounds.css");
-@import url("gtk-widgets-borders.css"); 
+@import url("gtk-widgets-borders.css");  
 @import url("gtk-widgets-assets.css");
 @import url("gtk-widgets.css");
 /* @import url("gnome-applications.css"); */
