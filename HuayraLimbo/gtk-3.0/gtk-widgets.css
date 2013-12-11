@@ -1630,16 +1630,16 @@ to (shade(shade(@selected_bg_color, 1.0), 1.1)));*/
  *********/
 /* combobox menus */
 GtkTreeMenu.menu {
-    background-color: @theme_base_color;
+    background-color:shade (@theme_base_color, 1.2);
 }
 
 GtkTreeMenu .menuitem {
 
-	background-color: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 0.8),
-                                      shade(@selected_bg_color, 1.1),
-									  shade(@selected_bg_color, 0.9),
-                                      @selected_bg_color);
+	background-image: linear-gradient(to bottom,
+                                      shade(@selected_bg_color, 0.9),
+                                      shade(@selected_bg_color, 1.2),
+									  shade(@selected_bg_color, 1.1),
+                                      shade(@selected_bg_color, 0.9));
     padding: 2px;
 
     border-style: solid;
@@ -1652,11 +1652,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu {
-    background-color: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 0.8),
-                                      shade(@selected_bg_color, 1.1),
-									  shade(@selected_bg_color, 0.9),
-                                      @selected_bg_color); /*-gtk-gradient(linear, left top, left bottom, from(shade(@theme_base_color, 0.8)), to(shade(@theme_base_color, 1.0)));*/
+    background-color: shade (@theme_base_color, 1.2);
     color: @theme_fg_color;
     padding: 4px;
     border-style: solid;
@@ -1711,16 +1707,21 @@ GtkTreeMenu .menuitem * {
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
     /*background-image: none; */
+	background-image: linear-gradient(to bottom,
+                                      shade(@selected_bg_color, 0.9),
+                                      shade(@selected_bg_color, 1.2),
+									  shade(@selected_bg_color, 1.1),
+                                      shade(@selected_bg_color, 0.9));
     /*background-color: @menu_bg_color; */
-	background-color: #ff0000 /* celeste mayo */
-	border-radius: 3 3 3 3;
-    color: @menu_fg_color;
+	background-color: transparent; 
+	border-radius: 4px;
+    color: @theme_selected_fg_color;
 }
 
 
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.4;
-    padding: 6px;
+    padding: 4px;
 }
 
 .menu .menuitem:hover {
@@ -1731,9 +1732,11 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                      from (shade(@selected_bg_color, 1.0)),
-                                      to (shade(@selected_bg_color, 1.3)));
+    background-image: linear-gradient(to bottom,
+                                      shade(@selected_bg_color, 0.9),
+                                      shade(@selected_bg_color, 1.2),
+									  shade(@selected_bg_color, 1.1),
+                                      shade(@selected_bg_color, 0.9));
     color: @theme_selected_fg_color;
 }
 
@@ -1833,7 +1836,7 @@ GtkTreeMenu .menuitem * {
     border-radius: 5px 5px 0 0;
     border-image: none;
     border-width: 1px 1px 0 1px;
-    border-color: shade(@borders, 1.30);
+    border-color: transparent; /* shade(@borders, 1.30); */
     border-style: solid;
 }
 
@@ -1971,14 +1974,15 @@ NOTA:incluye la MenuBar de Gedit por ejemplo
     border-width: 1px;
     border-radius: 4;
     border-style: solid;
+	border-color: transparent; /* No existia esta linea */
 
-    -GtkToolbar-button-relief: normal;
+    -GtkToolbar-button-relief: none; /* era: normal; */
 
     padding: 4px;
 }
 
 .inline-toolbar.toolbar:last-child {
-    border-width: 0 1px 1px 1px;
+    border-width: 0; /*0 1px 1px 1px;*/
     border-radius: 0 0 3px 3px;
 }
 
