@@ -533,7 +533,7 @@ GtkProgressBar {
                                      color-stop (0.75, @progressbar_background_b),
                                      to (shade(@progressbar_background_a, 0.85)));
 
-    border-radius: 3px;
+    border-radius: 6px;
     border-width: 1px;
     border-style: solid;
     border-color: @progressbar_border;
@@ -605,9 +605,9 @@ GtkProgressBar.vertical:backdrop,
  * GtkScale *
  ************/
 GtkScale {
-    -GtkScale-slider-length: 16;
-    -GtkRange-slider-width: 20;
-    -GtkRange-trough-border: 0;
+    -GtkScale-slider-length: 10;
+    -GtkRange-slider-width: 12;
+    -GtkRange-trough-border: 2;
 }
 
 GtkScale.slider,
@@ -615,11 +615,15 @@ GtkScale.slider:hover,
 GtkScale.slider:insensitive,
 GtkScale.slider:backdrop,
 GtkScale.slider:insensitive:backdrop {
-    border-radius: 0;
-    border-style: none;
+    border-radius: 1;
+    border-style: solid;
 
     color: alpha(@theme_base_color, 0.0); /* FIXME */
-    background-color: transparent;
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (@progressbar_background_a),
+                                     color-stop (0.75, @progressbar_background_b),
+                                     to (shade(@progressbar_background_a, 0.85))); /* transparent;*/
 
     /* background-image in -assets variant */
 }
@@ -630,6 +634,7 @@ GtkScale.trough.vertical,
 GtkScale.trough:backdrop {
     border-width: 1px;
     border-image: none;
+	/* background-image: none;*/
     border-style: solid;
 }
 
@@ -1715,7 +1720,7 @@ GtkTreeMenu .menuitem * {
     /*background-color: @menu_bg_color; */
 	background-color: transparent; 
 	border-radius: 4px;
-    color: @theme_selected_fg_color;
+    color:@theme_selected_fg_color;
 }
 
 
@@ -1733,10 +1738,10 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     background-image: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 0.9),
-                                      shade(@selected_bg_color, 1.2),
-									  shade(@selected_bg_color, 1.1),
-                                      shade(@selected_bg_color, 0.9));
+                                      shade(@selected_bg_color, 1.15),
+                                      shade(@selected_bg_color, 1.3),
+									  shade(@selected_bg_color, 1.35),
+                                      shade(@selected_bg_color, 1.1));
     color: @theme_selected_fg_color;
 }
 
@@ -1755,7 +1760,7 @@ GtkTreeMenu .menuitem * {
 
 .menuitem .accelerator:hover,
 .menuitem .accelerator:active {
-    color: alpha (@menu_fg_color, 0.4);
+    color: theme_selected_fg_color;
 }
 
 .menuitem.arrow {
