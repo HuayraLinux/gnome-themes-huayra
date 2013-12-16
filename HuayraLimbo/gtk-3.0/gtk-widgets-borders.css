@@ -98,7 +98,7 @@ GtkSwitch.trough:active {
     border-radius: 3px;
     border-width: 1px;
     border-style: solid;
-    border-color: "#ff0000"; /* transparent; */
+    border-color: transparent;
 }
 
 /* primary toolbar - focused element borders */

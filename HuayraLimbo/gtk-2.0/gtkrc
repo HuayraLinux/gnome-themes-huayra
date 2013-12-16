@@ -117,7 +117,7 @@ style "default" {
 	base[INSENSITIVE] = @bg_color
 	base[ACTIVE]      = shade (0.9, @selected_bg_color)
 
-
+	
 engine "murrine" 
 	{
 		animation           = TRUE
@@ -174,7 +174,7 @@ style "limbo-entry" {
 	xthickness = 3
 	ythickness = 3
 
-	bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
+	bg[SELECTED] = mix (0.1, @selected_bg_color, @base_color)
 	fg[SELECTED] = @text_color
     engine "murrine" {
     border_shades = { 1.0, 1.0 }
@@ -303,9 +303,29 @@ style "toolbar" {
       file = "imagenes/fondo_nulo.png"
       border = {0, 0, 0, 0}
       detail = "toolbar"}
-	}
-  
 
+	image{
+	  function = BOX
+	  state = ACTIVE
+      file = "imagenes/fondo_nulo.png"
+      border = {0, 0, 0, 0}
+      detail = "toolbar"}
+
+	image{
+	  function = BOX
+	  state = PRELIGHT
+      file = "imagenes/fondo_nulo.png"
+      border = {0, 0, 0, 0}
+      detail = "toolbar"}
+
+	image{
+	  function = BOX
+	  state = INSENSITIVE
+      file = "imagenes/fondo_nulo.png"
+      border = {0, 0, 0, 0}
+      detail = "toolbar"}
+
+	}
 } 
 
 # Estilo para la barra del menu
@@ -435,9 +455,9 @@ style "scroll-bar-limbo"
 	ythickness = 2
 	bg[NORMAL] = shade(1.1, @bg_color) #F1F1F1"
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
-	bg[ACTIVE] = shade(0.9, @tooltip_bg_color)
-	bg[SELECTED] = shade(0.8, @tooltip_bg_color)
-	bg[PRELIGHT] = shade(1.4, @tooltip_bg_color)
+	bg[ACTIVE] = shade(0.9, @base_color) # En Chromium actua sobre el trough de la barra (el espacio que no es el slider)
+	bg[SELECTED] = shade(0.8, @tooltip_bg_color) #0.8, @tooltip_bg_color
+	bg[PRELIGHT] = shade(1.6, @base_color) #"#D25FCC" #Color que uso para el prelight de la barra de scroll
 
 	engine "murrine" {
 		roundness = 6
@@ -539,12 +559,6 @@ style "frame_title" {
 	fg[NORMAL]        = shade(0.5, @fg_color)
 }
 
-#style "caja-path" {
-#	bg[NORMAL] = "#FF0000"
-#	bg[ACTIVE] = "#0000FF"
-#	fg[NORMAL] = "#00FF00"
-
-#}
 
 style "treeview" {
 	bg[NORMAL] = @bg_color
@@ -657,7 +671,7 @@ class "GtkCalendar" style "default"
 class "GtkEntry" style "limbo-entry"
 class "GtkList" style "list"
 
-class "GtkSpinButton" style "spinbutton"
+class "GtkSpinButton" style "botones-combobox" #"spinbutton"
 class "GtkScale" style "sliders-limbo" #"scale"
 #class "GtkVScale" style "sliders-limbo" #"vscale"
 #class "GtkHScale" style "sliders-limbo" #"hscale"
@@ -690,6 +704,7 @@ widget_class "*<GtkStatusbar>*" style "statusbar"
 
 widget_class "*<GtkComboBoxEntry>*" style "wider"
 widget_class "*<GtkCombo>*" style "wide"
+widget_class "*<GtkOptionMenu>*" style "botones-combobox" # Spinbuttons de Audacity
 
 widget_class "*<GtkMenuBar>*" style "menubar"
 widget_class "*<GtkMenu>*" style "menu"
