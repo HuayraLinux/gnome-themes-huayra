@@ -62,8 +62,7 @@ style "theme-panel"
 
 style "applet"
 {
-	fg[NORMAL] = "#ff0000"
-	bg_pixmap[NORMAL] = "imagenes/panel_bg2.png"
+	bg_pixmap[NORMAL] = "imagenes/fondo_nulo.png"
 }
 
 style "theme-panel-light"
@@ -72,8 +71,8 @@ style "theme-panel-light"
 }
 
 # Panel settings. Do not change.
-widget "*PanelWidget*"		style "theme-panel"
-widget "PanelWidget" style "theme-panel"
+#widget "*PanelWidget*"		style "theme-panel"
+widget "PanelWidget" style "applet" #"theme-panel"
 
 #widget "*PanelApplet*"		style "theme-panel"
 widget "*fast-user-switch*"	style "theme-panel"
@@ -81,13 +80,18 @@ widget "*gdm-user-switch*"	style "theme-panel"
 widget "*CPUFreq*Applet*"	style "theme-panel"
 widget "*indicator-applet*"	style "theme-panel"
 
-#class "PanelApp*"		style "theme-panel"
-class "PanelToplevel*"		style "theme-panel"
-#widget_class "*<PanelMenuBar>*" style "theme-panel"
-widget_class "*<MatePanelAppletFrameDBus>*" style "applet"
+class "PanelToplevel*"		style "applet" #"theme-panel"
+
+
+widget_class "*<MatePanelAppletFrameDBus>*" style "applet" # Fix para evitar que se use el fondo del panel en los menues desplegables de algunos applets.
+widget_class "*<PanelDItemEditor>*" style "applet" #
+
 widget_class "*PanelToplevel*"	style "theme-panel"
 #widget_class "*Mail*"		style "theme-panel" # Disabled to fix Evolution bug.
-class "*Panel*"		style "theme-panel" # Disabled to fix bug.
+class "*Panel*"		style "theme-panel" # Aplica el estilo en el fondo de los applets y widgets del panel
+
+widget_class "*Drawer" style "applet"
+
 widget_class "*notif*"		style "theme-panel"
 widget_class "*Notif*"		style "theme-panel"
 widget_class "*Tray*"		style "theme-panel" 
