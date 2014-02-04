@@ -91,19 +91,20 @@ style "default" {
 	# Color Definitions
 	####################
 	bg[NORMAL]        = @bg_color
-	bg[PRELIGHT]      = shade (1.02, @bg_color)
-	bg[SELECTED]      = @selected_bg_color
+	bg[PRELIGHT]      = shade (1.01, @bg_color)
+	bg[SELECTED]      = shade (1.01, @selected_bg_color) #@selected_bg_color
 	bg[INSENSITIVE]   = shade (0.8, @bg_color)
-	bg[ACTIVE]        = shade (0.9, @bg_color)
+	bg[ACTIVE]        = shade (0.95, @bg_color)
 
 
 	fg[INSENSITIVE]   = darker (@bg_color)
 #	fg[ACTIVE]        = shade (1.2, @fg_color)
 
-	fg[NORMAL]		= shade(0.5, @selected_fg_color)
-	fg[SELECTED]      = shade( 1.5, @selected_fg_color)
-    fg[ACTIVE]      = shade (0.7, @selected_fg_color)
-	fg[PRELIGHT] 	= shade (0.8, @selected_fg_color)
+	fg[NORMAL]		= shade(0.6, @selected_fg_color)
+#	fg[NORMAL]		= shade(0.5, @selected_fg_color)
+	fg[SELECTED]      = shade( 0.9, @selected_fg_color)
+    fg[ACTIVE]      = shade (0.5, @selected_fg_color)
+	fg[PRELIGHT] 	= shade (0.3, @selected_fg_color)
 
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
@@ -124,7 +125,7 @@ engine "murrine"
 		colorize_scrollbar  = TRUE
 		contrast            = 0.8
 		cellstyle = 0
-		glazestyle          = 5 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		glazestyle          = 3 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.1,1.0,1.0, 0.99} 
 		progressbarstyle    = 2
 		#focus_color         = "#69aef5"
@@ -486,17 +487,17 @@ style "botones-limbo" {
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
 	bg[ACTIVE] = shade(0.9, @bg_color)
 	bg[SELECTED] = shade(0.8, @bg_color)
-	bg[PRELIGHT] = shade(1.1, @bg_color)
+	bg[PRELIGHT] = shade(1.02, @bg_color)
 
     engine "murrine"
     {
-        border_shades = {0.95, 0.90}
-        roundness = 6
+        border_shades = {0.95, 0.94 }
+        roundness = 4
         contrast = 1.0 #resalta el borde de losbotones, oscureciendolo o aclarandolo
         trough_shades = {0.92, 0.98}
         lightborder_shade = 1.6
-		glazestyle = 5
-        #glowstyle = 4
+		glazestyle = 3
+        glowstyle = 2
         glow_shade = 1.02
         gradient_shades = {1.0, 0.99, 0.98, 0.97}
         trough_border_shades = {0.9, 0.98}
@@ -584,6 +585,13 @@ style "progressbar" {
 
 		hint = "progressbar"
 	}
+}
+
+style "iceweasel" {
+
+	xthickness = 10
+	ythickness = 8
+
 }
 
 # This style is based on the default style, so that the colors from the button
@@ -698,7 +706,7 @@ widget_class "*<GtkNotebook>*<GtkLayout>" style "limbo-notebook-bg"
 widget_class "*<GtkNotebook>*<GtkViewport>" style "limbo-notebook-bg"
 widget_class "*<GtkNotebook>*<GtkScrolledWindow>" style "limbo-notebook-bg"
 
-widget_class "*<GtkButton>" style "default" #Botones redondeados
+widget_class "*<GtkButton>" style "botones-limbo" #Botones redondeados
 widget_class "*<GtkNotebook>" style "limbo-notebook"
 widget_class "*<GtkStatusbar>*" style "statusbar"
 
@@ -804,6 +812,9 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 #}
 
 #widget "*GdlDockItemGrip*" style "inkscape-dock-fix"
+
+# Intenta corregir margen en Iceweasel
+widget "*MozContainer" style "iceweasel"
 
 widget "*GtkHandleBox" style "default"
 widget "*HandleBox*CommandsToolbar*" style "default"
