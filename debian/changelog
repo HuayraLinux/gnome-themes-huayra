@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.23) unstable; urgency=low
+
+  * correcciones en el teama limbo (gtk3)
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Tue, 04 Feb 2014 14:06:59 -0300
+
 gnome-themes-huayra (2.22) unstable; urgency=low
 
   * nuevas correcciones del tema
