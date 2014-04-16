@@ -135,10 +135,10 @@
 @define-color switch_trough_active_bg_a #5DB7B9; /* 509ae7; */
 @define-color switch_trough_active_bg_b #41B3B5; /*a5d0ff;  azul celeste */
 
-@define-color progressbar_background_a #D988E8; /* 76b0ec;  azul celeste */
-@define-color progressbar_background_b #B14DAA; /* 1f72c6;  azul */
+@define-color progressbar_background_a #AFFDFF; /* 76b0ec;  azul celeste */
+@define-color progressbar_background_b #038378; /* 1f72c6;  azul */
 @define-color progressbar_pattern @switch_slider_active_border;
-@define-color progressbar_border @switch_slider_active_border;
+@define-color progressbar_border #005759; /* @switch_slider_active_border;*/
 @define-color progressbar_unfocused_background @theme_base_color;
 @define-color progressbar_unfocused_border @unfocused_borders;
 

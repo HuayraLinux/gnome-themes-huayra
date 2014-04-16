@@ -610,54 +610,42 @@ GtkProgressBar.vertical:backdrop,
  ************/
 GtkScale {
     -GtkScale-slider-length: 10;
-    -GtkRange-slider-width: 12;
-    -GtkRange-trough-border: 2;
+    -GtkRange-slider-width: 10;
+    -GtkRange-trough-border: 1;
 }
+/* Control del slider */
 
-GtkScale.slider,
+GtkScale.slider, GtkScale.slider.vertical,
 GtkScale.slider:hover,
-GtkScale.slider:insensitive,
 GtkScale.slider:backdrop,
 GtkScale.slider:insensitive:backdrop {
-    border-radius: 1;
-    border-style: solid;
-
+    border-radius: 0;
+	border-width: 0px;
+    border-style: transparent;
     color: alpha(@theme_base_color, 0.0); /* FIXME */
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@progressbar_background_a),
-                                     color-stop (0.75, @progressbar_background_b),
-                                     to (shade(@progressbar_background_a, 0.85))); /* transparent;*/
+	background-image: url("imagenes/handle.png");
 
     /* background-image in -assets variant */
 }
 
-GtkScale.trough,
-GtkScale.trough.highlight,
-GtkScale.trough.vertical,
-GtkScale.trough:backdrop {
+GtkScale.slider:insensitive, GtkScale.slider.vertical:insensitive {
+    color: alpha(@theme_base_color, 0.0); /* FIXME */
+	border-width: 0px;
+	background-image: url("imagenes/handle-insensitive.png");
+}
+
+/* Fondo del slider */
+
+GtkScale.trough
+{
     border-width: 1px;
-    border-image: none;
-	/* background-image: none;*/
     border-style: solid;
-}
+	background-image: -gtk-gradient (linear, right top, left top,
+                                             from (shade(@progressbar_background_a, 0.8)),
+                                             to (shade(@progressbar_background_b, 1.1)));
+} 
 
-GtkScale.trough,
-GtkScale.trough.highlight,
-GtkScale.trough.vertical {
-    border-color: @borders;
-}
 
-GtkScale.trough:backdrop {
-    border-color: @unfocused_borders;
-}
-
-GtkScale.trough:insensitive {
-    background-color: @insensitive_bg_color;
-    border-color: @insensitive_borders;
-    box-shadow: none;
-    background-image: none;
-}
 
 GtkScale.progressbar {
     background-color: @scale_progress_fill;
@@ -671,30 +659,18 @@ GtkScale.progressbar:backdrop {
     -adwaita-progressbar-pattern: none;
 }
 
+GtkScale.trough.vertical
+{
+    border-width: 1px;
+    border-style: solid;
+	background-image: -gtk-gradient (linear, right top, left top,
+                                             from (shade(@progressbar_background_a, 0.8)),
+                                             to (shade(@progressbar_background_b, 1.1)));
+} 
+
+
 GtkScale.mark {
     color: alpha(@theme_fg_color, 0.3);
-}
-
-GtkScale.trough.vertical {
-    box-shadow: -1 0 inset @theme_bg_color;
-}
-
-GtkScale.trough {
-    box-shadow: 0 -1 inset @theme_bg_color;
-}
-
-GtkScale.trough:backdrop {
-    box-shadow: none;
-    border-color: @unfocused_borders;
-    background-color: @unfocused_dark_bg;
-    background-image: none;
-}
-
-GtkScale.trough:insensitive:backdrop {
-    background-color: @unfocused_insensitive_bg_color;
-    border-color: @unfocused_insensitive_borders;
-    box-shadow: none;
-    background-image: none;
 }
 
 /**********
