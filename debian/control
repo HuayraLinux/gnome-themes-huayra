@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
 Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 
 Package: gnome-themes-huayra
 Depends: ${misc:Depends}, huayra-themes-all
@@ -30,7 +30,7 @@ Package: huayra-themes-accesible
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
 Architecture: all
-Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Accesible de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Accesible.
 
@@ -38,7 +38,7 @@ Package: huayra-themes-frescoverde
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
 Architecture: all
-Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Fresco Verde.
 
@@ -46,7 +46,7 @@ Package: huayra-themes-limbo
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
 Architecture: all
-Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Limbo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Limbo.
 
@@ -54,7 +54,7 @@ Package: huayra-themes-mayo
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
 Architecture: all
-Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Mayo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Mayo.
 
@@ -62,7 +62,6 @@ Package: huayra-themes-violeta
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
 Architecture: all
-Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Violeta de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Violeta.
-
