@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.25) unstable; urgency=low
+ 
+  * conflicto con versiones antiguas de gnome-themes-huayra
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 05 May 2014 12:44:31 -0300
+
 gnome-themes-huayra (2.24) unstable; urgency=medium
 
   * Nuevo Release.
