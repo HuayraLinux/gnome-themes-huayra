@@ -19,7 +19,7 @@ Package: huayra-themes-all
 Depends: ${misc:Depends}, huayra-themes-accesible, huayra-themes-frescoverde,
     huayra-themes-limbo, huayra-themes-mayo, huayra-themes-violeta
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
@@ -31,7 +31,7 @@ Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
 Package: huayra-themes-accesible
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Accesible de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
@@ -41,7 +41,7 @@ Description: Tema Accesible de gtk2, gtk3, metacity y gnome-shell para Huayra GN
 Package: huayra-themes-frescoverde
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
@@ -51,7 +51,7 @@ Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para Huayra
 Package: huayra-themes-limbo
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Limbo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
@@ -61,7 +61,7 @@ Description: Tema Limbo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Li
 Package: huayra-themes-mayo
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Mayo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
@@ -71,7 +71,7 @@ Description: Tema Mayo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Lin
 Package: huayra-themes-violeta
 Depends: ${misc:Depends}
 Recommends: dmz-cursor-theme
-Conflicts: gnome-themes-huayra ( <= 2.14)
+Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Violeta de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
