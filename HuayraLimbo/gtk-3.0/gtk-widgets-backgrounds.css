@@ -104,7 +104,7 @@
 .toolbar .button:backdrop:hover,
 .primary-toolbar .raised .button:backdrop:hover {
     background-image: none;
-    background-color: "#ff0000"; /* @unfocused_button_background; */
+    background-color: #ff0000; /* @unfocused_button_background; */
 }
 
 /* Unfocused window pushed button background */
@@ -137,7 +137,7 @@ GtkComboBox.combobox-entry .button:hover,
                                     left top, left bottom,
                                     from(@entry_background_a),
                                     to(@entry_background_b)); */
-    box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
+    box-shadow: 0px 1px @entry_inset inset, 0px 2px alpha(@entry_inset, 0.4) inset;
 }
 
 /* Entry pushed button background */
@@ -159,7 +159,7 @@ column-header .button:active:focus {
                                     left top, left bottom,
                                     from(shade(@entry_background_a, 0.9)),
                                     to(@entry_background_b)); */
-    box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
+    box-shadow: 0px 1px @entry_inset inset, 0px 2px alpha(@entry_inset, 0.4) inset;
 }
 
 /* Insensitive entry background */
