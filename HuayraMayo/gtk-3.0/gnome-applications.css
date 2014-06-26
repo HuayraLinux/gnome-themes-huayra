@@ -68,7 +68,7 @@ TerminalWindow GtkNotebook.notebook {
 
 .nautilus-desktop.nautilus-canvas-item {
     color: @theme_bg_color;
-    text-shadow: 1 1 black;
+    text-shadow: 1px 1px black;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
@@ -98,7 +98,7 @@ NautilusQueryEditor.info {
 .nautilus-cluebar-label {
     font: bold;
     color: @theme_base_color;
-    text-shadow: 0 1 alpha(black, 0.15);
+    text-shadow: 0 1px alpha(black, 0.15);
 }
 
 .nautilus-cluebar-label:backdrop {
@@ -315,8 +315,8 @@ GtkIconView.documents-main-view.check:active {
 }
 
 .documents-selection-mode.toolbar .button * {
-    text-shadow: shade(@documents_selection_toolbar_border, 0.90) 0 1;
-    icon-shadow: shade(@documents_selection_toolbar_border, 0.90) 0 1;
+    text-shadow: shade(@documents_selection_toolbar_border, 0.90) 0 1px;
+    icon-shadow: shade(@documents_selection_toolbar_border, 0.90) 0 1px;
 }
 
 .documents-selection-mode.toolbar .button:hover {
@@ -399,7 +399,7 @@ GtkIconView.documents-main-view.check:active {
 
     text-shadow: none;
     icon-shadow: none;
-    box-shadow: -1 0 inset @documents_osd_button_inset;
+    box-shadow: -1px 0 @documents_osd_button_inset inset;
 }
 
 .documents-osd .toolbar .button,
@@ -411,7 +411,7 @@ GtkIconView.documents-main-view.check:active {
 .documents-osd .toolbar .button:nth-child(first) {
     border-radius: 4px 0 0 4px;
     border-left-width: 1px;
-    box-shadow: -1 0 inset @documents_osd_button_inset;
+    box-shadow: -1px 0 @documents_osd_button_inset inset;
 }
 
 .documents-osd .toolbar .button:nth-child(last) {
@@ -495,7 +495,7 @@ GtkIconView.documents-main-view.check:active {
                                      from(#aeaea4),
                                      color-stop(0.18, #d1d1cb),
                                      to(#d8d8d3));
-    text-shadow: @primary_toolbar_button_text_shadow 0 1;
+    text-shadow: @primary_toolbar_button_text_shadow 0 1px;
 }
 
 /* epiphany */
@@ -521,9 +521,9 @@ EphyToolbar .entry:backdrop {
 }
 
 EphyToolbar .entry:focus {
-    box-shadow: 1 2 inset alpha(@theme_selected_bg_color, 0.1),
-                1 1 inset alpha(@theme_selected_bg_color, 0.1),
-                0 -1 inset alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1px 2px alpha(@theme_selected_bg_color, 0.1) inset,
+                1px 1px alpha(@theme_selected_bg_color, 0.1) inset,
+                0 -1px alpha(@theme_selected_bg_color, 0.2) inset;
 }
 
 EphyToolbar .location-entry .button {
@@ -548,9 +548,9 @@ EphyToolbar .location-entry .button:focus {
                                     left top, left bottom,
                                     from(@entry_background_a),
                                     to(@entry_background_b));
-    box-shadow: 1 0 inset @inset_dark_color,
-                0 1 inset @entry_inset,
-                0 2 inset alpha(@entry_inset, 0.4);
+    box-shadow: 1px 0 @inset_dark_color inset,
+                0 1px @entry_inset inset,
+                0 2px alpha(@entry_inset, 0.4) inset;
 }
 
 EphyToolbar .location-entry .button:active,
@@ -559,9 +559,9 @@ EphyToolbar .location-entry .button:active:hover {
                                     left top, left bottom,
                                     from(shade(@entry_background_a, 0.9)),
                                     to(@entry_background_b));
-    box-shadow: 1 0 inset @inset_dark_color,
-                0 1 inset @entry_inset, 
-                0 2 inset alpha(@entry_inset, 0.4);
+    box-shadow: 1px 0 @inset_dark_color inset,
+                0 1px @entry_inset inset, 
+                0 2px alpha(@entry_inset, 0.4) inset;
 }
 
 EphyToolbar .location-entry .button:hover,
