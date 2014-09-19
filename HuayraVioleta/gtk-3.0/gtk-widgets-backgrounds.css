@@ -132,12 +132,8 @@ GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover {
-
-    /* background-image: -gtk-gradient(linear,
-                                    left top, left bottom,
-                                    from(@entry_background_a),
-                                    to(@entry_background_b)); */
-    box-shadow: 0 1px @entry_inset inset, 0 2px alpha(@entry_inset, 0.4) inset;
+                                    
+	box-shadow: 0 1 @entry_inset inset, 0 2 alpha(@entry_inset, 0.4) inset;
 }
 
 /* Entry pushed button background */

@@ -13,15 +13,18 @@
 
 /* draw regular check and radio items using our SVG assets */
 .check {
+	background: transparent;
     background-image: url("assets/checkbox-unchecked.png");
 }
 
 .check row:selected,
 .check row:selected:focus {
+	background: transparent;
     background-image: url("assets/checkbox-unchecked-alt.png");
 }
 
 .check:insensitive {
+	background-color: transparent;
     background-image: url("assets/checkbox-unchecked-insensitive.png");
 }
 
@@ -33,21 +36,25 @@
 
 .check:backdrop,
 .check row:selected:backdrop {
+	background: transparent;
     background-image: url("assets/checkbox-unchecked-backdrop.png");
 }
 
 .check:insensitive:backdrop,
 .check row:selected:insensitive:backdrop {
+	background: transparent;
     background-image: url("assets/checkbox-unchecked-backdrop-insensitive.png");
 }
 
 
 .check:active {
+	background: transparent;
     background-image: url("assets/checkbox-checked.png");
 }
 
 .check row:selected:active,
 .check row:selected:focus:active {
+	background: transparent;
     background-image: url("assets/checkbox-checked-alt.png");
 }
 

@@ -1,0 +1,3869 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg5038"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="assets_gtk3.svg">
+  <defs
+     id="defs5040">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4751"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4749"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4747"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4745"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4743"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4741"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4739"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4737"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4735"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4733"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4731"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4729"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4600"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4598"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4596"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4594"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4592"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4590"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4588"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4586"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4584"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4582"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4580"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4578"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4528"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4526"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4516"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4514"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4500"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4498"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4484"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4482"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4468"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4466"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4456"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4454"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect4430"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4428"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3117"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3115"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3113"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3093"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5837"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5012"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5884"
+       is_visible="true" />
+    <linearGradient
+       y2="1106.5294"
+       x2="808"
+       y1="1040.7369"
+       x1="806.39526"
+       gradientTransform="matrix(0.04728153,0,0,0.52063887,144.29163,-314.78125)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient5726"
+       xlink:href="#linearGradient85841-7-0"
+       inkscape:collect="always" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient85841-7-0">
+      <stop
+         style="stop-color:#242424;stop-opacity:1"
+         offset="0"
+         id="stop85843-4-8" />
+      <stop
+         id="stop85845-0-5"
+         offset="0.63381755"
+         style="stop-color:#101010;stop-opacity:1;" />
+      <stop
+         style="stop-color:#262626;stop-opacity:1"
+         offset="1"
+         id="stop85847-7-3" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10354-2-9-1-1"
+       id="linearGradient3107-4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1609.9926,-78.958432)"
+       x1="1205.5752"
+       y1="-186.45331"
+       x2="1205.5752"
+       y2="-202.34555" />
+    <linearGradient
+       id="linearGradient10354-2-9-1-1"
+       inkscape:collect="always">
+      <stop
+         id="stop10356-2-8-2-8"
+         offset="0"
+         style="stop-color:#bcbfb8;stop-opacity:1" />
+      <stop
+         id="stop10358-2-6-2-5"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10332-5-3-3-4"
+       id="linearGradient3109-6"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,0.84794288,-623.98415,-483.16392)"
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10332-5-3-3-4">
+      <stop
+         style="stop-color:#d3d7cf;stop-opacity:1"
+         offset="0"
+         id="stop10334-5-3-1-9" />
+      <stop
+         style="stop-color:#8f9985;stop-opacity:1"
+         offset="1"
+         id="stop10336-29-3-4-7" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5872-1"
+       id="linearGradient3111-0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.53799428,0,0,0.53799428,-103.24713,-141.50531)"
+       x1="205.84143"
+       y1="246.7094"
+       x2="206.74803"
+       y2="231.24142" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5872-1">
+      <stop
+         style="stop-color:#13508e;stop-opacity:1;"
+         offset="0"
+         id="stop5874-8" />
+      <stop
+         style="stop-color:#1862af;stop-opacity:1"
+         offset="1"
+         id="stop5876-4" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3113-7"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3115-6"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3117-0"
+       effect="spiro" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10354-2-9-1-1-8"
+       id="linearGradient3107-4-9"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-1609.9926,-78.958432)"
+       x1="1205.5752"
+       y1="-186.45331"
+       x2="1205.5752"
+       y2="-202.34555" />
+    <linearGradient
+       id="linearGradient10354-2-9-1-1-8"
+       inkscape:collect="always">
+      <stop
+         id="stop10356-2-8-2-8-3"
+         offset="0"
+         style="stop-color:#bcbfb8;stop-opacity:1" />
+      <stop
+         id="stop10358-2-6-2-5-1"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10332-5-3-3-4-9"
+       id="linearGradient3109-6-8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.84941206,0,0,0.84794288,-623.98415,-483.16392)"
+       x1="260.92538"
+       y1="233.77748"
+       x2="260.92538"
+       y2="248.97633" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10332-5-3-3-4-9">
+      <stop
+         style="stop-color:#d3d7cf;stop-opacity:1"
+         offset="0"
+         id="stop10334-5-3-1-9-1" />
+      <stop
+         style="stop-color:#8f9985;stop-opacity:1"
+         offset="1"
+         id="stop10336-29-3-4-7-4" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5872-1-8"
+       id="linearGradient3111-0-4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.53799428,0,0,0.53799428,-103.24713,-161.50531)"
+       x1="205.84143"
+       y1="246.7094"
+       x2="206.74803"
+       y2="231.24142" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5872-1-8">
+      <stop
+         style="stop-color:#13508e;stop-opacity:1;"
+         offset="0"
+         id="stop5874-8-6" />
+      <stop
+         style="stop-color:#1862af;stop-opacity:1"
+         offset="1"
+         id="stop5876-4-3" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3113-7-1"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3115-6-1"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3117-0-9"
+       effect="spiro" />
+    <style
+       id="style6"
+       type="text/css">
+   
+    .fil0 {fill:#99AE6A}
+    .fil4 {fill:#73A848}
+    .fil8 {fill:#6F448A;fill-rule:nonzero}
+    .fil1 {fill:#99AE6A;fill-rule:nonzero}
+    .fil3 {fill:#ABA0C0;fill-rule:nonzero}
+    .fil2 {fill:#BA8FBA;fill-rule:nonzero}
+    .fil5 {fill:#73A848;fill-rule:nonzero}
+    .fil6 {fill:#98227A;fill-rule:nonzero}
+    .fil9 {fill:#B299BF;fill-rule:nonzero}
+    .fil7 {fill:#D189B2;fill-rule:nonzero}
+   
+  </style>
+    <linearGradient
+       y2="260.26599"
+       x2="164.41701"
+       y1="245.94099"
+       x1="108.95"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3040"
+       xlink:href="#id6"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="232.739"
+       x2="109.125"
+       y1="277.48499"
+       x1="179.439"
+       gradientUnits="userSpaceOnUse"
+       id="id8">
+      <stop
+         id="stop43"
+         style="stop-color:#82C7E6"
+         offset="0" />
+      <stop
+         id="stop45"
+         style="stop-color:#6690C2"
+         offset="0.741176" />
+      <stop
+         id="stop47"
+         style="stop-color:#3C599B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="61.016998"
+       x2="254.12199"
+       y1="71.544601"
+       x1="102.645"
+       xlink:href="#id6"
+       gradientUnits="userSpaceOnUse"
+       id="id7" />
+    <linearGradient
+       y2="260.26599"
+       x2="164.41701"
+       y1="245.94099"
+       x1="108.95"
+       gradientUnits="userSpaceOnUse"
+       id="id6">
+      <stop
+         id="stop37"
+         style="stop-color:#B3D5E1"
+         offset="0" />
+      <stop
+         id="stop39"
+         style="stop-color:white"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="148.274"
+       x2="225.80499"
+       y1="34.988899"
+       x1="78.916298"
+       xlink:href="#id4"
+       gradientUnits="userSpaceOnUse"
+       id="id5" />
+    <linearGradient
+       y2="280.91"
+       x2="175.246"
+       y1="229.30901"
+       x1="113.321"
+       gradientUnits="userSpaceOnUse"
+       id="id4">
+      <stop
+         id="stop27"
+         style="stop-color:#94C9E2"
+         offset="0" />
+      <stop
+         id="stop29"
+         style="stop-color:#58A6D8"
+         offset="0.490196" />
+      <stop
+         id="stop31"
+         style="stop-color:#50719E"
+         offset="0.819608" />
+      <stop
+         id="stop33"
+         style="stop-color:#386EAB"
+         offset="1" />
+    </linearGradient>
+    <mask
+       id="id2">
+      <linearGradient
+         y2="54.344299"
+         x2="238.636"
+         y1="78.2174"
+         x1="118.132"
+         gradientUnits="userSpaceOnUse"
+         id="id3">
+        <stop
+           id="stop18"
+           style="stop-opacity:1; stop-color:white"
+           offset="0" />
+        <stop
+           id="stop20"
+           style="stop-opacity:0.501961; stop-color:white"
+           offset="0.439216" />
+        <stop
+           id="stop22"
+           style="stop-opacity:0; stop-color:white"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect24"
+         height="122.541"
+         width="239.94099"
+         y="5.0104699"
+         x="58.413502"
+         style="fill:url(#id3)" />
+    </mask>
+    <mask
+       id="id0">
+      <linearGradient
+         y2="247.755"
+         x2="159.43401"
+         y1="258.452"
+         x1="113.933"
+         gradientUnits="userSpaceOnUse"
+         id="id1">
+        <stop
+           id="stop10"
+           style="stop-opacity:1; stop-color:white"
+           offset="0" />
+        <stop
+           id="stop12"
+           style="stop-opacity:0; stop-color:white"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect14"
+         height="77.9142"
+         width="67.887802"
+         y="214.147"
+         x="102.74"
+         style="fill:url(#id1)" />
+    </mask>
+    <style
+       id="style6-5"
+       type="text/css">
+   
+    .fil1 {fill:url(#id4)}
+    .fil0 {fill:url(#id5)}
+    .fil3 {fill:url(#id6)}
+    .fil4 {fill:url(#id7)}
+    .fil2 {fill:url(#id8);fill-rule:nonzero}
+   
+  </style>
+    <linearGradient
+       y2="148.274"
+       x2="225.80499"
+       y1="34.988899"
+       x1="78.916298"
+       xlink:href="#id4-2"
+       gradientUnits="userSpaceOnUse"
+       id="id5-6" />
+    <linearGradient
+       y2="280.91"
+       x2="175.246"
+       y1="229.30901"
+       x1="113.321"
+       gradientUnits="userSpaceOnUse"
+       id="id4-2">
+      <stop
+         id="stop27-6"
+         style="stop-color:#94C9E2"
+         offset="0" />
+      <stop
+         id="stop29-4"
+         style="stop-color:#58A6D8"
+         offset="0.490196" />
+      <stop
+         id="stop31-2"
+         style="stop-color:#50719E"
+         offset="0.819608" />
+      <stop
+         id="stop33-5"
+         style="stop-color:#386EAB"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="280.91"
+       x2="175.246"
+       y1="229.30901"
+       x1="113.321"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3038-2"
+       xlink:href="#id4-2"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="280.91"
+       x2="175.246"
+       y1="229.30901"
+       x1="113.321"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3446">
+      <stop
+         id="stop3448"
+         style="stop-color:#94C9E2"
+         offset="0" />
+      <stop
+         id="stop3450"
+         style="stop-color:#58A6D8"
+         offset="0.490196" />
+      <stop
+         id="stop3452"
+         style="stop-color:#50719E"
+         offset="0.819608" />
+      <stop
+         id="stop3454"
+         style="stop-color:#386EAB"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="232.739"
+       x2="109.125"
+       y1="277.48499"
+       x1="179.439"
+       gradientUnits="userSpaceOnUse"
+       id="id8-7">
+      <stop
+         id="stop43-9"
+         style="stop-color:#82C7E6"
+         offset="0" />
+      <stop
+         id="stop45-3"
+         style="stop-color:#6690C2"
+         offset="0.741176" />
+      <stop
+         id="stop47-9"
+         style="stop-color:#3C599B"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="260.26599"
+       x2="164.41701"
+       y1="245.94099"
+       x1="108.95"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3040-0"
+       xlink:href="#id6-7"
+       inkscape:collect="always" />
+    <linearGradient
+       y2="260.26599"
+       x2="164.41701"
+       y1="245.94099"
+       x1="108.95"
+       gradientUnits="userSpaceOnUse"
+       id="id6-7">
+      <stop
+         id="stop37-3"
+         style="stop-color:#B3D5E1"
+         offset="0" />
+      <stop
+         id="stop39-0"
+         style="stop-color:white"
+         offset="1" />
+    </linearGradient>
+    <mask
+       id="id0-6">
+      <linearGradient
+         y2="247.755"
+         x2="159.43401"
+         y1="258.452"
+         x1="113.933"
+         gradientUnits="userSpaceOnUse"
+         id="id1-7">
+        <stop
+           id="stop10-1"
+           style="stop-opacity:1; stop-color:white"
+           offset="0" />
+        <stop
+           id="stop12-7"
+           style="stop-opacity:0; stop-color:white"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect14-8"
+         height="77.9142"
+         width="67.887802"
+         y="214.147"
+         x="102.74"
+         style="fill:url(#id1-7)" />
+    </mask>
+    <linearGradient
+       y2="247.755"
+       x2="159.43401"
+       y1="258.452"
+       x1="113.933"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3469">
+      <stop
+         id="stop3471"
+         style="stop-opacity:1; stop-color:white"
+         offset="0" />
+      <stop
+         id="stop3473"
+         style="stop-opacity:0; stop-color:white"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       y2="61.016998"
+       x2="254.12199"
+       y1="71.544601"
+       x1="102.645"
+       xlink:href="#id6-7"
+       gradientUnits="userSpaceOnUse"
+       id="id7-3" />
+    <linearGradient
+       y2="260.26599"
+       x2="164.41701"
+       y1="245.94099"
+       x1="108.95"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3476">
+      <stop
+         id="stop3478"
+         style="stop-color:#B3D5E1"
+         offset="0" />
+      <stop
+         id="stop3480"
+         style="stop-color:white"
+         offset="1" />
+    </linearGradient>
+    <mask
+       id="id2-6">
+      <linearGradient
+         y2="54.344299"
+         x2="238.636"
+         y1="78.2174"
+         x1="118.132"
+         gradientUnits="userSpaceOnUse"
+         id="id3-1">
+        <stop
+           id="stop18-5"
+           style="stop-opacity:1; stop-color:white"
+           offset="0" />
+        <stop
+           id="stop20-2"
+           style="stop-opacity:0.501961; stop-color:white"
+           offset="0.439216" />
+        <stop
+           id="stop22-9"
+           style="stop-opacity:0; stop-color:white"
+           offset="1" />
+      </linearGradient>
+      <rect
+         id="rect24-1"
+         height="122.541"
+         width="239.94099"
+         y="5.0104699"
+         x="58.413502"
+         style="fill:url(#id3-1)" />
+    </mask>
+    <linearGradient
+       y2="54.344299"
+       x2="238.636"
+       y1="78.2174"
+       x1="118.132"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3488">
+      <stop
+         id="stop3490"
+         style="stop-opacity:1; stop-color:white"
+         offset="0" />
+      <stop
+         id="stop3492"
+         style="stop-opacity:0.501961; stop-color:white"
+         offset="0.439216" />
+      <stop
+         id="stop3494"
+         style="stop-opacity:0; stop-color:white"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.5585938"
+     inkscape:cx="443.81388"
+     inkscape:cy="-168.41633"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:window-width="1918"
+     inkscape:window-height="1032"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-to-guides="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,1.4642857"
+       id="guide4432" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="16,17"
+       id="guide4434" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="20,-4.4285714"
+       id="guide4436" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="36,-2.75"
+       id="guide4438" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="30.785714,16"
+       id="guide4440" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="36.714286,0"
+       id="guide4442" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="40,-3.7857143"
+       id="guide4470" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="56,-5.5357143"
+       id="guide4472" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="60,-3"
+       id="guide4486" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="76,-4.5357143"
+       id="guide4488" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="80,-2.1428571"
+       id="guide4502" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="96,-2.6071429"
+       id="guide4504" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="100,13.714286"
+       id="guide4518" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="116,-2.7142857"
+       id="guide4520" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="100,-4.0406102"
+       id="guide4602" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-7.1720831,-20.00102"
+       id="guide4604" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="96,-24.041631"
+       id="guide4677" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="100,-40.002041"
+       id="guide4679" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="122.63252,-44.042651"
+       id="guide4753" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="80,-60.003061"
+       id="guide4755" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="100,-64.043671"
+       id="guide4799" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="76,-80.004082"
+       id="guide4801" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="102.12642,-84.044692"
+       id="guide4827" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="100,-100.0051"
+       id="guide4829" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="129,-104"
+       id="guide4890" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="131.42857,-120"
+       id="guide4892" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="130.14286,-124"
+       id="guide4942" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="123.85714,-140"
+       id="guide4944" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-11.714286,-144.14286"
+       id="guide4905" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-9.5714286,-164.14286"
+       id="guide4907" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="36,-156"
+       id="guide4909" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-6.9406393,-168.12785"
+       id="guide5702" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-3.0136986,-188.03653"
+       id="guide5704" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="128.76447,-192.04891"
+       id="guide5718" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="128.37701,-208.06375"
+       id="guide5720" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="131.47666,-212.06746"
+       id="guide5734" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="130.18514,-228.0823"
+       id="guide5736" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="141.36986,-231.96347"
+       id="guide5773" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="147.76256,-248.03653"
+       id="guide5775" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="119.98214,-243.96798"
+       id="guide5781" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="135.99698,-254.68759"
+       id="guide5783" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="140.00068,-145.68337"
+       id="guide5803" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="156.01552,-149.55793"
+       id="guide5805" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="143.87524,-251.9754"
+       id="guide5852" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="152.01181,-267.99024"
+       id="guide5854" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="149.17047,-271.34819"
+       id="guide5912" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="148.39556,-279.35561"
+       id="guide5914" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-23.634802,-267.34448"
+       id="guide5927" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-3.7454058,-270.44413"
+       id="guide5929" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="175.90492,-187.01198"
+       id="guide5939" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="191.95502,-158.40337"
+       id="guide5943" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="193.66409,-181.88053"
+       id="guide5945" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="209.67533,-167.1286"
+       id="guide5949" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="245.47576,-166.40899"
+       id="guide5951" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="227.57554,-165.59944"
+       id="guide5955" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="247.84254,-190.49909"
+       id="guide5957" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="302.95432,-192.67463"
+       id="guide5961" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="300.0759,-198.43148"
+       id="guide5963" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="319.68517,-181.88053"
+       id="guide5967" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="281.54603,-201.48981"
+       id="guide5969" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="158.21111,-188.69096"
+       id="guide4235" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="174.22594,-195.53601"
+       id="guide4237" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="211.5643,-182.51019"
+       id="guide4247" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="229.46451,-181.88053"
+       id="guide4253" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="263.82572,-189.6163"
+       id="guide4263" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="265.62474,-185.83837"
+       id="guide4265" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="284.06465,-201.13001"
+       id="guide4322" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="343.43218,-179.90162"
+       id="guide4324" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="339.65425,-181.70063"
+       id="guide4326" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="363.40126,-218.58046"
+       id="guide4333" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="367.7189,-228.0823"
+       id="guide4340" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="387.68798,-212.06746"
+       id="guide4342" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="391.82572,-212.06746"
+       id="guide4349" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="411.7948,-223.61771"
+       id="guide4351" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="415.75263,-216.96135"
+       id="guide4353" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="435.72171,-220.55938"
+       id="guide4360" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="439.49965,-219.83977"
+       id="guide4362" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="459.46873,-212.06746"
+       id="guide4369" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="464.14617,-177.20309"
+       id="guide4371" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="484.11525,-223.078"
+       id="guide4373" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="487.89318,-217.50105"
+       id="guide4375" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="507.86226,-212.06746"
+       id="guide4377" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5043">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="fondo">
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect85718-2-9"
+       width="16"
+       height="16"
+       x="0"
+       y="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       y="0"
+       x="20"
+       height="16"
+       width="16"
+       id="rect4446"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4458"
+       width="16"
+       height="16"
+       x="40"
+       y="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       y="0"
+       x="60"
+       height="16"
+       width="16"
+       id="rect4474"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4490"
+       width="16"
+       height="16"
+       x="80"
+       y="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop-insensitive-dark.png"
+       y="0"
+       x="100"
+       height="16"
+       width="16"
+       id="rect4506"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-dark.png"
+       y="20"
+       x="0"
+       height="16"
+       width="16"
+       id="rect4530"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4532"
+       width="16"
+       height="16"
+       x="20"
+       y="20"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop-dark.png"
+       y="20"
+       x="40"
+       height="16"
+       width="16"
+       id="rect4534"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4536"
+       width="16"
+       height="16"
+       x="60"
+       y="20"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-alt.png"
+       y="20"
+       x="80"
+       height="16"
+       width="16"
+       id="rect4538"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4540"
+       width="16"
+       height="16"
+       x="100"
+       y="20"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4641"
+       width="16"
+       height="16"
+       x="0"
+       y="40"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-alt.png"
+       y="40"
+       x="20"
+       height="16"
+       width="16"
+       id="rect4643"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4645"
+       width="16"
+       height="16"
+       x="40"
+       y="40"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       y="40"
+       x="60"
+       height="16"
+       width="16"
+       id="rect4647"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       y="60"
+       x="0"
+       height="16"
+       width="16"
+       id="rect4681"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4683"
+       width="16"
+       height="16"
+       x="20"
+       y="60"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       y="60"
+       x="40"
+       height="16"
+       width="16"
+       id="rect4685"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4687"
+       width="16"
+       height="16"
+       x="60"
+       y="60"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       y="60"
+       x="80"
+       height="16"
+       width="16"
+       id="rect4689"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4691"
+       width="16"
+       height="16"
+       x="100"
+       y="60"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4763"
+       width="16"
+       height="16"
+       x="0"
+       y="80"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed-selected.png"
+       y="80"
+       x="20"
+       height="16"
+       width="16"
+       id="rect4765"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4771"
+       width="16"
+       height="16"
+       x="80"
+       y="80"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-dark.png"
+       y="100"
+       x="-0.093696244"
+       height="16"
+       width="16"
+       id="rect4803"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4805"
+       width="16"
+       height="16"
+       x="20"
+       y="100"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-dark.png"
+       y="100"
+       x="40"
+       height="16"
+       width="16"
+       id="rect4807"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4809"
+       width="16"
+       height="16"
+       x="60"
+       y="100"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-insensitive-alt.png"
+       y="100"
+       x="80"
+       height="16"
+       width="16"
+       id="rect4811"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4813"
+       width="16"
+       height="16"
+       x="100"
+       y="100"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4854"
+       width="16"
+       height="16"
+       x="-0.093696244"
+       y="120"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-alt.png"
+       y="120"
+       x="20"
+       height="16"
+       width="16"
+       id="rect4856"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4858"
+       width="16"
+       height="16"
+       x="40"
+       y="120"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop.png"
+       y="120"
+       x="60"
+       height="16"
+       width="16"
+       id="rect4860"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4862"
+       width="16"
+       height="16"
+       x="80"
+       y="120"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-insensitive-dark.png"
+       y="120"
+       x="100"
+       height="16"
+       width="16"
+       id="rect4864"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-dark.png"
+       y="140"
+       x="-0.093696244"
+       height="16"
+       width="16"
+       id="rect4906"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4908"
+       width="16"
+       height="16"
+       x="20"
+       y="140"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-dark.png"
+       y="140"
+       x="40"
+       height="16"
+       width="16"
+       id="rect4910"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4912"
+       width="16"
+       height="16"
+       x="60"
+       y="140"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive.png"
+       y="140"
+       x="80"
+       height="16"
+       width="16"
+       id="rect4914"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4916"
+       width="16"
+       height="16"
+       x="100"
+       y="140"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="0"
+       rx="2.8717952"
+       style="opacity:0.75000000000000000;color:#000000;fill:#ffffff;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;fill-opacity:0"
+       id="rect5749"
+       width="16"
+       height="20"
+       x="158.24098"
+       y="184.12297"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz.png"
+       y="204.09206"
+       x="179.71411"
+       height="20"
+       width="16"
+       id="rect5751"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="3.5897441" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive-dark.png"
+       y="140"
+       x="120"
+       height="16"
+       width="16"
+       id="rect5795"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5799"
+       width="16"
+       height="16"
+       x="140"
+       y="140"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-insensitive-alt-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5812"
+       width="16"
+       height="16"
+       x="140"
+       y="120"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-dark.png"
+       y="120"
+       x="120"
+       height="16"
+       width="16"
+       id="rect5818"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       ry="2.8717952"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3442"
+       width="16"
+       height="16"
+       x="120"
+       y="40"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive-dark.png"
+       y="40"
+       x="140"
+       height="16"
+       width="16"
+       id="rect3446"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive.png"
+       y="40"
+       x="100"
+       height="16"
+       width="16"
+       id="rect3450"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       y="40"
+       x="80"
+       height="16"
+       width="16"
+       id="rect4222"
+       style="opacity:0.75;color:#000000;fill:none;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="2.8717952" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz.png"
+       y="184.12297"
+       x="175.96129"
+       height="20"
+       width="16"
+       id="rect4239"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="0" />
+    <rect
+       ry="0"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4243"
+       width="16"
+       height="20"
+       x="193.68159"
+       y="184.12297"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop.png"
+       y="184.12297"
+       x="211.5818"
+       height="20"
+       width="16"
+       id="rect4249"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="0" />
+    <rect
+       ry="0"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4255"
+       width="16"
+       height="20"
+       x="229.48201"
+       y="184.12297"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive-dark.png"
+       y="184.12297"
+       x="247.83197"
+       height="20"
+       width="16"
+       id="rect4259"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive.png"
+       y="184.12297"
+       x="265.64224"
+       height="20"
+       width="16"
+       id="rect4267"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       rx="2.8717952"
+       ry="0" />
+    <rect
+       ry="0"
+       rx="2.8717952"
+       style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4269"
+       width="16"
+       height="20"
+       x="283.99219"
+       y="184.12297"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+  <g
+     id="layer1"
+     inkscape:label="HuayraVioleta"
+     inkscape:groupmode="layer"
+     transform="translate(0,-32)">
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-46.338245"
+       x="0.85477185"
+       height="11.84269"
+       width="11.863204"
+       id="rect6506-6"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32500000000000001;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#a6f488;stroke-width:3.14726638999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 3.5447346,39.613316 2.82447,2.82447 7.4646704,-7.46467"
+       id="path5835"
+       inkscape:path-effect="#path-effect3093"
+       inkscape:original-d="m 3.5447346,39.613316 2.82447,2.82447 7.4646704,-7.46467"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.5447346,39.613316 2.82447,2.82447 7.4646704,-7.46467"
+       inkscape:path-effect="#path-effect5837"
+       id="path5880"
+       d="m 3.5447346,39.613316 2.82447,2.82447 7.4646704,-7.46467"
+       style="fill:none;stroke:#8abb22;stroke-width:2.57399999999999984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#8abb22;fill-opacity:1;fill-rule:nonzero"
+       inkscape:connector-curvature="0"
+       id="path10-6"
+       d="m -9.6180662,45.651513 c 0,1.132913 -0.9101348,2.051416 -2.0328148,2.051416 -1.122022,0 -2.032183,-0.918503 -2.032183,-2.051416 0,-1.132689 0.910161,-2.050337 2.032183,-2.050337 1.12268,0 2.0328148,0.917648 2.0328148,2.050337 z"
+       class="fil0" />
+    <path
+       style="fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.806;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0"
+       id="path12-0"
+       d="m -12.022787,42.088428 c 0,-0.950736 0,-1.330615 0,-2.392968 2.1598937,0 3.0634448,-1.1717 3.1012559,-2.351087 0.03781,-1.179388 -1.2631959,-2.030753 -2.3531029,-2.02313 -1.03536,0.0072 -2.327102,0.456123 -2.360767,1.956108 0,0 -1.602951,-0.01865 -2.240072,-0.03613 0.01246,-1.990403 2.208703,-3.852084 4.418482,-3.858371 3.1392857,-0.0089 4.8261442,1.573412 4.9023684,3.957105 0.076224,2.383694 -2.7158138,4.748475 -5.4681644,4.748475 z"
+       class="fil1"
+       sodipodi:nodetypes="cczsccszc" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4448"
+       width="11.863204"
+       height="11.84269"
+       x="20.854773"
+       y="-46.338245"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 23.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:path-effect="#path-effect4454"
+       id="path4450"
+       d="m 23.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       style="fill:none;stroke:#a6f488;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       style="fill:none;stroke:#492356;stroke-width:2.57399988000000013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 23.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       id="path4452"
+       inkscape:path-effect="#path-effect4456"
+       inkscape:original-d="m 23.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:connector-curvature="0" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-46.338245"
+       x="40.854774"
+       height="11.84269"
+       width="11.863204"
+       id="rect4460"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.50000000000000000"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#a6f488;stroke-width:3.14726638999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.5"
+       d="m 43.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       id="path4462"
+       inkscape:path-effect="#path-effect4466"
+       inkscape:original-d="m 43.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 43.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:path-effect="#path-effect4468"
+       id="path4464"
+       d="m 43.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       style="fill:none;stroke:#8abb22;stroke-width:2.57399988000000013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;opacity:0.50000000000000000"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4476"
+       width="11.863204"
+       height="11.84269"
+       x="60.854774"
+       y="-46.338245"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 63.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:path-effect="#path-effect4482"
+       id="path4478"
+       d="m 63.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       style="opacity:0.5;fill:none;stroke:#a6f488;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop.png"
+       style="opacity:0.5;fill:none;stroke:#492356;stroke-width:2.57399988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 63.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       id="path4480"
+       inkscape:path-effect="#path-effect4484"
+       inkscape:original-d="m 63.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:connector-curvature="0" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-46.338245"
+       x="80.854774"
+       height="11.84269"
+       width="11.863204"
+       id="rect4492"
+       style="opacity:0.50000000000000000;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.50000000000000000;fill:none;stroke:#bebebe;stroke-width:3.14726638999999997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 83.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       id="path4494"
+       inkscape:path-effect="#path-effect4498"
+       inkscape:original-d="m 83.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 83.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:path-effect="#path-effect4500"
+       id="path4496"
+       d="m 83.544735,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       style="opacity:0.50000000000000000;fill:none;stroke:#3d3d3d;stroke-width:2.57399988000000013;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.50000000000000000;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4508"
+       width="11.863204"
+       height="11.84269"
+       x="100.85477"
+       y="-46.338245"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop-insensitive-dark.png"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 103.54474,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:path-effect="#path-effect4526"
+       id="path4522"
+       d="m 103.54474,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       style="opacity:0.5;fill:none;stroke:#bebebe;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-backdrop-insensitive-dark.png"
+       style="opacity:0.5;fill:none;stroke:#3d3d3d;stroke-width:2.57399988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 103.54474,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       id="path4524"
+       inkscape:path-effect="#path-effect4528"
+       inkscape:original-d="m 103.54474,39.613316 2.82447,2.82447 7.46467,-7.46467"
+       inkscape:connector-curvature="0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-dark.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4542"
+       width="11.863204"
+       height="11.84269"
+       x="0.85477185"
+       y="-66.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-66.338242"
+       x="20.854773"
+       height="11.84269"
+       width="11.863204"
+       id="rect4548"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4554"
+       width="11.863204"
+       height="11.84269"
+       x="40.854774"
+       y="-66.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-66.338242"
+       x="60.854774"
+       height="11.84269"
+       width="11.863204"
+       id="rect4560"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-alt.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4566"
+       width="11.863204"
+       height="11.84269"
+       x="80.854774"
+       y="-66.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-66.338242"
+       x="100.85477"
+       height="11.84269"
+       width="11.863204"
+       id="rect4572"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#8abb22;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4606"
+       width="10.542784"
+       height="3.2164774"
+       x="1.515229"
+       y="58.808659"
+       rx="1.3829777"
+       ry="1.6082387"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="1.6082387"
+       rx="1.3829777"
+       y="58.808659"
+       x="21.514982"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4619"
+       style="fill:#492356;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974948999999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="1.6082387"
+       rx="1.3829777"
+       y="58.808659"
+       x="41.515228"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4621"
+       style="fill:#8abb22;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974948999999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.5"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="fill:#492356;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974948999999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;opacity:0.5"
+       id="rect4623"
+       width="10.542784"
+       height="3.2164774"
+       x="61.514984"
+       y="58.808659"
+       rx="1.3829777"
+       ry="1.6082387"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="1.6082387"
+       rx="1.3829777"
+       y="58.808659"
+       x="81.514984"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4625"
+       style="opacity:0.50000000000000000;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974948999999998;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4639"
+       width="10.542784"
+       height="3.2164774"
+       x="101.51498"
+       y="58.808659"
+       rx="1.3829777"
+       ry="1.6082387"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-mixed-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-86.338242"
+       x="0.85477257"
+       height="11.84269"
+       width="11.863204"
+       id="rect4653"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-alt.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4655"
+       width="11.863204"
+       height="11.84269"
+       x="20.854773"
+       y="-86.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-86.338242"
+       x="40.854774"
+       height="11.84269"
+       width="11.863204"
+       id="rect4657"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4659"
+       width="11.863204"
+       height="11.84269"
+       x="60.854774"
+       y="-86.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-86.338242"
+       x="80.854767"
+       height="11.84269"
+       width="11.863204"
+       id="rect4661"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-dark.png"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.5447346,99.613316 2.82447,2.824474 7.4646704,-7.464674"
+       inkscape:path-effect="#path-effect4729"
+       id="path4695"
+       d="m 3.5447346,99.613316 2.82447,2.824474 7.4646704,-7.464674"
+       style="fill:none;stroke:#a6f488;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-checked.png"
+       style="fill:none;stroke:#8abb22;stroke-width:2.57399988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 3.5447346,99.613316 2.82447,2.824474 7.4646704,-7.464674"
+       id="path4697"
+       inkscape:path-effect="#path-effect4731"
+       inkscape:original-d="m 3.5447346,99.613316 2.82447,2.824474 7.4646704,-7.464674"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#a6f488;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 23.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       id="path4701"
+       inkscape:path-effect="#path-effect4733"
+       inkscape:original-d="m 23.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 23.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       inkscape:path-effect="#path-effect4735"
+       id="path4703"
+       d="m 23.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       style="fill:none;stroke:#492356;stroke-width:2.57399988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-checked-selected.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-checked-insensitive.png"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 83.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       inkscape:path-effect="#path-effect4745"
+       id="path4719"
+       d="m 83.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       style="opacity:0.5;fill:none;stroke:#bebebe;stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-checked-insensitive.png"
+       style="opacity:0.5;fill:none;stroke:#3d3d3d;stroke-width:2.57399988;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 83.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       id="path4721"
+       inkscape:path-effect="#path-effect4747"
+       inkscape:original-d="m 83.544735,99.613316 2.82447,2.824474 7.46467,-7.464674"
+       inkscape:connector-curvature="0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed.png"
+       ry="1.6082387"
+       rx="1.3829777"
+       y="118.80865"
+       x="1.515229"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4787"
+       style="fill:#8abb22;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed-selected.png"
+       style="fill:#492356;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4789"
+       width="10.542784"
+       height="3.2164774"
+       x="21.514982"
+       y="118.80865"
+       rx="1.3829777"
+       ry="1.6082387" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/menuitem-checkbox-mixed-insensitive.png"
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4795"
+       width="10.542784"
+       height="3.2164774"
+       x="81.514984"
+       y="118.80865"
+       rx="1.3829777"
+       ry="1.6082387" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-dark.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4815"
+       width="14.600023"
+       height="14.574778"
+       x="0.60629213"
+       y="-147.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-147.28738"
+       x="20.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4817"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4819"
+       width="14.600023"
+       height="14.574778"
+       x="40.699989"
+       y="-147.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-147.28738"
+       x="60.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4821"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-insensitive-alt.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4823"
+       width="14.600023"
+       height="14.574778"
+       x="80.699989"
+       y="-147.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-147.28738"
+       x="100.69999"
+       height="14.574778"
+       width="14.600023"
+       id="rect4825"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-dark.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4842"
+       width="7.7866788"
+       height="7.7732148"
+       x="4.0129642"
+       y="-143.8866"
+       rx="3.8933394"
+       ry="3.8866074" />
+    <rect
+       ry="3.8866074"
+       rx="3.8933394"
+       y="-143.8866"
+       x="24.106661"
+       height="7.7732148"
+       width="7.7866788"
+       id="rect4844"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="3.8866074"
+       rx="3.8933394"
+       y="-143.8866"
+       x="44.106663"
+       height="7.7732148"
+       width="7.7866788"
+       id="rect4846"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4848"
+       width="7.7866788"
+       height="7.7732148"
+       x="64.106659"
+       y="-143.8866"
+       rx="3.8933394"
+       ry="3.8866074" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-insensitive-alt.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4850"
+       width="7.7866788"
+       height="7.7732148"
+       x="84.106659"
+       y="-143.8866"
+       rx="3.8933394"
+       ry="3.8866074" />
+    <rect
+       ry="3.8866074"
+       rx="3.8933394"
+       y="-143.8866"
+       x="104.10666"
+       height="7.7732148"
+       width="7.7866788"
+       id="rect4852"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.213321;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-checked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-167.28738"
+       x="0.60629213"
+       height="14.574778"
+       width="14.600023"
+       id="rect4866"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-alt.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4868"
+       width="14.600023"
+       height="14.574778"
+       x="20.699989"
+       y="-167.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-167.28738"
+       x="40.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4870"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4872"
+       width="14.600023"
+       height="14.574778"
+       x="60.699989"
+       y="-167.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-167.28738"
+       x="80.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4874"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4876"
+       width="14.600023"
+       height="14.574778"
+       x="100.69999"
+       y="-167.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-dark.png"
+       ry="1.6082387"
+       rx="1.3829777"
+       y="158.39175"
+       x="2.634912"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4894"
+       style="fill:#8abb22;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-alt.png"
+       style="fill:#492356;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4896"
+       width="10.542784"
+       height="3.2164774"
+       x="22.728609"
+       y="158.39175"
+       rx="1.3829777"
+       ry="1.6082387" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-dark.png"
+       style="opacity:0.5;fill:#8abb22;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4898"
+       width="10.542784"
+       height="3.2164774"
+       x="42.728607"
+       y="158.39175"
+       rx="1.3829777"
+       ry="1.6082387" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop.png"
+       ry="1.6082387"
+       rx="1.3829777"
+       y="158.39175"
+       x="62.728607"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4900"
+       style="opacity:0.5;fill:#492356;fill-opacity:1;stroke:#a6f488;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt.png"
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4902"
+       width="10.542784"
+       height="3.2164774"
+       x="82.728607"
+       y="158.39175"
+       rx="1.3829777"
+       ry="1.6082387" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-backdrop-insensitive-dark.png"
+       ry="1.6082387"
+       rx="1.3829777"
+       y="158.39175"
+       x="102.72861"
+       height="3.2164774"
+       width="10.542784"
+       id="rect4904"
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-dark.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4918"
+       width="14.600023"
+       height="14.574778"
+       x="0.60629213"
+       y="-187.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-187.28738"
+       x="20.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4920"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-alt.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4922"
+       width="14.600023"
+       height="14.574778"
+       x="40.699989"
+       y="-187.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-187.28738"
+       x="60.699989"
+       height="14.574778"
+       width="14.600023"
+       id="rect4924"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4926"
+       width="14.600023"
+       height="14.574778"
+       x="80.699989"
+       y="-187.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-187.28738"
+       x="100.69999"
+       height="14.574778"
+       width="14.600023"
+       id="rect4928"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 6.323157,211.21434 c 0.737779,0.89637 2.74837,0.89909 3.482837,0 6.092898,-7.45851 6.064854,-7.45381 6.064854,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.386454,-0.86649 -0.866489,-0.86649 l -13.97643,0 c -0.480035,0 -0.866489,0.38645 -0.866489,0.86649 l 0,10.10972 c 0,0.48003 0.03333,0.48813 6.161717,7.93384 z"
+       id="rect4892"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path4912"
+       d="m 46.323157,211.21434 c 0.737779,0.89637 2.74837,0.89909 3.482837,0 6.092898,-7.45851 6.064854,-7.45381 6.064854,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.386454,-0.86649 -0.866489,-0.86649 l -13.97643,0 c -0.480035,0 -0.866489,0.38645 -0.866489,0.86649 l 0,10.10972 c 0,0.48003 0.03333,0.48813 6.161717,7.93384 z"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.5"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.50000000000000000;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 106.32316,211.21434 c 0.73778,0.89637 2.74837,0.89909 3.48283,0 6.0929,-7.45851 6.06486,-7.45381 6.06486,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.38646,-0.86649 -0.86649,-0.86649 l -13.97643,0 c -0.48004,0 -0.86649,0.38645 -0.86649,0.86649 l 0,10.10972 c 0,0.48003 0.0333,0.48813 6.16172,7.93384 z"
+       id="path5682"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5684"
+       d="m 26.323157,211.21434 c 0.737779,0.89637 2.74837,0.89909 3.482837,0 6.092898,-7.45851 6.064854,-7.45381 6.064854,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.386454,-0.86649 -0.866489,-0.86649 l -13.97643,0 c -0.480035,0 -0.866489,0.38645 -0.866489,0.86649 l 0,10.10972 c 0,0.48003 0.03333,0.48813 6.161717,7.93384 z"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.5"
+       d="m 66.323157,211.21434 c 0.737779,0.89637 2.74837,0.89909 3.482837,0 6.092898,-7.45851 6.064854,-7.45381 6.064854,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.386454,-0.86649 -0.866489,-0.86649 l -13.97643,0 c -0.480035,0 -0.866489,0.38645 -0.866489,0.86649 l 0,10.10972 c 0,0.48003 0.03333,0.48813 6.161717,7.93384 z"
+       id="path5686"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-backdrop-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5688"
+       d="m 86.323157,211.21434 c 0.737779,0.89637 2.74837,0.89909 3.482837,0 6.092898,-7.45851 6.064854,-7.45381 6.064854,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.386454,-0.86649 -0.866489,-0.86649 l -13.97643,0 c -0.480035,0 -0.866489,0.38645 -0.866489,0.86649 l 0,10.10972 c 0,0.48003 0.03333,0.48813 6.161717,7.93384 z"
+       style="opacity:0.50000000000000000;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999000000002;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5690"
+       d="m 6.323157,216.97759 c 0.737779,-0.89637 2.74837,-0.89909 3.482837,0 6.092898,7.45851 6.064854,7.45381 6.064854,7.93384 l 0,10.10972 c 0,0.48004 -0.386454,0.86649 -0.866489,0.86649 l -13.97643,0 c -0.480035,0 -0.866489,-0.38645 -0.866489,-0.86649 l 0,-10.10972 c 0,-0.48003 0.03333,-0.48813 6.161717,-7.93384 z"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 46.323157,216.97759 c 0.737779,-0.89637 2.74837,-0.89909 3.482837,0 6.092898,7.45851 6.064854,7.45381 6.064854,7.93384 l 0,10.10972 c 0,0.48004 -0.386454,0.86649 -0.866489,0.86649 l -13.97643,0 c -0.480035,0 -0.866489,-0.38645 -0.866489,-0.86649 l 0,-10.10972 c 0,-0.48003 0.03333,-0.48813 6.161717,-7.93384 z"
+       id="path5692"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5694"
+       d="m 106.32316,216.97759 c 0.73778,-0.89637 2.74837,-0.89909 3.48283,0 6.0929,7.45851 6.06486,7.45381 6.06486,7.93384 l 0,10.10972 c 0,0.48004 -0.38646,0.86649 -0.86649,0.86649 l -13.97643,0 c -0.48004,0 -0.86649,-0.38645 -0.86649,-0.86649 l 0,-10.10972 c 0,-0.48003 0.0333,-0.48813 6.16172,-7.93384 z"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 26.323157,216.97759 c 0.737779,-0.89637 2.74837,-0.89909 3.482837,0 6.092898,7.45851 6.064854,7.45381 6.064854,7.93384 l 0,10.10972 c 0,0.48004 -0.386454,0.86649 -0.866489,0.86649 l -13.97643,0 c -0.480035,0 -0.866489,-0.38645 -0.866489,-0.86649 l 0,-10.10972 c 0,-0.48003 0.03333,-0.48813 6.161717,-7.93384 z"
+       id="path5696"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5698"
+       d="m 66.323157,216.97759 c 0.737779,-0.89637 2.74837,-0.89909 3.482837,0 6.092898,7.45851 6.064854,7.45381 6.064854,7.93384 l 0,10.10972 c 0,0.48004 -0.386454,0.86649 -0.866489,0.86649 l -13.97643,0 c -0.480035,0 -0.866489,-0.38645 -0.866489,-0.86649 l 0,-10.10972 c 0,-0.48003 0.03333,-0.48813 6.161717,-7.93384 z"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-backdrop-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 86.323157,216.97759 c 0.737779,-0.89637 2.74837,-0.89909 3.482837,0 6.092898,7.45851 6.064854,7.45381 6.064854,7.93384 l 0,10.10972 c 0,0.48004 -0.386454,0.86649 -0.866489,0.86649 l -13.97643,0 c -0.480035,0 -0.866489,-0.38645 -0.866489,-0.86649 l 0,-10.10972 c 0,-0.48003 0.03333,-0.48813 6.161717,-7.93384 z"
+       id="path5700"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-dark.png"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m -2.0435599,249.72575 c -0.89637,-0.73777 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.1097199,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.1097199,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       id="path5706"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-backdrop-dark.png"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5708"
+       d="m 37.95644,249.72575 c -0.89637,-0.73777 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-insensitive-dark.png"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 97.956441,249.72575 c -0.89637,-0.73778 -0.89909,-2.74837 0,-3.48283 7.458509,-6.0929 7.453809,-6.06486 7.933839,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.933839,-6.16172 z"
+       id="path5710"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left.png"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5712"
+       d="m 17.95644,249.72575 c -0.89637,-0.73777 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-backdrop.png"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 57.95644,249.72575 c -0.89637,-0.73777 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       id="path5714"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-insensitive.png"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5716"
+       d="m 77.95644,249.72575 c -0.89637,-0.73777 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5722"
+       d="m 16.193192,269.72575 c 0.89637,-0.73777 0.89909,-2.74837 0,-3.48283 -7.4585099,-6.0929 -7.4538099,-6.06486 -7.9338399,-6.06486 l -10.1097199,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.1097199,0 c 0.48003,0 0.48813,-0.0333 7.9338399,-6.16172 z"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 56.193192,269.72575 c 0.89637,-0.73777 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.10972,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.10972,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       id="path5724"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5726"
+       d="m 116.19319,269.72575 c 0.89637,-0.73778 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.109717,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.109717,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 36.193192,269.72575 c 0.89637,-0.73777 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.10972,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.10972,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       id="path5728"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5730"
+       d="m 76.193192,269.72575 c 0.89637,-0.73777 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.10972,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.10972,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 96.193192,269.72575 c 0.89637,-0.73777 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.10972,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.10972,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       id="path5732"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="7.7865"
+       rx="7.7864995"
+       y="-233.90947"
+       x="158.45448"
+       height="15.572998"
+       width="15.572999"
+       id="rect5761"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-right-backdrop-insensitive-dark.png"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 136.19319,269.72575 c 0.89637,-0.73778 0.89909,-2.74837 0,-3.48283 -7.45851,-6.0929 -7.45381,-6.06486 -7.93384,-6.06486 l -10.10972,0 c -0.48004,0 -0.86649,0.38646 -0.86649,0.86649 l 0,13.97643 c 0,0.48004 0.38645,0.86649 0.86649,0.86649 l 10.10972,0 c 0.48003,0 0.48813,-0.0333 7.93384,-6.16172 z"
+       id="path5785"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <path
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5787"
+       d="m 117.95644,249.72575 c -0.89637,-0.73778 -0.89909,-2.74837 0,-3.48283 7.45851,-6.0929 7.45381,-6.06486 7.93384,-6.06486 l 10.10972,0 c 0.48004,0 0.86649,0.38646 0.86649,0.86649 l 0,13.97643 c 0,0.48004 -0.38645,0.86649 -0.86649,0.86649 l -10.10972,0 c -0.48003,0 -0.48813,-0.0333 -7.93384,-6.16172 z"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-left-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-down-backdrop-insensitive-dark.png"
+       sodipodi:nodetypes="sssssssss"
+       inkscape:connector-curvature="0"
+       id="path5789"
+       d="m 126.32316,211.21434 c 0.73778,0.89637 2.74837,0.89909 3.48283,0 6.0929,-7.45851 6.06486,-7.45381 6.06486,-7.93384 l 0,-10.10972 c 0,-0.48004 -0.38646,-0.86649 -0.86649,-0.86649 l -13.97643,0 c -0.48004,0 -0.86649,0.38645 -0.86649,0.86649 l 0,10.10972 c 0,0.48003 0.0333,0.48813 6.16172,7.93384 z"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-up-backdrop-insensitive-dark.png"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 126.32316,216.97759 c 0.73778,-0.89637 2.74837,-0.89909 3.48283,0 6.0929,7.45851 6.06486,7.45381 6.06486,7.93384 l 0,10.10972 c 0,0.48004 -0.38646,0.86649 -0.86649,0.86649 l -13.97643,0 c -0.48004,0 -0.86649,-0.38645 -0.86649,-0.86649 l 0,-10.10972 c 0,-0.48003 0.0333,-0.48813 6.16172,-7.93384 z"
+       id="path5791"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssss" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-backdrop-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5797"
+       width="14.600023"
+       height="14.574778"
+       x="120.69999"
+       y="-187.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-187.28738"
+       x="140.69998"
+       height="14.574778"
+       width="14.600023"
+       id="rect5801"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-unchecked-insensitive-alt-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       ry="7.2873888"
+       rx="7.3000116"
+       y="-167.28738"
+       x="140.69998"
+       height="14.574778"
+       width="14.600023"
+       id="rect5814"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5816"
+       width="10.542784"
+       height="3.2164774"
+       x="142.72861"
+       y="158.39175"
+       rx="1.3829777"
+       ry="1.6082387"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-alt-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.39997688;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect5820"
+       width="14.600023"
+       height="14.574778"
+       x="120.69998"
+       y="-167.28738"
+       rx="7.3000116"
+       ry="7.2873888" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/radio-mixed-insensitive-dark.png"
+       ry="1.6082387"
+       rx="1.3829777"
+       y="158.39175"
+       x="122.72861"
+       height="3.2164774"
+       width="10.542784"
+       id="rect5822"
+       style="opacity:0.5;fill:#3d3d3d;fill-opacity:1;stroke:#bebebe;stroke-width:0.26974949;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-5"
+       transform="translate(-0.09370267,315.41647)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4"
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-0"
+       transform="translate(19.999995,315.41648)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4-3"
+         style="color:#000000;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-01"
+       transform="translate(39.999995,315.41648)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4-0"
+         style="color:#000000;fill:#aaa8ac;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-6"
+       transform="translate(59.999995,315.41648)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4-1"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-1"
+       transform="translate(79.999995,315.41647)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4-01"
+         style="color:#000000;fill:#eeeeec;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-4"
+       transform="translate(99.999995,315.41647)">
+      <path
+         transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)"
+         d="m 665.47588,255.0668 c 0,4.02825 -2.01821,7.29379 -4.5078,7.29379 -2.48959,0 -4.50781,-3.26554 -4.50781,-7.29379 0,-4.02824 2.01822,-7.29378 4.50781,-7.29378 2.48959,0 4.5078,3.26554 4.5078,7.29378 z"
+         sodipodi:ry="7.2937827"
+         sodipodi:rx="4.5078058"
+         sodipodi:cy="255.0668"
+         sodipodi:cx="660.96808"
+         id="path5784-4-6"
+         style="color:#000000;fill:#a3c3e3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <rect
+       ry="0.86648858"
+       rx="0.86648858"
+       y="-86.338242"
+       x="120.85477"
+       height="11.84269"
+       width="11.863204"
+       id="rect3444"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3448"
+       width="11.863204"
+       height="11.84269"
+       x="140.85477"
+       y="-86.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/checkbox-unchecked-backdrop-insensitive.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.32499999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3452"
+       width="11.863204"
+       height="11.84269"
+       x="100.85477"
+       y="-86.338242"
+       rx="0.86648858"
+       ry="0.86648858" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz.png"
+       transform="scale(1,-1)"
+       style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700150999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4241"
+       width="15.572999"
+       height="15.572998"
+       x="176.17479"
+       y="-233.90947"
+       rx="7.7864995"
+       ry="7.7865" />
+    <rect
+       ry="7.7865"
+       rx="7.7864995"
+       y="-233.90947"
+       x="193.8951"
+       height="15.572998"
+       width="15.572999"
+       id="rect4245"
+       style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700150999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;opacity:0.5"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop.png"
+       transform="scale(1,-1)"
+       style="opacity:0.50000000000000000;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700150999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4251"
+       width="15.572999"
+       height="15.572998"
+       x="211.7953"
+       y="-233.90947"
+       rx="7.7864995"
+       ry="7.7865" />
+    <rect
+       ry="7.7865"
+       rx="7.7864995"
+       y="-233.90947"
+       x="229.69551"
+       height="15.572998"
+       width="15.572999"
+       id="rect4257"
+       style="opacity:0.50000000000000000;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700150999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive-dark.png"
+       transform="scale(1,-1)"
+       style="opacity:0.50000000000000000;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700150999999997;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4261"
+       width="15.572999"
+       height="15.572998"
+       x="248.04547"
+       y="-233.90947"
+       rx="7.7864995"
+       ry="7.7865" />
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive.png"
+       transform="scale(1,-1)"
+       style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect4271"
+       width="15.572999"
+       height="15.572998"
+       x="265.85574"
+       y="-233.90947"
+       rx="7.7864995"
+       ry="7.7865" />
+    <rect
+       ry="7.7865"
+       rx="7.7864995"
+       y="-233.90947"
+       x="284.20569"
+       height="15.572998"
+       width="15.572999"
+       id="rect4273"
+       style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       transform="scale(1,-1)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4318"
+       transform="matrix(0,1,-1,0,597.90513,81.807928)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         ry="0"
+         rx="2.8717952"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4275"
+         width="16"
+         height="20"
+         x="158.24098"
+         y="226.21996"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         ry="7.7865"
+         rx="7.7864995"
+         y="-276.00644"
+         x="158.45448"
+         height="15.572998"
+         width="15.572999"
+         id="rect4291"
+         style="color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="scale(1,-1)"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+    <g
+       id="g4329"
+       transform="matrix(0,1,-1,0,621.65214,64.102462)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz.png"
+         y="226.21996"
+         x="175.96129"
+         height="20"
+         width="16"
+         id="rect4277"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         rx="2.8717952"
+         ry="0" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz.png"
+         transform="scale(1,-1)"
+         style="color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4293"
+         width="15.572999"
+         height="15.572998"
+         x="176.17479"
+         y="-276.00644"
+         rx="7.7864995"
+         ry="7.7865" />
+    </g>
+    <g
+       id="g4336"
+       transform="matrix(0,1,-1,0,645.93886,46.367315)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-backdrop-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         ry="0"
+         rx="2.8717952"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4279"
+         width="16"
+         height="20"
+         x="193.68159"
+         y="226.21996"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         ry="7.7865"
+         rx="7.7864995"
+         y="-276.00644"
+         x="193.8951"
+         height="15.572998"
+         width="15.572999"
+         id="rect4295"
+         style="opacity:0.5;color:#000000;fill:#492356;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="scale(1,-1)"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+    <g
+       id="g4345"
+       transform="matrix(0,1,-1,0,670.04568,28.481948)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-backdrop.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop.png"
+         y="226.21996"
+         x="211.5818"
+         height="20"
+         width="16"
+         id="rect4281"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         rx="2.8717952"
+         ry="0" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop.png"
+         transform="scale(1,-1)"
+         style="opacity:0.5;color:#000000;fill:#8abb22;fill-opacity:1;fill-rule:nonzero;stroke:#a6f488;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4297"
+         width="15.572999"
+         height="15.572998"
+         x="211.7953"
+         y="-276.00644"
+         rx="7.7864995"
+         ry="7.7865" />
+    </g>
+    <g
+       id="g4356"
+       transform="matrix(0,1,-1,0,693.97259,10.5669)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         ry="0"
+         rx="2.8717952"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4283"
+         width="16"
+         height="20"
+         x="229.48201"
+         y="226.21996"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         ry="7.7865"
+         rx="7.7864995"
+         y="-276.00644"
+         x="229.69551"
+         height="15.572998"
+         width="15.572999"
+         id="rect4299"
+         style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="scale(1,-1)"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+    <g
+       id="g4365"
+       transform="matrix(0,1,-1,0,717.71961,-7.7830602)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive-dark.png"
+         y="226.21996"
+         x="247.83197"
+         height="20"
+         width="16"
+         id="rect4285"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         rx="2.8717952"
+         ry="0" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-insensitive-dark.png"
+         transform="scale(1,-1)"
+         style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4301"
+         width="15.572999"
+         height="15.572998"
+         x="248.04547"
+         y="-276.00644"
+         rx="7.7864995"
+         ry="7.7865" />
+    </g>
+    <g
+       id="g4313"
+       transform="matrix(0,1,-1,0,742.36613,-25.593332)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-backdrop-insensitive.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive.png"
+         y="226.21996"
+         x="265.64224"
+         height="20"
+         width="16"
+         id="rect4287"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         rx="2.8717952"
+         ry="0" />
+      <rect
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive.png"
+         transform="scale(1,-1)"
+         style="opacity:0.5;color:#000000;fill:#6f6f6f;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4303"
+         width="15.572999"
+         height="15.572998"
+         x="265.85574"
+         y="-276.00644"
+         rx="7.7864995"
+         ry="7.7865" />
+    </g>
+    <g
+       id="g4308"
+       transform="matrix(0,1,-1,0,766.11314,-63.928437)"
+       inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-vert-backdrop-insensitive-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <rect
+         transform="translate(0,32)"
+         ry="0"
+         rx="2.8717952"
+         style="opacity:0.75;color:#000000;fill:#ffffff;fill-opacity:0;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4289"
+         width="16"
+         height="20"
+         x="303.99219"
+         y="226.21996"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+      <rect
+         ry="7.7865"
+         rx="7.7864995"
+         y="-276.00644"
+         x="304.20569"
+         height="15.572998"
+         width="15.572999"
+         id="rect4305"
+         style="opacity:0.5;color:#000000;fill:#3d3d3d;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.42700151;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         transform="scale(1,-1)"
+         inkscape:export-filename="/home/digitalh/repos/gnome-themes-huayra/HuayraVioleta/gtk-3.0/assets/scale-slider-horz-backdrop-insensitive-dark.png"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="HuayraMayo">
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/jimmac/SparkleShare/gnome-mockups/boxes/interactive/img/checkbox-on.png"
+       transform="matrix(1.0743362,0,0,1.0743362,-501.93044,-201.22007)"
+       id="g3095"
+       style="display:inline;enable-background:new">
+      <g
+         transform="translate(877.50354,-102.83507)"
+         id="g3097"
+         style="enable-background:new">
+        <rect
+           transform="scale(1,-1)"
+           style="color:#000000;fill:url(#linearGradient3107-4);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3109-6);stroke-width:0.48824981;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect3099"
+           width="11.042357"
+           height="11.023263"
+           x="-409.50739"
+           y="-284.86218"
+           rx="0.80653393"
+           ry="0.80653393" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.5447363,-12.386684 2.82447,2.8244702 7.4646707,-7.4646702"
+       inkscape:path-effect="#path-effect3113-7"
+       id="path3101"
+       d="m 3.5447363,-12.386684 2.82447,2.8244702 7.4646707,-7.4646702"
+       style="fill:none;stroke:url(#linearGradient3111-0);stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#4787c8;stroke-width:1.57363319;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 3.5447363,-12.386684 2.82447,2.8244702 7.4646707,-7.4646702"
+       id="path3103"
+       inkscape:path-effect="#path-effect3115-6"
+       inkscape:original-d="m 3.5447363,-12.386684 2.82447,2.8244702 7.4646707,-7.4646702"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="csccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.1244282,-12.151311 c 0.3529458,-0.301584 0.7588141,-0.71479 1.0255516,-0.437121 l 2.0511032,2.135165 7.128425,-6.80899 c 0.369871,-0.369871 1.025551,0.117686 1.025551,0.117686"
+       inkscape:path-effect="#path-effect3117-0"
+       id="path3105"
+       d="m 3.1244282,-12.151311 c -0.060792,-0.05428 -0.1065957,-0.125174 -0.1311322,-0.202892 -0.024537,-0.07772 -0.027729,-0.162019 -0.00942,-0.241435 0.018312,-0.07942 0.058028,-0.153686 0.1133403,-0.213542 0.055312,-0.05986 0.1259638,-0.105164 0.2029513,-0.131905 0.076988,-0.02674 0.1600392,-0.03498 0.2410859,-0.02641 0.081047,0.0086 0.1599499,0.03377 0.232757,0.0704 0.1456142,0.07325 0.2630464,0.191117 0.3759666,0.308665 l 2.0511032,2.135165 7.128425,-6.80899 c 0.08048,-0.07687 0.16267,-0.153575 0.258945,-0.209402 0.09628,-0.05583 0.206791,-0.08988 0.318019,-0.08617 0.111229,0.0037 0.221444,0.0461 0.303742,0.121014 0.0823,0.07492 0.135262,0.181365 0.144845,0.292242"
+       style="fill:none;stroke:#7ea7d3;stroke-width:0.52454442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       style="fill-rule:evenodd"
+       id="g3378"
+       transform="matrix(0.07335003,0,0,0.07335003,-20.659682,-21.829621)">
+      <g
+         transform="matrix(0.81761363,0,0,0.81761363,2.8638364,4.9242722)"
+         id="Capa_x0020_1">
+        <metadata
+           id="CorelCorpID_0Corel-Layer" />
+        <g
+           id="_140981208">
+          <path
+             style="fill:url(#id5-6)"
+             inkscape:connector-curvature="0"
+             d="m 135.281,179.591 c 0,-19.1907 0,-26.8725 0,-48.3082 43.5967,0 61.8475,-23.6516 62.5922,-47.4555 0.78064,-23.7956 -25.4856,-40.9973 -47.4708,-40.8381 -20.918,0.159172 -46.9836,9.22232 -47.6562,39.4914 0,0 -32.3549,-0.390319 -45.2257,-0.74465 0.257444,-40.1654 44.5932,-77.7454 89.1975,-77.8686 63.3534,-0.195159 97.3928,31.7584 98.9555,79.8714 1.52114,48.1088 -54.855,95.8523 -110.392,95.8523 z"
+             class="fil0"
+             id="_141442704" />
+          <g
+             id="g53">
+            <path
+               style="fill:url(#linearGradient3038-2)"
+               inkscape:connector-curvature="0"
+               d="m 183.862,255.102 c 0,22.0613 -17.7277,39.9509 -39.5869,39.9509 -21.8468,0 -39.5744,-17.8855 -39.5744,-39.9509 0,-22.0572 17.7277,-39.9315 39.5744,-39.9315 21.8592,0 39.5869,17.8744 39.5869,39.9315 z"
+               class="fil1"
+               id="_141809840" />
+            <path
+               style="fill:url(#id8-7);fill-rule:nonzero"
+               inkscape:connector-curvature="0"
+               d="m 184.932,255.102 c 0,11.3206 -4.55095,21.5755 -11.9089,29.0012 -7.35931,7.42574 -17.5242,12.021 -28.7466,12.021 -11.2196,0 -21.3831,-4.59386 -28.741,-12.0224 -7.35377,-7.42436 -11.9047,-17.6778 -11.9047,-28.9998 0,-11.3179 4.55095,-21.5658 11.9047,-28.986 7.35792,-7.42436 17.52,-12.0154 28.741,-12.0154 11.2237,0 21.3886,4.59109 28.7479,12.0141 7.35654,7.42021 11.9075,17.6695 11.9075,28.9874 z m -13.4231,27.4967 c 6.97037,-7.03404 11.2819,-16.756 11.2819,-27.4967 0,-10.7365 -4.3115,-20.453 -11.2791,-27.4829 -6.96899,-7.02989 -16.5996,-11.3774 -27.2351,-11.3774 -10.6313,0 -20.2592,4.34887 -27.2268,11.3788 -6.9676,7.02989 -11.2777,16.7449 -11.2777,27.4815 0,10.7407 4.3115,20.4627 11.2777,27.4953 6.9676,7.03404 16.5955,11.3857 27.2268,11.3857 10.6341,0 20.2647,-4.35164 27.2323,-11.3843 z"
+               class="fil2"
+               id="_146285624" />
+            <path
+               inkscape:connector-curvature="0"
+               mask="url(#id0-6)"
+               d="m 107.16,254.353 c 2.73915,-34.3937 36.9474,-46.7981 59.154,-26.1541 10.1787,9.46315 -8.205,45.479 -22.5028,59.6219 -8.19531,8.10396 -23.9478,-2.51908 -31.584,-13.5089 -5.57104,-8.02229 -4.30181,-15.412 -5.06722,-19.9588 z"
+               style="fill:url(#linearGradient3040-0)"
+               class="fil3"
+               id="_144443808" />
+          </g>
+          <path
+             inkscape:connector-curvature="0"
+             mask="url(#id2-6)"
+             d="m 59.7976,78.7918 c 18.399,-89.9878 141.652,-91.7636 174.37,-29.3528 4.15509,7.92264 9.67907,16.266 6.08316,17.192 -41.4776,10.6632 -49.5193,-13.7137 -57.7436,-19.3471 -22.9361,-15.7124 -75.4242,-15.1934 -84.1939,31.5715 l -38.5156,-0.06367 z"
+             style="fill:url(#id7-3)"
+             class="fil4"
+             id="_53543664" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="HuayraFrescoVerde">
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/jimmac/SparkleShare/gnome-mockups/boxes/interactive/img/checkbox-on.png"
+       transform="matrix(1.0743362,0,0,1.0743362,-501.93044,-221.22007)"
+       id="g3095-1"
+       style="display:inline;enable-background:new">
+      <g
+         transform="translate(877.50354,-102.83507)"
+         id="g3097-7"
+         style="enable-background:new">
+        <rect
+           transform="scale(1,-1)"
+           style="color:#000000;fill:url(#linearGradient3107-4-9);fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient3109-6-8);stroke-width:0.48824981;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect3099-0"
+           width="11.042357"
+           height="11.023263"
+           x="-409.50739"
+           y="-284.86218"
+           rx="0.80653393"
+           ry="0.80653393" />
+      </g>
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.544738,-32.386684 2.82447,2.82447 7.464671,-7.46467"
+       inkscape:path-effect="#path-effect3113-7-1"
+       id="path3101-0"
+       d="m 3.544738,-32.386684 2.82447,2.82447 7.464671,-7.46467"
+       style="fill:none;stroke:url(#linearGradient3111-0-4);stroke-width:3.14726639;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       style="fill:none;stroke:#4787c8;stroke-width:1.57363319;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 3.544738,-32.386684 2.82447,2.82447 7.464671,-7.46467"
+       id="path3103-4"
+       inkscape:path-effect="#path-effect3115-6-1"
+       inkscape:original-d="m 3.544738,-32.386684 2.82447,2.82447 7.464671,-7.46467"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="csccc"
+       inkscape:connector-curvature="0"
+       inkscape:original-d="m 3.1244299,-32.151311 c 0.3529458,-0.301584 0.7588141,-0.71479 1.0255516,-0.437121 l 2.0511032,2.135165 7.1284253,-6.80899 c 0.369871,-0.369871 1.025551,0.117686 1.025551,0.117686"
+       inkscape:path-effect="#path-effect3117-0-9"
+       id="path3105-8"
+       d="m 3.1244299,-32.151311 c -0.060792,-0.05428 -0.1065957,-0.125174 -0.1311322,-0.202892 -0.024537,-0.07772 -0.027729,-0.162019 -0.00942,-0.241435 0.018312,-0.07941 0.058028,-0.153686 0.1133403,-0.213542 0.055312,-0.05985 0.1259638,-0.105164 0.2029513,-0.131905 0.076988,-0.02674 0.1600392,-0.03498 0.2410859,-0.02641 0.081047,0.0086 0.1599499,0.03377 0.232757,0.0704 0.1456142,0.07325 0.2630464,0.191117 0.3759666,0.308665 l 2.0511032,2.135165 7.1284253,-6.80899 c 0.08048,-0.07687 0.16267,-0.153575 0.258945,-0.209402 0.09628,-0.05583 0.206791,-0.08988 0.318019,-0.08617 0.111229,0.0037 0.221444,0.0461 0.303742,0.121014 0.0823,0.07492 0.135262,0.181365 0.144845,0.292242"
+       style="fill:none;stroke:#7ea7d3;stroke-width:0.52454442px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       transform="matrix(0.06202126,0,0,0.06202126,-18.403468,-89.904117)"
+       id="layer1-9"
+       inkscape:label="Capa 1">
+      <rect
+         style="fill:#00923f;fill-rule:evenodd;stroke:#72706f;stroke-width:3.56301117"
+         class="fil0 str0"
+         x="38.819675"
+         y="996.82874"
+         width="181.77892"
+         height="28.919361"
+         rx="18.547808"
+         ry="18.547808"
+         id="rect7040" />
+      <g
+         transform="matrix(0.85807511,0,0,0.85807511,0.37284795,799.1626)"
+         id="_81071816"
+         style="fill-rule:evenodd">
+        <path
+           style="fill:#1f1a17;stroke:#1f1a17;stroke-width:2.76821995"
+           inkscape:connector-curvature="0"
+           id="_81851448"
+           class="fil1 str1"
+           d="m 59.6039,230.051 c -3.74401,1.73014 -8.07074,3.13777 -9.877,7.20844 -3.85197,8.67559 2.12045,18.4086 10.7005,20.3021 17.8536,3.94194 35.764,2.04433 53.8654,2.48586 l 96.4558,4.68936 -0.008,0.3571 -133.057005,1.50314 c -8.38908,-0.80002 -26.4005,-2.19796 -30.2248,-12.4431 -2.49555,-6.68248 -4.19939,-16.3962 2.28101,-21.4592 3.09902,-2.42357 6.12191,-2.57444 9.86454,-2.64365 z" />
+      </g>
+      <path
+         style="fill:none"
+         inkscape:connector-curvature="0"
+         class="fil2"
+         d="m 51.517499,996.56534 c -14.304279,1.99408 -11.021606,13.87206 -8.582156,19.94336 4.237647,10.5572 42.158722,9.3078 55.508113,9.3078 26.701184,0 56.061544,0 82.762724,0.6639"
+         id="path7044" />
+      <rect
+         style="fill:#b8db7c;fill-rule:evenodd;stroke:#72706f;stroke-width:5.90924549"
+         y="836.26654"
+         x="1.0099374"
+         class="fil3 str0"
+         transform="matrix(0.99999573,-0.00292343,0.00714097,0.9999745,0,0)"
+         width="241.70341"
+         height="159.56158"
+         rx="38.36554"
+         ry="24.547865"
+         id="rect7046" />
+      <g
+         transform="matrix(0.85807511,0,0,0.85807511,0.37284795,799.1626)"
+         id="_45158744"
+         style="fill-rule:evenodd">
+        <path
+           style="fill:#1f1a17;stroke:#1f1a17;stroke-width:2.76821995"
+           inkscape:connector-curvature="0"
+           id="_80379776"
+           class="fil1 str1"
+           d="m 290.378,109.933 3.95025,51.7629 c -0.74604,23.0053 0.3917,57.3367 -27.6766,64.5922 -9.51159,2.45818 -19.3069,3.73848 -29.1313,3.87689 l -97.1727,-1.6111 -0.0111,-0.60486 97.0537,-5.05753 c 12.1428,-0.76541 25.7001,-1.96543 36.2789,-8.73096 15.239,-9.74828 14.0833,-38.3813 15.3733,-52.7373 l 1.33566,-51.4902 z" />
+      </g>
+      <path
+         style="fill:none"
+         inkscape:connector-curvature="0"
+         class="fil2"
+         d="m 249.53727,893.49337 c 3.33259,13.79957 1.63071,75.66043 -5.91577,86.01774 -6.99657,9.60349 -21.33884,13.70809 -39.49595,14.02996 l -83.32919,1.47865"
+         id="path7050" />
+      <g
+         transform="matrix(0.85807511,0,0,0.85807511,0.37284795,799.1626)"
+         id="_81827144"
+         style="fill-rule:evenodd">
+        <path
+           style="fill:#1f1a17;stroke:#1f1a17;stroke-width:2.76821995"
+           inkscape:connector-curvature="0"
+           id="_80692792"
+           class="fil1 str1"
+           d="M 132.574,42.733 C 97.7263,44.02714 55.9581,39.29349 25.199,59.28 17.05352,64.57145 13.6721,75.5474 12.85,84.5607 l -1.39518,41.4194 -2.91216,28.7535 -0.546723,0 -1.15711,-56.581 c -0.175782,-14.2508 -1.60418,-29.8981 9.1891,-41.1191 11.3054,-11.7539 27.6406,-15.5325 43.3489,-17.1463 24.7686,-2.54261 48.572503,0.573021 73.197203,2.84573 z" />
+      </g>
+      <path
+         style="fill:none"
+         inkscape:connector-curvature="0"
+         class="fil2"
+         d="m 114.13041,835.83073 c -14.666543,0 -32.038488,-1.78626 -46.664636,-0.98577 -45.665924,2.49885 -61.8182295,14.74491 -58.6637718,48.2989 0.6068607,6.46567 -1.3337899,41.39861 -1.3337899,48.79178"
+         id="path7054" />
+      <path
+         style="fill:none"
+         inkscape:connector-curvature="0"
+         class="fil2"
+         d="m 58.522297,903.4153 c -1.900256,7.8683 -0.929931,43.13612 3.371782,49.04122 3.989363,5.47515 12.166459,7.81486 22.518168,7.99895 l 47.507943,0.84206"
+         id="path7060" />
+      <path
+         style="fill:none"
+         inkscape:connector-curvature="0"
+         class="fil2"
+         d="m 135.72045,870.54029 c 8.36123,0 18.26517,-1.01783 26.60496,-0.56176 26.03489,1.42402 35.24406,8.40632 33.44474,27.53615 -0.34554,3.68651 0.76012,23.60255 0.76012,27.81759"
+         id="path7064" />
+      <path
+         class="fil2"
+         d="m 143.3267,937.67505 c 10.79262,4.75157 14.89159,-6.42434 16.46886,-12.47689 2.74571,-10.52242 -23.71388,-26.41981 -32.79397,-32.37584 -18.16183,-11.91311 -38.132571,-25.01259 -55.94045,-37.46845"
+         id="path11198-0-0-4-1-7"
+         inkscape:connector-curvature="0"
+         style="fill:none" />
+      <text
+         transform="scale(1.2582786,0.79473654)"
+         sodipodi:linespacing="125%"
+         id="text3050"
+         y="1168.7626"
+         x="25.058006"
+         style="font-size:177.11346436px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Supra Genius Curves BRK;-inkscape-font-specification:Supra Genius Curves BRK"
+           y="1168.7626"
+           x="25.058006"
+           id="tspan3052"
+           sodipodi:role="line">&gt;</tspan></text>
+      <rect
+         ry="5.5575857"
+         rx="11.990167"
+         y="883.83392"
+         x="72.16851"
+         height="5.5575857"
+         width="25.262735"
+         id="rect3054"
+         style="fill:#1f1a17;fill-opacity:1" />
+    </g>
+  </g>
+</svg>
