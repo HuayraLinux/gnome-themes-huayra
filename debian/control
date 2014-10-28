@@ -1,7 +1,7 @@
 Source: gnome-themes-huayra
 Section: x11
 Priority: optional
-Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Maintainer: Ivan Hoffmann <digital.h@gmail.com>
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.5
 
