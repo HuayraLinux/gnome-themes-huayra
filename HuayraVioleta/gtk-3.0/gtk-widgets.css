@@ -1206,7 +1206,11 @@ GtkTreeMenu .menuitem *:hover,
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
+/*
 	color: mix (@menu_fg_color, @theme_bg_color, 0.6);
+*/
+	color: shade(@menu_fg_color, 0.6);
+	
 }
 
 .menu .menuitem .accelerator:insensitive {

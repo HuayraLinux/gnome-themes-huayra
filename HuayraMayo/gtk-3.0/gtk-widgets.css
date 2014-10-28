@@ -1619,7 +1619,7 @@ GtkTreeMenu .menuitem * {
 .menubar {
     border-style: none;
     padding: 4px;
-
+	
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
 }
@@ -1634,12 +1634,12 @@ GtkTreeMenu .menuitem * {
     background-image: none;
     /* background-color: @menu_bg_color; */
 	background-color: #6D97AD; /* celeste mayo */
-
+	
     border-radius: 0 0 0 0;
 }
 
 .menubar .menuitem *:hover {
-    color: @menu_fg_color;
+    color: @menu_selected_fg_color;
 }
 
 .menu .menuitem {
@@ -1657,6 +1657,7 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem *:hover {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+    
 }
 
 .menu .menuitem:insensitive,
