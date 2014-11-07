@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.30) UNRELEASED; urgency=low
+
+  * Fix en tema Limbo, que tenia ventanas transparentes por error. 
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Fri, 07 Nov 2014 14:47:32 -0300
+
 gnome-themes-huayra (2.29) torbellino; urgency=low
 
   * Correcciones en temas GTK 2 y 3 de Mayo y Violeta. 
