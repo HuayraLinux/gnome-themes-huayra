@@ -71,7 +71,7 @@
 
   <piece position="titlebar">
     <draw_ops>
-	<!-- se define un gradiente vertical de dos tonos de azul, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
+	<!-- se define un gradiente vertical de dos tonos, aunque se pueden añadir cuantos colores se desee. "type" tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
 		<color value="#efefef" />
 		<color value="#efefef" />
@@ -222,7 +222,9 @@
 	<!-- se define un gradiente vertical de dos tonos de violeta, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
 		<color value="#e0e0e0" />
-		<color value="#e0e0e0" />
+		<color value="#ebebeb" />
+		<color value="#efefef" />
+		<color value="#efefef" />
  	</gradient>
     </draw_ops>
   </piece>
