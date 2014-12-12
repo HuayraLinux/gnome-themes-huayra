@@ -29,7 +29,7 @@ DbusmenuGtkMenu .menu,
 .primary-toolbar .menu {
 	/* menu-dark en menubar */
     background-image: none;
-    background-color: shade(@theme_bg_dark_color, 1.00);
+    background-color: shade (@theme_bg_dark_color, 1.20);
 	
     padding: 8px 0px;
 	border-style: none;
@@ -84,8 +84,8 @@ DbusmenuGtkMenu .menu,
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     border-radius: 0px;    
-    border-color:  shade(@theme_bg_dark_color, 1.00);
-	padding: 18 px; /* TEST */
+    border-color: shade (@theme_bg_dark_color, 1.00);
+	padding: 8px; /* TEST */
     background-color: shade (@theme_bg_dark_color, 1.00);
 
 }
@@ -240,7 +240,7 @@ DbusmenuGtkMenu .menuitem.radio:active,
 .menuitem:insensitive,
 .menuitem *:insensitive {
 	/* contextual menu insensitive */
-    color: mix (@menu_fg_color, @menu_bg_color, 0.4);
+    color: #ff00ff; /* mix (@menu_fg_color, @menu_bg_color, 0.4); TEST*/
     text-shadow: none;
 }
 
@@ -253,7 +253,7 @@ DbusmenuGtkMenu .menuitem *:insensitive,
 .primary-toolbar .menuitem:insensitive,
 .primary-toolbar .menuitem *:insensitive {
 	/* dark menu insensitive */
-    color: mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);
+    color: shade (@theme_fg_color, 0.7); /* TEST mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);*/
     text-shadow: none;
 }
 
@@ -310,7 +310,7 @@ Genericmenuitem .menuitem .accelerator,
 DbusmenuGtkMenu .menuitem .accelerator,
 .menubar .menuitem .accelerator,
 .primary-toolbar .menuitem .accelerator {
-    color: alpha (@theme_fg_dark_color, 0.8);
+    color: shade (@theme_fg_color, 0.8); /* alpha (@theme_fg_dark_color, 0.8);*/
 }
 
 Genericmenuitem .menuitem .accelerator:hover,
@@ -324,7 +324,7 @@ Genericmenuitem .menuitem .accelerator:insensitive,
 DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 .menubar .menuitem .accelerator:insensitive,
 .primary-toolbar .menuitem .accelerator:insensitive {
-    color: alpha (mix (@theme_fg_dark_color, @theme_bg_dark_color, 0.4), 0.8);
+    color: shade (@theme_fg_color, 0.8); /* alpha (mix (@theme_fg_dark_color, @theme_bg_dark_color, 0.4), 0.8);*/ 
     text-shadow: none;
 }
 
