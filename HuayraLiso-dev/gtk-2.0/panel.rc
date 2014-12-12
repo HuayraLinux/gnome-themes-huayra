@@ -1,0 +1,105 @@
+################################################
+# PANELS
+################################################
+
+style "panel"
+{
+
+	font_name = "Asap regular 10"
+	bg[SELECTED]	= shade (1.1, @selected_bg_color) # Makes selected items dark.
+	bg[NORMAL]	= "#404040" #"#314347" # Color de fondo del panel
+	bg[PRELIGHT]	= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
+	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
+	bg[INSENSITIVE]	= "#5c3C3C"
+	fg[NORMAL]	= "#F0F0F0" # Makes panel text light.
+	fg[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
+	fg[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
+	fg[ACTIVE]	= @selected_fg_color  # Makes active text colored.
+	fg[INSENSITIVE]	= "#666666" # Color for insensitive text.
+	text[NORMAL]	= "#c0c0c0"
+	text[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
+	text[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
+	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
+	text[INSENSITIVE]	= "#666666"
+
+
+	engine "murrine" {
+		animation           = TRUE
+		colorize_scrollbar  = TRUE
+		contrast            = 0.0
+		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		gradient_shades     = {1.0,1.0,1.0, 1.0} 
+		progressbarstyle    = 2
+		#focus_color         = "#f0f0f0" #"#69aef5"
+		glowstyle	    	= 3
+		glow_shade          = 1.2
+		handlestyle			= 1
+		highlight_shade     = 0.0
+		lightborder_shade   = 0.0
+		lightborderstyle    = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
+		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
+		listviewstyle       = 0 # 0 = nothing, 1 = dotted
+		menubaritemstyle    = 0 # 0 = menuitem look, 1 = button look
+		menubarstyle        = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menuitemstyle       = 0 # 0 = flat, 1 = glassy, 2 = striped
+		menustyle           = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+		reliefstyle	    	= 0 # 0 = flat, 1 = inset, 2 = shadow
+		rgba		    	= FALSE
+		roundness           = 2 # Redondeado de bordes en los botones
+		scrollbarstyle      = 0 # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, blablabla..
+		sliderstyle         = 1 # 0 = nothing added, 1 = handles
+		separatorstyle	    = 1
+		stepperstyle        = 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
+		toolbarstyle	    = 2 # 0 = flat, 1 = glassy, 2 = gradient
+		spinbuttonstyle     = 0
+		comboboxstyle	    = 1
+		arrowstyle 	    	= 1
+	}
+}
+
+style "panel-light"
+{
+	fg[NORMAL]	= @fg_color
+}
+
+# Panel settings. Do not change.
+widget "*PanelWidget*"		style "panel"
+#widget "PanelWidget" style "panel" #"panel"
+
+#widget "*PanelApplet*"		style "panel" #Controla los colores de un applet, por ejemplo el control de multiples escritorios
+widget "*fast-user-switch*"	style "panel"
+widget "*gdm-user-switch*"	style "panel"
+widget "*CPUFreq*Applet*"	style "panel"
+widget "*indicator-applet*"	style "panel"
+
+class "PanelToplevel*"		style "panel" #"panel"
+
+
+# widget_class "*<MatePanelAppletFrameDBus>*" style "panel" # Fix para evitar que se use el fondo del panel en los menues desplegables de algunos applets.
+widget_class "*<PanelDItemEditor>*" style "panel" #
+
+widget_class "*PanelToplevel*"	style "panel"
+class "*Panel*"		style "panel" # Aplica el estilo en el fondo de los applets y widgets del panel
+
+widget_class "*Drawer" style "panel"
+
+widget_class "*notif*"		style "panel"
+widget_class "*Notif*"		style "panel"
+widget_class "*Tray*"		style "panel" 
+widget_class "*tray*"		style "panel"
+widget_class "*computertemp*"	style "panel"
+widget_class "*Applet*Tomboy*"	style "panel"
+widget_class "*Applet*Netstatus*"	style "panel"
+
+# XFCE panel theming.
+widget "*Xfce*Panel*"		style "panel"
+class "*Xfce*Panel*"		style "panel"
+
+# Fix xfce-notifyd button
+style "xfce-notifyd-button" {
+	fg[NORMAL]	= @text_color
+	fg[PRELIGHT]	= @text_color
+	fg[ACTIVE]	= @text_color
+}
+
+widget_class "XfceNotifyWindow.*.GtkButton*" style "xfce-notifyd-button"

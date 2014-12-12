@@ -9,7 +9,7 @@ gtk-color-scheme = "selected_bg_color:#ffb380" #naranja claro
 gtk-color-scheme = "selected_fg_color:#eeeeee"
 gtk-color-scheme = "text_color:#1a1a1a" #gris oscuro
 gtk-color-scheme = "bg_color:#efefef"
-gtk-color-scheme = "tooltip_bg_color:#6Ae7ea" # verde turquesa
+gtk-color-scheme = "tooltip_bg_color:#4ECAE9" ##6Ae7ea" # verde turquesa
 
 #base_color: (original babdb6) cajas de entrada, fondos de carpetas, "blanco" de editores, etc.
 #fg_color: texto de ventanas (menues)
@@ -35,7 +35,7 @@ gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
 ##########
 # PANELS 
 ##########
-#include "panel.rc" # Toda la configuracion del panel superior se controla desde este archivo.
+include "panel.rc" # Toda la configuracion del panel superior se controla desde este archivo.
 
 style "default" {
 	xthickness = 1
@@ -70,7 +70,7 @@ style "default" {
 	GtkScrollbar::has_secondary_backward_stepper	= 1
 	GtkScrollbar::has_secondary_forward_stepper	= 0
 
-	GtkScrolledWindow::scrollbar-spacing		= 0
+	GtkScrolledWindow::scrollbar-spacing		= 2
 	GtkScrolledWindow::scrollbars-within-bevel	= 0
 
 	GtkMenuBar::internal-padding = 2
@@ -230,9 +230,10 @@ style "scale" {
 
 style "vscale" {
 
-	engine "clearlooks" {
-		hint = "vscale"
-	}
+#	engine "clearlooks" {
+#		hint = "vscale"
+#	}
+
 }
 
 style "hscale" {
@@ -399,23 +400,59 @@ style "sliders-liso"
 
 }
 
-style "scroll-bar-liso"
+style "scrollbar-horizontal"
 # Estilo para las barras de scroll
 {
+	bg[SELECTED]		= @selected_bg_color		# color indicador
+	bg[NORMAL]			= shade (0.83, @bg_color)			# color borde indicador
 
-#border-width = 2
-#GtkMenuBar::shadow_type        		        = GTK_SHADOW_OUT
-
-	xthickness = 2
-	ythickness = 2
-	bg[NORMAL] = shade(1.1, @bg_color) #F1F1F1"
-	bg[INSENSITIVE] = shade(0.9, @bg_color)
-	bg[ACTIVE] = shade(0.9, @base_color) # En Chromium actua sobre el trough de la barra (el espacio que no es el slider)
-	bg[SELECTED] = shade(0.8, @tooltip_bg_color) #0.8, @tooltip_bg_color
-	bg[PRELIGHT] = shade(1.6, @base_color) #"#D25FCC" #Color que uso para el prelight de la barra de scroll
-
+    # color flechas (stepper)	
+    fg[NORMAL]          = shade (1.00, @base_color)
+	fg[PRELIGHT]		= shade (1.00, @base_color)
+	fg[ACTIVE]		    = shade (1.00, @base_color)
+    fg[SELECTED]        = shade (1.00, @base_color)
+    fg[INSENSITIVE]     = shade (1.00, @base_color)
+	
+	engine "murrine" {
+        roundness               = 0
+        gradient_shades			= {1.0,1.0,1.0,1.0}
+        highlight_shade			= 1.0
+        glow_shade              = 1.0
+        prelight_shade          = .75
+        gradient_colors         = FALSE
+        lightborder_shade       = 1.0
+        lightborderstyle        = 0
+        trough_shades           = {1.00, 1.00}
+        border_shades           = {1.32, 1.32}
+        contrast                = 0.00
+	}
 }
 
+style "scrollbar-vertical" {
+	bg[SELECTED]		= @tooltip_bg_color		# color indicador
+	bg[NORMAL]			= shade (0.83, @bg_color)			# color borde indicador
+
+    # color flechas (stepper)	
+    fg[NORMAL]          = shade (1.00, @base_color)
+	fg[PRELIGHT]		= shade (1.00, @base_color)
+	fg[ACTIVE]		    = shade (1.00, @base_color)
+    fg[SELECTED]        = shade (1.00, @base_color)
+    fg[INSENSITIVE]     = shade (1.00, @base_color)
+	
+	engine "murrine" {
+        roundness               = 0
+        gradient_shades			= {1.0,1.0,1.0,1.0}
+        highlight_shade			= 1.0
+        glow_shade              = 1.0
+        prelight_shade          = .75
+        gradient_colors         = FALSE
+        lightborder_shade       = 1.0
+        lightborderstyle        = 0
+        trough_shades           = {1.00, 1.00}
+        border_shades           = {1.32, 1.32}
+        contrast                = 0.00
+	}
+}
 
 style "botones-liso" {
 #Estilo para todos los botones de la interfaz
@@ -602,9 +639,9 @@ class "GtkSpinButton" style "botones-combobox" #"spinbutton"
 class "GtkScale" style "sliders-liso" #"scale"
 #class "GtkVScale" style "sliders-limbo" #"vscale"
 #class "GtkHScale" style "sliders-limbo" #"hscale"
-class "GtkScrollbar" style "scroll-bar-liso" #"scrollbar"
-class "GtkHScrollbar" style "scroll-bar-liso" #"hscrollbar"
-class "GtkVScrollbar" style "scroll-bar-liso" #"vscrollbar"
+class "GtkScrollbar" style "scrollbar-vertical" #"scrollbar"
+class "GtkHScrollbar" style "scrollbar-horizontal" #"hscrollbar"
+class "GtkVScrollbar" style "scrollbar-vertical" #"vscrollbar"
 class "GtkToolbar"   style "toolbar" 
 widget_class "*<GtkToolbar>.*.<GtkButton>*"     style "botones-toolbar" #"toolbar_button"
 class "GtkSeparatorToolItem"		            style "toolbar_separator"

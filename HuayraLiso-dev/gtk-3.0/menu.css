@@ -71,7 +71,7 @@
 	border-radius: 0px;
     padding: 3px 4px;
 
-    color: @menu_fg_color;
+    color: #ff0000; /*@menu_fg_color; */
     text-shadow: 0px 1px alpha(#fff, 0.10);
 }
 
