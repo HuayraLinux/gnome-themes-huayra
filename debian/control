@@ -17,7 +17,8 @@ Description: transitional dummy package for huayra-themes-all
 
 Package: huayra-themes-all
 Depends: ${misc:Depends}, huayra-themes-accesible, huayra-themes-frescoverde,
-    huayra-themes-limbo, huayra-themes-mayo, huayra-themes-violeta
+    huayra-themes-limbo, huayra-themes-mayo, huayra-themes-violeta,
+    huayra-themes-liso
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -77,3 +78,13 @@ Architecture: all
 Description: Tema Violeta de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Violeta.
+
+Package: huayra-themes-liso
+Depends: ${misc:Depends}
+Recommends: dmz-cursor-theme
+Breaks: gnome-themes-huayra ( <= 2.14)
+Replaces: gnome-themes-huayra ( <= 2.14)
+Architecture: all
+Description: Tema Liso de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+ En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
+ GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema por defecto de Huayra 3.0.

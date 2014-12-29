@@ -1,10 +1,10 @@
 [X-GNOME-Metatheme]
-Name=HuayraLiso-dev
+Name=HuayraLiso
 Type=X-GNOME-Metatheme
 Comment=Tema Flat
 Encoding=UTF-8
-GtkTheme=HuayraLiso-dev
-MetacityTheme=HuayraLiso-dev
-IconTheme=liso-dev
+GtkTheme=HuayraLiso
+MetacityTheme=HuayraLiso
+IconTheme=huayra-liso
 CursorTheme=Mate
 CursorSize=24
