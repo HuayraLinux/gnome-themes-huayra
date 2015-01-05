@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.32) torbellino; urgency=medium
+
+  * Mejoras en tema Huayra Liso (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Mon, 05 Jan 2015 16:46:12 -0300
+
 gnome-themes-huayra (2.31) torbellino; urgency=medium
 
   * Preparado para empaquetar Huayra Liso.
