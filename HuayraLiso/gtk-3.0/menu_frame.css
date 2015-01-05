@@ -7,10 +7,10 @@
     background-image: none;
     background-color: @menu_bg_color;
 	color: #00ff00; 
-    padding: 8px; /* TEST */
-	border-width: 10px; /* TEST */
+    padding: 6px; /* TEST */
+	border-width: 0px; /* TEST */
 	border-style: solid;
-	border-radius: 0px;
+	border-radius: 4px;
 	border-color: shade(@menu_bg_color, 0.97);
 	border-image: 	none;
 
@@ -104,12 +104,11 @@ DbusmenuGtkMenu .menu,
 .menuitem {
 	/* contextual menu-item */
     -GtkMenuItem-arrow-scaling: 0.7;
-    -unico-menuitem-arrow-color: @menu_controls_color;
 	border-radius: 0px;
     padding: 3px 4px;
 
-    color: #00ff00; /*@menu_fg_color;*/
-    text-shadow: 0px 1px alpha(#fff, 0.10);
+    color: @menu_fg_color;
+    text-shadow: none;
 }
 
 
@@ -118,7 +117,7 @@ DbusmenuGtkMenu .menuitem,
 .menubar .menuitem,
 .primary-toolbar .menuitem {
 	/* dark menu-item */
-	color: shade (@text_color, 1.3); /* MENU PPAL */
+	color: alpha (@text_color, 0.75); /* MENU PPAL */
     /*color: @theme_fg_dark_color;*/
     text-shadow: 0px 1px @theme_shadow_dark_color;
 }
@@ -240,7 +239,7 @@ DbusmenuGtkMenu .menuitem.radio:active,
 .menuitem:insensitive,
 .menuitem *:insensitive {
 	/* contextual menu insensitive */
-    color: #ff00ff; /* mix (@menu_fg_color, @menu_bg_color, 0.4); TEST*/
+    color: alpha (@text_color, 0.2);
     text-shadow: none;
 }
 

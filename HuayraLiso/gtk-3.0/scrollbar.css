@@ -3,15 +3,15 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width: 15;
+    -GtkRange-slider-width: 8;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 0;
+    -GtkRange-trough-border: 1;
 
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
     
-    -GtkScrollbar-min-slider-length: 30;	
+    -GtkScrollbar-min-slider-length: 10;	
 }
 
 .scrollbar.trough.vertical {
@@ -19,8 +19,8 @@
 	border-width: 0px;
 
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@bg_color, 1.04)),
-                                     to   (shade (@bg_color, 1.04)));
+                                     from (shade (@theme_bg_color, 1.05)),
+                                     to   (shade (@theme_bg_color, 1.05)));
 
 }
 
@@ -29,8 +29,8 @@
 	border-width: 0px;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 1.04)),
-                                     to   (shade (@bg_color, 1.04)));
+                                     from (shade (@theme_bg_color, 1.05)),
+                                     to   (shade (@theme_bg_color, 1.05)));
 
 }
 
@@ -48,40 +48,31 @@
 }
 
 .scrollbar.slider.vertical {
-	border-radius: 0px;
+	border-radius: 2px;
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@bg_color, 1.04)),
-                                     color-stop(0.35, shade(@bg_color, 1.04)),
-                                     color-stop(0.35, mix(@theme_bg_color, @theme_mix_base, 0.25)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.25)));
+                                     from (shade (@tooltip_bg_color, 1.05)),
+                                     to   (shade (@tooltip_bg_color, 1.05)));
 
 }
 
 .scrollbar.slider.vertical:prelight {
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@bg_color, 1.04)),
-                                     color-stop(0.35, shade(@bg_color, 1.04)),
-                                     color-stop(0.35, mix(@theme_bg_color, @theme_mix_base, 0.40)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.40)));
-
+                                     from (shade (@tooltip_bg_color, 0.85)),
+                                     to   (shade (@tooltip_bg_color, 0.85)));
 }
 
 .scrollbar.slider.horizontal {
 	border-radius: 0px;
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 1.04)),
-                                     color-stop(0.35, shade(@bg_color, 1.04)),
-                                     color-stop(0.35, mix(@theme_bg_color, @theme_mix_base, 0.25)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.25)));
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@selected_bg_color, 1.05)),
+                                     to   (shade (@selected_bg_color, 1.05)));
 
 }
 
 .scrollbar.slider.horizontal:prelight {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@bg_color, 1.04)),
-                                     color-stop(0.35, shade(@bg_color, 1.04)),
-                                     color-stop(0.35, mix(@theme_bg_color, @theme_mix_base, 0.40)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.40)));
+    background-image: -gtk-gradient (linear, left top, right top,
+                                     from (shade (@selected_bg_color, 0.85)),
+                                     to   (shade (@selected_bg_color, 0.85)));
 
 }
 
@@ -91,7 +82,7 @@
 }
 
 .scrollbar.trough:insensitive {
-    -GtkRange-trough-border: 3px;
+    -GtkRange-trough-border: 1px;
 }
 
 /* overlay scrollbar */

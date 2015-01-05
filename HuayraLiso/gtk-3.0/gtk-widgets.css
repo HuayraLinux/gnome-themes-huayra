@@ -55,7 +55,7 @@
 
     border-width: 0px;
 	/* engine: unico;*/
-	
+/* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
 /*
 	-unico-focus-border-color: alpha (@theme_selected_bg_color, 0.25);
@@ -76,7 +76,7 @@
  * Base States *
  ***************/
 GtkWindow {
-    color: #FF0000; /* @theme_fg_color; */
+    color: shade (@theme_fg_color, 0.6); 
 }
 
 * {
@@ -445,16 +445,10 @@ GtkProgressBar,
  ************/
 .scale {
     -GtkScale-slider-length: 16;
-    -GtkRange-slider-width: 20;
+    -GtkRange-slider-width: 16;
     -GtkRange-trough-border: 0;
 
-    -unico-focus-border-radius: 0;
-    -unico-focus-border-dashes: 0;
     -GtkWidget-focus-line-width: 0;
-
-	-unico-focus-border-color: transparent;    
-    -unico-focus-fill-color: transparent;
-    -unico-focus-outer-stroke-color: transparent;
 
 }
 
@@ -482,8 +476,8 @@ GtkProgressBar,
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
-			         from (alpha (#000, 0.14)),
-			         to   (alpha (#000, 0.14)));
+			         from (alpha (@selected_bg_color, 0.4)),
+			         to   (alpha (@selected_bg_color, 0.4)));
 
  
 }
@@ -502,7 +496,6 @@ GtkProgressBar,
     border-radius: 0px;
     border-style: none;
 
-    -unico-progressbar-pattern: none;
 }
 
 .scale.mark {
@@ -521,7 +514,7 @@ GtkProgressBar,
 	border-color: @scale_progress_fill;
     border-image: none;
 
-	color: 			#ff00ff; /* @theme_selected_fg_color; */
+	color: 	shade (@theme_selected_fg_color, 0.7);
 	text-shadow: 	none;
 
 
@@ -582,31 +575,27 @@ GtkScrolledWindow.frame {
  ***********/
 .button,
 .button.menuitem.menubar {
-    padding: 2px 2px;
+    padding: 5px 5px;
 }
 
 .button {
-/*
-    -unico-focus-fill-color: alpha (@theme_base_color, 0.00);
-	-unico-focus-border-color: alpha (shade(@focused_entry_border, 1.10), 0.35);
-	-unico-focus-border-radius: 0; */
     -GtkWidget-focus-line-width: 1;
 
     border-width: 1px;
-    border-radius: 0px;
+    border-radius: 2px;
     border-style: solid;
     border-color: mix(@theme_bg_color, @theme_mix_base, 0.10);
 
 	/* box-shadow Syntax */
 	/* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
 
-	background-image: -gtk-gradient (linear,
+/*	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.10)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.10)));
+                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.10)));*/
 
-    color: #ffff00; /*		 @text_color; @theme_fg_color; */
-	text-shadow: 0px 1px @theme_shadow_color;
+    color:  shade (@theme_fg_color, 0.6); 
+	text-shadow: none; 
 }
 
 .button:hover {
@@ -618,8 +607,8 @@ GtkScrolledWindow.frame {
 
     border-color: mix(@theme_selected_bg_color, @theme_bg_color, 0.18);
     
-	color: 		#ff0000; /*	@theme_selected_fg_color; */
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+	color: 	@theme_selected_fg_color; /*shade (@theme_fg_color, 0.6); */
+	text-shadow: none; /* 0px 1px @theme_selected_shadow_color;*/
 }
 
 .button:active,
@@ -632,26 +621,12 @@ GtkScrolledWindow.frame {
 
     border-color: shade(@theme_selected_bg_color, 1.00);
 
-    color: 		#ff0000; /*	@theme_selected_fg_color; */
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    color: 	@theme_selected_fg_color; 
+	text-shadow: none; 
 
-
-	/*-unico-focus-fill-color: alpha (@theme_base_color, 0.0);
-	-unico-focus-border-color: alpha (@theme_base_color, 0.0);*/
 
 }
 
-.button.default {
-/*	-unico-focus-fill-color: alpha (@theme_base_color, 0.0); */
-
-}
-
-.button:hover,
-.button:active,
-.button:hover:active {
-	color: #ff0000; /* @theme_selected_fg_color; */
-	/* text-shadow: 0px 1px @theme_selected_shadow_color; */
-}
 
 .cell:insensitive,
 .button:insensitive {
@@ -662,8 +637,6 @@ GtkScrolledWindow.frame {
 
     background-image: none;
     border-image: none;
- 
-
 }
 
 .cell:insensitive,
@@ -687,14 +660,14 @@ GtkComboBox {
 
 GtkComboBox .cell {
 	/* color combobox read-only */
-    color: 			@theme_fg_color;
-	text-shadow: 0px 1px @theme_shadow_color;
+    color: 	shade (@theme_fg_color, 0.6); 
+	text-shadow: none;
 }
 
 GtkComboBox .cell:hover {
 	/* color combobox read-only */
     color: 			@theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+	text-shadow: none;
 }
 
 GtkComboBox .separator {
@@ -923,7 +896,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 .toolbar.menubar .button *:insensitive 
 .primary-toolbar .toolbar .button *:insensitive,
 .primary-toolbar.toolbar .button *:insensitive {
-	color: #ff00ff; /* mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40); */
+	color: alpha (@insensitive_fg_color, 0.5);
     text-shadow: none;
 }
 
@@ -1468,26 +1441,26 @@ GtkTreeView {
 
 GtkTreeView row:nth-child(odd),
 GtkTreeView row:nth-child(odd):hover {
-	background-color: shade(@theme_base_color, 0.97);
+	background-color: shade (@tooltip_bg_color, 1.61);
 	text-shadow: none;
 }
 
 GtkTreeView row:nth-child(even),
 GtkTreeView row:nth-child(even):hover  {	
-    background-color: shade(@theme_base_color, 1.00);
+    background-color: shade (@tooltip_bg_color, 1.54);
 	text-shadow: none;
 }
 
 column-header {
-    padding: 0px 2px;
+    padding: 0px 4px;
 }
 
 column-header .button:active,
 column-header .button:active:hover {
-	background-image: -gtk-gradient (linear,
+	/* background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.09)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.09)));
+                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.09)));*/
 
     border-width: 0px 1px 1px 0px;
     border-radius: 0px;
@@ -1505,17 +1478,15 @@ column-header .button *:hover:active {
 }
 
 column-header .button {
-    padding: 0px 4px 1px;
-/*    -unico-focus-border-gradient: none;
-    -unico-focus-border-radius: 0;
-    -unico-focus-border-dashes: 0; */
+    padding: 5px 4px 1px;
+
     -GtkWidget-focus-line-width: 0; 
 
 
-	background-image: -gtk-gradient (linear,
+	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.045)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.045)));
+                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.045)));*/
 
     border-width: 0px 1px 1px 0px;
     border-radius: 0px;
@@ -1531,10 +1502,10 @@ column-header .button:hover {
     border-style: solid;
 	border-color: shade (@theme_bg_color, 1.00);
 	border-image: none;
-	background-image: -gtk-gradient (linear,
+	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.065)),
-                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.065)));
+                                     to   (mix(@theme_bg_color, @theme_mix_base, 0.065)));*/
 	color: @theme_fg_color;
 	text-shadow: none;
 }
@@ -1558,7 +1529,7 @@ row:selected:focused {
 }
 
 .cell {
-    color: @theme_fg_color;
+    color: shade (@theme_fg_color, 0.6);
     padding: 0px 2px;
     border-width: 0px;
 }

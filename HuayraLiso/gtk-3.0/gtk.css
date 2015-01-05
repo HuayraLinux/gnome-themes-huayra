@@ -70,9 +70,9 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color button_raised_gradient_color_b shade(@theme_bg_dark_color, 0.91);
 @define-color button_raised_linked_shadow alpha(@theme_base_color, 0.70);
 
-@define-color menu_bg_color #ff0000; /* shade(@theme_bg_color, 0.86); */
-@define-color menu_fg_color #FF0000; /* @theme_text_color; */
-@define-color menu_controls_color #ff0000; /* shade (@theme_fg_dark_color, 0.89); */
+@define-color menu_bg_color shade (@theme_bg_color,1.1);
+@define-color menu_fg_color alpha (@text_color, 0.75);
+@define-color menu_controls_color shade (@theme_fg_dark_color, 0.89); 
 @define-color menu_combobox_border #3277bf;
 @define-color menu_separator shade(@menu_bg_color, 0.95);
 
@@ -199,9 +199,10 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 
 @import url("gtk-widgets.css");
 @import url("menu_frame.css");
-/* @import url("scrollbar.css"); */
+@import url("scrollbar.css");
+
 /* @import url("sidebar.css"); */
-/* @import url("gtk-widgets-assets.css"); */
+@import url("gtk-widgets-assets.css");
 /* @import url("gnome-panel.css"); */
 
 /*  
@@ -211,7 +212,7 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 	@import url("tabs-2.css");
 	@import url("tabs-classic.css");
 */
-/*@import url("tabs-classic.css"); */
+@import url("tabs.css");
 
 /* 
 	There are 2 options for Unity panel:
