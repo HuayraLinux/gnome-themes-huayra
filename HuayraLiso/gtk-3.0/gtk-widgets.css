@@ -17,8 +17,8 @@
     -GtkMenu-vertical-padding: 2;  
     -GtkMenuBar-internal-padding: 3;
     -GtkMenuItem-arrow-scaling: 0.6;
-    -GtkNotebook-tab-overlap: 0;
-    -GtkNotebook-tab-curvature: 0;
+    -GtkNotebook-tab-overlap: 0px;
+    -GtkNotebook-tab-curvature:8px;
 	-GtkNotebook-initial-gap: 0;
 
     -GtkPaned-handle-size: 3;
@@ -53,7 +53,7 @@
 
     -WnckTasklist-fade-overlay-rect: 0;
 
-    border-width: 0px;
+    border-width: 1px;
 	/* engine: unico;*/
 /* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
@@ -1270,21 +1270,21 @@ GtkSwitch.trough {
 
     border-width: 0px;
     border-style: none;
-    border-radius: 0px;
+    border-radius: 4px;
     border-image: none;
 
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (@trough_bg_color_a),
-                                     to   (@trough_bg_color_a));
+                                     from (@selected_bg_color),
+                                     to   (@selected_bg_color));
 }
 
 GtkSwitch.trough:active {
     color: @theme_selected_fg_color;
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@trough_bg_color_b, 1.00)),
-                                     to   (shade(@trough_bg_color_b, 1.00))); 
+                                     from (@tooltip_bg_color),
+                                     to   (@tooltip_bg_color)); 
 }
 
 GtkSwitch.trough:insensitive {
@@ -1298,18 +1298,18 @@ GtkSwitch.trough:insensitive {
 
 GtkSwitch.slider {
     border-image: none;
-    border-width: 4px;
-    border-style: solid;
-    border-radius: 0px;
+    border-width: 6px;
+    border-style: none;
+    border-radius: 4px;
 
-	padding: 1px;
+	padding: 4px;
 
 	border-image: none;
 	border-color:  shade(@trough_bg_color_a, 1.00);
 
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (@theme_switch),
+                                 	from (@theme_switch),
                                      to   (@theme_switch));
 
 /*    -unico-switch-grip-color: alpha(@theme_base_color, 0.0); */

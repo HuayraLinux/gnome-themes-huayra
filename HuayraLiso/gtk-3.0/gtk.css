@@ -48,12 +48,12 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color theme_fg_color 			@fg_color;
 @define-color theme_tooltip_bg_color 	@tooltip_bg_color;
 @define-color theme_tooltip_fg_color 	@tooltip_fg_color;
-@define-color theme_tab_bg_color 		shade(@theme_bg_color, 0.68);
+@define-color theme_tab_bg_color 		shade (@theme_bg_color, 0.8);
 @define-color theme_shadow_color		alpha(#fff, 0.12);
 @define-color theme_check_bg_color		shade (@theme_bg_color, 0.90);
 @define-color theme_check_fg_color		shade (@theme_selected_bg_color, 0.70);
 @define-color theme_mix_base			#000;
-@define-color theme_switch				shade (@theme_bg_color, 0.55);
+@define-color theme_switch				shade (@bg_color, 1.2);
 
 /*****************[  StudioFlat-Light-Frame ]*********************/
 @define-color theme_bg_dark_color @bg_color;
