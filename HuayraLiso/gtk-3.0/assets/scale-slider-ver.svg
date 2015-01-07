@@ -188,8 +188,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="27.950001"
-     inkscape:cx="1.3225036"
-     inkscape:cy="7.4041816"
+     inkscape:cx="14.263961"
+     inkscape:cy="4.8950512"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -234,25 +234,13 @@
      transform="translate(-2.0000102,-16.000015)">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#e66d1e;fill-opacity:1;fill-rule:nonzero;stroke:#ffcfad;stroke-width:0.98214066;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffebdd;fill-opacity:1;fill-rule:nonzero;stroke:#ffb380;stroke-width:2.73224974;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path5387-8-1"
        sodipodi:cx="312.375"
        sodipodi:cy="290.25"
        sodipodi:rx="6.875"
        sodipodi:ry="6.875"
        d="m 319.25,290.25 a 6.875,6.875 0 1 1 -13.75,0 6.875,6.875 0 1 1 13.75,0 z"
-       transform="matrix(1.0859183,0,0,-1.0859183,-329.21368,339.18784)" />
-    <path
-       sodipodi:type="arc"
-       style="opacity:0.73999999;fill:#ff9955;fill-opacity:1;stroke:none"
-       id="path3818"
-       sodipodi:cx="5.6529517"
-       sodipodi:cy="10.847943"
-       sodipodi:rx="2.8622539"
-       sodipodi:ry="2.5402503"
-       d="m 8.5152056,10.847943 a 2.8622539,2.5402503 0 1 1 -5.7245078,0 l 2.8622539,0 z"
-       transform="matrix(2.1611923,0,0,-2.1611923,-2.2501608,47.092972)"
-       sodipodi:start="0"
-       sodipodi:end="3.1415927" />
+       transform="matrix(0.97180726,0,0,-0.97180726,-293.56825,306.09061)" />
   </g>
 </svg>

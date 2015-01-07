@@ -57,7 +57,7 @@ style "default" {
 
 	GtkPaned::handle-size = 2
 
-	GtkRange::trough-border = 2
+	GtkRange::trough-border = 0
 #	GtkRange::trough-under-steppers = TRUE
 	GtkRange::slider-width = 10 # Afecta tambien al ancho de las barras de scroll de las ventanas
 	GtkRange::stepper-size = 10
@@ -70,7 +70,7 @@ style "default" {
 	GtkScrollbar::has_secondary_backward_stepper	= 1
 	GtkScrollbar::has_secondary_forward_stepper	= 0
 
-	GtkScrolledWindow::scrollbar-spacing		= 2
+	GtkScrolledWindow::scrollbar-spacing		= 0
 	GtkScrolledWindow::scrollbars-within-bevel	= 0
 
 	GtkMenuBar::internal-padding = 2
@@ -190,11 +190,12 @@ style "liso-entry" {
 
 
 style "liso-notebook" {
-  bg[NORMAL]   = shade (1.05, @bg_color)
-  bg[ACTIVE]   = shade (0.95, @bg_color)
+  bg[NORMAL]   = shade (1.15, @bg_color)
+  bg[ACTIVE]   = shade (0.90, @bg_color)
 	engine "murrine" {
-		border_shades           = {0.80, 0.80}
-		contrast                = 0.0
+		border_shades           = {0.90, 0.90}
+		contrast                = 0.6
+		roundness = 8
 
 	}
 }
@@ -357,7 +358,7 @@ style "menu" {
 
 	bg[NORMAL]        = shade(1.3, @base_color) #shade (1.4, @selected_bg_color)
 	bg[PRELIGHT]      = "#00ff00" #shade(1.3, @selected_bg_color)
-	bg[SELECTED]      = shade(1.15, @selected_bg_color)
+	bg[SELECTED]      = shade(0.97, @selected_bg_color)
     bg[ACTIVE]      = @selected_bg_color #@tooltip_bg_color
 
 	fg[NORMAL]		= shade(0.5, @selected_fg_color)
@@ -414,13 +415,13 @@ style "scrollbar-horizontal"
     fg[INSENSITIVE]     = shade (1.00, @base_color)
 	
 	engine "murrine" {
-        roundness               = 0
+        roundness               = 4
         gradient_shades			= {1.0,1.0,1.0,1.0}
         highlight_shade			= 1.0
         glow_shade              = 1.0
         prelight_shade          = .75
         gradient_colors         = FALSE
-        lightborder_shade       = 1.0
+        lightborder_shade       = 0.0
         lightborderstyle        = 0
         trough_shades           = {1.00, 1.00}
         border_shades           = {1.32, 1.32}
@@ -440,13 +441,13 @@ style "scrollbar-vertical" {
     fg[INSENSITIVE]     = shade (1.00, @base_color)
 	
 	engine "murrine" {
-        roundness               = 0
+        roundness               = 4
         gradient_shades			= {1.0,1.0,1.0,1.0}
         highlight_shade			= 1.0
         glow_shade              = 1.0
         prelight_shade          = .75
         gradient_colors         = FALSE
-        lightborder_shade       = 1.0
+        lightborder_shade       = 0.0
         lightborderstyle        = 0
         trough_shades           = {1.00, 1.00}
         border_shades           = {1.32, 1.32}

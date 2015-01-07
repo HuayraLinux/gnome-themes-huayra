@@ -6,7 +6,7 @@
     -GtkRange-slider-width: 8;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-border: 1;
+    -GtkRange-trough-border: 0;
 
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
@@ -15,7 +15,7 @@
 }
 
 .scrollbar.trough.vertical {
-    border-radius: 0px;
+    border-radius: 4px;
 	border-width: 0px;
 
     background-image: -gtk-gradient (linear, left top, right top,
@@ -25,7 +25,7 @@
 }
 
 .scrollbar.trough.horizontal {
-    border-radius: 0px;
+    border-radius: 4px;
 	border-width: 0px;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -37,7 +37,7 @@
 .scrollbar.slider,
 .scrollbar.button {
     border-width: 		0px;
-    border-radius: 		0px;
+    border-radius: 		4px;
 	background-color: 	mix(@theme_bg_color, @theme_mix_base, 0.25);
 	background-image: none;
 }
@@ -48,7 +48,7 @@
 }
 
 .scrollbar.slider.vertical {
-	border-radius: 2px;
+	border-radius: 4px;
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@tooltip_bg_color, 1.05)),
                                      to   (shade (@tooltip_bg_color, 1.05)));
@@ -62,7 +62,7 @@
 }
 
 .scrollbar.slider.horizontal {
-	border-radius: 0px;
+	border-radius: 4px;
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@selected_bg_color, 1.05)),
                                      to   (shade (@selected_bg_color, 1.05)));
