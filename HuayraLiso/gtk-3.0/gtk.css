@@ -12,12 +12,12 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 
 /* Default color scheme */
 @define-color base_color #FFFFFF;
-@define-color fg_color #f4f3f3;
+@define-color fg_color #404040; /* #f4f3f3;*/
 @define-color tooltip_fg_color #ffffff;
 @define-color selected_bg_color #ffb380;
 @define-color selected_fg_color #eeeeee;
 @define-color text_color #1a1a1a;
-@define-color bg_color #efefef;
+@define-color bg_color #efefef; 
 @define-color tooltip_bg_color #4ECAE9;
 
 
@@ -70,7 +70,7 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color button_raised_gradient_color_b shade(@theme_bg_dark_color, 0.91);
 @define-color button_raised_linked_shadow alpha(@theme_base_color, 0.70);
 
-@define-color menu_bg_color shade (@theme_bg_color,1.1);
+@define-color menu_bg_color shade (@theme_bg_color,1.2);
 @define-color menu_fg_color alpha (@text_color, 0.75);
 @define-color menu_controls_color shade (@theme_fg_dark_color, 0.89); 
 @define-color menu_combobox_border #3277bf;
@@ -198,7 +198,8 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
 @import url("gtk-widgets.css");
-@import url("menu_frame.css");
+@import url("menu_frame.css"); 
+/* @import url("menu.css");*/
 @import url("scrollbar.css");
 
 /* @import url("sidebar.css"); */

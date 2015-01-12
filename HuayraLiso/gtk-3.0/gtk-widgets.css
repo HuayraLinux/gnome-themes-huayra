@@ -53,8 +53,8 @@
 
     -WnckTasklist-fade-overlay-rect: 0;
 
-    border-width: 1px;
-	/* engine: adwaita;*/
+    border-width: 0px;
+/*	engine: unico; */
 /* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
 /*
@@ -135,14 +135,23 @@ GtkWindow {
 /*********
  * label *
  *********/
-GtkLabel,
+
+GtkBox {
+	background-color: transparent; /* las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
+}
+
+GtkLabel {
+	background-color: transparent;
+}
+
 GtkLabel:insensitive {
     background-color: transparent;
 }
 
+
 .view.rubberband,
 .rubberband {
-    background-color: alpha (@theme_selected_bg_color, 0.35);
+    background-color: transparent; /* alpha (@theme_selected_bg_color, 0.35); */
 
     border-width: 1px;
     border-style: solid;
@@ -214,7 +223,7 @@ GtkComboBox .separator {
 
 GtkStatusbar {
     padding: 5px;
-    color: @theme_fg_color;
+    color: shade(@theme_fg_color, 0.5);
     -GtkStatusbar-shadow-type: none;
 }
 
@@ -335,6 +344,8 @@ GtkStatusbar {
 .spinbutton.button {
     color: @internal_element_color;
 }
+
+
 
 
 .spinbutton.button:prelight,
@@ -579,6 +590,8 @@ GtkScrolledWindow.frame {
 /***********
  * Buttons *
  ***********/
+
+
 .button,
 .button.menuitem.menubar {
     padding: 5px 5px;
@@ -599,21 +612,24 @@ GtkScrolledWindow.frame {
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.10)),
                                      to   (mix(@theme_bg_color, @theme_mix_base, 0.10)));*/
+	background-color: transparent;
+	background-image: none;
 
-    color:  shade (@theme_fg_color, 0.6); 
+    color:  shade (@theme_fg_color, 0.6); /* texto de los botones Aceptar/Cancelar y cabeceras de treeview */
 	text-shadow: none; 
 }
 
 .button:hover {
-
+	background-color: @theme_selected_bg_color;
+	background-image: none; /*
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_selected_bg_color, @theme_bg_color, 0.18)),
-                                     to   (mix(@theme_selected_bg_color, @theme_bg_color, 0.18)));
+                                     to   (mix(@theme_selected_bg_color, @theme_bg_color, 0.18))); */
 
     border-color: mix(@theme_selected_bg_color, @theme_bg_color, 0.18);
     
-	color: 	@theme_selected_fg_color; /*shade (@theme_fg_color, 0.6); */
+	color: shade (@theme_fg_color, 0.6);
 	text-shadow: none; /* 0px 1px @theme_selected_shadow_color;*/
 }
 
@@ -627,7 +643,7 @@ GtkScrolledWindow.frame {
 
     border-color: shade(@theme_selected_bg_color, 1.00);
 
-    color: 	@theme_selected_fg_color; 
+    color: @theme_selected_fg_color; 
 	text-shadow: none; 
 
 
@@ -792,7 +808,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 }
 
 .toolbar.toolbar {
-	background-color:  shade (@theme_bg_color, 0.97);
+	background-color:  transparent; /* shade (@theme_bg_color, 0.97);*/
 
 }
 
@@ -828,7 +844,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
     border-style: none;    
     border-color: transparent;
 	padding: 4px 2px;
-	background-color: @theme_bg_color; /* TEST */
+	background-color:  @theme_bg_color;  
 
     -GtkWidget-window-dragging: false;
     -GtkToolbar-button-relief: normal;
@@ -861,7 +877,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
     box-shadow: none;
 
     background-image: none;
-    background-color: transparent;
+    background-color: transparent; 
     padding: 8px; /* TEST */
 
 }
@@ -1070,7 +1086,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 .toolbar .raised .button GtkLabel,
 .toolbar .raised.button GtkLabel {
     icon-shadow: none;
-	color: #ffff00; /* shade(@theme_fg_dark_color, 0.90); */
+	color: shade(@theme_fg_dark_color, 0.90); 
 	text-shadow: 0px 1px @theme_shadow_dark_color;
 }
 
@@ -1185,14 +1201,15 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar .button:active:hover {
-    background-image: -gtk-gradient (linear,
+	background-image: none;
+/*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_color, 0.70)),
-                                     to   (shade (@theme_bg_color, 0.70)));
+                                     to   (shade (@theme_bg_color, 0.70)));*/
 }
 
 .inline-toolbar.toolbar .button:hover {
-    background-color: alpha(@theme_base_color, 0.0);
+    background-color: transparent; /* alpha(@theme_base_color, 0.0);*/
     background-image: none;
 }
 
@@ -1400,16 +1417,11 @@ GtkIconView.view.cell:selected:focused {
     border-color: shade(@theme_selected_bg_color, 1.04);
     border-image: none;
 
-/*
-	-unico-focus-fill-color: alpha (@theme_base_color, 0.0);
-	-unico-focus-border-color: alpha (@theme_base_color, 0.0);
-    -unico-focus-border-radius: 0;
-*/
 	text-shadow: 1px 0px @theme_selected_shadow_color;  
 }
 
 .view {
-    background-color: @theme_base_color;
+    background-color: @theme_base_color; /* Fondo de los paneles de vista de arbol y edicion de texto en Bluefish */
     color: @theme_text_color;
     border-radius: 0px;
 	text-shadow: none;
@@ -1430,7 +1442,7 @@ GtkIconView.view.cell:selected:focused {
 
 .view:active, 
 .view *:active {
-    background-color: shade(@theme_bg_color, 0.915);
+    background-color: shade(@theme_bg_color, 0.915); 
     color: @theme_text_color;
 	text-shadow: none;
 
@@ -1444,6 +1456,7 @@ GtkTreeView {
     -GtkWidget-focus-padding: 1;
 
 }
+
 
 GtkTreeView row:nth-child(odd),
 GtkTreeView row:nth-child(odd):hover {
@@ -1467,6 +1480,8 @@ column-header .button:active:hover {
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.09)),
                                      to   (mix(@theme_bg_color, @theme_mix_base, 0.09)));*/
+	background-image: none;
+	background-color: shade(@selected_bg_color, 0.5);
 
     border-width: 0px 1px 1px 0px;
     border-radius: 0px;
@@ -1480,6 +1495,7 @@ column-header .button:active:hover {
 column-header .button *:active,
 column-header .button *:hover:active {
 	color: @theme_text_color;
+	background-color: #ff0000;
 	/* text-shadow: 0px 1px @theme_selected_shadow_color; */
 }
 
@@ -1488,7 +1504,8 @@ column-header .button {
 
     -GtkWidget-focus-line-width: 0; 
 
-
+	background-image: none;
+	background-color: shade(@theme_bg_color, 0.85);
 	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.045)),
@@ -1508,6 +1525,8 @@ column-header .button:hover {
     border-style: solid;
 	border-color: shade (@theme_bg_color, 1.00);
 	border-image: none;
+	background-color: @selected_bg_color;
+	background-image: none;
 	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.065)),
@@ -1542,7 +1561,7 @@ row:selected:focused {
 
 .cell:hover {
 	/* Poner el mismo fondo que .view para evitar mouse-over en listas */
-	background-color: @theme_base_color;
+	background-color: transparent; /* @theme_base_color; */
 
 }
 
@@ -1644,7 +1663,7 @@ GtkCalendar.highlight {
 }
 
 .dim-label {
-    color: mix (@theme_fg_color, @theme_bg_color, 0.30);	
+    color: mix (@theme_fg_color, @theme_bg_color, 0.30);
 }
 
 .dim-label:focused {
@@ -1918,7 +1937,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active {
 
 MarlinViewWindow .menubar.toolbar GtkContainer,
 MarlinViewWindow .primary-toolbar GtkContainer {
-	color: #ff0000; /* @theme_fg_dark_color; */
+	color:  @theme_fg_dark_color;
 }
 
 

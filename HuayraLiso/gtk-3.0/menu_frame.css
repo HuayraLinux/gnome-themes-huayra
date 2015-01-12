@@ -5,13 +5,13 @@
 .menu {
 	/* menu contextual */
     background-image: none;
-    background-color: @menu_bg_color;
-	color: #00ff00; 
-    padding: 6px; /* TEST */
-	border-width: 0px; /* TEST */
+    background-color: shade(@menu_bg_color, 1.2);
+	
+    padding: 0px; /* TEST */
+	border-width: 1px; /* TEST */
 	border-style: solid;
-	border-radius: 4px;
-	border-color: shade(@menu_bg_color, 0.97);
+	border-radius: 6px;
+	border-color: shade(@menu_bg_color, 0.6);
 	border-image: 	none;
 
 }
@@ -27,17 +27,16 @@ DbusmenuGtkMenu .menu,
 .toolbar .primary-toolbar .menu,
 .primary-toolbar .button .menu,
 .primary-toolbar .menu {
-	/* menu-dark en menubar */
+	/* menu principal y submenues en menubar */
     background-image: none;
-    background-color: shade (@theme_bg_dark_color, 1.20);
+    background-color:  shade (@theme_bg_dark_color, 1.60); /* fixeando*/
 	
     padding: 8px 0px;
-	border-style: none;
+	border-style: solid;
 	border-width: 1px;
-	border-radius: 0px;
+	border-radius: 6px;
+	border-color: shade(@menu_bg_color, 0.6);
 
-	border-color: shade(@theme_bg_dark_color, 0.97);
-	border-image: 	none;
 }
 
 .toolbar .menu {
@@ -76,9 +75,6 @@ DbusmenuGtkMenu .menu,
 .menubar {
     -GtkWidget-window-dragging: true;
 
-/*	-unico-inner-stroke-bottom-color: transparent;
-	-unico-inner-stroke-width: 0px;
-*/
 
     /* linea 3D (clara) */
     border-width: 0px 0px 1px 0px;
@@ -86,7 +82,7 @@ DbusmenuGtkMenu .menu,
     border-radius: 0px;    
     border-color: shade (@theme_bg_dark_color, 1.00);
 	padding: 8px; /* TEST */
-    background-color: shade (@theme_bg_dark_color, 1.00);
+    background-color:  shade (@theme_bg_dark_color, 1.00); /* Fondo de las barras de menu principal */
 
 }
 
@@ -96,6 +92,7 @@ DbusmenuGtkMenu .menu,
 .menubar.menuitem {
     border-radius: 0px;
     border-width: 1px 1px 0 1px;
+	
 }
 
 /************
@@ -109,6 +106,7 @@ DbusmenuGtkMenu .menu,
 
     color: @menu_fg_color;
     text-shadow: none;
+	background-color: transparent; /* Fondo del texto de menu principal y submenues */
 }
 
 
