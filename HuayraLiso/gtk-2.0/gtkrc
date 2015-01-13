@@ -107,11 +107,11 @@ style "default" {
 	fg[INSENSITIVE]   = darker (@bg_color)
 #	fg[ACTIVE]        = shade (1.2, @fg_color)
 
-	fg[NORMAL]		= shade(0.6, @selected_fg_color)
+	fg[NORMAL]		= shade(0.7, @selected_fg_color)
 #	fg[NORMAL]		= shade(0.5, @selected_fg_color)
 	fg[SELECTED]      = shade( 0.9, @selected_fg_color)
-    fg[ACTIVE]      = shade (0.5, @selected_fg_color)
-	fg[PRELIGHT] 	= shade (0.3, @selected_fg_color)
+    fg[ACTIVE]      = shade (0.6, @selected_fg_color)
+	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
 
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
@@ -134,10 +134,10 @@ engine "murrine"
 		cellstyle = 0
 		glazestyle          = 4 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,1.0,1.0,1.0} 
-		progressbarstyle    = 2
+		progressbarstyle    = 0
 		focus_color         = "#FFB380" #naranjita claro
-		glowstyle	    	= 4
-		glow_shade          = 1.8
+		glowstyle	    	= 1
+		glow_shade          = 1.0 # valores mayores de 1 hacen que se vea un brillo sobre los controles cuando estan seleccionados. Lo mantengo asi para compatibilidad con estilo Flat
 		focusstyle			= 3
 		handlestyle	= 0 
 		highlight_shade     = 1.0
@@ -190,8 +190,12 @@ style "liso-entry" {
 
 
 style "liso-notebook" {
-  bg[NORMAL]   = shade (1.15, @bg_color)
-  bg[ACTIVE]   = shade (0.90, @bg_color)
+
+	fg[ACTIVE] = shade (1.5, @bg_color)
+	fg[SELECTED] = shade (1.7, @bg_color)
+
+	bg[NORMAL]   = shade (1.15, @bg_color)
+	bg[ACTIVE]   = shade (0.90, @bg_color)
 	engine "murrine" {
 		border_shades           = {0.90, 0.90}
 		contrast                = 0.6
@@ -201,9 +205,11 @@ style "liso-notebook" {
 }
 
 style "liso-notebook-layout" {
-  bg[NORMAL]   = shade (1.0, @bg_color)
-  bg[ACTIVE]   = shade (1.0, @bg_color)
-  fg[NORMAL] = shade(1.4, @bg_color)
+	bg[NORMAL]   = shade (1.0, @bg_color)
+	bg[ACTIVE]   = shade (1.0, @bg_color)
+	fg[NORMAL] = shade(1.4, @bg_color)
+
+	
 	engine "murrine" {
 		border_shades           = {1.00, 1.00}
 		contrast                = 0.0
@@ -291,8 +297,8 @@ style "botones-toolbar" {
 	bg[INSENSITIVE]	= shade (0.6, @bg_color)
 	
 	fg[NORMAL] = shade (0.5, @fg_color) #Color de los textos en los botones del toolbar
-	fg[PRELIGHT] = "#000000"
-	fg[ACTIVE] = @fg_color
+	fg[PRELIGHT] = shade( 1.2, @fg_color)
+	fg[ACTIVE] = shade(1.1,@fg_color)
 
 	engine "murrine" {
 		separatorstyle          = 0
@@ -460,11 +466,12 @@ style "botones-liso" {
     xthickness = 4
     ythickness = 4
 
-	bg[NORMAL] = "#F0F0F0" #shade(1.0, @bg_color) #F1F1F1"
+	bg[NORMAL] =  @bg_color #F1F1F1"
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
-	bg[ACTIVE] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(0.9, @selected_bg_color)
 	bg[SELECTED] = shade(0.8, @bg_color)
-	bg[PRELIGHT] = shade(1.12, @selected_bg_color)
+	bg[PRELIGHT] = @selected_bg_color
+
 	engine "murrine" {
 		border_shades           = {1.00, 1.00}
 		contrast                = 0.3
@@ -531,17 +538,21 @@ style "treeview" {
 
 # The almost useless progress bar style
 style "progressbar" {
-	xthickness = 1
-	ythickness = 1
+	xthickness = 0
+	ythickness = 0
+	fg[ACTIVE] = @fg_color
+	fg[SELECTED] = @bg_color
+	fg[PRELIGHT]      = @fg_color
+	engine "murrine" {
 
-	fg[PRELIGHT]      = @selected_fg_color
-
-	engine "clearlooks" {
-		# Explicitly set the radius for the progress bars inside menu items.
-		radius = 3.0
-
-		hint = "progressbar"
+		contrast= 0.9
 	}
+#	engine "clearlooks" {
+		# Explicitly set the radius for the progress bars inside menu items.
+#		radius = 3.0
+
+#		hint = "progressbar"
+#	}
 }
 
 style "iceweasel" {

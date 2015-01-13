@@ -69,6 +69,7 @@
 
     background-color: shade (@theme_bg_color, 0.97);
 	background-image: none;
+	color: #ffff00;
 }
 
 .notebook tab.right {

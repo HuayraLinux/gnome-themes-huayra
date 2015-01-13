@@ -6,22 +6,22 @@ style "panel"
 {
 
 	font_name = "Asap regular 10"
-	bg[SELECTED]	= shade (1.1, @selected_bg_color) # Makes selected items dark.
-	bg[NORMAL]	= "#404040" #"#314347" # Color de fondo del panel
-	bg[PRELIGHT]	= shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
+
+	bg[SELECTED]	= @tooltip_bg_color # Makes selected items dark.
+	bg[NORMAL]	= "#3c3c3c" # Makes panel background dark.
+	bg[PRELIGHT]	= shade (0.65, @selected_bg_color) # Makes panel button prelight dark.
 	bg[ACTIVE]	= shade (0.60, @bg_color) # Makes active buttons dark.
 	bg[INSENSITIVE]	= "#5c3C3C"
-	fg[NORMAL]	= "#F0F0F0" # Makes panel text light.
+	fg[NORMAL]	= "#E6E6E6" # Makes panel text light.
 	fg[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
 	fg[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
 	fg[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	fg[INSENSITIVE]	= "#666666" # Color for insensitive text.
-	text[NORMAL]	= "#c0c0c0"
+	text[NORMAL]	= "#101010"
 	text[PRELIGHT]	= @selected_fg_color  # Makes prelighted text colored.
 	text[SELECTED]	= @selected_fg_color  # Makes prelighted text colored.
 	text[ACTIVE]	= @selected_fg_color  # Makes active text colored.
 	text[INSENSITIVE]	= "#666666"
-
 
 	engine "murrine" {
 		animation           = TRUE
@@ -29,10 +29,10 @@ style "panel"
 		contrast            = 0.0
 		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,1.0,1.0, 1.0} 
-		progressbarstyle    = 2
+		progressbarstyle    = 0
 		#focus_color         = "#f0f0f0" #"#69aef5"
-		glowstyle	    	= 3
-		glow_shade          = 1.2
+		glowstyle	    	= 1
+		glow_shade          = 1.0
 		handlestyle			= 1
 		highlight_shade     = 0.0
 		lightborder_shade   = 0.0

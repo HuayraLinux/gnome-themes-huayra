@@ -5,10 +5,10 @@
 .menu {
 	/* menu contextual */
     background-image: none;
-    background-color: @menu_bg_color;
+    background-color:  shade(@menu_bg_color, 0.6); 
 	
-    padding: 5px 0px;
-	border-style: solid;
+    padding: 0px 0px;
+	border-style: none;
 	border-width: 1px;
 	border-radius: 0px;
 
@@ -31,7 +31,7 @@
 .primary-toolbar .menu.button:active:insensitive,
 .primary-toolbar .menu.button:insensitive,
 .primary-toolbar .menu.button {
-    background-color: shade (@theme_bg_dark_color, 1.07);
+    background-color: #ffff00; /* shade (@theme_bg_dark_color, 1.07);*/
     background-image: none;
     border-radius: 0;
     border-style: none;
@@ -47,16 +47,13 @@
 .menubar {
     -GtkWidget-window-dragging: true;
 
-	-unico-inner-stroke-bottom-color: transparent;
-	-unico-inner-stroke-width: 0px;
-
     /* linea 3D (clara) */
     border-width: 0px 0px 1px 0px;
     border-style: solid;
     border-radius: 0px;    
     border-color:  shade(@theme_bg_dark_color, 1.00);
 
-    background-color: shade (@theme_bg_dark_color, 1.00);
+    background-color: #ff00ff; /* shade (@theme_bg_dark_color, 1.00); */
 }
 
 
@@ -67,8 +64,7 @@
 .menuitem {
 	/* contextual menu-item */
     -GtkMenuItem-arrow-scaling: 0.5;
-    -unico-menuitem-arrow-color: @menu_controls_color;
-	border-radius: 0px;
+ 	border-radius: 0px;
     padding: 3px 4px;
 
     color: #ff0000; /*@menu_fg_color; */
@@ -85,7 +81,7 @@
 }
 
 GtkTreeMenu.menu {
-    background-color: @menu_bg_color;
+    background-color: #fff00f; /* @menu_bg_color;*/
 
 }
 
@@ -112,8 +108,8 @@ GtkComboBox .menuitem *:hover {
                                      from (shade (@theme_selected_bg_color, 1.0)),
                                      to   (shade (@theme_selected_bg_color, 1.0)));
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
-    -unico-bullet-color: @theme_selected_fg_color;
+   	text-shadow:none;
+    
 }
 
 .toolbar .raised .button .menuitem *:hover, /* menuitem opciones visualizacion nautilus  */
@@ -127,7 +123,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menu .menuitem:hover {
     /* color: @menu_fg_color; */
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+   	text-shadow:none;
 }
 
 .menuitem:insensitive,
@@ -183,7 +179,7 @@ GtkTreeMenu .menuitem *:prelight,
 .primary-toolbar .menuitem GtkCalendar.button,
 .primary-toolbar .menuitem GtkCalendar.header,
 .primary-toolbar .menuitem GtkCalendar.view {
-    background-color: @theme_bg_dark_color;
+    background-color: #ff00ff; /* @theme_bg_dark_color;*/
     background-image: none;
     border-radius: 0;
     border-style: solid;
@@ -217,7 +213,7 @@ GtkTreeMenu .menuitem *:prelight,
 }
 */
 .menubar .menuitem GtkScale.trough {
-    background-color: @theme_bg_dark_color;
+    background-color: #ff0000; /* @theme_bg_dark_color; */
     background-image: none;
 
 	border-color: shade(@theme_bg_dark_color, 0.97);
