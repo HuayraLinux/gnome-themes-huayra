@@ -132,7 +132,7 @@ engine "murrine"
 		colorize_scrollbar  = TRUE
 		contrast            = 0.0 # Elimina color de bordes en toolbar, menubar y botones
 		cellstyle = 0
-		glazestyle          = 4 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
+		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,1.0,1.0,1.0} 
 		progressbarstyle    = 0
 		focus_color         = "#FFB380" #naranjita claro
@@ -373,7 +373,9 @@ style "menu" {
 	fg[PRELIGHT] 	= shade (1.5, @selected_fg_color)
 	engine "murrine" {
 		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
-		roundness		    = 1 # 0 = squared 
+		glowstyle = 1
+		glow_shade = 1.0
+		roundness		    = 3 # 0 = squared 
 	}
 }
 
@@ -470,16 +472,33 @@ style "botones-liso" {
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
 	bg[ACTIVE] = shade(0.9, @selected_bg_color)
 	bg[SELECTED] = shade(0.8, @bg_color)
-	bg[PRELIGHT] = @selected_bg_color
+	bg[PRELIGHT] = shade(1.05, @selected_bg_color)
 
 	engine "murrine" {
-		border_shades           = {1.00, 1.00}
-		contrast                = 0.3
+		border_shades           = {0.90, 0.90}
+		contrast                = 0.0
+	}
+}
+
+style "botones-path" {
+#Estilo para los botones de la caja de path en "Abrir Archivo" en Caja.
+    xthickness = 4
+    ythickness = 4
+
+	bg[NORMAL] =  @bg_color #F1F1F1"
+	bg[INSENSITIVE] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(1.2, @tooltip_bg_color)
+	bg[SELECTED] = shade(0.8, @bg_color)
+	bg[PRELIGHT] = shade(1.05, @selected_bg_color)
+
+	engine "murrine" {
+		border_shades           = {0.90, 0.90}
+		contrast                = 0.0
 	}
 }
 
 style "botones-combobox" {
-#Estilo para todos los botones de la interfaz
+#Estilo para los botones de combobox
     xthickness = 3
     ythickness = 3
 
@@ -487,11 +506,11 @@ style "botones-combobox" {
 	bg[INSENSITIVE] = shade(1.1, @bg_color)
 	bg[ACTIVE] = shade(1.0, @bg_color)
 	bg[SELECTED] = shade(1.1, @bg_color)
-	bg[PRELIGHT] = shade(1.4, @bg_color)
+	bg[PRELIGHT] = shade(1.2, @selected_bg_color)
 
 	fg[NORMAL] = shade(0.5, @fg_color)
 	fg[ACTIVE] = shade(0.6, @fg_color)
-	fg[PRELIGHT] = shade(0.9, @fg_color)
+	fg[PRELIGHT] = shade(0.9, @selected_bg_color)
 	fg[SELECTED] = shade(0.7, @fg_color)
 
 	text[NORMAL]      = @text_color
@@ -517,6 +536,11 @@ style "separator_menu_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 7
+	engine "murrine" {
+		gradient_shades			= {1.0,1.0,1.0,1.0}
+        highlight_shade			= 1.0
+        glow_shade              = 1.0
+	}
 }
 
 style "frame_title" {
@@ -527,11 +551,15 @@ style "frame_title" {
 
 style "treeview" {
 	bg[NORMAL] = @bg_color
-	bg[SELECTED] = @bg_color
+	bg[SELECTED] = @selected_bg_color
 	bg[ACTIVE] = @bg_color
 
-	engine "clearlooks" {
-		hint = "treeview"
+	engine "murrine" {
+		roundness = 3
+		contrast=0.0
+        highlight_shade			= 1.0
+        glow_shade              = 1.0
+		border_shades			= {1.0, 1.0}
 	}
 	
 }
@@ -567,9 +595,16 @@ style "iceweasel" {
 style "treeview_header" = "toolbar" {
 	xthickness = 2
 	ythickness = 1
+	bg[NORMAL] = shade(1.5, @tooltip_bg_color)
+	bg[ACTIVE] = @selected_bg_color
+	bg[PRELIGHT] = shade(1.1, @selected_bg_color)
 
-	engine "clearlooks" {
-		hint = "treeview-header"
+	engine "murrine" {
+		contrast = 0.0
+		roundness = 3
+        highlight_shade			= 1.0
+        glow_shade              = 1.0
+		border_shades			= {1.0, 1.0}
 	}
 }
 
@@ -679,7 +714,7 @@ widget_class "*<GtkNotebook>*<GtkScrolledWindow>" style "liso-notebook-bg"
 widget_class "*<GtkButton>" style "botones-liso" #Botones redondeados
 widget_class "*<GtkNotebook>" style "liso-notebook"
 widget_class "*<GtkStatusbar>*" style "statusbar"
-
+widget_class "*<GtkToggleButton>" style "botones-path"
 widget_class "*<GtkComboBoxEntry>*" style "wider"
 widget_class "*<GtkCombo>*" style "wide"
 widget_class "*<GtkOptionMenu>*" style "botones-combobox" # Spinbuttons de Audacity
@@ -733,7 +768,10 @@ widget "*.nautilus-extra-view-widget" style : highest "botones-liso"
 # Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
 widget_class "*.<GtkComboBox>.<GtkCellView>" style "comboboxentry" #"text_is_fg_color_workaround"
 
-widget_class "*.<GtkComboBox>.<GtkToggleButton>" style "botones-combobox" # Color para boton de listas desplegables ComboBox
+widget_class "*.<GtkComboBox>.<GtkToggleButton>" style "botones-path" # Color para boton de listas desplegables ComboBox
+
+widget_class "*.<GtkPathBar>.<GtkToggleButton>" style "botones-path" # Botones de path en Caja
+
 widget_class "*<GtkTable>" style "default" # inkscape 
 widget_class "*<gtkmm__GtkFrame>.*"	style "botones-combobox" #"default" # inkscape label de objetos
 

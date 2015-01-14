@@ -64,9 +64,7 @@ DbusmenuGtkMenu .menu,
     border-width: 1px;
 
     border-image: none;
-/*    -unico-glow-radius: 0;
-    -unico-inner-stroke-width: 0;
-    -unico-outer-stroke-width: 0; */
+
 }
 
 /***********
@@ -250,7 +248,7 @@ DbusmenuGtkMenu .menuitem *:insensitive,
 .primary-toolbar .menuitem:insensitive,
 .primary-toolbar .menuitem *:insensitive {
 	/* dark menu insensitive */
-    color: shade (@theme_fg_color, 0.7); /* TEST mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);*/
+    color: alpha (@theme_fg_color, 0.3);  TEST mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);*/
     text-shadow: none;
 }
 
@@ -289,9 +287,7 @@ DbusmenuGtkMenu .menuitem *:insensitive,
                                            from (shade (@theme_bg_dark_color, 0.9)),
                                            to (shade (@theme_bg_dark_color, 0.9))) 1;
 
-    -unico-outer-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (shade (@theme_bg_dark_color, 0.98)),
-                                                 to (shade (@theme_bg_dark_color, 1.1)));;
+    
 }
 
 .menubar .menuitem GtkScale.trough {
@@ -321,7 +317,7 @@ Genericmenuitem .menuitem .accelerator:insensitive,
 DbusmenuGtkMenu .menuitem .accelerator:insensitive,
 .menubar .menuitem .accelerator:insensitive,
 .primary-toolbar .menuitem .accelerator:insensitive {
-    color: shade (@theme_fg_color, 0.8); /* alpha (mix (@theme_fg_dark_color, @theme_bg_dark_color, 0.4), 0.8);*/ 
+    color: alpha (@theme_fg_color, 0.4); /* alpha (mix (@theme_fg_dark_color, @theme_bg_dark_color, 0.4), 0.8);*/ 
     text-shadow: none;
 }
 
