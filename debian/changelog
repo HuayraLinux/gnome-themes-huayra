@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.36) torbellino; urgency=medium
+
+  * Se agregaron engines de gtk2 como dependencias de los temas.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 20 Jan 2015 12:24:16 -0300
+
 gnome-themes-huayra (2.35) torbellino; urgency=medium
 
   * Mas correcciones en Huayra Liso (Claudio "malefico" Andaur)

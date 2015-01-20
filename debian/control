@@ -30,7 +30,7 @@ Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  (dummy package)
 
 Package: huayra-themes-accesible
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -40,7 +40,7 @@ Description: Tema Accesible de gtk2, gtk3, metacity y gnome-shell para Huayra GN
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Accesible.
 
 Package: huayra-themes-frescoverde
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -50,7 +50,7 @@ Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para Huayra
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Fresco Verde.
 
 Package: huayra-themes-limbo
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -60,7 +60,7 @@ Description: Tema Limbo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Li
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Limbo.
 
 Package: huayra-themes-mayo
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -70,7 +70,7 @@ Description: Tema Mayo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Lin
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Mayo.
 
 Package: huayra-themes-violeta
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
@@ -80,7 +80,7 @@ Description: Tema Violeta de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Violeta.
 
 Package: huayra-themes-liso
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
