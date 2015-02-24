@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.37) torbellino; urgency=medium
+
+  * Corrección de panel.rc que soluciona problemas del tema en ventana 
+Crear Lanzador (Claudio "malefico" Andaur).
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 24 Feb 2015 10:13:29 -0300
+
 gnome-themes-huayra (2.36) torbellino; urgency=medium
 
   * Se agregaron engines de gtk2 como dependencias de los temas.
