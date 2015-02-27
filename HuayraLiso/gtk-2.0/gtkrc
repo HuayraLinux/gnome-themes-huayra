@@ -363,7 +363,7 @@ style "menu" {
 	ythickness = 3
 
 	bg[NORMAL]        = shade(1.3, @base_color) #shade (1.4, @selected_bg_color)
-	bg[PRELIGHT]      = "#00ff00" #shade(1.3, @selected_bg_color)
+	bg[PRELIGHT]      = shade(1.3, @selected_bg_color)
 	bg[SELECTED]      = shade(0.97, @selected_bg_color)
     bg[ACTIVE]      = @selected_bg_color #@tooltip_bg_color
 

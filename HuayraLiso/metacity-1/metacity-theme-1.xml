@@ -174,13 +174,13 @@
 
   <button function="menu" state="prelight">
     <draw_ops>
-      <image filename="menu-activo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+      <image filename="menu-highlight.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="menu-activo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+      <image filename="menu-activo-presionado.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
     </draw_ops>
   </button>
 
@@ -315,7 +315,7 @@
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="menu-inactivo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+      <image filename="menu-activo-presionado.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
     </draw_ops>
   </button>
 

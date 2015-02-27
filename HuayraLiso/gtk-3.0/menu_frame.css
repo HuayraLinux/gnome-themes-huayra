@@ -248,7 +248,7 @@ DbusmenuGtkMenu .menuitem *:insensitive,
 .primary-toolbar .menuitem:insensitive,
 .primary-toolbar .menuitem *:insensitive {
 	/* dark menu insensitive */
-    color: alpha (@theme_fg_color, 0.3);  TEST mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);*/
+    color: alpha (@theme_fg_color, 0.3);  /* TEST mix(@theme_fg_dark_color, @theme_bg_dark_color, 0.40);*/
     text-shadow: none;
 }
 
