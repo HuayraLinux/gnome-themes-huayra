@@ -1,7 +1,16 @@
+gnome-themes-huayra (2.38) torbellino; urgency=medium
+
+  * Correcciones en Huayra Liso:
+    - Bordes de menúes.
+    - Iconos faltantes en ventanas.
+    (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Fri, 27 Feb 2015 15:38:02 -0300
+
 gnome-themes-huayra (2.37) torbellino; urgency=medium
 
   * Corrección de panel.rc que soluciona problemas del tema en ventana 
-Crear Lanzador (Claudio "malefico" Andaur).
+    Crear Lanzador (Claudio "malefico" Andaur).
 
  -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 24 Feb 2015 10:13:29 -0300
 
