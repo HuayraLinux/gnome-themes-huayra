@@ -14,13 +14,14 @@
 .radio row:selected:focused {   
 	/* Se debe poner background-image para que dibuje background en check-row */
 	/* ej complementos de rhythmbox */
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.10)),
                                      to   (mix(@theme_bg_color, @theme_mix_base, 0.10)));
-
+*/
 	/*background-color: 	mix(@theme_bg_color, @theme_mix_base, 0.10);
 	background-image: 	none;*/
+	background-color: transparent;
     border-width: 		1px;
     border-style: 		solid; 
 	border-color: 		mix(@theme_bg_color, @theme_mix_base, 0.10);
@@ -40,7 +41,7 @@
 .radio row:selected:focused:active {
 	color: mix(@theme_check_fg_color, @theme_base_color, 0.15);
 	
-	background-color: 	@theme_check_bg_color;
+	background-color: 	transparent; /* @theme_check_bg_color;*/
 	background-image: 	none;
 	border-color: 		@theme_check_bg_color;
 }
@@ -55,7 +56,7 @@
 .check row:selected:focused:active {
 	color: @theme_check_fg_color;
 
-	background-color: 	@theme_check_bg_color;
+	background-color: 	transparent; /* @theme_check_bg_color;*/
 	background-image: 	none;
 	border-color: 		@theme_check_bg_color;
 }
@@ -82,7 +83,7 @@
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focused:inconsistent:insensitive {
     background-image: none;
-    background-color: @insensitive_bg_color;
+    background-color: transparent; /* @insensitive_bg_color;*/
     color: @insensitive_fg_color;
 	border-color: @insensitive_fg_color;
 }
@@ -211,4 +212,6 @@ GtkScale.scale-has-marks-above.slider.vertical:insensitive {
 
 
 }
+
+
 

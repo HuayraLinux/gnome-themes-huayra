@@ -6,13 +6,13 @@
 .notebook {
     padding: 0px;
 
-    border-color: @transparent;
+    border-color:  @transparent;
     border-style: solid; 
-	border-radius: 0px;
-    border-width: 1px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+    border-width: 0px;
     border-image: none;
 
-    background-color: shade(@theme_bg_color, 0.97);
+    background-color:  shade(@theme_bg_color, 0.97);
 	
 }
 
@@ -21,9 +21,9 @@
 }
 
 .notebook tab {
-    border-width: 0px 1px 0px 0px;
+    border-width: 1px 1px 0px 0px;
     border-style: solid; 
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 0px 0px;
 
 	border-top-color: 		shade (@theme_bg_color, 0.5);
 	border-left-color: 		shade (@theme_bg_color, 0.5);
@@ -48,9 +48,9 @@
 
 	border-radius: 8px 8px 8px 8px;
 	border-top-color: 		@theme_fg_color; /* @theme_selected_bg_color; */
-	border-left-color: 		shade (@theme_bg_color, 0.5);
-	border-bottom-color: 	shade (@theme_bg_color, 0.5); /* @theme_selected_bg_color; */
-	border-right-color: 	shade (@theme_bg_color, 0.5); /* @theme_selected_bg_color; */
+	border-left-color: 		shade (@theme_bg_color, 0.75);
+	border-bottom-color: 	shade (@theme_bg_color, 0.75); /* @theme_selected_bg_color; */
+	border-right-color: 	shade (@theme_bg_color, 0.75); /* @theme_selected_bg_color; */
 
     background-color: shade (@theme_bg_color, 0.85);
 	background-image: none;
@@ -83,7 +83,7 @@
 
 .notebook tab:active {
 	border-style: solid;
-	border-width: 3px 0px 1px 0px;
+	border-width: 3px 1px 1px 0px;
 
 	border-radius: 8px 8px 0px 0px;
 	border-top-color: 		@tooltip_bg_color; /* @theme_selected_bg_color; */
