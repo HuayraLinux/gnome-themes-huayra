@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.40) torbellino; urgency=medium
+
+  * Fix final para dialogo de impresion GTK3 (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 03 Mar 2015 13:32:46 -0300
+
 gnome-themes-huayra (2.39) torbellino; urgency=medium
 
   * Correcciones en Huayra Liso:
