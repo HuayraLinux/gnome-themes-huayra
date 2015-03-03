@@ -77,12 +77,13 @@
  ***************/
 GtkWindow {
     color: shade (@theme_fg_color, 0.6); 
+
 }
 
 * {
     /* inherit the color from parent by default */
     color: inherit;
-    background-color: @theme_bg_color;
+    background-color: shade(@theme_bg_color, 0.97);
 }
 
 *:active {
@@ -137,7 +138,7 @@ GtkWindow {
  *********/
 
 GtkBox {
-	background-color: transparent;  las etiquetas normalmente estan contenidas dentro de una caja GtkBox 
+	background-color: shade(@theme_bg_color, 0.97);  /* las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
 }
 
 GtkLabel {
@@ -1297,7 +1298,7 @@ GtkSwitch.trough {
     /* color: shade (@internal_element_color, 0.60); */
 	color: shade(@theme_fg_color, 1.50);   
 
-    border-width: 0px;
+    border-width: 0px 0px 0px 0px;
     border-style: none;
     border-radius: 4px;
     border-image: none;
@@ -1327,11 +1328,11 @@ GtkSwitch.trough:insensitive {
 
 GtkSwitch.slider {
     border-image: none;
-    border-width: 6px;
+    border-width: 6px 6px 6px 6px;
     border-style: none;
     border-radius: 4px;
 
-	padding: 4px;
+	padding: 4px 4px 4px 4px;
 
 	border-image: none;
 	border-color:  shade(@trough_bg_color_a, 1.00);
@@ -1341,10 +1342,16 @@ GtkSwitch.slider {
                                  	from (@theme_switch),
                                      to   (@theme_switch));
 
-/*    -unico-switch-grip-color: alpha(@theme_base_color, 0.0); */
 }
 
 GtkSwitch.slider:active {
+    
+    border-width: 6px 6px 6px 6px;
+    border-style: none;
+    border-radius: 4px;
+
+	padding: 4px 4px 4px 4px;
+
 	border-image: none;
 	border-color:  shade(@trough_bg_color_b, 1.00);
 
@@ -1419,7 +1426,7 @@ GtkIconView.view.cell:selected:focused {
 	/* eg. Configuration center */
     background-color: alpha(@theme_selected_bg_color, 1.00);    
 	background-image: none;
-    border-width: 1px;
+    border-width: 0px;
     border-style: solid;
     border-radius: 0px;
     border-color: shade(@theme_selected_bg_color, 1.04);
@@ -1428,9 +1435,15 @@ GtkIconView.view.cell:selected:focused {
 	text-shadow: 1px 0px @theme_selected_shadow_color;  
 }
 
+
+
+
 .view {
     background-color: @theme_base_color; /* Fondo de los paneles de vista de arbol y edicion de texto en Bluefish */
     color: @theme_text_color;
+	border-style: solid;
+	border-width: 1px;
+	border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
 	text-shadow: none;
 }
@@ -1440,10 +1453,11 @@ GtkIconView.view.cell:selected:focused {
 .view:selected:focused,
 .view *:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.00);
-	background-image: -gtk-gradient (linear,
+	background-image: none;
+	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.00)),
-                                     to (shade(@theme_selected_bg_color, 1.00))); 
+                                     to (shade(@theme_selected_bg_color, 1.00))); */
     color: @theme_selected_fg_color;
 	text-shadow: none;
 }
@@ -1454,6 +1468,17 @@ GtkIconView.view.cell:selected:focused {
     color: @theme_text_color;
 	text-shadow: none;
 
+}
+
+/* Fix para Dialogo de Impresion en GTK3 */
+
+GtkPrintUnixDialog GtkTreeView.view {
+	background-color: shade(@theme_bg_color, 1.2);
+
+}
+
+GtkPrintUnixDialog .view {
+	background-color: shade(@theme_bg_color, 0.97);
 }
 
 GtkTreeView {	
@@ -1513,7 +1538,7 @@ column-header .button {
     -GtkWidget-focus-line-width: 0; 
 
 	background-image: none;
-	background-color: shade(@theme_bg_color, 0.85);
+	background-color: shade(@theme_bg_color, 0.97);
 	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.045)),
@@ -2066,10 +2091,10 @@ MarlinViewWindow .primary-toolbar GtkContainer {
     border-radius: 0px;
 }
 
-/* Fixes para dialogo de Impresora */
+/* Más fixes para dialogo de Impresora */
 
 GtkPrintUnixDialog GtkGrid, GtkRadioButton, GtkCheckButton {
-	background-color: transparent;
+	background-color: shade(@theme_bg_color, 0.97);
 }
 
 GtkPrintUnixDialog GtkSpinButton {
@@ -2084,18 +2109,18 @@ GtkPrintUnixDialog GtkEntry {
 	border-radius: 4px;
 }
 
-GtkPrintUnixDialog .view {
+/* GtkPrintUnixDialog .view {
 	background-color: shade(@bg_color, 1.2);
 	border-width: 1px;
 	border-style: solid;
 	margin: 0px;
-}
+}*/
 
 GtkPrintUnixDialog GtkButtonBox {
 	background-color: shade(@bg_color, 0.97);
 	border-color: shade(@bg_color, 0.97);
 	border-width: 0px;
-	margin: 0px;
+	margin: 0px 0px 0px 0px;
 	
 }
 
