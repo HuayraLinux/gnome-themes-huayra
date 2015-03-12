@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.41) torbellino; urgency=medium
+
+  * Varias mejoras del tema Liso para mejor soporte de aplicaciones
+    GTK3. (Claudio "malefico" Andaur)
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Thu, 12 Mar 2015 15:58:44 -0300
+
 gnome-themes-huayra (2.40) torbellino; urgency=medium
 
   * Fix final para dialogo de impresion GTK3 (Claudio "malefico" Andaur)
