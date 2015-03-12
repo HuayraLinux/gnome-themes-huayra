@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.42) unstable; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Fix para menu flotante en apps Gnome
+
+ -- Mauro <mauro@sdf.org>  Thu, 12 Mar 2015 17:18:15 -0300
+
 gnome-themes-huayra (2.41) torbellino; urgency=medium
 
   * Varias mejoras del tema Liso para mejor soporte de aplicaciones
