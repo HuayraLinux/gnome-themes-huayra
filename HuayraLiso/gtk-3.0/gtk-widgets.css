@@ -145,7 +145,7 @@ GtkWindow {
  *********/
 
 GtkBox {
-	background-color: shade(@theme_bg_color, 0.97);  /* las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
+	background-color: transparent; /* shade(@theme_bg_color, 0.97); las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
 }
 
 GtkBox:hover {
