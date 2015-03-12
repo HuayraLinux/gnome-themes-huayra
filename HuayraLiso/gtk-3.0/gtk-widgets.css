@@ -54,7 +54,7 @@
     -WnckTasklist-fade-overlay-rect: 0;
 
     border-width: 0px;
-/*	engine: unico; */
+/* 	engine: none;*/
 /* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
 /*
@@ -77,14 +77,16 @@
  ***************/
 GtkWindow {
     color: shade (@theme_fg_color, 0.6); 
+	border-color: transparent;
 
 }
 
 * {
     /* inherit the color from parent by default */
     color: inherit;
-    background-color: shade(@theme_bg_color, 0.97);
+    background-color: inherit; /* shade(@theme_bg_color, 0.97);*/
 }
+
 
 *:active {
 }
@@ -96,7 +98,7 @@ GtkWindow {
 }
 
 *:hover {
- 	background-color: alpha(shade(@menu_bg_color, 1.05), 0.0);
+ 	background-color: alpha(shade(@menu_bg_color, 1.05), 0.5);
 }
 
 *:hover:insensitive {
@@ -109,9 +111,14 @@ GtkWindow {
 }
 
 *:insensitive {
-    background-color: transparent;/* @insensitive_bg_color; */
+    background-color: @insensitive_bg_color; 
     color: @insensitive_fg_color;
     border-color: @insensitive_border_color;
+}
+
+.background {
+	color: @theme_fg_color;
+	background-color: @theme_bg_color;
 }
 
 
@@ -141,6 +148,10 @@ GtkBox {
 	background-color: shade(@theme_bg_color, 0.97);  /* las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
 }
 
+GtkBox:hover {
+	background-color: transparent;
+}
+
 GtkLabel {
 	background-color: transparent;
 }
@@ -149,6 +160,9 @@ GtkLabel:insensitive {
     background-color: transparent;
 }
 
+GtkLabel:active:hover {
+	background-color: yellow;
+}
 
 .view.rubberband,
 .rubberband {
@@ -160,6 +174,74 @@ GtkLabel:insensitive {
     border-radius: 0px;    
     border-color: @theme_selected_bg_color;
 
+}
+
+
+
+/**********************************************************************
+ * Titlebar 
+ * Las nuevas aplicaciones GTK3 decoran tambien los bordes de ventana *
+ **********************************************************************/
+
+.titlebar {
+	background-image: none; /*linear-gradient(to bottom,
+	                  @theme_base_color,
+	                  @theme_bg_color);*/
+	background-color: #efefef ; /* transparent;*/
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	border-bottom: 0px none;
+	border-color: shade(@border_color, 1.30);
+	padding: 5px 4px 4px 4px;
+}
+
+.titlebar > * {
+	background: none;
+}
+
+.tiled .titlebar {
+	border-radius: 0;
+}
+
+.maximized .titlebar {
+	border-radius: 0;
+}
+
+.titlebar .title {
+	font: Bold;
+}
+
+/*.titlebar :first-child {*/
+/*	padding: 5px 5px 6px 5px;*/
+/*}*/
+
+.titlebar .titlebutton {
+	background-color: #909090;
+	border-radius: 4px;
+	/* background: none;*/
+	border-image: none;
+	border-style: none;
+}
+
+.titlebar .titlebutton:active:insensitive {
+	background-color: #939393;
+	border-style: none;
+}
+
+.titlebar .titlebutton:hover {
+	background-color: @tooltip_bg_color;
+	border-style: none;
+}
+
+
+.window-frame {
+	border-width: 1px;
+	border-radius: 7px 7px 0 0;
+	border-style: solid;
+	margin: 10px;
 }
 
 
@@ -335,7 +417,7 @@ GtkStatusbar {
 .spinbutton.button:focused,
 .spinbutton.button:insensitive {
     background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
+    background-color: transparent;
 
     border-width: 1px;
     border-style: none;
@@ -674,6 +756,14 @@ GtkScrolledWindow.frame {
 	text-shadow: none;
 }
 
+/* botones de decoracion de ventana */
+
+.titlebar .linked.raised .button,
+.titlebar .linked.raised .button:active {
+	padding: 5px 8px 6px;
+}
+
+
 /**************
  * ComboBoxes *
  **************/
@@ -728,6 +818,7 @@ GtkComboBox .button {
 
 GtkComboBox .button *:prelight {
     color: @theme_selected_fg_color;
+	background-color: @theme_selected_bg_color;
 
 }
 
@@ -831,6 +922,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
 	border-radius: 5px; 
     -GtkToolbar-button-relief: none;
 }
+
 
 /********************
  * Primary Toolbars *
@@ -2098,7 +2190,7 @@ GtkPrintUnixDialog GtkGrid, GtkRadioButton, GtkCheckButton {
 }
 
 GtkPrintUnixDialog GtkSpinButton {
-	border-width:1;
+	border-width:1px;
 	border-style: solid;
 	border-color: shade(@bg_color, 0.8);
 	border-radius: 4px;
