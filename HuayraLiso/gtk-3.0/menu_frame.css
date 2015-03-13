@@ -359,7 +359,7 @@ DbusmenuGtkMenu .menuitem .accelerator:insensitive,
     border-style: solid;
 }
 
-GtkPopover {
+GtkPopover, GtkPopover.background {
 
 	background-color: @menu_bg_color;
 	border-radius: 4px;

@@ -78,7 +78,6 @@
 GtkWindow {
     color: shade (@theme_fg_color, 0.6); 
 	border-color: transparent;
-
 }
 
 * {
@@ -219,6 +218,7 @@ GtkLabel:active:hover {
 /*}*/
 
 .titlebar .titlebutton {
+	color: shade(@theme_base_color, 0.9);
 	background-color: #909090;
 	border-radius: 4px;
 	/* background: none;*/
@@ -1585,6 +1585,7 @@ GtkTreeView {
 
 GtkTreeView row:nth-child(odd),
 GtkTreeView row:nth-child(odd):hover {
+
 	background-color: shade (@tooltip_bg_color, 1.61);
 	text-shadow: none;
 }
