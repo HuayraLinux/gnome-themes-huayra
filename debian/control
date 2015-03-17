@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Ivan Hoffmann <digital.h@gmail.com>
 Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 
 Package: gnome-themes-huayra
 Depends: ${misc:Depends}, huayra-themes-all
@@ -87,4 +87,4 @@ Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Liso de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
- GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema por defecto de Huayra 3.0.
+ GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema por defecto de Huayra 3.
