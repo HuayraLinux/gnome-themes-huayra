@@ -1,3 +1,11 @@
+gnome-themes-huayra (2.44) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Fix para texto de tiempo en pantalla de screensaver.
+    Fix en color de estado inactivo de flechas de submenu.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 17 Mar 2015 11:29:00 -0300
+
 gnome-themes-huayra (2.43) torbellino; urgency=medium
 
   * Fix de menu y decoraciones de ventana de aplicaciones GNOME.
