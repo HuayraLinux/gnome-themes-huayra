@@ -237,17 +237,12 @@ style "scale" {
 
 style "vscale" {
 
-#	engine "clearlooks" {
-#		hint = "vscale"
-#	}
-
+	fg[NORMAL] = shade (0.6, @bg_color)
 }
 
 style "hscale" {
 
-	engine "clearlooks" {
-		hint = "hscale"
-	}
+	fg[NORMAL] = shade (0.6, @bg_color)
 }
 
 
@@ -684,8 +679,8 @@ class "GtkList" style "list"
 
 class "GtkSpinButton" style "botones-combobox" #"spinbutton"
 class "GtkScale" style "sliders-liso" #"scale"
-#class "GtkVScale" style "sliders-limbo" #"vscale"
-#class "GtkHScale" style "sliders-limbo" #"hscale"
+class "GtkVScale" style "vscale"
+class "GtkHScale" style "hscale" 
 class "GtkScrollbar" style "scrollbar-vertical" #"scrollbar"
 class "GtkHScrollbar" style "scrollbar-horizontal" #"hscrollbar"
 class "GtkVScrollbar" style "scrollbar-vertical" #"vscrollbar"
