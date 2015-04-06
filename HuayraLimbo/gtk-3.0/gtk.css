@@ -11,8 +11,8 @@
 @define-color selected_fg_color #ffffff; /* color de frente de elemento seleccionado */
 @define-color text_color #202030; /* color del texto escrito */
 @define-color fg_color #202020; /* color del texto de labels, menúes, widgets */
-@define-color tooltip_bg_color #6Ae7ea; /*#69aef5;  color de fondo de los tooltips */ 
-@define-color tooltip_fg_color #ffffff; /* color de texto de los tooltips */ 
+@define-color tooltip_bg_color #429C9F; /* color de fondo de los tooltips */ 
+@define-color tooltip_fg_color #FFFFFF; /* color de texto de los tooltips */ 
 /*@define-color unfocused_bg_color #f8f8f8;*/
 @define-color unfocused_bg_color @bg_color;
 
@@ -224,8 +224,11 @@
 @define-color wm_button_bg_active_b shade (@bg_color, 0.9);
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
-@import url("gtk-widgets-backgrounds.css");
-@import url("gtk-widgets-borders.css");  
-@import url("gtk-widgets-assets.css"); 
+
+/* @import url("gtk-widgets-backgrounds.css");*/
+@import url("gtk-widgets-borders.css"); 
+/* @import url("gtk-widgets-assets.css"); */
 @import url("gtk-widgets.css");
 /* @import url("gnome-applications.css"); */
+/* @import url("menues-test.css");*/
+@import url("menues.css");

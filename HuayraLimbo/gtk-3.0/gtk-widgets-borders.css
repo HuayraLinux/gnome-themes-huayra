@@ -9,11 +9,11 @@ GtkComboBox.combobox-entry .button,
 .trough,
 .trough.highlight,
 GtkSwitch.trough {
-    border-image: url("borders/generic-border.svg") 3 3 4 3 / 3 3 4 3 stretch;
+    border-image: none; /* url("borders/generic-border.svg") 3 3 4 3 / 3 3 4 3 stretch;*/
     border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: @borders;
 }
 
 .trough row {
@@ -30,32 +30,43 @@ GtkComboBox.combobox-entry .entry:focus,
 .button:focus:active,
 .button.default:active,
 GtkSwitch.trough:active { 
-    border-image: url("borders/generic-border-focused.svg") 3 3 4 3 / 3 3 4 3 stretch;
+    border-image: none; /* url("borders/generic-border-focused.svg") 3 3 4 3 / 3 3 4 3 stretch;*/
     border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: @borders; /* transparent;*/
 
 }
 
 /* generic button borders */
 .button {
-    border-image: url("borders/button-border.svg") 3 3 4 3 / 3 3 4 3 stretch;
+    border-image: none; /* url("borders/button-border.svg") 3 3 4 3 / 3 3 4 3 stretch;*/
     border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: @borders;
 
 }
 
-/* focused button borders */
-.button:focus,
-.button.default { 
-    border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3 3 4 3 stretch;
+/* Los botones de las barras de Bluefish por ejemplo, no muestran borde hasta que no se hace mouse over */
+GtkToolbar .button {
+	padding: 2px;
+    border-image: none; 
     border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
+    border-width: 0px;
+    border-style: none;
+    border-color: @borders;
+
+}
+
+/* Botones focalizados */
+.button:focus, .button:active, .button:hover,
+.button.default { 
+	border-image: none;
+    border-radius: 3px;
+    border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: @borders;
 
 }
 
@@ -81,6 +92,7 @@ GtkSwitch.trough:active {
 .primary-toolbar .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry,
 .primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .button,
 .primary-toolbar .button:active,
 .primary-toolbar .button.raised:active,
 .primary-toolbar .raised .button:active,
@@ -97,8 +109,9 @@ GtkSwitch.trough:active {
     /* border-image: url("borders/primary-toolbar-generic-border.svg") 4 / 4 stretch; */
     border-radius: 3px;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-color: transparent;
+	border-image: none; /* test */
 }
 
 /* primary toolbar - focused element borders */

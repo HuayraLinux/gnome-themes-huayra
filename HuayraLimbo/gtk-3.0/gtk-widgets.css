@@ -1,6 +1,6 @@
 * {
     engine: none;
-    padding: 0;
+    padding: 2px;
     background-clip: padding-box;
 
     -GtkToolButton-icon-spacing: 4;
@@ -24,7 +24,7 @@
     -GtkToolItemGroup-expander-size: 11;
     -GtkExpander-expander-size: 11; /* Tamaño de la flecha de expansión de contenido */
 
-    -GtkMenu-horizontal-padding: 3; /* Relleno lateral del menú */
+    -GtkMenu-horizontal-padding: 2; /* Relleno lateral del menú */
     -GtkMenu-vertical-padding: 3; /* Relleno superior e inferior del menú */
 	
 
@@ -112,15 +112,14 @@ GtkWindow:backdrop {
 
     border-radius: 0px;
 
-    background-color: alpha(@theme_tooltip_bg_color, 0.90);
-    color: @theme_tooltip_fg_color;
-    text-shadow: 1px 1px #000;
-        
-
+    background-color: @theme_tooltip_bg_color;
+    text-shadow: none;
 }
+
 
 .tooltip * {
     background-color: transparent;
+	color: @tooltip_fg_color;
 }
 
 /*****************
@@ -207,8 +206,19 @@ GtkStatusbar {
     border-radius: 0;
 }
 
+/* GtkBox necesita tener fondo transparente para que no se vea un fondo en las etiquetas */
+
+GtkBox {
+	background-color: transparent;
+}
+
+GtkBox:hover {
+	background-color: transparent;
+}
+
 GtkLabel {
 	color: shade (@text_color, 1.1);
+	background-color: transparent;
 }
 
 GtkTreeView.view.separator,
@@ -333,6 +343,7 @@ GtkImage:insensitive {
     padding: 2px 6px;
     border-width: 0;
     border-radius: 0;
+    background-color: transparent;
     border-style: none;
     border-image: none;
     box-shadow: 1px 0px @inset_dark_color inset;
@@ -729,10 +740,11 @@ GtkScrolledWindow.frame:backdrop {
  * Buttons *
  ***********/
 .button,
-.button.menuitem.menubar,
 GtkComboBox.combobox-entry .button {
     padding: 1px 4px;
 }
+
+/* .button.menuitem.menubar,*/
 
 .button {
     -GtkButton-image-spacing: 4;
@@ -743,7 +755,7 @@ GtkComboBox.combobox-entry .button {
     color: @theme_text_color;
 
     border-style: solid;
-    border-color: transparent;
+    border-color: @borders; /* transparent */
 
     text-shadow: @button_text_shadow 0px 0px;
 }
@@ -765,7 +777,7 @@ GtkComboBox.combobox-entry .button {
     /* setting border-style: none; here would override the border-width values 
      * we set in gtk-widget-borders.css to zero.
      */
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: transparent;
 
@@ -1124,7 +1136,7 @@ GtkLinkButton.button *:active {
  * tabs          *
  *****************/
 .notebook {
-    padding: 0;
+    padding: 4px;
 
     border-color: @borders;
     border-style: solid;
@@ -1132,10 +1144,10 @@ GtkLinkButton.button *:active {
 
     background-color: @theme_base_color;
 
-    -GtkNotebook-tab-overlap: 8;
+    -GtkNotebook-tab-overlap: 1;
     -GtkNotebook-tab-curvature: 3;
     /* FIXME - the gap should be applied only to top or bottom tabs */
-    -GtkNotebook-initial-gap: 8;
+    -GtkNotebook-initial-gap: 2;
 }
 
 .notebook GtkViewport {
@@ -1149,43 +1161,39 @@ GtkLinkButton.button *:active {
 }
 
 .notebook tab {
-    padding: 3px;
+    padding: 6px;
     border-style: solid;
 	border-radius: 6px;
     /* we draw our own custom border here for now */
-    border-width: 1px;
+    border-width: 1px 1px 0px 1px;
 
-    /*background-image: linear-gradient(to bottom,
+	background-image: linear-gradient(to bottom,
                                       @notebook_tab_hilight 2px,
                                       @notebook_tab_gradient_a 2px,
                                       @notebook_tab_gradient_a 7px,
                                       @notebook_tab_gradient_b);
 
-*/
-    -adwaita-focus-border-radius: 2;
+
+   
 }
 
-.notebook tab:backdrop {
+/* .notebook tab:backdrop {
     background-image: none;
     background-color: @theme_unfocused_bg_color;
-    border-color: @unfocused_insensitive_borders;
-}
+   border-color: @unfocused_insensitive_borders; 
+}*/
 
-.notebook tab:active {
-    -adwaita-border-gradient: -gtk-gradient (linear,
-                                             left top, left bottom,
-                                             from (@notebook_active_tab_border),
-                                             to (@borders));
+/* .notebook tab:active {
 
     background-image: linear-gradient(to bottom,
                                       @notebook_selected_tab_color,
                                       @notebook_selected_tab_color 2px,
-                                      @button_gradient_color_a 3px, /* FIXME */
+                                      @button_gradient_color_a 3px, 
                                       @theme_base_color);
-}
+}*/
 
-.notebook tab:active:backdrop {
-    /* FIXME I need to set a background-image here, background-color is ignored */
+/* .notebook tab:active:backdrop {
+    
     background-image: linear-gradient(to bottom,
                                       @unfocused_borders,
                                       @unfocused_borders 2px,
@@ -1193,28 +1201,48 @@ GtkLinkButton.button *:active {
                                       @theme_unfocused_base_color);
     background-color:  @theme_unfocused_base_color;
     border-color: @unfocused_borders;
-    /* FIXME - should be possible to set it to none and use border color */
-    -adwaita-border-gradient: -gtk-gradient (linear, 
-                                             left top, left bottom,
-                                             from (@unfocused_borders),
-                                             to (@unfocused_borders));
-    -adwaita-selected-tab-color: @unfocused_borders;
-}
+
+}*/
 
 .notebook tab.top {
     padding: 4px 2px 0;
+	border-width: 1px 1px 0px 1px;
+	border-top-color: 		@theme_fg_color; /* @theme_selected_bg_color; */
+	border-left-color: 		@theme_fg_color;
+	border-bottom-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+	border-right-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+
 }
 
 .notebook tab.top:active {
     padding: 7px 2px 0;
+	border-width: 3px 1px 0px 1px;
+	background-image: none;
+	border-top-color: 		@selected_bg_color; /* @theme_selected_bg_color; */
+	border-left-color: 		@theme_fg_color;
+	border-bottom-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+	border-right-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
 }
 
 .notebook tab.bottom {
     padding: 0 2px 4px;
+	border-width: 0px 1px 1px 1px;
+	border-top-color: 		@theme_bg_color; /* @theme_selected_bg_color; */
+	border-left-color: 		@theme_fg_color;
+	border-bottom-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+	border-right-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+
+
 }
 
 .notebook tab.bottom:active {
     padding: 0 2px 7px;
+	border-width: 0px 1px 3px 1px;
+	border-top-color: 		@theme_fg_color; /* @theme_selected_bg_color; */
+	border-left-color: 		@theme_fg_color;
+	border-bottom-color: 	@selected_bg_color; /* @theme_selected_bg_color; */
+	border-right-color: 	@theme_fg_color; /* @theme_selected_bg_color; */
+	background-image: none;
 }
 
 .notebook tab.left,
@@ -1228,7 +1256,6 @@ GtkLinkButton.button *:active {
 .notebook tab.right:active {
     background-image: none;
     background-color: @theme_base_color;
-    -adwaita-selected-tab-color: alpha(@theme_base_color, 0.0);
 }
 
 .notebook tab.left,
@@ -1327,6 +1354,7 @@ GtkComboBox .separator {
 
 GtkComboBox.combobox-entry .entry:first-child,
 GtkComboBox.combobox-entry .button:first-child {
+	background-color: transparent;
     border-image-width: 3 0 4 3;
     border-radius: 3px 0 0 3px;
     border-right-width: 0;
@@ -1636,220 +1664,22 @@ to (shade(shade(@selected_bg_color, 1.0), 1.1)));*/
     border-width: 3px;
 }
 
-/*********
- * Menus *
- *********/
-/* combobox menus */
-GtkTreeMenu.menu {
-    background-color:shade (@theme_base_color, 1.2);
-}
-
-GtkTreeMenu .menuitem {
-
-	background-image: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 0.9),
-                                      shade(@selected_bg_color, 1.2),
-									  shade(@selected_bg_color, 1.1),
-                                      shade(@selected_bg_color, 0.9));
-    padding: 2px;
-
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: @menu_combobox_border;
-}
-
-GtkTreeMenu .menuitem * {
-    color: @theme_text_color;
-}
-
-.menu {
-    background-color: shade (@theme_base_color, 1.2);
-    color: @theme_fg_color;
-    padding: 4px;
-    border-style: solid;
-	border-radius: 4px;
-}
-
-.menu.button {
-    background-image: none;
-    background-color: @theme_base_color;
-    color: @internal_element_color;
-
-    border-image: none;
-    border-style: none;
-}
-
-.menu.button:hover {
-    background-image: none;
-    background-color: @theme_base_color;
-    color: @theme_text_color;
-
-    border-image: none;
-    border-style: solid;
-	border-width: 1px;
-	border-radius: 4px;
-}
-
-.menu.button:insensitive {
-    background-color: @theme_base_color;
-    color: lighter(@internal_element_color);
-
-    border-image: none;
-    border-style: none;
-}
-
-/* this controls the general appearance of the menubar */
-.menubar {
-	font: "Asap 10"; 
-    border-style: none;
-    padding: 2px;
-	/* background-image: url("imagenes/menubarbg3.png");*/
-	background-color: #f4f4f4;
-    -GtkWidget-window-dragging: true;
-    -GtkMenuBar-internal-padding: 8;
-	-GtkMenuBar-shadow-type: none;
-}
-
-.menubar .menuitem {
-    border-style: none;
-    padding: 3px 5px;
-}
-
-/* remove the image from the prelight areas */
-.menubar .menuitem:hover {
-    /*background-image: none; */
-	background-image: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 0.9),
-                                      shade(@selected_bg_color, 1.2),
-									  shade(@selected_bg_color, 1.1),
-                                      shade(@selected_bg_color, 0.9));
-    /*background-color: @menu_bg_color; */
-	background-color: transparent; 
-	border-radius: 4px;
-    color:@theme_selected_fg_color;
-}
-
-
-.menu .menuitem {
-    -GtkMenuItem-arrow-scaling: 0.4;
-    padding: 4px;
-}
-
-.menu .menuitem:hover {
-    border-radius: 3px;
-}
-
-.menu .menuitem:active,
-.menu .menuitem *:active,
-.menu .menuitem:hover,
-.menu .menuitem *:hover {
-    background-image: linear-gradient(to bottom,
-                                      shade(@selected_bg_color, 1.15),
-                                      shade(@selected_bg_color, 1.3),
-									  shade(@selected_bg_color, 1.35),
-                                      shade(@selected_bg_color, 1.1));
-    color: @theme_selected_fg_color;
-}
-
-.menu .menuitem:insensitive,
-.menu .menuitem *:insensitive {
-    color: alpha (@menu_fg_color, 0.4); /*mix (@menu_fg_color, @menu_bg_color, 0.6);*/
-}
-
-.menu .menuitem .accelerator:insensitive {
-    color: alpha (@menu_fg_color, 0.4); /*mix (@menu_fg_color, @menu_bg_color, 0.7);*/
-}
-
-.menuitem .accelerator {
-    color: alpha (@menu_fg_color, 0.4);
-}
-
-.menuitem .accelerator:hover,
-.menuitem .accelerator:active {
-    color: @theme_selected_fg_color;
-}
-
-.menuitem.arrow {
-    color: @menu_controls_color;
-}
-
-.menuitem.separator {
-    color: alpha (@menu_fg_color, 0.1); /*@menu_separator;*/
-	border: 1px;
-
-    -GtkMenuItem-horizontal-padding: 0;
-}
-
-.menuitem.check,
-.menuitem.radio,
-.menuitem.check:hover,
-.menuitem.radio:hover,
-.menuitem.check:insensitive,
-.menuitem.radio:insensitive {
-    background-image: none;
-    background-color: transparent;
-}
-
-.menuitem.check:active,
-.menuitem.radio:active {
-    background-color: transparent;
-}
-
-.menuitem.check:active {
-    background-image: url("assets/menuitem-checkbox-checked.png");
-}
-
-.menuitem.check:active:hover {
-    background-image: url("assets/menuitem-checkbox-checked-selected.png");
-}
-
-.menuitem.check:active:insensitive {
-    background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
-}
-
-.menuitem.check:inconsistent,
-.menuitem.radio:inconsistent {
-    background-image: url("assets/menuitem-checkbox-mixed.png");
-}
-
-.menuitem.check:inconsistent:insensitive,
-.menuitem.radio:inconsistent:insensitive {
-    background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
-}
-
-.menuitem.check:inconsistent:hover,
-.menuitem.radio:inconsistent:hover {
-    background-image: url("assets/menuitem-checkbox-mixed-selected.png");
-}
-
-.menuitem.radio:active {
-    background-image: url("assets/menuitem-radio-checked.png");
-}
-
-.menuitem.radio:active:hover {
-    background-image: url("assets/menuitem-radio-checked-selected.png");
-}
-
-.menuitem.radio:active:insensitive {
-    background-image: url("assets/menuitem-radio-checked-insensitive.png");
-}
-
 
 /***************
  * Menu Button *
  ***************/
-.button.menuitem.menubar:active,
-.button.menuitem.menubar *:active {
-    color: @theme_text_color;
+/* .button.menuitem.menubar:active,*/
+/*.button.menuitem.menubar *:active {*/
+/*   color: yellow; 
     background-image: none;
-    background-color: #ff0000; /* @menu_bg_color;*/
+    background-color: #ff0000; 
 
     border-radius: 5px 5px 0 0;
     border-image: none;
     border-width: 1px 1px 0 1px;
     border-color: shade(@borders, 1.3);
     border-style: solid;
-}
+}*/
 
 /****************
  * Radiobuttons *
@@ -1881,8 +1711,8 @@ GtkCheckButton:selected:focus {
 	                                  @toolbar_gradient_base,
 	                                  @toolbar_gradient_bottom); shade(@theme_bg_color, 1.6) or 
 	                                                                     shade(@theme_bg_color, 1.7) = #5F5F67 */
-	border-style: solid;
-	border-width: 2px;
+	border-style: none;
+	border-width: 0px;
 	border-radius: 3px;
 	padding: 1px;
 
@@ -1904,19 +1734,21 @@ GtkCheckButton:selected:focus {
  ********************/
 
 
-.toolbar.menubar {
+/* .toolbar.menubar {*/
 	/*background-image: url("imagenes/menubarbg3.png");*/
     /*background-image: linear-gradient(to bottom, @toolbar_gradient_a, @toolbar_gradient_b);*/
-	border-style: solid;
+/*	background-color: transparent;*/
+/* 	border-style: none;*/
 /*	border-radius: 3px;
 	border-width: 2px; */
 
-    -GtkToolbar-button-relief: normal;
-	border-width: 1px;
+/*    -GtkToolbar-button-relief: normal;
+	border-width: 0px;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 0px;*/
 	/*shadow-type: none;*/
-}
+/*	color: green;
+}*/
 
 /********************
  * Primary Toolbars *
@@ -1930,9 +1762,8 @@ NOTA:incluye la MenuBar de Gedit por ejemplo
 
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
-    border-width: 0px 0px 0px 0px; /* 0 1 0 1*/
     border-radius: 3px;
-    border-style: solid;
+    border-style: none;
     border-top-color: @toolbar_border_top;
     border-bottom-color: @toolbar_border_bottom;
 
@@ -2158,9 +1989,6 @@ GtkTreeView {
 
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 1;
-    -adwaita-focus-border-radius: 2;
-    -adwaita-focus-border-dashes: 1;
-    -adwaita-focus-border-color: alpha(@theme_text_color, 0.6);
 }
 
 GtkTreeView.dnd {
@@ -2188,12 +2016,6 @@ GtkIconView.view.cell:selected:focus {
     color: @theme_selected_fg_color;
     border-radius: 4px;
 
-    /* FIXME: this probably needs to be better;
-     * see https://bugzilla.gnome.org/show_bug.cgi?id=644157
-     */
-    -adwaita-focus-border-color: @treeview_focus_border;
-    -adwaita-focus-border-radius: 3;
-    -adwaita-focus-border-dashes: 0;
 }
 
 .view,
@@ -2550,128 +2372,12 @@ GtkInfoBar:last-child,
     color: mix (@theme_selected_fg_color, @theme_base_color, 0.50);
 }
 
-/**********************
- * Fallback Mode Panel
- **********************/
-/*
-.gnome-panel-menu-bar,
-PanelApplet > GtkMenuBar.menubar,
-PanelToplevel,
-PanelWidget,
-PanelAppletFrame,
-PanelApplet {
-    background-color: @os_chrome_bg_color;
-    background-image: none;
-    color: @os_chrome_fg_color;
-}
-*/
-/* botones del panel */
-/*  
-ClockBox,
-.gnome-panel-menu-bar,
-PanelApplet > GtkMenuBar.menubar {
-    font: bold;
-}
-*/
-/* hover y active */
-/* 
-.gnome-panel-menu-bar .menuitem:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem:hover,
-.gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover { 
-    background-color: @os_chrome_selected_bg_color; 
-    color: @os_chrome_selected_fg_color;
-}
-*/ 
-/* Color del texto de los elementos de menúes y submenúes del panel */
-/* 
-.gnome-panel-menu-bar .menuitem *:hover,
-PanelApplet > GtkMenuBar.menubar .menuitem *:hover { 
-    color: #000;
-    text-shadow: #fff 0 1;
-}
-PanelApplet .button,
-PanelApplet .button:hover {
-    padding: 4px;
-
-    border-image: none;
-    border-width: 0;
-    border-radius: 0;
-
-    background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
-
-    color: @os_chrome_fg_color;
-}
-*/
-/* boton active */
-/* 
-PanelApplet .button:active:hover,
-PanelApplet .button:active { 
-    border-image: none;
-    background-image: none;
-    background-color: @os_chrome_selected_bg_color;
-    border-width: 0;
-    border-radius: 0;
-    
-	background-color: #6D97AD;
-    color: #fff;
-}
-
-PanelApplet *:hover {
-    color: #ffffff; 
-}
-
-PanelApplet *:active,
-PanelApplet *:hover:active { 
-    color: @os_chrome_selected_fg_color;
-    text-shadow: @os_chrome_bg_color 0 1;
-}
-
-NaTrayApplet {
-    -NaTrayApplet-icon-padding: 0;
-    -NaTrayApplet-icon-size: 8;
-}
-*/
-/* botones de seleccion de escritorio */
-/* 
-WnckPager, WnckTasklist { 
-    background-color: @os_chrome_selected_bg_color;
-    background-image: none;
-    color: @os_chrome_fg_color;
-}
-
-GsmFailWhaleDialog {
-    background-color: @os_chrome_bg_color;
-    background-image: none;
-    color: @os_chrome_fg_color;
-}
-
-GsmFailWhaleDialog * {
-    background-color: @os_chrome_bg_color;
-    background-image: none;
-}
-*/
-/* gnome-screensaver lock dialog */
-/* 
-GSLockPlug .frame {
-    border-color: @borders;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0;
-} 
-*/
-/*
- *
- *=
- *
- */
  
  
-PanelMenuBar {
+/*PanelMenuBar {
 }
 .gnome-panel-menu-bar {
-}
+}*/
 PanelApplet {
 }
 PanelAppletFrame {
