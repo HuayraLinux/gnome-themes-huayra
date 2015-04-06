@@ -217,7 +217,7 @@ GtkBox:hover {
 }
 
 GtkLabel {
-	color: shade (@text_color, 1.1);
+/*	color: shade (@text_color, 1.1);*/
 	background-color: transparent;
 }
 

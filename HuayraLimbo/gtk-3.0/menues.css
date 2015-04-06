@@ -4,7 +4,7 @@
 
 .menu {
     background-color: shade (@theme_base_color, 1.2);
-    color: green; /* @theme_fg_color;*/
+    color: @theme_fg_color;
     padding: 4px;
     border-style: solid;
 	border-radius: 4px;
@@ -22,7 +22,7 @@
 .menu.button {
     background-image: none;
     background-color: yellow; /* @theme_base_color;*/
-    color: red; /* @internal_element_color;*/
+    color: @internal_element_color;
 
     border-image: none;
     border-style: none;
@@ -62,7 +62,7 @@
     border-style: none;
     padding: 3px 5px;
 	background-color: transparent;
-	color: red;
+	color: shade(@theme_text_color, 1.1);
 }
 
 
@@ -106,14 +106,15 @@
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
     color: alpha (@menu_fg_color, 0.4); /*mix (@menu_fg_color, @menu_bg_color, 0.6);*/
+	background-color: transparent;
 }
 
 .menu .menuitem .accelerator:insensitive {
-    color: red; /* alpha (@menu_fg_color, 0.4); mix (@menu_fg_color, @menu_bg_color, 0.7);*/
+    color: alpha (@menu_fg_color, 0.2);
 }
 
 .menuitem .accelerator {
-    color: alpha (@menu_fg_color, 0.4);
+    color: alpha (@menu_fg_color, 0.6);
 }
 
 .menuitem .accelerator:hover,
