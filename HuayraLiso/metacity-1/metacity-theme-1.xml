@@ -20,7 +20,7 @@
   <distance name="bottom_height" value="2"/>
   <distance name="left_titlebar_edge" value="2"/>
   <distance name="right_titlebar_edge" value="1"/>
-  <aspect_ratio name="button" value="1.0"/>
+  <aspect_ratio name="button" value="0.86"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="5" right="1" top="2" bottom="2"/>
   <border name="button_border" left="1" right="4" top="0" bottom="0"/>
@@ -32,7 +32,7 @@
   <distance name="bottom_height" value="2"/>
   <distance name="left_titlebar_edge" value="2"/>
   <distance name="right_titlebar_edge" value="1"/>
-  <aspect_ratio name="button" value="1.0"/>
+  <aspect_ratio name="button" value="0.86"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="15" right="0" top="2" bottom="2"/>
   <border name="button_border" left="1" right="4" top="0" bottom="0"/>
@@ -168,7 +168,7 @@
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="minimizar-activo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+      <image filename="menu-activo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
     </draw_ops>
   </button>
 

@@ -41,7 +41,7 @@ style "default" {
 	xthickness = 1
 	ythickness = 1
 
-	font_name = "Asap regular 10"
+	#font_name = "Asap regular 10"
 	#######################
 	# Style Properties
 	#######################

@@ -151,6 +151,10 @@ GtkBox:hover {
 	background-color: transparent;
 }
 
+GtkBox:insensitive {
+	background-color: transparent;
+}
+
 GtkLabel {
 	background-color: transparent;
 }
@@ -741,7 +745,7 @@ GtkScrolledWindow.frame {
 .cell:insensitive,
 .button:insensitive {
 	color: @insensitive_fg_color;
-    background-color: @insensitive_bg_color;
+    background-color: transparent; /* @insensitive_bg_color;*/
 	border-style: solid;
 	border-color: @insensitive_border_color;
 
@@ -933,10 +937,7 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
  */
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
-    /*background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade (@theme_bg_dark_color, 1.00)),
-                                     to (shade (@theme_bg_dark_color, 1.00)));*/
+    background-image: none;
 	border-image: none;    
 	border-width: 0px 0px 0px 0px;
     border-radius: 3px;

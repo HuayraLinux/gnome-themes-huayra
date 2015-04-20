@@ -5,7 +5,7 @@
 style "panel"
 {
 
-	font_name = "Asap regular 10"
+	#font_name = "Asap regular 10"
 
 	bg[SELECTED]	= @tooltip_bg_color # Makes selected items dark.
 	bg[NORMAL]	= "#3c3c3c" # Makes panel background dark.
