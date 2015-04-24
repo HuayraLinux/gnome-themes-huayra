@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.46) UNRELEASED; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Huayra Liso, lineas que definen font comentadas. 
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Fri, 24 Apr 2015 10:27:18 -0300
+
 gnome-themes-huayra (2.45) torbellino; urgency=medium
 
   [Claudio "malefico" Andaur]
