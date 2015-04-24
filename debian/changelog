@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.47) torbellino; urgency=medium
+
+  * Fix en index.theme de Huayra Accesible para que llame al set de
+    iconos correcto.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Fri, 24 Apr 2015 10:48:54 -0300
+
 gnome-themes-huayra (2.46) torbellino; urgency=medium
 
   [Claudio "malefico" Andaur]
