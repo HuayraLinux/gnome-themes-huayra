@@ -1,3 +1,9 @@
+gnome-themes-huayra (2.48) torbellino; urgency=medium
+
+  * Se agrega huayra-cursors-theme como dependencia de Liso.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Mon, 08 Jun 2015 10:31:52 -0300
+
 gnome-themes-huayra (2.47) torbellino; urgency=medium
 
   * Fix en index.theme de Huayra Accesible para que llame al set de

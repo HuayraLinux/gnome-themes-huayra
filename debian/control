@@ -30,61 +30,73 @@ Description: Temas de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
  (dummy package)
 
 Package: huayra-themes-accesible
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Accesible de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema de alto contraste de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Accesible.
 
 Package: huayra-themes-frescoverde
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema Fresco Verde de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Fresco Verde.
 
 Package: huayra-themes-limbo
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Limbo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema de ventanas Limbo de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Limbo.
 
 Package: huayra-themes-mayo
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Mayo de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema de ventanas Mayo de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Mayo.
 
 Package: huayra-themes-violeta
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Violeta de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema de ventanas Violeta de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema Huayra Violeta.
 
 Package: huayra-themes-liso
-Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, gtk2-engines-murrine
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine, huayra-cursors-theme
 Recommends: dmz-cursor-theme
 Breaks: gnome-themes-huayra ( <= 2.14)
 Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
-Description: Tema Liso de gtk2, gtk3, metacity y gnome-shell para Huayra GNU/Linux
+Description: Tema de ventanas Liso de gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
  GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema por defecto de Huayra 3.
