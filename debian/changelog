@@ -1,3 +1,11 @@
+gnome-themes-huayra (2.49) torbellino; urgency=medium
+
+  * Correcciones en HuayraAccesible:
+    - Etiqueta Author duplicada en metacity-1.xml
+    - Se comentaron lineas de definición de iconos en gtkrc.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 23 Jun 2015 12:27:26 -0300
+
 gnome-themes-huayra (2.48) torbellino; urgency=medium
 
   * Se agrega huayra-cursors-theme como dependencia de Liso.
