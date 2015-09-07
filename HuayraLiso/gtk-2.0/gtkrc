@@ -828,3 +828,26 @@ widget_class "*GimpToolbox*" style "performance-fix"
 widget_class "*GimpMenuDock*" style "performance-fix"
 widget "*OOoFixed*" style "performance-fix" # Openoffice/Libreoffice
 
+# Patch para texto de iconos de escritorio en XFCE
+
+#
+style "xfdesktop-icon-view" {
+
+    ## transparency (alpha) factor
+    # original: XfdesktopIconView::label-alpha = 75
+    # set transparency of icon text background to 100%
+    XfdesktopIconView::label-alpha = 30
+
+    # background colors
+    base[NORMAL] = "#000000"
+    base[SELECTED] = "#C5C5C5"
+    base[ACTIVE] = "#C5C5C5"
+
+    # foreground colors
+    fg[NORMAL] = "#C0C0C0"
+    fg[SELECTED] = "#FFFFFF"
+    fg[ACTIVE] = "#000000"
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
+
