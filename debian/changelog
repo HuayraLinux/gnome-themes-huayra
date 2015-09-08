@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.50) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Ajustes para XFCE Huayra Liso.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 08 Sep 2015 11:43:46 -0300
+
 gnome-themes-huayra (2.49) torbellino; urgency=medium
 
   * Correcciones en HuayraAccesible:
