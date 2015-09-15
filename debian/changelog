@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.51) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Se agregan clases para corregir toggles de GTK3 en Liso.
+
+ -- Ivan Hoffmann <digital.h@gmail.com>  Tue, 15 Sep 2015 10:46:24 -0300
+
 gnome-themes-huayra (2.50) torbellino; urgency=medium
 
   [Claudio "malefico" Andaur]
