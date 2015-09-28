@@ -55,6 +55,11 @@
 
     border-width: 0px;
  	engine: none;
+
+	-adwaita-focus-border-color: alpha(@theme_text_color, 0.3);
+    -adwaita-focus-border-radius: 2;
+    -adwaita-focus-border-dashes: 1;
+
 /* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
 /*
@@ -109,6 +114,13 @@ GtkWindow {
     /* color: @selected_fg_color; */
 }
 
+/*
+focused {
+	border-color: red;
+	border-style:solid;
+	border-width: 1px;
+*/
+
 *:insensitive {
     background-color: @insensitive_bg_color; 
     color: @insensitive_fg_color;
@@ -145,10 +157,12 @@ GtkWindow {
 
 GtkBox {
 	background-color: transparent; /* shade(@theme_bg_color, 0.97); las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
+	background-image: none;
 }
 
 GtkBox:hover {
 	background-color: transparent;
+	background-image: none;
 }
 
 GtkBox:insensitive {
@@ -157,14 +171,25 @@ GtkBox:insensitive {
 
 GtkLabel {
 	background-color: transparent;
+	background-image:none;
 }
+
 
 GtkLabel:insensitive {
     background-color: transparent;
 }
 
-GtkLabel:active:hover {
+/*GtkLabel:active:hover {
 	background-color: yellow;
+}*/
+
+GtkLabel:focused, 
+GtkLabel:active:focused{
+	background-color: transparent;
+	background-image:none;
+	border-width: 3px;
+	border-color: green;
+	border-style: solid;
 }
 
 .view.rubberband,
@@ -197,7 +222,9 @@ GtkLabel:active:hover {
 	border-bottom-right-radius: 0px;
 
 	border-bottom: 0px none;
-	border-color: shade(@border_color, 1.30);
+	border-style: solid;
+	border-width: 1px 1px 0px 1px;
+	border-color: alpha(@theme_fg_color, 0.3); /* shade(@border_color, 1.30);*/
 	padding: 5px 4px 4px 4px;
 }
 
@@ -228,6 +255,7 @@ GtkLabel:active:hover {
 	/* background: none;*/
 	border-image: none;
 	border-style: none;
+	border-color: green;
 }
 
 .titlebar .titlebutton:active:insensitive {
@@ -240,11 +268,21 @@ GtkLabel:active:hover {
 	border-style: none;
 }
 
+/* Bordes para la ventana principal de Simple-Scan y Gnome-Calculator */
+UserInterface, MathWindow {
+	border-style: solid;
+	border-color: alpha(@theme_fg_color, 0.3);
+	border-width: 0px 1px 1px 1px;
+
+}
+
 
 .window-frame {
-	border-width: 1px;
+	border-image: none;
+	border-width: 2px;
 	border-radius: 7px 7px 0 0;
 	border-style: solid;
+	border-color: red;
 	margin: 10px;
 }
 
@@ -358,6 +396,11 @@ GtkStatusbar {
 }
 
 .entry:focused {
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: @insensitive_border_color;
+
 /*
     border-image: -gtk-gradient (linear,
                             left top, left bottom,
@@ -418,7 +461,7 @@ GtkStatusbar {
 .spinbutton.button:prelight,
 .spinbutton.button:hover,
 .spinbutton.button:active,
-.spinbutton.button:focused,
+
 .spinbutton.button:insensitive {
     background-image: none;
     background-color: transparent;
@@ -428,6 +471,14 @@ GtkStatusbar {
     border-image: none;
 	border-radius: 2px;
 
+}
+
+
+.spinbutton.button:focused {
+
+    border-width: 1px;
+    border-style: dashed;
+	border-color: @insensitive_border_color;
 }
 
 .spinbutton.button {
@@ -739,6 +790,18 @@ GtkScrolledWindow.frame {
 	text-shadow: none; 
 
 
+}
+
+.button:focused {
+    border-width: 1px;
+    border-style: dashed;
+	border-color: shade(@theme_selected_bg_color, 0.6); 
+}
+
+.button.label:focused {
+    border-width: 1px;
+    border-style: dashed;
+	border-color: shade(@theme_selected_bg_color, 0.6); 
 }
 
 GtkToggleButton.button:checked,
@@ -1843,6 +1906,7 @@ MathDisplay {
                                      left top, left bottom,
                                      from (shade (@theme_bg_dark_color, 0.60)),
                                      to (shade (@theme_bg_dark_color, 0.60)));
+
 }
 
 MathDisplay GtkTextView {
