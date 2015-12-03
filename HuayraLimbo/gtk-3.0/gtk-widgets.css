@@ -1,6 +1,6 @@
 * {
     engine: none;
-    padding: 2px;
+    padding: 3px;
     background-clip: padding-box;
 
     -GtkToolButton-icon-spacing: 4;
@@ -621,9 +621,10 @@ GtkProgressBar.vertical:backdrop,
  ************/
 
 .scale {
-	-GtkScale-slider-length: 10;
-	-GtkRange-slider-width: 10;
-	-GtkRange-trough-border: 0;
+	-GtkScale-slider-length: 10px;
+	-GtkRange-slider-width: 10px;
+	-GtkRange-trough-border: 6px;
+	
 }
 
 .scale.slider,
@@ -633,9 +634,8 @@ GtkProgressBar.vertical:backdrop,
 .scale.slider.vertical:hover,
 .scale.slider.vertical:insensitive
  {
-	border-radius: 0;
-	border-style: none;
-
+	border-radius: 3px;
+	border-style: solid;
 	background-color: transparent;
 	background-image: url("imagenes/handle.png");
 	/* background-image in -assets variant */
@@ -644,6 +644,8 @@ GtkProgressBar.vertical:backdrop,
 .scale.trough {
 	margin: 7px 0;
 	border-radius: 6px;
+	background-color: red;
+	color: green;
 }
 
 .scale.trough.vertical {
@@ -656,11 +658,14 @@ GtkProgressBar.vertical:backdrop,
 	border-width: 1px;
 	border-image: none;
 	border-style: solid;
+	border-color: transparent;
 }
 
 .scale.trough,
 .scale.trough.vertical {
 	border-color: @borders;
+	background-color: shade(@insensitive_bg_color, 0.65);
+	color: shade(@insensitive_bg_color, 0.85);
 }
 
 .scale.trough.highlight,
@@ -672,7 +677,7 @@ GtkProgressBar.vertical:backdrop,
 .scale.trough.highlight:insensitive,
 .scale.trough.vertical:insensitive,
 .scale.trough.highlight.vertical:insensitive {
-	background-color: shade(@insensitive_bg_color, 0.85);
+	background-color: blue; /* shade(@insensitive_bg_color, 0.85);*/
 	border-color: shade(@insensitive_scale_borders, 0.85);
 	box-shadow: none;
 	background-image: none;
@@ -681,7 +686,7 @@ GtkProgressBar.vertical:backdrop,
 .scale.trough.highlight,
 .scale.trough.vertical.highlight {
 	background-image: none;
-	background-color: @scale_highlight_bg;
+	background-color: @selected_bg_color;  /* @scale_highlight_bg;*/
 }
 
 .scale.progressbar {
@@ -758,6 +763,19 @@ GtkComboBox.combobox-entry .button {
     border-color: @borders; /* transparent */
 
     text-shadow: @button_text_shadow 0px 0px;
+}
+
+
+GtkToggleButton.button:checked,
+.button:checked,
+.button:checked:active, active:hover {
+	color: shade(@theme_tooltip_fg_color, 0.9);
+	background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@theme_selected_bg_color, 0.75)),
+                                     to   (shade(@theme_selected_bg_color, 0.75)));
+
+
 }
 
 /* We may want a background for focused buttons, but in the meantime let's remove it too */
@@ -1691,7 +1709,9 @@ to (shade(shade(@selected_bg_color, 1.0), 1.1)));*/
 .radio:insensitive {
     background-color: transparent; /* transparent;*/
     border-style: none;
+    background-image: url("assets/checkbox-unchecked.png");
 }
+
 
 GtkCheckButton:hover,
 GtkCheckButton:active:hover,

@@ -208,6 +208,7 @@
 /*********************
  * GtkScale's slider *
  *********************/
+/*
 GtkScale.slider,
 GtkScale.slider.horizontal {
     background-image: url("assets/scale-slider-horz.png");
@@ -308,4 +309,4 @@ GtkScale.scale-has-marks-below.slider.vertical:backdrop {
 GtkScale.scale-has-marks-below.slider.vertical:backdrop:insensitive {
     background-image: url("assets/scale-slider-right-backdrop-insensitive.png");
 }
-
+*/
