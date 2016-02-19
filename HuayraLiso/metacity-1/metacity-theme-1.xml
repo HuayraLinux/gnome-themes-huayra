@@ -1,430 +1,439 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>HuayraLiso-dev</name>
+  <name>HuayraLiso</name>
   <author>Claudio "malefico" Andaur &lt;malefico3d@huayra.conectarigualdad.gob.ar&gt; </author>
-  <copyright>&#194; CENITAL 2014 - ConectarIgualdad</copyright>
-  <date>Diciembre 25, 2014</date>
-  <description>Tema Huayra Liso. Un tema Flat. Conectar Igualdad. http://huayra.conectarigualdad.gob.ar</description>
+  <copyright>&#194; CENITAL 2016 - ConectarIgualdad</copyright>
+  <date>20 Enero 2016</date>
+  <description>Tema Huayra Liso. Un tema flat. Codigo restructurado.</description>
 </info>
 
 <!-- define constants -->
-<constant name="IconTitleSpacing" value="10"/> <!-- Space between menu button and title -->
-<constant name="AnchoBoton" value="22"/> <!-- Button width -->
-<constant name="AltoBoton" value="19"/>
+<constant name="AnchoBoton" value="20"/> <!-- Button width -->
+<constant name="AltoBoton" value="18"/>
+
+<!-- :::: GEOMETRIAS :::: -->
 
 <!-- Parametros generales para ventana "normal" -->
-<frame_geometry name="normal" title_scale="large" rounded_top_left="true" rounded_top_right="true">
-  <distance name="left_width" value="2"/>
-  <distance name="right_width" value="2"/>
-  <distance name="bottom_height" value="2"/>
-  <distance name="left_titlebar_edge" value="2"/>
-  <distance name="right_titlebar_edge" value="1"/>
-  <aspect_ratio name="button" value="0.86"/>
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
+  <distance name="left_width" value="0"/>
+  <distance name="right_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
+  <distance name="left_titlebar_edge" value="4"/>
+  <distance name="right_titlebar_edge" value="6"/>
+  <aspect_ratio name="button" value="1.00"/>
   <distance name="title_vertical_pad" value="4"/>
-  <border name="title_border" left="5" right="1" top="2" bottom="2"/>
-  <border name="button_border" left="1" right="4" top="0" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="2" bottom="0"/>
+  <border name="button_border" left="0" right="1" top="0" bottom="0"/>
 </frame_geometry>
 
-<frame_geometry name="max" title_scale="large" rounded_top_left="false" rounded_top_right="false">
-  <distance name="left_width" value="5"/>
-  <distance name="right_width" value="2"/>
-  <distance name="bottom_height" value="2"/>
-  <distance name="left_titlebar_edge" value="2"/>
-  <distance name="right_titlebar_edge" value="1"/>
-  <aspect_ratio name="button" value="0.86"/>
+<frame_geometry name="shaded" parent="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false"/>
+
+<frame_geometry name="normal-maximizado" title_scale="medium" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
+  <distance name="left_width" value="0"/>
+  <distance name="right_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
+  <distance name="left_titlebar_edge" value="4"/>
+  <distance name="right_titlebar_edge" value="6"/>
+  <aspect_ratio name="button" value="1.00"/>
   <distance name="title_vertical_pad" value="4"/>
-  <border name="title_border" left="15" right="0" top="2" bottom="2"/>
-  <border name="button_border" left="1" right="4" top="0" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="2" bottom="0"/>
+  <border name="button_border" left="0" right="1" top="0" bottom="0"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="false">
-  <distance name="left_width" value="3"/>
-  <distance name="right_width" value="3"/>
-  <distance name="bottom_height" value="3"/>
-  <distance name="left_titlebar_edge" value="4"/>
-  <distance name="right_titlebar_edge" value="4"/>
-  <distance name="button_width" value="4"/>
-  <distance name="button_height" value="4"/>
+  <distance name="left_width" value="2"/>
+  <distance name="right_width" value="2"/>
+  <distance name="bottom_height" value="2"/>
+  <distance name="left_titlebar_edge" value="0"/>
+  <distance name="right_titlebar_edge" value="0"/>
+  <distance name="button_width" value="0"/>
+  <distance name="button_height" value="0"/>
   <distance name="title_vertical_pad" value="4"/>
-  <border name="title_border" left="15" right="0" top="4" bottom="0"/>
-  <border name="button_border" left="3" right="3" top="0" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="4" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
 
+<!-- ::: BORDES ::: -->
+
+<draw_ops name="borde-lateral-izquierdo-normal">
+	<gradient type="vertical" x="0" y="0" width="2" height="height">
+		<color value="#EFEFEF" />
+		<color value="#EFEFEF" />
+ 	</gradient>
+</draw_ops>
+
+<draw_ops name="borde-lateral-derecho-normal">
+	<gradient type="vertical" x="0" y="0" width="2" height="height">
+		<color value="#EFEFEF" />
+		<color value="#EFEFEF" />
+ 	</gradient>
+</draw_ops>
 
 
+<draw_ops name="borde-inferior-normal">
+	<tint color="#EFEFEF" alpha="1.0" x="0" y="0" width="width" height="2"/>
+</draw_ops>
 
-<!-- Estilo Activo (ventana con foco) -->
-<!-- Este es el estilo por defecto de las ventanas -->
+<draw_ops name="borde-lateral-derecho-inactivo">
+	<gradient type="vertical" x="0" y="0" width="2" height="height">
+		<color value="#EFEFEF" />
+		<color value="#EFEFEF" />
+ 	</gradient>
+</draw_ops>
 
-<frame_style name="enfoco" geometry="normal">
-  <piece position="title">
-    <draw_ops>
-	<!-- Escribimos dos veces el titulo de la ventana para lograr un efecto de "tallado" pseudo-tridimensional --> 
-	<title color="#787878" x="20" y="0 `max` ((height-title_height)/2)"/>
+<draw_ops name="borde-lateral-izquierdo-inactivo">
+	<gradient type="vertical" x="0" y="0" width="2" height="height">
+		<color value="#EFEFEF" />
+		<color value="#EFEFEF" />
+ 	</gradient>
+</draw_ops>
 
 
-<!--      <title color="#666666" x="IconTitleSpacing" y="0"/> -->
+<draw_ops name="borde-inferior-inactivo">
+	<tint color="#EFEFEF" alpha="1.0" x="0" y="0" width="width" height="2"/>
+</draw_ops>
 
-    </draw_ops>
-  </piece>
 
-  <piece position="titlebar">
-    <draw_ops>
-	<!-- se define un gradiente vertical de dos tonos, aunque se pueden añadir cuantos colores se desee. "type" tambien puede ser "horizontal" o "diagonal" -->  
+<draw_ops name="borde-normal">
+	<line color="#EFEFEF" x1="0" y1="0" x2="width" y2="0" dash_off_length="2" dash_on_length="4"/>
+	<!-- <rectangle color="#d3ff23" filled="false" x="0" y="0" width="width-1" height="height-1"/> -->
+</draw_ops>
+
+<draw_ops name="borde-inactivo">
+	<line color="#EFEFEF" x1="0" y1="0" x2="width" y2="0" dash_off_length="0" dash_on_length="0"/>
+	<!-- <rectangle color="#37abc8" filled="false" x="0" y="0" width="width-1" height="height-1"/> -->
+</draw_ops>
+
+<draw_ops name="borde-maximizado">
+	<line color="#EFEFEF" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="#EFEFEF" x1="0" y1="height-1" x2="width" y2="height-1"/>
+</draw_ops>
+
+<!-- :::::   TITLEBAR   :::::  -->
+<!-- Color de fondo de la barra titulo. Se define un gradiente vertical de dos tonos, aunque se pueden añadir cuantos colores se desee. "type" tambien puede ser "horizontal" o "diagonal" -->  
+
+<draw_ops name="titlebar-normal">
+<!-- gris claro, el mismo que los paneles de controles -->
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#efefef" />
-		<color value="#efefef" />
+		<color value="#F7F7F7" />
+		<color value="#EFEFEF" />
  	</gradient>
-    </draw_ops>
-  </piece>
+</draw_ops>
 
-  <piece position="left_edge">
-	<draw_ops>
-	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#efefef" />
-		<color value="#efefef" />
- 	</gradient>
-	</draw_ops>
-  </piece>
-  <piece position="right_edge">
-	<draw_ops>
-	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#efefef" />
-		<color value="#efefef" />
- 	</gradient>
-	</draw_ops>
-  </piece>
-  <piece position="bottom_edge">
-	<draw_ops>
-		<tint color="#efefef" alpha="1.0" x="0" y="0" width="width" height="2"/>
-	</draw_ops>
-  </piece>
-
-<!-- Aqui se definen los iconos de los botones. Los botones tienen 3 estados: 
-
-	"prelight" (cuando el raton pasa encima pero no se hace clic)
-	"normal" (como se ven si no se hace nada)
-	"pressed" (si se hace clic. Este estado dura mientras se mantenga pulsado el boton del raton)
--->
-
-  <button function="close" state="normal">
-    <draw_ops>
-      <image filename="cerrar-activo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-<!--
-  <button function="right_right_background" state="normal">
-    <draw_ops>
-
-	<tint color="#54245c" alpha="1.0" x="0" y="0" width="width + 30" height="height"/>
-    </draw_ops>
-  </button>
--->
-  <button function="close" state="prelight">
-    <draw_ops>
-      <image filename="cerrar-highlight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="close" state="pressed">
-    <draw_ops>
-      <image filename="cerrar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="minimize" state="normal">
-    <draw_ops>
-      <image filename="minimizar-activo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="minimize" state="prelight">
-    <draw_ops>
-      <image filename="minimizar-highlight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="minimize" state="pressed">
-    <draw_ops>
-      <image filename="minimizar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="maximize" state="normal">
-    <draw_ops>
-      <image filename="maximizar-activo_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="maximize" state="prelight">
-    <draw_ops>
-      <image filename="maximizar-highlight_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="maximize" state="pressed">
-    <draw_ops>
-      <image filename="maximizar-presionado_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="menu" state="normal">
-    <draw_ops>
-      <image filename="menu-activo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="menu" state="prelight">
-    <draw_ops>
-      <image filename="menu-highlight.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="menu" state="pressed">
-    <draw_ops>
-      <image filename="menu-activo-presionado.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-</frame_style>
-
-<!-- Estilo normal maximizado -->
-<frame_style name="enfoco_maximizado" geometry="max" parent="enfoco" >
-
-  <button function="maximize" state="normal">
-    <draw_ops>
-      <image filename="maximizar-activo_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="maximize" state="prelight">
-    <draw_ops>
-      <image filename="maximizar-highlight_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-  <button function="maximize" state="pressed">
-    <draw_ops>
-      <image filename="maximizar-presionado_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-</frame_style>
-
-<!-- Estilo Inactivo -->
-<frame_style name="sinfoco" geometry="normal">
-
-  <piece position="title">
-    <draw_ops>
-	<title color="#969696" x="15" y="0 `max` ((height-title_height)/2)"/>
-
-<!--      <title color="#808090" x="IconTitleSpacing" y="0"/> -->
-    </draw_ops>
-  </piece>
-
-  <piece position="titlebar">
-    <draw_ops>
-	<!-- se define un gradiente vertical de dos tonos de violeta, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
+<draw_ops name="titlebar-normal-maximizado">
+<!-- gradiente amarillo yema -->
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#e0e0e0" />
+		<color value="#F7F7F7" />
+		<color value="#EFEFEF" />
+	</gradient>
+</draw_ops>
+
+<draw_ops name="titlebar-inactivo">
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
 		<color value="#ebebeb" />
-		<color value="#efefef" />
-		<color value="#efefef" />
+		<color value="#EFEFEF" />
  	</gradient>
-    </draw_ops>
-  </piece>
-  <piece position="left_edge">
-	<draw_ops>
-	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#f4f3f3" />
-		<color value="#d7d7d7" />
-		<color value="#d0d0d0" />
-	</gradient>
-	</draw_ops>
-  </piece>
-  <piece position="right_edge">
-	<draw_ops>
-	<gradient type="vertical" x="0" y="0" width="3" height="height">
-		<color value="#f4f3f3" />
-		<color value="#d7d7d7" />
-		<color value="#d0d0d0" />
-	</gradient>
-	</draw_ops>
-  </piece>
-  <piece position="bottom_edge">
-	<draw_ops>
-		<tint color="#c1c1c1" alpha="1.0" x="0" y="0" width="width" height="3"/>
-	</draw_ops>
-  </piece>
+</draw_ops>
 
+<draw_ops name="titlebar-inactivo-maximizado">
+<!-- gradiente naranja -->
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="#ebebeb" />
+		<color value="#EFEFEF" />
+ 	</gradient>
+</draw_ops>
 
-  <button function="close" state="normal">
-    <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<!-- BACKGROUND -->
 
-  <button function="close" state="pressed">
-    <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<draw_ops name="fondo-normal">
+	<rectangle color="#000000" filled="true" x="1" y="1" width="width-2" height="height-2"/>
+</draw_ops>
 
-  <button function="close" state="prelight">
-    <draw_ops>
-      <image filename="cerrar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<!-- :::::   TITULOS   :::::  -->
+<!-- Color de las letras del titulo --> 
 
-  <button function="minimize" state="normal">
-    <draw_ops>
-      <image filename="minimizar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<draw_ops name="titulo-normal">
+	<title color="#787878" x="20" y="0 `max` ((height-title_height)/2)"/>
+</draw_ops>
 
-  <button function="minimize" state="prelight">
-    <draw_ops>
-      <image filename="minimizar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<draw_ops name="titulo-inactivo">
+	<title color="#969696" x="15" y="0 `max` ((height-title_height)/2)"/>
+</draw_ops>
 
-  <button function="minimize" state="pressed">
-    <draw_ops>
-      <image filename="minimizar-inactivo.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
+<draw_ops name="titulo-maximizado">
+	<title color="#787878" x="20" y="0 `max` ((height-title_height)/2)"/>
+</draw_ops>
 
-  <button function="maximize" state="normal">
-    <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="maximize" state="prelight">
-    <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="maximize" state="pressed">
-    <draw_ops>
-      <image filename="maximizar-inactivo_A.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="menu" state="normal">
-    <draw_ops>
-      <image filename="menu-inactivo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="menu" state="pressed">
-    <draw_ops>
-      <image filename="menu-activo-presionado.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-</frame_style>
-
-
-
-<!-- Estilo no-maximizado sin foco -->
-<frame_style name="sinfoco_maximizado" geometry="normal" parent="sinfoco">
-  <button function="maximize" state="normal">
-    <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="maximize" state="prelight">
-    <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-  <button function="maximize" state="pressed">
-    <draw_ops>
-      <image filename="maximizar-inactivo_B.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
-    </draw_ops>
-  </button>
-
-</frame_style>
-
-
-<!-- Estilo "Shaded" Activo (con foco) -->
-<frame_style name="normal_shaded" geometry="normal" parent="sinfoco">
-
-</frame_style>
-
-<!-- Active (focused) shaded style -->
-<frame_style name="focused_shaded" geometry="normal" parent="enfoco">
-
-</frame_style>
-
-<frame_style_set name="normal">
-	<frame focus="yes" state="shaded" style="enfoco"/>
-	<frame focus="yes" state="normal" resize="both" style="enfoco"/>
-	<frame focus="yes" state="maximized" style="enfoco_maximizado"/>
-	<frame focus="yes" state="maximized_and_shaded" style="enfoco_maximizado"/>
-	<frame focus="no" state="normal" resize="both" style="sinfoco"/>
-	<frame focus="no" state="shaded" style="normal_shaded"/>
-	<frame focus="no" state="maximized" style="sinfoco_maximizado"/>
-	<frame focus="no" state="maximized_and_shaded" style="sinfoco"/>
-</frame_style_set>
+<draw_ops name="titulo-maximizado-inactivo">
+	<title color="#969696" x="20" y="0 `max` ((height-title_height)/2)"/>
+</draw_ops>
 
 <draw_ops name="blank">
 <!-- nothing -->
 </draw_ops>
 
+<!-- ::: FONDO COMPLETO (BORDE + TITLEBAR) ::: -->
+
+<draw_ops name="ventana-normal">
+	<include name="titlebar-normal"/>
+</draw_ops>
+
+<draw_ops name="ventana-inactiva">
+	<include name="titlebar-inactivo"/>
+</draw_ops>
+
+<draw_ops name="ventana-normal-maximizada">
+	<include name="titlebar-normal-maximizado"/>
+</draw_ops>
+
+<draw_ops name="ventana-inactiva-maximizada">
+	<include name="titlebar-inactivo-maximizado"/>
+</draw_ops>
+
+
+<!-- :::::   BOTONES   :::::  -->
+<!-- ::::::::Aqui se definen los iconos de los botones. Los botones tienen 3 estados: 
+
+	"prelight" (cuando el raton pasa encima pero no se hace clic)
+	"normal" (como se ven si no se hace nada)
+	"pressed" (si se hace clic. Este estado dura mientras se mantenga pulsado el boton del raton)
+
+Adicionalmente se define el estado "inactivo" para cuando la funcion está desactivada (caso ventana fuera de foco) -->
+
+<!-- ::: CERRAR ::: -->
+
+<draw_ops name="btn-cerrar-normal">
+  <image filename="cerrar-normal.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-cerrar-prelight">
+  <image filename="cerrar-prelight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-cerrar-presionado">
+  <image filename="cerrar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+
+<!-- ::::: MINIMIZAR  ::::: -->
+
+<draw_ops name="btn-minimizar-normal">
+  <image filename="minimizar-normal.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-minimizar-prelight">
+  <image filename="minimizar-prelight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-minimizar-presionado">
+  <image filename="minimizar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+
+<!-- ::::: MAXIMIZAR ::::: -->
+
+<draw_ops name="btn-maximizar-normal">
+  <image filename="maximizar-normal.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-maximizar-prelight">
+  <image filename="maximizar-prelight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-maximizar-presionado">
+  <image filename="maximizar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+
+<!-- ::::: DESMAXIMIZAR ::::: -->
+
+<draw_ops name="btn-desmaximizar-normal">
+  <image filename="desmaximizar-normal.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-desmaximizar-prelight">
+  <image filename="desmaximizar-prelight.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-desmaximizar-presionado">
+  <image filename="desmaximizar-presionado.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+
+<!-- ::::: MENU  ::::: -->
+
+<draw_ops name="btn-menu-normal">
+  <image filename="menu-normal.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-menu-prelight">
+  <image filename="menu-prelight.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<draw_ops name="btn-menu-presionado">
+  <image filename="menu-presionado.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<!--
+<draw_ops name="btn-menu-inactivo">
+  <image filename="menu-inactivo.png" x="4" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+-->
+
+<!-- BLANK -->
+<draw_ops name="btn-blank">
+  <image filename="blank.png" x="3" y="4" width="AnchoBoton" height="AltoBoton"/>
+</draw_ops>
+
+<!-- ::::::::           ESTILOS           ::::::::: -->
+
+<!-- Estilo Activo (ventana con foco) -->
+<!-- Este es el estilo por defecto de las ventanas -->
+
+<!-- NORMAL  -->
+
+<frame_style name="normal" geometry="normal">
+	<piece position="titlebar" draw_ops="ventana-normal"/> 
+	<piece position="title" draw_ops="titulo-normal"/>
+	<piece position="left_edge" draw_ops="borde-lateral-izquierdo-normal"/>
+	<piece position="right_edge" draw_ops="borde-lateral-derecho-normal"/>
+	<piece position="bottom_edge" draw_ops="borde-inferior-normal"/>
+	<button function="close" state="normal" draw_ops="btn-cerrar-normal"/>
+	<button function="close" state="pressed" draw_ops="btn-cerrar-presionado"/>
+	<button function="close" state="prelight" draw_ops="btn-cerrar-prelight"/>
+	<button function="maximize" state="normal" draw_ops="btn-maximizar-normal"/>
+	<button function="maximize" state="pressed" draw_ops="btn-maximizar-presionado"/>
+	<button function="maximize" state="prelight" draw_ops="btn-maximizar-prelight"/>
+	<button function="minimize" state="normal" draw_ops="btn-minimizar-normal"/>
+	<button function="minimize" state="pressed" draw_ops="btn-minimizar-presionado"/>
+	<button function="minimize" state="prelight" draw_ops="btn-minimizar-prelight"/>
+	<button function="menu" state="normal" draw_ops="btn-menu-normal"/>
+	<button function="menu" state="pressed" draw_ops="btn-menu-presionado"/>
+	<button function="menu" state="prelight" draw_ops="btn-menu-prelight"/>
+</frame_style>
+
+<!-- SIN FOCO -->
+
+<frame_style name="sinfoco" geometry="normal" parent="normal">
+	<piece position="titlebar" draw_ops="ventana-inactiva"/>
+	<piece position="title" draw_ops="titulo-inactivo"/>
+	<piece position="left_edge" draw_ops="borde-lateral-izquierdo-inactivo"/>
+	<piece position="right_edge" draw_ops="borde-lateral-derecho-inactivo"/>
+	<piece position="bottom_edge" draw_ops="borde-inferior-inactivo"/>
+	<button function="close" state="normal" draw_ops="btn-blank"/>
+	<button function="close" state="pressed" draw_ops="btn-blank"/>
+	<button function="close" state="prelight" draw_ops="btn-blank"/>
+	<button function="maximize" state="normal" draw_ops="btn-blank"/>
+	<button function="maximize" state="pressed" draw_ops="btn-blank"/>
+	<button function="maximize" state="prelight" draw_ops="btn-blank"/>
+	<button function="minimize" state="normal" draw_ops="btn-blank"/>
+	<button function="minimize" state="pressed" draw_ops="btn-blank"/>
+	<button function="minimize" state="prelight" draw_ops="btn-blank"/>
+	<button function="menu" state="normal" draw_ops="btn-blank"/>
+	<button function="menu" state="pressed" draw_ops="btn-blank"/>
+	<button function="menu" state="prelight" draw_ops="btn-blank"/>
+
+<!--	<button function="close" state="normal" draw_ops="btn-cerrar-inactivo"/>
+	<button function="close" state="pressed" draw_ops="btn-cerrar-inactivo"/>
+	<button function="close" state="prelight" draw_ops="btn-cerrar-inactivo"/>
+	<button function="maximize" state="normal" draw_ops="btn-maximizar-inactivo-A"/>
+	<button function="maximize" state="pressed" draw_ops="btn-maximizar-inactivo-A"/>
+	<button function="maximize" state="prelight" draw_ops="btn-maximizar-inactivo-A"/>
+	<button function="minimize" state="normal" draw_ops="btn-minimizar-inactivo"/>
+	<button function="minimize" state="pressed" draw_ops="btn-minimizar-inactivo"/>
+	<button function="minimize" state="prelight" draw_ops="btn-minimizar-inactivo"/>
+	<button function="menu" state="normal" draw_ops="btn-menu-inactivo"/>
+	<button function="menu" state="pressed" draw_ops="btn-menu-inactivo"/>
+	<button function="menu" state="prelight" draw_ops="btn-menu-inactivo"/> -->
+</frame_style>
+
+<!-- NORMAL MAXIMIZADO -->
+
+<frame_style name="maximizado" geometry="normal-maximizado" parent="normal">
+	<piece position="titlebar" draw_ops="ventana-normal-maximizada"/>
+	<piece position="title" draw_ops="titulo-maximizado"/>
+	<button function="close" state="normal" draw_ops="btn-cerrar-normal"/>
+	<button function="close" state="pressed" draw_ops="btn-cerrar-presionado"/>
+	<button function="close" state="prelight" draw_ops="btn-cerrar-prelight"/>
+	<button function="maximize" state="normal" draw_ops="btn-desmaximizar-normal"/>
+	<button function="maximize" state="pressed" draw_ops="btn-desmaximizar-presionado"/>
+	<button function="maximize" state="prelight" draw_ops="btn-desmaximizar-prelight"/>
+	<button function="minimize" state="normal" draw_ops="btn-minimizar-normal"/>
+	<button function="minimize" state="pressed" draw_ops="btn-minimizar-presionado"/>
+	<button function="minimize" state="prelight" draw_ops="btn-minimizar-prelight"/>
+</frame_style>
+
+<!-- SIN FOCO MAXIMIZADO -->
+<frame_style name="maximizado-sinfoco" geometry="normal-maximizado" parent="sinfoco">
+	<piece position="titlebar" draw_ops="ventana-inactiva-maximizada"/>
+	<piece position="title" draw_ops="titulo-maximizado-inactivo"/>
+	<button function="close" state="normal" draw_ops="btn-blank"/>
+	<button function="close" state="pressed" draw_ops="btn-blank"/>
+	<button function="close" state="prelight" draw_ops="btn-blank"/>
+	<button function="maximize" state="normal" draw_ops="btn-blank"/>
+	<button function="maximize" state="pressed" draw_ops="btn-blank"/>
+	<button function="maximize" state="prelight" draw_ops="btn-blank"/>
+	<button function="minimize" state="normal" draw_ops="btn-blank"/>
+	<button function="minimize" state="pressed" draw_ops="btn-blank"/>
+	<button function="minimize" state="prelight" draw_ops="btn-blank"/>
+	<button function="menu" state="normal" draw_ops="btn-blank"/>
+	<button function="menu" state="pressed" draw_ops="btn-blank"/>
+	<button function="menu" state="prelight" draw_ops="btn-blank"/>
+</frame_style>
+
+
+<!-- Estilo "Shaded" Activo (con foco) -->
+<frame_style name="normal_shaded" geometry="shaded" parent="normal">
+	<piece position="entire_background" draw_ops="ventana-normal-maximizada"/>
+</frame_style>
+
+<!-- Active (focused) shaded style -->
+<frame_style name="sinfoco_shaded" geometry="shaded" parent="sinfoco">
+	<piece position="entire_background" draw_ops="ventana-normal-maximizada"/>
+</frame_style>
+
 <frame_style name="border" geometry="border" parent="sinfoco">
   <piece position="title" draw_ops="blank"/>
 </frame_style>
 
-<frame_style_set name="border">
-<frame focus="yes" state="normal" resize="both" style="border"/>
-<frame focus="no" state="normal" resize="both" style="border"/>
-<frame focus="yes" state="maximized" style="border"/>
-<frame focus="no" state="maximized" style="border"/>
-<frame focus="yes" state="shaded" style="border"/>
-<frame focus="no" state="shaded" style="border"/>
-<frame focus="yes" state="maximized_and_shaded" style="border"/>
-<frame focus="no" state="maximized_and_shaded" style="border"/>
+
+<!-- STYLE SETS  -->
+
+<frame_style_set name="set_normal">
+	<frame focus="yes" state="shaded" style="normal"/>
+	<frame focus="yes" state="normal" resize="both" style="normal"/>
+	<frame focus="yes" state="maximized" style="maximizado"/>
+	<frame focus="yes" state="maximized_and_shaded" style="maximizado"/>
+	<frame focus="no" state="normal" resize="both" style="sinfoco"/>
+	<frame focus="no" state="shaded" style="sinfoco_shaded"/>
+	<frame focus="no" state="maximized" style="maximizado-sinfoco"/>
+	<frame focus="no" state="maximized_and_shaded" style="sinfoco"/>
 </frame_style_set>
 
-<window type="normal" style_set="normal"/>
-<window type="dialog" style_set="normal"/>
-<window type="modal_dialog" style_set="normal"/>
-<window type="menu" style_set="normal"/>
-<window type="utility" style_set="normal"/>
-<window type="border" style_set="border"/>
 
+<frame_style_set name="set_borde">
+	<frame focus="yes" state="normal" resize="both" style="border"/>
+	<frame focus="no" state="normal" resize="both" style="border"/>
+	<frame focus="yes" state="maximized" style="border"/>
+	<frame focus="no" state="maximized" style="border"/>
+	<frame focus="yes" state="shaded" style="border"/>
+	<frame focus="no" state="shaded" style="border"/>
+	<frame focus="yes" state="maximized_and_shaded" style="border"/>
+	<frame focus="no" state="maximized_and_shaded" style="border"/>
+</frame_style_set>
 
-<menu_icon function="maximize" state="normal">
-  <draw_ops>
-    <image filename="menu-activo.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
-  </draw_ops>
-</menu_icon>
+<window type="normal" style_set="set_normal"/>
+<window type="dialog" style_set="set_normal"/>
+<window type="modal_dialog" style_set="set_normal"/>
+<window type="menu" style_set="set_normal"/>
+<window type="utility" style_set="set_normal"/>
+<window type="border" style_set="set_borde"/>
 
+<menu_icon function="close" state="normal" draw_ops="btn-cerrar-normal"/>
+<menu_icon function="maximize" state="normal" draw_ops="btn-maximizar-normal"/>
+<menu_icon function="unmaximize" state="normal" draw_ops="btn-desmaximizar-normal"/>
+<menu_icon function="minimize" state="normal" draw_ops="btn-minimizar-normal"/>
 
-<menu_icon function="close" state="normal">
-  <draw_ops>
-    <image filename="cerrar-activo.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
-  </draw_ops>
-</menu_icon>
-
-<menu_icon function="minimize" state="normal">
-  <draw_ops>
-    <image filename="menu-activo.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
-  </draw_ops>
-</menu_icon>
-
-<menu_icon function="unmaximize" state="normal">
-  <draw_ops>
-  </draw_ops>
-</menu_icon>
 
 </metacity_theme>
