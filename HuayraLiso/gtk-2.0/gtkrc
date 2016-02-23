@@ -6,7 +6,7 @@ gtk-color-scheme = "base_color:#ffffff"
 gtk-color-scheme = "fg_color:#f4f3f3"
 gtk-color-scheme = "tooltip_fg_color:#ffffff"
 gtk-color-scheme = "selected_bg_color:#ffb380" #naranja claro
-gtk-color-scheme = "selected_fg_color:#eeeeee"
+gtk-color-scheme = "selected_fg_color:#ffffff"
 gtk-color-scheme = "text_color:#1a1a1a" #gris oscuro
 gtk-color-scheme = "bg_color:#efefef"
 gtk-color-scheme = "tooltip_bg_color:#4ECAE9" ##6Ae7ea" # verde turquesa
@@ -21,6 +21,15 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" ##6Ae7ea" # verde turquesa
 #tooltip_bg_color: (original f5f5b5) color de fondo de tooltips
 #link_color: (original 0000ee) color de links (ejemplo: "obtener mas fondos en linea")
 #visited_link_color: (original 551a8b) enlaces visitados.
+
+# Colores personalizados:
+
+gtk-color-scheme = "color_foco:#101010" # Gris oscuro para linea punteada de foco
+gtk-color-scheme = "naranja:#FF9543"
+gtk-color-scheme = "amarillo:#F5D923"
+gtk-color-scheme = "azul:#34A1BD"
+gtk-color-scheme = "verde:#A0CF00"
+gtk-color-scheme = "gris_claro:#FAFAFA"
 
 
 #gtk-auto-mnemonics = 1
@@ -38,8 +47,8 @@ gtk-button-images    = 0 # Enables or disables icons on buttons (OS X-like).
 include "panel.rc" # Toda la configuracion del panel superior se controla desde este archivo.
 
 style "default" {
-	xthickness = 1
-	ythickness = 1
+	xthickness = 2
+	ythickness = 2
 
 	#font_name = "Asap regular 10"
 	#######################
@@ -68,14 +77,14 @@ style "default" {
 
 	GtkScrollbar::min-slider-length = 25
 	GtkScrollbar::has_secondary_backward_stepper	= 1
-	GtkScrollbar::has_secondary_forward_stepper	= 0
+	GtkScrollbar::has_secondary_forward_stepper	= 1
 
-	GtkScrolledWindow::scrollbar-spacing		= 0
+	GtkScrolledWindow::scrollbar-spacing		= 2
 	GtkScrolledWindow::scrollbars-within-bevel	= 0
 
 	GtkMenuBar::internal-padding = 2
 	GtkExpander::expander-size = 8
-	GtkToolbar::internal-padding = 0
+	GtkToolbar::internal-padding = 2
 	GtkTreeView::expander-size = 14
 	GtkTreeView::vertical-separator = 1
 	#GtkTreeView::border-width = 4
@@ -109,8 +118,8 @@ style "default" {
 
 	fg[NORMAL]		= shade(0.7, @selected_fg_color)
 #	fg[NORMAL]		= shade(0.5, @selected_fg_color)
-	fg[SELECTED]      = shade( 0.9, @selected_fg_color)
-    fg[ACTIVE]      = shade (0.6, @selected_fg_color)
+	fg[SELECTED]      = shade( 0.9, @azul)
+    fg[ACTIVE]      = shade (0.4, @selected_fg_color)
 	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
 
 	text[NORMAL]      = @text_color
@@ -130,12 +139,12 @@ engine "murrine"
 		animation           = FALSE
 		border_shades       = {0.7, 0.7}
 		colorize_scrollbar  = TRUE
-		contrast            = 0.0 # Elimina color de bordes en toolbar, menubar y botones
+		contrast            = 0.5 # Elimina color de bordes en toolbar, menubar y botones
 		cellstyle = 0
 		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,1.0,1.0,1.0} 
 		progressbarstyle    = 0
-		focus_color         = "#FFB380" #naranjita claro
+		focus_color         = shade (1.2, @naranja) #naranjita claro
 		glowstyle	    	= 1
 		glow_shade          = 1.0 # valores mayores de 1 hacen que se vea un brillo sobre los controles cuando estan seleccionados. Lo mantengo asi para compatibilidad con estilo Flat
 		focusstyle			= 3
@@ -196,10 +205,11 @@ style "liso-notebook" {
 
 	bg[NORMAL]   = shade (1.15, @bg_color)
 	bg[ACTIVE]   = shade (0.90, @bg_color)
+
 	engine "murrine" {
-		border_shades           = {0.90, 0.90}
-		contrast                = 0.6
-		roundness = 8
+		border_shades           = {0.7, 0.7}
+		contrast                = 0.9
+		roundness = 4
 
 	}
 }
@@ -208,11 +218,10 @@ style "liso-notebook-layout" {
 	bg[NORMAL]   = shade (1.0, @bg_color)
 	bg[ACTIVE]   = shade (1.0, @bg_color)
 	fg[NORMAL] = shade(1.4, @bg_color)
-
 	
 	engine "murrine" {
 		border_shades           = {1.00, 1.00}
-		contrast                = 0.0
+		contrast                = 0.8
 	}
 }
 
@@ -332,7 +341,7 @@ style "menubar" {
 	bg[NORMAL]        = @bg_color
 	bg[PRELIGHT]        = shade (0.9, @bg_color)
 	bg[ACTIVE]        = shade (0.8, @bg_color)
-	bg[SELECTED]        = shade (1.1, @selected_bg_color) #color del menu seleccionado en la barra de menu
+	bg[SELECTED]        = shade (1.0, @selected_bg_color) #color del menu seleccionado en la barra de menu
 	bg[INSENSITIVE]	= shade (0.6, @bg_color)
 
 	fg[NORMAL] = shade (0.3, @selected_fg_color)
@@ -340,6 +349,7 @@ style "menubar" {
 
         GtkWidget::window-dragging = 1
 	engine "murrine" {
+		roundness = 0
 		gradient_shades     	= {1.00,1.00,1.00,1.00}		
         border_shades 			= {1.1, 0.9}
 		contrast            	= 0.0
@@ -373,7 +383,7 @@ style "menu" {
 		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
 		glowstyle = 1
 		glow_shade = 1.0
-		roundness		    = 3 # 0 = squared 
+		roundness		    = 0 # 0 = squared 
 	}
 }
 
@@ -394,8 +404,8 @@ style "menu_item" {
 style "sliders-liso"
 # Estilo para los deslizadores de volumen
 {
-	xthickness = 1
-	ythickness = 4
+	xthickness = 2
+	ythickness = 2
 	bg[NORMAL] = shade (1.2, @selected_fg_color) # flecha o area movil rectangular del slider
 	#bg[INSENSITIVE] = shade(0.9, @selected_bg_color)
 	bg[ACTIVE] = shade(0.9, @selected_fg_color) #color de fondo del slider
@@ -407,57 +417,29 @@ style "sliders-liso"
 
 }
 
-style "scrollbar-horizontal"
-# Estilo para las barras de scroll
-{
-	bg[SELECTED]		= @selected_bg_color		# color indicador
-	bg[NORMAL]			= shade (0.83, @bg_color)			# color borde indicador
+style "scrollbar-liso" {
+	bg[SELECTED]		= shade (1.3, @azul)		# color indicador
+	bg[NORMAL]			= shade (1.3, @azul)			# color borde indicador
 
     # color flechas (stepper)	
-    fg[NORMAL]          = shade (1.00, @base_color)
-	fg[PRELIGHT]		= shade (1.00, @base_color)
-	fg[ACTIVE]		    = shade (1.00, @base_color)
+    fg[NORMAL]          = shade (0.4, @base_color)
+	fg[PRELIGHT]		= shade (1.20, @naranja)
+	fg[ACTIVE]		    = shade (1.00, @azul)
     fg[SELECTED]        = shade (1.00, @base_color)
-    fg[INSENSITIVE]     = shade (1.00, @base_color)
+    fg[INSENSITIVE]     = shade (0.5, @base_color)
 	
 	engine "murrine" {
-        roundness               = 4
-        gradient_shades			= {1.0,1.0,1.0,1.0}
+        roundness               = 0
+        gradient_shades			= {1.05,1.0,1.0,1.0}
         highlight_shade			= 1.0
         glow_shade              = 1.0
-        prelight_shade          = .75
+        prelight_shade          = 0.8
         gradient_colors         = FALSE
-        lightborder_shade       = 0.0
-        lightborderstyle        = 0
-        trough_shades           = {1.00, 1.00}
-        border_shades           = {1.32, 1.32}
-        contrast                = 0.00
-	}
-}
-
-style "scrollbar-vertical" {
-	bg[SELECTED]		= @tooltip_bg_color		# color indicador
-	bg[NORMAL]			= shade (0.83, @bg_color)			# color borde indicador
-
-    # color flechas (stepper)	
-    fg[NORMAL]          = shade (1.00, @base_color)
-	fg[PRELIGHT]		= shade (1.00, @base_color)
-	fg[ACTIVE]		    = shade (1.00, @base_color)
-    fg[SELECTED]        = shade (1.00, @base_color)
-    fg[INSENSITIVE]     = shade (1.00, @base_color)
-	
-	engine "murrine" {
-        roundness               = 4
-        gradient_shades			= {1.0,1.0,1.0,1.0}
-        highlight_shade			= 1.0
-        glow_shade              = 1.0
-        prelight_shade          = .75
-        gradient_colors         = FALSE
-        lightborder_shade       = 0.0
-        lightborderstyle        = 0
-        trough_shades           = {1.00, 1.00}
-        border_shades           = {1.32, 1.32}
-        contrast                = 0.00
+        lightborder_shade       = 1.2
+        lightborderstyle        = 1
+        trough_shades           = {0.9, 0.9}
+        border_shades           = {1.0, 1.2}
+        contrast                = 0.8
 	}
 }
 
@@ -468,7 +450,7 @@ style "botones-liso" {
 
 	bg[NORMAL] =  @bg_color #F1F1F1"
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
-	bg[ACTIVE] = shade(0.9, @selected_bg_color)
+	bg[ACTIVE] = shade(0.7, @selected_bg_color)
 	bg[SELECTED] = shade(0.8, @bg_color)
 	bg[PRELIGHT] = shade(1.05, @selected_bg_color)
 
@@ -501,21 +483,49 @@ style "botones-combobox" {
     ythickness = 3
 
 	bg[NORMAL] = shade(1.0, @bg_color) #F1F1F1"
-	bg[INSENSITIVE] = shade(1.1, @bg_color)
-	bg[ACTIVE] = shade(1.0, @bg_color)
-	bg[SELECTED] = shade(1.1, @bg_color)
-	bg[PRELIGHT] = shade(1.2, @selected_bg_color)
+	bg[INSENSITIVE] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(0.8, @selected_bg_color)
+	bg[SELECTED] = shade(1.3, @azul)
+	bg[PRELIGHT] = shade(1.1, @selected_bg_color)
 
-	fg[NORMAL] = shade(0.5, @fg_color)
-	fg[ACTIVE] = shade(0.6, @fg_color)
-	fg[PRELIGHT] = shade(0.9, @selected_bg_color)
-	fg[SELECTED] = shade(0.7, @fg_color)
+	fg[NORMAL] = shade(0.7, @fg_color)
+	fg[ACTIVE] = shade(0.9, @selected_fg_color)
+	fg[PRELIGHT] = shade(1.0, @selected_fg_color)
+	fg[SELECTED] = shade(0.2, @fg_color)
+	fg[INSENSITIVE] = shade(0.85, @bg_color)
 
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
 	text[SELECTED]    = @selected_fg_color
 	text[INSENSITIVE] = darker (@bg_color)
 	text[ACTIVE]      = @selected_fg_color
+	engine "murrine" {
+		border_shades           = {1.00, 1.00}
+		contrast                = 0.8
+	}
+
+}
+
+style "checkbox-liso" {
+
+	bg[NORMAL] = shade(1.0, @bg_color) #F1F1F1"
+	bg[INSENSITIVE] = shade(0.9, @bg_color)
+	bg[ACTIVE] = shade(0.8, @selected_bg_color)
+	bg[SELECTED] = shade(0.9, @selected_bg_color)
+	bg[PRELIGHT] = shade(1.1, @selected_bg_color)
+
+	fg[NORMAL] = shade(0.7, @fg_color)
+	fg[ACTIVE] = shade(0.9, @selected_fg_color)
+	fg[PRELIGHT] = shade(1.0, @selected_fg_color)
+	fg[SELECTED] = shade(0.2, @fg_color)
+	fg[INSENSITIVE] = shade(0.85, @bg_color)
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[SELECTED]    = @naranja #@selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+	text[ACTIVE]      = @selected_fg_color
+
 	engine "murrine" {
 		border_shades           = {1.00, 1.00}
 		contrast                = 0.8
@@ -625,7 +635,7 @@ style "tooltips" {
 #	bg[NORMAL]        = mix (0.50, shade (1.05, @bg_color), @selected_bg_color)
 #}
 
-# Wrokaroudn style for places where the text color is used instead of the fg color.
+# Workaround style for places where the text color is used instead of the fg color.
 style "text_is_fg_color_workaround" {
 
 	text[NORMAL]      = @fg_color
@@ -649,9 +659,9 @@ style "menuitem_text_is_fg_color_workaround" {
 style "fg_is_text_color_workaround" {
 
 	fg[NORMAL]        = @text_color
-	fg[PRELIGHT]      = @text_color
+	fg[PRELIGHT]      = @selected_fg_color #@text_color
 	fg[SELECTED]      = @selected_fg_color
-	fg[ACTIVE]        = @selected_fg_color
+	fg[ACTIVE]        = @text_color #@selected_fg_color
 	fg[INSENSITIVE]   = darker (@bg_color)
 }
 
@@ -684,9 +694,9 @@ class "GtkSpinButton" style "botones-combobox" #"spinbutton"
 class "GtkScale" style "sliders-liso" #"scale"
 class "GtkVScale" style "vscale"
 class "GtkHScale" style "hscale" 
-class "GtkScrollbar" style "scrollbar-vertical" #"scrollbar"
-class "GtkHScrollbar" style "scrollbar-horizontal" #"hscrollbar"
-class "GtkVScrollbar" style "scrollbar-vertical" #"vscrollbar"
+class "GtkScrollbar" style "scrollbar-liso" #"scrollbar"
+class "GtkHScrollbar" style "scrollbar-liso" #"hscrollbar"
+class "GtkVScrollbar" style "scrollbar-liso" #"vscrollbar"
 class "GtkToolbar"   style "toolbar" 
 widget_class "*<GtkToolbar>.*.<GtkButton>*"     style "botones-toolbar" #"toolbar_button"
 class "GtkSeparatorToolItem"		            style "toolbar_separator"
@@ -771,7 +781,8 @@ widget_class "*.<GtkComboBox>.<GtkToggleButton>" style "botones-path" # Color pa
 widget_class "*.<GtkPathBar>.<GtkToggleButton>" style "botones-path" # Botones de path en Caja
 
 widget_class "*<GtkTable>" style "default" # inkscape 
-widget_class "*<gtkmm__GtkFrame>.*"	style "botones-combobox" #"default" # inkscape label de objetos
+#widget_class "*<gtkmm__GtkFrame>.*"	style "botones-combobox" #"default" # inkscape label de objetos
+widget_class "*<gtkmm__GtkFrame>.*"	style "fg_is_text_color_workaround" #"default" # inkscape label de objetos
 
 # This is the part of the workaround that fixes the menus
 widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround"
