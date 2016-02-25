@@ -1,3 +1,11 @@
+gnome-themes-huayra (2.52) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur
+  * Fixes para temas GTK2 y GTK3 en Liso.
+    Comienzo de tema Huayra Ocho.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Thu, 25 Feb 2016 11:45:39 -0300
+
 gnome-themes-huayra (2.51) torbellino; urgency=medium
 
   [Claudio "malefico" Andaur]
