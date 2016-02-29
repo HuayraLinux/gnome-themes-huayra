@@ -156,7 +156,7 @@ GtkComboBox .menuitem *:hover, *:hover:active {
                                      from (shade (@theme_selected_bg_color, 1.0)),
                                      to   (shade (@theme_selected_bg_color, 1.0)));
 
-    color: red; /* @theme_selected_fg_color;   shade (@text_color, 0.2); color de texto en menu ppal */
+    color: @theme_selected_fg_color; /* color de texto seleccionado en menu ppal*/
    	text-shadow: none; /* 0px 1px @theme_selected_shadow_color;*/
 	/*    -unico-bullet-color: @theme_selected_fg_color;*/
 }

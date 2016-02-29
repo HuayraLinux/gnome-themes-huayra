@@ -533,7 +533,7 @@ GtkStatusbar {
 	border-color: @scale_progress_fill;
     border-image: none;
 
-	color: 	shade (@theme_selected_bg_color, 0.8) ; 
+	color: 	shade (@bg_color, 0.7); /* shade (@theme_selected_bg_color, 0.8) ; */
 	text-shadow: 	none;
 }
 
