@@ -3,7 +3,7 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width: 8;
+    -GtkRange-slider-width: 10;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
@@ -14,30 +14,25 @@
     -GtkScrollbar-min-slider-length: 10;	
 }
 
-.scrollbar.trough.vertical {
-    border-radius: 2px;
+.scrollbar.trough.vertical,
+.scrollbar.trough.horizontal {
+	border-style: solid;
+	border-color: shade (@theme_bg_color, 0.75);
+    border-radius: 0px;
 	border-width: 1px;
 
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@theme_bg_color, 1.05)),
-                                     to   (shade (@theme_bg_color, 1.05)));
-
-}
-
-.scrollbar.trough.horizontal {
-    border-radius: 2px;
-	border-width: 1px;
-
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 1.05)),
-                                     to   (shade (@theme_bg_color, 1.05)));
+                                     from (shade (@theme_bg_color, 0.95)),
+                                     to   (shade (@theme_bg_color, 0.95)));
 
 }
 
 .scrollbar.slider,
 .scrollbar.button {
-    border-width: 		0px;
-    border-radius: 		2px;
+	border-style: solid;
+	border-color: shade (@tooltip_bg_color, 0.75);
+    border-width: 		1px;
+    border-radius: 		0px;
 	background-color: 	mix(@theme_bg_color, @theme_mix_base, 0.25);
 	background-image: none;
 }
@@ -47,7 +42,8 @@
 	background-image: none;
 }
 
-.scrollbar.slider.vertical {
+.scrollbar.slider.vertical, 
+.scrollbar.slider.horizontal {
 	border-radius: 0px;
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@tooltip_bg_color, 1.05)),
@@ -55,26 +51,13 @@
 
 }
 
-.scrollbar.slider.vertical:prelight {
+.scrollbar.slider.vertical:prelight,
+.scrollbar.slider.horizontal:prelight {
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@tooltip_bg_color, 0.85)),
                                      to   (shade (@tooltip_bg_color, 0.85)));
 }
 
-.scrollbar.slider.horizontal {
-	border-radius: 4px;
-    background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@selected_bg_color, 1.05)),
-                                     to   (shade (@selected_bg_color, 1.05)));
-
-}
-
-.scrollbar.slider.horizontal:prelight {
-    background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@selected_bg_color, 0.85)),
-                                     to   (shade (@selected_bg_color, 0.85)));
-
-}
 
 
 .scrollbar.slider:insensitive {

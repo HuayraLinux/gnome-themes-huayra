@@ -10,7 +10,7 @@
     padding: 0px; /* TEST */
 	border-width: 1px; /* TEST */
 	border-style: solid;
-	border-radius: 6px;
+	border-radius: 0px;
 	border-color: shade(@menu_bg_color, 0.6);
 	border-image: 	none;
 
@@ -36,7 +36,7 @@ DbusmenuGtkMenu .menu,
     padding: 8px 0px;
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 6px;
+	border-radius: 0px;
 	border-color: shade(@menu_bg_color, 0.6);
 
 }
@@ -62,7 +62,7 @@ DbusmenuGtkMenu .menu,
 .titlebar .menu.button {
     background-color: shade (@theme_bg_dark_color, 1.07);
     background-image: none;
-    border-radius: 0;
+    border-radius: 0px;
     border-style: none;
     border-width: 1px;
 
@@ -128,7 +128,7 @@ GtkTreeMenu.menu {
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 0px;
-	border-color: shade(@menu_bg_color, 0.97);
+	border-color: shade(@menu_bg_color, 0.75);
 	border-image: 	none;
 
 }
@@ -141,12 +141,12 @@ GtkTreeMenu .menuitem {
 
 /* Workaround for lp:949368 */
 GtkComboBox .menuitem * {
-    color: @menu_fg_color;
-    text-shadow: 0px 1px alpha(#fff, 0.10);
+    color: @menu_fg_color; 
+    text-shadow: none;
 }
-GtkComboBox .menuitem *:hover {
-    color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+GtkComboBox .menuitem *:hover, *:hover:active {
+    color: yellow; /* @theme_selected_fg_color;*/
+   	text-shadow: none; /*0px 1px @theme_selected_shadow_color;*/
 }
 
 .menuitem:hover,
@@ -156,7 +156,7 @@ GtkComboBox .menuitem *:hover {
                                      from (shade (@theme_selected_bg_color, 1.0)),
                                      to   (shade (@theme_selected_bg_color, 1.0)));
 
-    color: @theme_selected_fg_color; /*  shade (@text_color, 0.2); color de texto en menu ppal */
+    color: red; /* @theme_selected_fg_color;   shade (@text_color, 0.2); color de texto en menu ppal */
    	text-shadow: none; /* 0px 1px @theme_selected_shadow_color;*/
 	/*    -unico-bullet-color: @theme_selected_fg_color;*/
 }
@@ -372,6 +372,6 @@ GtkPopover, GtkPopover.background {
 
 .menuitem.button {
 	border-style: none;
-	border-radius: 3px;
+	border-radius: 0px;
 
 }
