@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.53) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Mas ajustes de tema GTK3 en Huayra Liso.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Tue, 01 Mar 2016 11:36:25 -0300
+
 gnome-themes-huayra (2.52) torbellino; urgency=medium
 
   [Claudio "malefico" Andaur
