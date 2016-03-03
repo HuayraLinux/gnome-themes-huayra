@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.55) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Huayra Liso: Fix en color de texto de Synapse.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Thu, 03 Mar 2016 12:32:32 -0300
+
 gnome-themes-huayra (2.54) torbellino; urgency=medium
 
   * Se agrega tema HuayraOcho.
