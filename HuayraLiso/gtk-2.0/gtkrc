@@ -118,7 +118,7 @@ style "default" {
 
 	fg[NORMAL]		= shade(0.7, @selected_fg_color)
 #	fg[NORMAL]		= shade(0.5, @selected_fg_color)
-	fg[SELECTED]      = shade( 0.9, @azul)
+	fg[SELECTED]      = @selected_fg_color #color de letras en SYNAPSE @verde #shade( 0.9, @azul)
     fg[ACTIVE]      = shade (0.4, @selected_fg_color)
 	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
 
@@ -676,6 +676,15 @@ style "evo_new_button_workaround" {
 	}
 }
 
+style "expander-liso" {
+	fg[NORMAL]        = shade(0.5, @selected_fg_color)
+	fg[PRELIGHT]      = @selected_bg_color #@text_color
+	fg[SELECTED]      = @selected_fg_color
+	fg[ACTIVE]        = @text_color #@selected_fg_color
+	fg[INSENSITIVE]   = darker (@bg_color)
+
+}
+	
 
 ###############################################################################
 # The following part of the gtkrc applies the different styles to the widgets.
@@ -700,6 +709,8 @@ class "GtkVScrollbar" style "scrollbar-liso" #"vscrollbar"
 class "GtkToolbar"   style "toolbar" 
 widget_class "*<GtkToolbar>.*.<GtkButton>*"     style "botones-toolbar" #"toolbar_button"
 class "GtkSeparatorToolItem"		            style "toolbar_separator"
+
+class "GtkExpander" style "expander-liso"
 
 #class "GtkHandleBox" style "toolbar" #Agregué para fixear Synaptic
 #class "GtkVBox" style "toolbar" # Fix 2
@@ -745,6 +756,7 @@ widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
 
 widget_class "*.<gtkmm__GtkFrame>.<gtkmm__GtkLabel>" style "botones-liso"
+widget_class "*<GtkExpander>.<GtkLabel>" style "expander-liso" # Listas expandibles son las que tienen un boton con forma de triangulo a la derecha Ej: Opciones Avanzadas en GIMP>New
 
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
