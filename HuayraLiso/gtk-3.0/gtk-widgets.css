@@ -1531,17 +1531,44 @@ GtkIconView.view.cell:selected:focused {
 	text-shadow: 1px 0px @theme_selected_shadow_color;  
 }
 
+.view,
+GtkTreeView {
+	background-color: @theme_base_color;
+	color: @theme_text_color;
+}
 
+.view:selected,
+GtkTreeView:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
 
+.view:selected:focused, 
+GtkTreeView:selected:focused {
+    background-color: shade(@theme_selected_bg_color, 0.915); 
+	background-image: none;
+    color: @theme_selected_fg_color;
+	text-shadow: none;
 
+}
+
+.view:hover, 
+.view *:active:hover {
+    
+    color: shade (@theme_bg_color, 0.5);
+	text-shadow: none;
+
+}
+/*
 .view {
-    background-color: @theme_base_color; /* Fondo de los paneles de vista de arbol y edicion de texto en Bluefish */
+    background-color: @theme_base_color;  Fondo de los paneles de vista de arbol y edicion de texto en Bluefish 
     color: @theme_text_color;
 	border-style: solid;
 	border-width: 1px;
 	border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
 	text-shadow: none;
+	background-image: none;
 }
 
 .view:selected,
@@ -1549,22 +1576,31 @@ GtkIconView.view.cell:selected:focused {
 .view:selected:focused,
 .view *:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.00);
-	background-image: none;
-	/*background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.00)),
-                                     to (shade(@theme_selected_bg_color, 1.00))); */
-    color: @theme_selected_fg_color;
+	
+
+    color: yellow;  @theme_text_color;  @theme_selected_fg_color;  
 	text-shadow: none;
 }
 
 .view:active, 
 .view *:active {
-    background-color: shade(@theme_bg_color, 0.915); 
+    background-color: green; shade(@theme_tooltip_bg_color, 0.5);  shade(@theme_bg_color, 0.915); 
     color: @theme_text_color;
 	text-shadow: none;
 
 }
+
+.view:hover, 
+.view *:active:hover {
+    background-color: red;  shade(@theme_tooltip_bg_color, 0.5);  shade(@theme_bg_color, 0.915); 
+	background-image: none;
+    color: green;
+	text-shadow: none;
+
+}
+
+*/
+
 
 /* Fix para Dialogo de Impresion en GTK3 */
 
