@@ -78,8 +78,11 @@
 GtkWindow {
     color: shade (@theme_fg_color, 0.6); 
 	border-style: solid;
-	border-color: shade (@theme_bg_color, 0.5);
-	border-width: 1px;
+	border-color: shade (@theme_bg_color, 0.85);
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-width: 0px;
 }
 
 * {
@@ -200,7 +203,10 @@ GtkLabel:active:hover {
 
 	border-bottom: 0px none;
 	border-style: solid;
-	border-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 0px;
 	border-color: shade(@border_color, 1.30);
 	padding: 5px 4px 4px 4px;
 }
@@ -287,12 +293,6 @@ GtkLabel:active:hover {
     &:active:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-active.png'),url('assets/titlebutton-close-active@2.png')); }
     &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-close-backdrop.png'),url('assets/titlebutton-close-backdrop@2.png')); }  
   }*/
-
-
-
-GtkWindow {
-
-}
 
 
 .window-frame {
