@@ -43,7 +43,7 @@
 
     -GtkTreeView-expander-size: 8;
 
-    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-padding: 2;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-link-color: @link_color;
     -GtkWidget-visited-link-color: @link_color;
@@ -52,8 +52,13 @@
 	-GtkWindow-resize-grip-width: 0;    
 
     -WnckTasklist-fade-overlay-rect: 0;
-
+	outline-color: alpha(@theme_text_color, 0.3);
+	outline-style: dashed;
+	outline-offset: -3px; /* 2px */
+	outline-width: 1px;
+	outline-radius: 2px;
     border-width: 0px;
+
 /* 	engine: none;*/
 /* En Debian Jessie, el paquete del engine Unico está roto, por el momento comentamos todo lo relacionado */
 	/* Resaltar destino en drag-drop */
@@ -1178,7 +1183,7 @@ GtkComboBox.combobox-entry .button *:prelight {
                      from (shade (@button_raised_gradient_color_a, 1.00)),
                      to   (shade (@button_raised_gradient_color_a, 1.00)));
 
-    -GtkWidget-focus-line-width: 0;	
+    -GtkWidget-focus-line-width: 1;	
 	/* -unico-focus-border-color: alpha (shade(@focused_entry_border, 1.1), 0.6); */
 
 }
@@ -2177,6 +2182,7 @@ MarlinViewWindow .primary-toolbar GtkContainer {
     /* border-image-width: 10px 0 10px 0; */
     border-radius: 0;
 }
+
 
 /* Leftmost button */
 .linked .entry:first-child,
