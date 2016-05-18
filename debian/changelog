@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.58) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Huayra Liso: Mas correcciones de GTK3.
+
+ -- Iván Hoffmann <digital.h@gmail.com.ar>  Wed, 18 May 2016 11:58:32 -0300
+
 gnome-themes-huayra (2.57) torbellino; urgency=medium
 
   * Huayra Liso: Mas Fixes en GTK 3.
