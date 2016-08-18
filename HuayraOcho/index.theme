@@ -1,10 +1,10 @@
 [X-GNOME-Metatheme]
-Name=HuayraFinito
+Name=HuayraOcho
 Type=X-GNOME-Metatheme
 Comment=Tema Flat
 Encoding=UTF-8
-GtkTheme=HuayraLiso
-MetacityTheme=HuayraFinito
-IconTheme=huayra-liso
+GtkTheme=HuayraOcho
+MetacityTheme=HuayraOcho
+IconTheme=huayra-ocho
 CursorTheme=Mate
 CursorSize=24

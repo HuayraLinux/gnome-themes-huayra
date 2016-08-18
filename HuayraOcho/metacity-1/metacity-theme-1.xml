@@ -19,12 +19,26 @@
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="2"/>
   <distance name="left_titlebar_edge" value="1"/>
-  <distance name="right_titlebar_edge" value="1"/>
+  <distance name="right_titlebar_edge" value="4"/>
   <aspect_ratio name="button" value="1.00"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="0" right="0" top="0" bottom="0"/>
   <border name="button_border" left="1" right="4" top="0" bottom="0"/>
 </frame_geometry>
+
+
+<!-- <frame_geometry name="normal" title_scale="small" rounded_top_left="true" rounded_top_right="true">
+  <distance name="left_width" value="3"/>
+  <distance name="right_width" value="3"/>
+  <distance name="bottom_height" value="3"/>
+  <distance name="left_titlebar_edge" value="4"/>
+  <distance name="right_titlebar_edge" value="4"/>
+  <aspect_ratio name="button" value="1.0"/>
+  <distance name="title_vertical_pad" value="4"/>
+  <border name="title_border" left="15" right="0" top="4" bottom="0"/>
+  <border name="button_border" left="3" right="3" top="0" bottom="0"/>
+</frame_geometry>
+-->
 
 <frame_geometry name="max" title_scale="medium" rounded_top_left="false" rounded_top_right="false">
   <distance name="left_width" value="5"/>
