@@ -1,0 +1,446 @@
+
+/*****************
+ * Botones y decoraciones  *
+ * de cabecera de ventanas *
+ *****************/
+
+.search-bar {
+  background-color: #F5F6F7;
+  border-style: solid;
+  border-color: #dcdfe3;
+  border-width: 0 0 1px;
+  padding: 3px; }
+
+.action-bar {
+  background-color: #edeef0; }
+
+.header-bar {
+  padding: 5px 5px 4px 5px;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-radius: 0;
+  border-color: #d4d5db;
+  color: rgba(82, 93, 118, 0.8);
+  background-color: #e7e8eb; }
+  .csd .header-bar {
+    background-color: rgba(231, 232, 235, 0.95);
+    border-color: rgba(212, 213, 219, 0.95); }
+  .header-bar:backdrop {
+    color: rgba(82, 93, 118, 0.5); }
+  .header-bar .title {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .header-bar .subtitle {
+    font-size: smaller;
+    padding-left: 12px;
+    padding-right: 12px; }
+  .header-bar.selection-mode, .header-bar.titlebar.selection-mode {
+    color: #ffffff;
+    background-color: rgba(82, 148, 226, 0.95);
+    border-color: rgba(65, 137, 223, 0.95);
+    box-shadow: none; }
+    .header-bar.selection-mode:backdrop, .header-bar.titlebar.selection-mode:backdrop {
+      background-color: rgba(82, 148, 226, 0.95);
+      color: rgba(255, 255, 255, 0.6); }
+    .header-bar.selection-mode .button, .header-bar.titlebar.selection-mode .button {
+      color: #ffffff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0);
+      border-color: rgba(255, 255, 255, 0); }
+      .header-bar.selection-mode .button.flat, .header-bar.titlebar.selection-mode .button.flat {
+        border-color: transparent;
+        background-color: transparent;
+        background-image: none;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0); }
+      .header-bar.selection-mode .button:hover, .header-bar.titlebar.selection-mode .button:hover {
+        color: #ffffff;
+        outline-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.5); }
+      .header-bar.selection-mode .button:active, .header-bar.selection-mode .button:checked, .header-bar.titlebar.selection-mode .button:active, .header-bar.titlebar.selection-mode .button:checked {
+        color: rgba(82, 148, 226, 0.95);
+        outline-color: rgba(82, 148, 226, 0.25);
+        background-color: #ffffff;
+        border-color: #ffffff; }
+      .header-bar.selection-mode .button:insensitive, .header-bar.titlebar.selection-mode .button:insensitive {
+        color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0); }
+        .header-bar.selection-mode .button:insensitive:active, .header-bar.selection-mode .button:insensitive:checked, .header-bar.titlebar.selection-mode .button:insensitive:active, .header-bar.titlebar.selection-mode .button:insensitive:checked {
+          color: rgba(82, 148, 226, 0.35);
+          background-color: rgba(255, 255, 255, 0.15);
+          border-color: rgba(255, 255, 255, 0.15); }
+    .header-bar.selection-mode .selection-menu, .header-bar.titlebar.selection-mode .selection-menu {
+      box-shadow: none;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .header-bar.selection-mode .selection-menu GtkArrow, .header-bar.titlebar.selection-mode .selection-menu GtkArrow {
+        -GtkArrow-arrow-scaling: 1; }
+      .header-bar.selection-mode .selection-menu .arrow, .header-bar.titlebar.selection-mode .selection-menu .arrow {
+        -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+    .maximized .header-bar.selection-mode, .maximized .header-bar.titlebar.selection-mode {
+      background-color: #5294e2; }
+  .tiled .header-bar, .tiled .header-bar:backdrop,
+  .maximized .header-bar, .maximized .header-bar:backdrop {
+    border-radius: 0; }
+  .maximized .header-bar {
+    background-color: #e7e8eb;
+    border-color: #d4d5db; }
+  .header-bar.default-decoration,
+  .csd .header-bar.default-decoration, .header-bar.default-decoration:backdrop,
+  .csd .header-bar.default-decoration:backdrop {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #e7e8eb;
+    border-bottom-width: 0; }
+    .maximized .header-bar.default-decoration, .maximized
+    .csd .header-bar.default-decoration, .maximized .header-bar.default-decoration:backdrop, .maximized
+    .csd .header-bar.default-decoration:backdrop {
+      background-color: #e7e8eb; }
+
+.titlebar {
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 4px 4px 0 0;
+  color: rgba(82, 93, 118, 0.8);
+  background-color: #e7e8eb;
+  box-shadow: inset 0 1px rgba(239, 240, 242, 0.95); }
+  .csd .titlebar {
+    background-color: rgba(231, 232, 235, 0.95); }
+  .titlebar:backdrop {
+    color: rgba(82, 93, 118, 0.5);
+    background-color: #eff0f2; }
+    .csd .titlebar:backdrop {
+      background-color: rgba(239, 240, 242, 0.95); }
+  .maximized .titlebar {
+    background-color: #e7e8eb; }
+    .maximized .titlebar:backdrop, .csd .maximized .titlebar:backdrop {
+      background-color: #eff0f2; }
+
+.titlebar .titlebar,
+.titlebar .titlebar:backdrop {
+  background-color: transparent; }
+
+
+.header-bar.default-decoration .button.titlebutton, .titlebar.default-decoration .button.titlebutton,
+.header-bar.selection-mode.default-decoration .button.titlebutton, .titlebar.selection-mode.default-decoration .button.titlebutton {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+.header-bar .button.titlebutton, .titlebar .button.titlebutton,
+.header-bar.selection-mode .button.titlebutton, .titlebar.selection-mode .button.titlebutton {
+  padding: 8px 4px;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  background-color: rgba(231, 232, 235, 0);
+  border-color: rgba(231, 232, 235, 0);
+  color: transparent;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .header-bar .button.titlebutton:backdrop, .titlebar .button.titlebutton:backdrop,
+  .header-bar.selection-mode .button.titlebutton:backdrop, .titlebar.selection-mode .button.titlebutton:backdrop {
+    opacity: 1; }
+
+
+.header-bar .right .button.titlebutton:nth-last-child(3),
+.header-bar .right:dir(rtl) .button.titlebutton:nth-child(3),
+.header-bar .left .button.titlebutton:nth-child(3),
+.header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3), .titlebar .right .button.titlebutton:nth-last-child(3),
+.titlebar .right:dir(rtl) .button.titlebutton:nth-child(3),
+.titlebar .left .button.titlebutton:nth-child(3),
+.titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3),
+.header-bar.selection-mode .right .button.titlebutton:nth-last-child(3),
+.header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3),
+.header-bar.selection-mode .left .button.titlebutton:nth-child(3),
+.header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3), .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3),
+.titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3),
+.titlebar.selection-mode .left .button.titlebutton:nth-child(3),
+.titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3) {
+  background-image: -gtk-scaled(url("assets/minimizar-activo.png"), url("assets/minimizar-activo@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(3):hover, .header-bar .right .button.titlebutton:nth-last-child(3):backdrop:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop:hover,
+  .header-bar .left .button.titlebutton:nth-child(3):hover,
+  .header-bar .left .button.titlebutton:nth-child(3):backdrop:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop:hover, .titlebar .right .button.titlebutton:nth-last-child(3):hover, .titlebar .right .button.titlebutton:nth-last-child(3):backdrop:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop:hover,
+  .titlebar .left .button.titlebutton:nth-child(3):hover,
+  .titlebar .left .button.titlebutton:nth-child(3):backdrop:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop:hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(3):hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(3):backdrop:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop:hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(3):hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(3):backdrop:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop:hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3):hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3):backdrop:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop:hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(3):hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(3):backdrop:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop:hover {
+    background-image: -gtk-scaled(url("assets/minimizar-highlight.png"), url("assets/minimizar-highlight@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(3):active:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(3):active:hover,
+  .header-bar .left .button.titlebutton:nth-child(3):active:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3):active:hover, .titlebar .right .button.titlebutton:nth-last-child(3):active:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(3):active:hover,
+  .titlebar .left .button.titlebutton:nth-child(3):active:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3):active:hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(3):active:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):active:hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(3):active:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):active:hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3):active:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):active:hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(3):active:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):active:hover {
+    background-image: -gtk-scaled(url("assets/minimizar-activo.png"), url("assets/titlebutton-minimize-active@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(3):backdrop,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop,
+  .header-bar .left .button.titlebutton:nth-child(3):backdrop,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop, .titlebar .right .button.titlebutton:nth-last-child(3):backdrop,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop,
+  .titlebar .left .button.titlebutton:nth-child(3):backdrop,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(3):backdrop,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(3):backdrop,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(3):backdrop,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(3):backdrop,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(3):backdrop,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(3):backdrop {
+    background-image: -gtk-scaled(url("assets/minimizar-inactivo.png"), url("assets/titlebutton-minimize-backdrop@2.png")); }
+
+.header-bar .right .button.titlebutton:nth-last-child(2),
+.header-bar .right:dir(rtl) .button.titlebutton:nth-child(2),
+.header-bar .left .button.titlebutton:nth-child(2),
+.header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2), .titlebar .right .button.titlebutton:nth-last-child(2),
+.titlebar .right:dir(rtl) .button.titlebutton:nth-child(2),
+.titlebar .left .button.titlebutton:nth-child(2),
+.titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2),
+.header-bar.selection-mode .right .button.titlebutton:nth-last-child(2),
+.header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2),
+.header-bar.selection-mode .left .button.titlebutton:nth-child(2),
+.header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2), .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2),
+.titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2),
+.titlebar.selection-mode .left .button.titlebutton:nth-child(2),
+.titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2) {
+  background-image: -gtk-scaled(url("assets/maximizar-activo_A.png"), url("assets/titlebutton-maximize@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(2):hover, .header-bar .right .button.titlebutton:nth-last-child(2):backdrop:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop:hover,
+  .header-bar .left .button.titlebutton:nth-child(2):hover,
+  .header-bar .left .button.titlebutton:nth-child(2):backdrop:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop:hover, .titlebar .right .button.titlebutton:nth-last-child(2):hover, .titlebar .right .button.titlebutton:nth-last-child(2):backdrop:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop:hover,
+  .titlebar .left .button.titlebutton:nth-child(2):hover,
+  .titlebar .left .button.titlebutton:nth-child(2):backdrop:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop:hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(2):hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(2):backdrop:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop:hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(2):hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(2):backdrop:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop:hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2):hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2):backdrop:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop:hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(2):hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(2):backdrop:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop:hover {
+    background-image: -gtk-scaled(url("assets/maximizar-highlight_A.png"), url("assets/titlebutton-maximize-hover@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(2):active:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):active:hover,
+  .header-bar .left .button.titlebutton:nth-child(2):active:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2):active:hover, .titlebar .right .button.titlebutton:nth-last-child(2):active:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(2):active:hover,
+  .titlebar .left .button.titlebutton:nth-child(2):active:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2):active:hover,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(2):active:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):active:hover,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(2):active:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):active:hover, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2):active:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):active:hover,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(2):active:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):active:hover {
+    background-image: -gtk-scaled(url("assets/maximizar-activo_A.png"), url("assets/titlebutton-maximize-active@2.png")); }
+  .header-bar .right .button.titlebutton:nth-last-child(2):backdrop,
+  .header-bar .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop,
+  .header-bar .left .button.titlebutton:nth-child(2):backdrop,
+  .header-bar .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop, .titlebar .right .button.titlebutton:nth-last-child(2):backdrop,
+  .titlebar .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop,
+  .titlebar .left .button.titlebutton:nth-child(2):backdrop,
+  .titlebar .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop,
+  .header-bar.selection-mode .right .button.titlebutton:nth-last-child(2):backdrop,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop,
+  .header-bar.selection-mode .left .button.titlebutton:nth-child(2):backdrop,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop, .titlebar.selection-mode .right .button.titlebutton:nth-last-child(2):backdrop,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:nth-child(2):backdrop,
+  .titlebar.selection-mode .left .button.titlebutton:nth-child(2):backdrop,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:nth-last-child(2):backdrop {
+    background-image: -gtk-scaled(url("assets/maximizar-inactivo_A.png"), url("assets/titlebutton-maximize-backdrop@2.png")); }
+
+.header-bar .right .button.titlebutton:last-child,
+.header-bar .right:dir(rtl) .button.titlebutton:first-child,
+.header-bar .left .button.titlebutton:first-child,
+.header-bar .left:dir(rtl) .button.titlebutton:last-child, .titlebar .right .button.titlebutton:last-child,
+.titlebar .right:dir(rtl) .button.titlebutton:first-child,
+.titlebar .left .button.titlebutton:first-child,
+.titlebar .left:dir(rtl) .button.titlebutton:last-child,
+.header-bar.selection-mode .right .button.titlebutton:last-child,
+.header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child,
+.header-bar.selection-mode .left .button.titlebutton:first-child,
+.header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child, .titlebar.selection-mode .right .button.titlebutton:last-child,
+.titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child,
+.titlebar.selection-mode .left .button.titlebutton:first-child,
+.titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child {
+  background-image: -gtk-scaled(url("assets/cerrar-activo.png"), url("assets/titlebutton-close@2.png")); }
+  .header-bar .right .button.titlebutton:last-child:hover, .header-bar .right .button.titlebutton:last-child:backdrop:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:first-child:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:first-child:backdrop:hover,
+  .header-bar .left .button.titlebutton:first-child:hover,
+  .header-bar .left .button.titlebutton:first-child:backdrop:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:last-child:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:last-child:backdrop:hover, .titlebar .right .button.titlebutton:last-child:hover, .titlebar .right .button.titlebutton:last-child:backdrop:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:first-child:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:first-child:backdrop:hover,
+  .titlebar .left .button.titlebutton:first-child:hover,
+  .titlebar .left .button.titlebutton:first-child:backdrop:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:last-child:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:last-child:backdrop:hover,
+  .header-bar.selection-mode .right .button.titlebutton:last-child:hover,
+  .header-bar.selection-mode .right .button.titlebutton:last-child:backdrop:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:backdrop:hover,
+  .header-bar.selection-mode .left .button.titlebutton:first-child:hover,
+  .header-bar.selection-mode .left .button.titlebutton:first-child:backdrop:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:backdrop:hover, .titlebar.selection-mode .right .button.titlebutton:last-child:hover, .titlebar.selection-mode .right .button.titlebutton:last-child:backdrop:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:backdrop:hover,
+  .titlebar.selection-mode .left .button.titlebutton:first-child:hover,
+  .titlebar.selection-mode .left .button.titlebutton:first-child:backdrop:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:backdrop:hover {
+    background-image: -gtk-scaled(url("assets/cerrar-highlight.png"), url("assets/titlebutton-close-hover@2.png")); }
+  .header-bar .right .button.titlebutton:last-child:active:hover,
+  .header-bar .right:dir(rtl) .button.titlebutton:first-child:active:hover,
+  .header-bar .left .button.titlebutton:first-child:active:hover,
+  .header-bar .left:dir(rtl) .button.titlebutton:last-child:active:hover, .titlebar .right .button.titlebutton:last-child:active:hover,
+  .titlebar .right:dir(rtl) .button.titlebutton:first-child:active:hover,
+  .titlebar .left .button.titlebutton:first-child:active:hover,
+  .titlebar .left:dir(rtl) .button.titlebutton:last-child:active:hover,
+  .header-bar.selection-mode .right .button.titlebutton:last-child:active:hover,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:active:hover,
+  .header-bar.selection-mode .left .button.titlebutton:first-child:active:hover,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:active:hover, .titlebar.selection-mode .right .button.titlebutton:last-child:active:hover,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:active:hover,
+  .titlebar.selection-mode .left .button.titlebutton:first-child:active:hover,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:active:hover {
+    background-image: -gtk-scaled(url("assets/cerrar-activo.png"), url("assets/titlebutton-close-active@2.png")); }
+  .header-bar .right .button.titlebutton:last-child:backdrop,
+  .header-bar .right:dir(rtl) .button.titlebutton:first-child:backdrop,
+  .header-bar .left .button.titlebutton:first-child:backdrop,
+  .header-bar .left:dir(rtl) .button.titlebutton:last-child:backdrop, .titlebar .right .button.titlebutton:last-child:backdrop,
+  .titlebar .right:dir(rtl) .button.titlebutton:first-child:backdrop,
+  .titlebar .left .button.titlebutton:first-child:backdrop,
+  .titlebar .left:dir(rtl) .button.titlebutton:last-child:backdrop,
+  .header-bar.selection-mode .right .button.titlebutton:last-child:backdrop,
+  .header-bar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:backdrop,
+  .header-bar.selection-mode .left .button.titlebutton:first-child:backdrop,
+  .header-bar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:backdrop, .titlebar.selection-mode .right .button.titlebutton:last-child:backdrop,
+  .titlebar.selection-mode .right:dir(rtl) .button.titlebutton:first-child:backdrop,
+  .titlebar.selection-mode .left .button.titlebutton:first-child:backdrop,
+  .titlebar.selection-mode .left:dir(rtl) .button.titlebutton:last-child:backdrop {
+    background-image: -gtk-scaled(url("assets/cerrar-inactivo.png"), url("assets/titlebutton-close-backdrop@2.png")); }
+
+.header-bar .left GtkMenuButton.button.titlebutton:first-child,
+.header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+.header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
+.header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child, .titlebar .left GtkMenuButton.button.titlebutton:first-child,
+.titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+.titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
+.titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child {
+  padding: 4px 6px 4px 6px;
+  color: rgba(82, 93, 118, 0.8); }
+  .header-bar .left GtkMenuButton.button.titlebutton:first-child, .header-bar .left GtkMenuButton.button.titlebutton:first-child:hover, .header-bar .left GtkMenuButton.button.titlebutton:first-child:active:hover, .header-bar .left GtkMenuButton.button.titlebutton:first-child:backdrop, .header-bar .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child, .titlebar .left GtkMenuButton.button.titlebutton:first-child:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child:active:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child:backdrop, .titlebar .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover {
+    background-image: none;
+    background-color: rgba(231, 232, 235, 0);
+    border-color: rgba(231, 232, 235, 0); }
+  .header-bar .left GtkMenuButton.button.titlebutton:first-child:hover, .header-bar .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:backdrop:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:backdrop:hover {
+    color: rgba(82, 93, 118, 0.8);
+    outline-color: rgba(82, 93, 118, 0.1);
+    border-color: rgba(82, 93, 118, 0.1);
+    background-color: rgba(251, 251, 252, 0.9); }
+  .header-bar .left GtkMenuButton.button.titlebutton:first-child:active:hover, .header-bar .left GtkMenuButton.button.titlebutton:first-child:checked,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .header-bar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active:hover,
+  .header-bar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:checked,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .header-bar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked, .titlebar .left GtkMenuButton.button.titlebutton:first-child:active:hover, .titlebar .left GtkMenuButton.button.titlebutton:first-child:checked,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .titlebar .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:active:hover,
+  .titlebar.selection-mode .left GtkMenuButton.button.titlebutton:first-child:checked,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:active:hover,
+  .titlebar.selection-mode .left:dir(rtl) GtkMenuButton.button.titlebutton:last-child:checked {
+    color: #ffffff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    border-color: #5294E2;
+    background-color: #5294E2; }
+

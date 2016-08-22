@@ -189,6 +189,7 @@ GtkLabel:active:hover {
 
 }
 
+
 /******* Sombras para ventanas en GTK3 > 3.14 *******/
 
 .window-frame {
@@ -196,131 +197,24 @@ GtkLabel:active:hover {
   border-width: 0px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 10px; }
-  .window-frame:backdrop {
+.window-frame:backdrop {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2); }
-  .window-frame.tiled {
+.window-frame.tiled {
     border-radius: 0; }
-  .window-frame.popup {
+.window-frame.popup {
     box-shadow: none;
     border-radius: 0; }
-  .window-frame.csd.popup, .window-frame.csd.menu {
+.window-frame.csd.popup, .window-frame.csd.menu {
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1); }
-  .window-frame.csd.tooltip {
+.window-frame.csd.tooltip {
     border-radius: 2px;
     box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
-  .window-frame.csd.message-dialog {
+.window-frame.csd.message-dialog {
     border-radius: 3px; }
 
 
-/**********************************************************************
- * Titlebar 
- * Las nuevas aplicaciones GTK3 decoran tambien los bordes de ventana *
- **********************************************************************/
-
-.titlebar {
-	background-image: none; /*linear-gradient(to bottom,
-	                  @theme_base_color,
-	                  @theme_bg_color);*/
-	background-color: #efefef ; /* transparent;*/
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-
-	border-bottom: 0px none;
-	border-style: none;
-	border-left-width: 1px;
-	border-right-width: 1px;
-	border-top-width: 1px;
-	border-bottom-width: 0px;
-	border-color: shade(@border_color, 1.30);
-	padding: 5px 4px 4px 4px;
-}
-
-.titlebar > * {
-	background: none;
-}
-
-.tiled .titlebar {
-	border-radius: 0;
-}
-
-.maximized .titlebar {
-	border-radius: 0;
-}
-
-.titlebar .title {
-	font: Bold;
-}
-
-/*.titlebar :first-child {*/
-/*	padding: 5px 5px 6px 5px;*/
-/*}*/
-
-.titlebar .titlebutton {
-	color: shade (@tooltip_bg_color, 0.8); /* shade(@theme_base_color, 0.9);*/
-	background-color: transparent; /* #909090; */
-	border-radius: 4px;
-	/* background: none;*/
-/*	border-image: url('assets/minimizar-normal.png');*/
-	border-style: none;
-}
-
-.titlebar .titlebutton:active:insensitive {
-	background-color: #939393;
-	border-style: none;
-}
-
-.titlebar .titlebutton:hover {
-	background-color: @tooltip_bg_color;
-	border-style: none;
-}
-
-/*  // Minimize
-
-  .right .button.titlebutton:nth-last-child(3),
-  .right:dir(rtl) .button.titlebutton:nth-child(3),
-  .left .button.titlebutton:nth-child(3),
-  .left:dir(rtl) .button.titlebutton:nth-last-child(3) {
-    background-image: -gtk-scaled(url('assets/minimizar-normal.png'),url('assets/minimizar-normal@2.png'));
-
-    .right .button.titlebutton:nth-last-child(3):hover,
-  .right:dir(rtl) .button.titlebutton:nth-child(3):hover,
-  .left .button.titlebutton:nth-child(3):hover,
-  .left:dir(rtl) .button.titlebutton:nth-last-child(3):hover, &:backdrop:hover { background-image: -gtk-scaled(url('assets/minimizar-prelight.png'),url('assets/minimizar-prelight@2.png')); }
-    .right .button.titlebutton:nth-last-child(3):active:hover,
-  .right:dir(rtl) .button.titlebutton:nth-child(3):active:hover,
-  .left .button.titlebutton:nth-child(3):active:hover,
-  .left:dir(rtl) .button.titlebutton:nth-last-child(3):active:hover { background-image: -gtk-scaled(url('assets/minimizar-presionado.png'),url('assets/minimizar-presionado@2.png')); }
-}
-*/
-  /* Maximize
-
-  .right .button.titlebutton:nth-last-child(2),
-  .right:dir(rtl) .button.titlebutton:nth-child(2),
-  .left .button.titlebutton:nth-child(2),
-  .left:dir(rtl) .button.titlebutton:nth-last-child(2) {
-    background-image: -gtk-scaled(url('assets/titlebutton-max.png'),url('assets/titlebutton-max@2.png'));
-
-    &:hover, &:backdrop:hover { background-image: -gtk-scaled(url('assets/titlebutton-max-hover.png'),url('assets/titlebutton-max-hover@2.png')); }
-    &:active:hover { background-image: -gtk-scaled(url('assets/titlebutton-max-active.png'),url('assets/titlebutton-max-active@2.png')); }
-    &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-max-backdrop.png'),url('assets/titlebutton-max-backdrop@2.png')); }
-}
-
-  // Close
-
-  .right .button.titlebutton:last-child,
-  .right:dir(rtl) .button.titlebutton:first-child,
-  .left .button.titlebutton:first-child,
-  .left:dir(rtl) .button.titlebutton:last-child {
-    background-image: -gtk-scaled(url('assets/titlebutton-close.png'),url('assets/titlebutton-close@2.png'));
-
-    &:hover, &:backdrop:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-hover.png'),url('assets/titlebutton-close-hover@2.png')); }
-    &:active:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-active.png'),url('assets/titlebutton-close-active@2.png')); }
-    &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-close-backdrop.png'),url('assets/titlebutton-close-backdrop@2.png')); }  
-  }*/
-
+/*
 
 .window-frame {
 	border-width: 1px;
@@ -329,6 +223,7 @@ GtkLabel:active:hover {
 	border-color: @theme_selected_bg_color;
 	margin: 10px;
 }
+*/
 
 
 /*************
