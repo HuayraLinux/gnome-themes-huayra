@@ -197,13 +197,14 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color wm_button_bg_active_b shade (@bg_color, 0.9);
 @define-color wm_button_bg_active_c shade (@bg_color, 0.9);
 
-@import url("gtk-widgets.css"); 
+@import url("gtk-widgets.css");
+@import url("gtk-widgets-assets.css");
 @import url("ventanas.css");
 @import url("menu_frame.css"); 
 @import url("scrollbar.css");
 
 /* @import url("sidebar.css"); */
-@import url("gtk-widgets-assets.css");
+
 /* @import url("gnome-panel.css"); */
 
 @import url("tabs.css");

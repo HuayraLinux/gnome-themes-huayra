@@ -14,21 +14,21 @@
 .radio row:selected:focused {   
 	/* Se debe poner background-image para que dibuje background en check-row */
 	/* ej complementos de rhythmbox */
-/*    background-image: -gtk-gradient (linear,
+    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_bg_color, @theme_mix_base, 0.10)),
                                      to   (mix(@theme_bg_color, @theme_mix_base, 0.10)));
-*/
+
 	/*background-color: 	mix(@theme_bg_color, @theme_mix_base, 0.10);
 	background-image: 	none;*/
-	background-color: transparent;
-	background-image: none;
+	background-color: white; /* fondo del checkbox y radiobutton */
+/*	background-image: none; */
     border-width: 		1px;
     border-style: 		solid; 
 	border-color: 		mix(@theme_bg_color, @theme_mix_base, 0.10);
 	border-image: 		none;
 
-    color: 	shade(@tooltip_bg_color, 0.8); /* Color de las tildes en los checboxes y botones radio */
+    color: 	shade (@tooltip_bg_color, 0.8); /* Color de las tildes en los checkboxes y botones radio */
 	text-shadow: 0px 1px @theme_shadow_color;
 
 }

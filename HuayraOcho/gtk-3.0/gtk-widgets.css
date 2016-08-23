@@ -1380,32 +1380,42 @@ GtkAssistant .sidebar {
  *************/
 
 GtkSwitch {
-	color: @switch_color;
+	color: shade (@bg_color, 0.7);  /* color del texto "I" o "0" del switch */
 	border-style: solid;
 	border-width: 1px;
 	border-color: shade (@insensitive_bg_color, 0.5);
+
+}
+GtkSwitch.trough {  /* Fondo del switch en estado apagado */
+	background-color: white; /* shade (@bg_color, 0.9);*/
+	background-image: none;
+
 }
 
-GtkScale.progressbar,
-GtkSwitch.trough:active {
+GtkScale.progressbar {
 	color: @switch_trough_active_color;
 }
 
 GtkSwitch.trough:active {
-	background-color: shade (@bg_color, 0.9);
+	red; /* color: @switch_trough_active_color; */
+}
+
+GtkSwitch.trough:active {  /* Fondo del switch en estado encendido */
+	background-color: white; /* shade (@bg_color, 0.9);*/
 	background-image: none;
-/*	border-style: solid;
+	border-style: solid;
 	border-width: 1px;
-	border-color: shade (@insensitive_bg_color, 0.3);*/
+/*	border-color: shade (@insensitive_bg_color, 0.3); */
 /*	background-image: -gtk-gradient (linear,
 	                  left top, left bottom,
 	                  from (@tooltip_bg_color),
-	                  to (shade (@tooltip_bg_color, 0.3)));*/
+	                  to (shade (@tooltip_bg_color, 0.3))); */
 }
+
 
 GtkSwitch.trough:insensitive {
 	background-image: none;
-	background-color: @insensitive_bg_color;
+	background-color: white; /* @insensitive_bg_color;*/
 	color: mix(@insensitive_bg_color, @insensitive_fg_color, 0.5);
 
 }
@@ -1415,8 +1425,13 @@ GtkSwitch.slider {
 	border-width: 1px;
 	border-radius: 2px;
 	border-style: solid;
-	border-color: @switch_slider_border_color;
-	padding: 0px 0px 1px 0px;
+	border-color: @tooltip_bg_color;
+	padding: 0px 0px 0px 0px;
+}
+
+GtkSwitch.slider:hover {
+	background-color: shade (@tooltip_bg_color, 1.05);
+/* 	border-color: green;*/
 }
 
 GtkSwitch.slider:insensitive {
