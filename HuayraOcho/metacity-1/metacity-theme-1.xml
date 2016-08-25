@@ -14,7 +14,7 @@
 <constant name="AltoBoton" value="9"/>
 
 <!-- Parametros generales para ventana "normal" -->
-<frame_geometry name="normal" title_scale="large" rounded_top_left="false" rounded_top_right="false">
+<frame_geometry name="normal" title_scale="large" rounded_top_left="true" rounded_top_right="true">
   <distance name="left_width" value="1"/>
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="2"/>
@@ -75,7 +75,7 @@
   <piece position="title">
     <draw_ops>
 	<!-- Color de las letras del titulo --> 
-		<title color="#216778" x="20" y="0 `max` ((height-title_height)/2)"/>
+		<title color="#a0a0a3" x="20" y="0 `max` ((height-title_height)/2)"/>
     </draw_ops>
   </piece>
 
@@ -83,8 +83,8 @@
     <draw_ops>
 	<!-- Color del fondo del titulo. Se define un gradiente vertical de dos tonos, aunque se pueden añadir cuantos colores se desee. "type" tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#aad400" />
-		<color value="#aad400" />
+		<color value="#e5e6eb" />
+		<color value="#e5e6eb" />
  	</gradient>
     </draw_ops>
   </piece>
@@ -92,22 +92,22 @@
   <piece position="left_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="2" height="height">
-		<color value="#aad400" />
-		<color value="#aad400" />
+		<color value="#e5e6eb" />
+		<color value="#e5e6eb" />
  	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="2" height="height">
-		<color value="#aad400" />
-		<color value="#aad400" />
+		<color value="#e5e6eb" />
+		<color value="#e5e6eb" />
  	</gradient>
 	</draw_ops>
   </piece>
   <piece position="bottom_edge">
 	<draw_ops>
-		<tint color="#aad400" alpha="1.0" x="0" y="0" width="width" height="2"/>
+		<tint color="#e5e6eb" alpha="1.0" x="0" y="0" width="width" height="2"/>
 	</draw_ops>
   </piece>
 
@@ -213,7 +213,7 @@
 
   <piece position="title">
     <draw_ops>
-		<title color="#aaf9af" x="15" y="0 `max` ((height-title_height)/2)"/>
+		<title color="#a5a5a5" x="15" y="0 `max` ((height-title_height)/2)"/>
     </draw_ops>
   </piece>
 
@@ -221,30 +221,30 @@
     <draw_ops>
 	<!-- se define un gradiente vertical de dos tonos de violeta, aunque se pueden añadir cuantos colores se desee. Type tambien puede ser "horizontal" o "diagonal" -->  
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#37abc8" />
-		<color value="#37abc8" />
+		<color value="#efefef" />
+		<color value="#efefef" />
  	</gradient>
     </draw_ops>
   </piece>
   <piece position="left_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="2" height="height">
-		<color value="#37abc8" />
-		<color value="#37abc8" />
+		<color value="#efefef" />
+		<color value="#efefef" />
 	</gradient>
 	</draw_ops>
   </piece>
   <piece position="right_edge">
 	<draw_ops>
 	<gradient type="vertical" x="0" y="0" width="2" height="height">
-		<color value="#37abc8" />
-		<color value="#37abc8" />
+		<color value="#efefef" />
+		<color value="#efefef" />
 	</gradient>
 	</draw_ops>
   </piece>
   <piece position="bottom_edge">
 	<draw_ops>
-		<tint color="#37abc8" alpha="1.0" x="0" y="0" width="width" height="2"/>
+		<tint color="#efefef" alpha="1.0" x="0" y="0" width="width" height="2"/>
 	</draw_ops>
   </piece>
 

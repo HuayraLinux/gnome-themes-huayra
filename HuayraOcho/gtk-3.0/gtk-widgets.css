@@ -82,7 +82,7 @@
  ***************/
 GtkWindow {
     color: shade (@theme_fg_color, 0.6); 
-	border-style: solid;
+	border-style: none; /* TEST */
 	border-color: shade (@theme_bg_color, 0.85);
 	border-left-width: 1px;
 	border-right-width: 1px;
@@ -419,9 +419,15 @@ GtkStatusbar {
     color: @internal_element_prelight;
 }
 
-.spinbutton.button:insensitive {
+.spinbutton.button:insensitive, .spinbutton.entry:insensitive {
     color: @insensitive_border_color;
+	background-color: transparent; /* TEST */
 }
+.spinbutton.button:insensitive:hover, .spinbutton.entry:insensitive:hover {
+	color: shade (@bg_color, 0.9);
+	border-color: shade (@bg_color, 0.9);
+}
+
 
 .spinbutton.entry {
     padding: 5px 6px 5px 3px;
@@ -647,7 +653,7 @@ GtkProgressBar,
 
 /* only render frames in a GtkScrolledWindow */
 GtkScrolledWindow.frame {
-    border-style: solid;
+    border-style: solid; /* TEST*/
     border-color: shade (@theme_bg_color, 0.90);
     border-width: 1px;
     border-radius: 0px;
@@ -902,12 +908,13 @@ GtkComboBox.combobox-entry .button *:prelight {
     padding: 2px 4px;
     border-width: 0px;
     border-radius: 3px;
-    border-style: solid;
-    border-color: @theme_base_color;
+    border-style: none;
+    border-color: transparent;
 }
 
 .toolbar.toolbar {
-	background-color:  transparent; /* shade (@theme_bg_color, 0.97);*/
+	background-color:  @bg_color; /* shade (@theme_bg_color, 0.97);*/
+	border-style: none;
 
 }
 
@@ -954,7 +961,7 @@ GtkComboBox.combobox-entry .button *:prelight {
     background-color: @theme_bg_color; /* shade (@theme_bg_dark_color, 0.97); */
 
     border-image: none;
-    border-style: solid;
+    border-style: none;
     border-color: shade (@theme_bg_dark_color, 0.91);
 }
 
@@ -1784,7 +1791,7 @@ GtkCalendar.highlight {
 }
 
 .info {
-    background-color: @info_bg_color;
+    background-color:  @info_bg_color;
     color: @info_fg_color;
 }
 
@@ -1920,10 +1927,15 @@ NautilusXContentBar.info,
 NautilusSearchBar.info,
 NautilusQueryEditor.info {
 
+/*
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@nautilus_cluebar_color, 1.00)),
                                      to (shade (@nautilus_cluebar_color, 1.00)));
+*/
+	background-image: none;
+	background-color: red;
+
     border-radius: 0px;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
@@ -1939,6 +1951,12 @@ NautilusSearchBar .entry:focused {
     -GtkEntry-inner-border: 1;
 }
 
+NautilusSearchBar .button {  /* TEST */
+	background-color: blue;
+	background-image:none;
+
+}
+
 NemoSearchBar .entry.image,
 NautilusSearchBar .entry.image {
     color: shade(@nautilus_cluebar_color, 0.60);
@@ -1949,6 +1967,7 @@ NautilusSearchBar .entry.image {
     font: bold;
     color: shade(@theme_fg_color, 1.00);
 }
+
 
 NemoTrashBar .button,
 NemoTrashBar .button:hover,
