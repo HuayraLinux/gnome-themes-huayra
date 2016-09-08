@@ -5,7 +5,7 @@
 gtk-color-scheme = "base_color:#ffffff"
 gtk-color-scheme = "fg_color:#f4f3f3"
 gtk-color-scheme = "tooltip_fg_color:#ffffff"
-gtk-color-scheme = "selected_bg_color:#ffb380" #naranja claro
+gtk-color-scheme = "selected_bg_color:#8eb300" # verde
 gtk-color-scheme = "selected_fg_color:#ffffff"
 gtk-color-scheme = "text_color:#1a1a1a" #gris oscuro
 gtk-color-scheme = "bg_color:#efefef"

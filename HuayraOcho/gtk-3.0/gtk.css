@@ -14,7 +14,7 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color base_color #FFFFFF;
 @define-color fg_color #404040; /* #f4f3f3;*/
 @define-color tooltip_fg_color #ffffff;
-@define-color selected_bg_color #ffb380;
+@define-color selected_bg_color #8eb300; /* verde */
 @define-color selected_fg_color #eeeeee;
 @define-color text_color #1a1a1a;
 @define-color bg_color #efefef; 
@@ -32,11 +32,11 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color selection_mint		#628d64;
 @define-color selection_red			#8e4f4f;
 @define-color selection_mono		#888888;
-@define-color selection_liso		#ffb380;
+@define-color selection_ocho		#8eb300; /* verde */
 
 /* Here you can set the color selection, I recommend one of the above,
    but you can put the one you like */
-@define-color theme_selected_bg_color 		@selection_liso;
+@define-color theme_selected_bg_color 		@selection_ocho;
 @define-color theme_selected_fg_color 		@seleted_fg_color;
 @define-color theme_selected_shadow_color 	alpha(#000, 0.08);
 /*******************************************************************/
