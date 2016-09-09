@@ -39,9 +39,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="9.376447"
-     inkscape:cy="10.14915"
+     inkscape:zoom="30.373857"
+     inkscape:cx="12.284714"
+     inkscape:cy="9.8203034"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -58,7 +58,12 @@
      inkscape:object-paths="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-nodes="true"
-     inkscape:snap-smooth-nodes="true">
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-width="1914"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid5954"
@@ -84,9 +89,9 @@
      transform="translate(-5,-1027.3622)">
     <path
        style="opacity:0.95;fill:#353945;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 27,1027.3622 0,17.9445 c 0,0.5848 -0.4906,1.0555 -1.1,1.0555 l -19.8,0 c -0.6094,0 -1.1,-0.4707 -1.1,-1.0555 l 0,-17.9445 z"
+       d="m 27,1027.3622 c -0.01569,5.5008 0.02808,14.8466 0,19 l -22,0 0,-19 z"
        id="rect4145-1"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssscc" />
+       sodipodi:nodetypes="ccccc" />
   </g>
 </svg>
