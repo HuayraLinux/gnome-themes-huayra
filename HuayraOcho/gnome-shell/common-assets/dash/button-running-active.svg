@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="16"
-   height="16"
+   width="48"
+   height="48"
    id="svg7355"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,9 +41,9 @@
      inkscape:window-height="1028"
      id="namedview4173"
      showgrid="true"
-     inkscape:zoom="16.269617"
-     inkscape:cx="-2.1954541"
-     inkscape:cy="4.8910571"
+     inkscape:zoom="11.504356"
+     inkscape:cx="24.218951"
+     inkscape:cy="20.850729"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -54,7 +54,9 @@
      inkscape:snap-bbox-edge-midpoints="true">
     <inkscape:grid
        type="xygrid"
-       id="grid4145" />
+       id="grid4145"
+       spacingx="1"
+       spacingy="1" />
   </sodipodi:namedview>
   <defs
      id="defs7357">
@@ -113,47 +115,55 @@
   </defs>
   <g
      id="layer1"
-     transform="matrix(1.6213276,0,0,1.6213276,-431.6347,-376.55274)">
+     transform="matrix(1.6213276,0,0,1.6213276,-431.6347,-344.55274)">
     <g
        style="display:inline"
        id="g30864"
        transform="translate(255.223,70.118091)">
-      <g
-         id="g4156"
-         transform="matrix(1.9866918,0,0,1.9866918,-10.853611,-164.86418)">
-        <rect
-           y="164.60909"
-           x="11.000002"
-           height="4.9512744"
-           width="1.1902891"
-           id="rect4145-3"
-           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00e6ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30773678;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
-        <path
-           transform="matrix(-0.97922215,-0.20279032,0.20279032,-0.97922215,-7.863605,332.54062)"
-           inkscape:transform-center-y="0.009568015"
-           inkscape:transform-center-x="-0.91029032"
-           d="m 14.004355,168.13319 -3.733153,-1.21307 2.917126,-2.62647 z"
-           inkscape:randomized="0"
-           inkscape:rounded="0"
-           inkscape:flatsided="true"
-           sodipodi:arg2="1.8849785"
-           sodipodi:arg1="0.83778094"
-           sodipodi:r2="1.1331362"
-           sodipodi:r1="2.2662723"
-           sodipodi:cy="166.44899"
-           sodipodi:cx="12.487962"
-           sodipodi:sides="3"
-           id="path4153"
-           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00e6ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.54699999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-           sodipodi:type="star" />
-      </g>
       <rect
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00e6ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.54699999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         id="rect4154"
-         width="10.008197"
-         height="9.8944674"
-         x="-3.8026824"
-         y="162.10553" />
+         style="fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:1.23355699;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4887"
+         width="27.755032"
+         height="0.61678576"
+         x="11.61678"
+         y="142.39462" />
+      <rect
+         style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:1.23355699;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4887-0"
+         width="27.755032"
+         height="0.61677426"
+         x="11.61678"
+         y="171.38322" />
+      <rect
+         style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:1.23355699;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4887-4"
+         width="29.605375"
+         height="0.61677837"
+         x="142.39462"
+         y="-11.61678"
+         transform="matrix(0,1,-1,0,0,0)" />
+      <rect
+         style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:1.23355699;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4887-4-7"
+         width="27.138252"
+         height="0.61677879"
+         x="143.62819"
+         y="-40.60537"
+         transform="matrix(0,1,-1,0,0,0)" />
+      <rect
+         style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4925-0"
+         width="0.61677927"
+         height="0.61677349"
+         x="39.371811"
+         y="143.01141" />
+      <rect
+         style="display:inline;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect4925-1"
+         width="0.61677927"
+         height="0.61677092"
+         x="39.371811"
+         y="170.76645" />
     </g>
   </g>
 </svg>
