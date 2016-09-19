@@ -99,9 +99,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="32.998318"
-     inkscape:cx="6.3160735"
-     inkscape:cy="9.1853829"
+     inkscape:zoom="18.893863"
+     inkscape:cx="28.415236"
+     inkscape:cy="7.956266"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -110,10 +110,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1032"
+     inkscape:window-width="1914"
+     inkscape:window-height="1030"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="26"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      showguides="true"
@@ -140,7 +140,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -150,7 +150,7 @@
      inkscape:groupmode="layer"
      transform="translate(-120,87.999997)">
     <g
-       transform="translate(-886,-448)"
+       transform="translate(-810,-465)"
        style="display:inline;opacity:1"
        id="switch-active-2"
        inkscape:label="#g4829">
@@ -216,5 +216,28 @@
            style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none" />
       </g>
     </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#cccccc;stroke-width:0.49138689;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4229"
+       width="49.508617"
+       height="19.508614"
+       x="-169.7543"
+       y="-87.754311"
+       transform="scale(-1,1)" />
+    <rect
+       style="opacity:1;fill:#4ecae9;fill-opacity:1;stroke:none;stroke-width:0.49138689;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4229-2"
+       width="26"
+       height="20"
+       x="-146"
+       y="-88"
+       transform="scale(-1,1)" />
+    <circle
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#cccccc;stroke-width:0.56999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4221"
+       cx="-157.92502"
+       cy="-77.925003"
+       r="3.690171"
+       transform="scale(-1,1)" />
   </g>
 </svg>
