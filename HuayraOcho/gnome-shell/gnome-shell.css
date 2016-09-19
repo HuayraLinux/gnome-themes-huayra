@@ -17,12 +17,11 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-@define-color panel_gnome_shell_bg #9da6b7;
-
 stage {
   font-family: Futura Bk bt, Cantarell, Sans-Serif;
   font-size: 9pt;
-  color: #5c616c; }
+  color: #5c616c; 
+}
 
 .app-well-menu,
 .run-dialog-error-label,
@@ -50,7 +49,7 @@ stage {
   background-gradient-direction: none !important;
   text-shadow: 0 1px rgba(255, 255, 255, 0);
   color: #5c616c;
-  background-color: #fbfbfc;
+  background-color: blue; /*#fbfbfc;*/
   border: 1px solid #cfd6e6;
   box-shadow: inset 0 2px 4px rgba(251, 251, 252, 0.05); }
   .popup-menu .modal-dialog-button:focus {
@@ -81,7 +80,7 @@ stage {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: rgba(92, 97, 108, 0.55);
     border: 1px solid rgba(207, 214, 230, 0.55);
-    background-color: rgba(251, 251, 252, 0.55);
+    background-color: green; /* rgba(251, 251, 252, 0.55);*/
     box-shadow: inset 0 2px 4px rgba(251, 251, 252, 0.05); }
 
 .candidate-page-button,
@@ -90,23 +89,55 @@ stage {
 .modal-dialog-button {
   background-gradient-direction: none !important; }
 
+.modal-dialog-button, .modal-dialog-button-box .button {
+
+ font-size: 1em;
+  min-height: 20px;
+  padding: 5px 32px;
+  transition-duration: 0;
+  border-radius: 2px;
+  text-shadow: 0 1px rgba(255, 255, 255, 0);
+  color: white; /* #202020;  #BAC3CF;*/
+  border: 1px solid #c9a928; /* rgba(0, 0, 0, 0.35);*/
+  background-color: #c9a928; /* rgba(102, 109, 132, 0.35); amarillo oscuro */ }
+  .modal-dialog-button:hover, .modal-dialog-button-box .button:hover {
+    text-shadow: 0 1px rgba(255, 255, 255, 0);
+    color: white;
+    border: 1px solid #8eb300; /*rgba(0, 0, 0, 0.35);*/
+    background-color: #8eb300; /* rgba(119, 127, 151, 0.45); */
+}
+ .modal-dialog-button:focus, .modal-dialog-button-box .button:focus {
+    color: #8eb300; }
+ .modal-dialog-button:active, .modal-dialog-button-box .button:active {
+    text-shadow: 0 1px rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border: 1px solid #004a23;
+    background-color: #004a23; }
+
+ .modal-dialog-button:insensitive, .modal-dialog-button-box .button:insensitive {
+    text-shadow: 0 1px rgba(255, 255, 255, 0);
+    color: #5d626e;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    background-color: rgba(102, 109, 132, 0.2); }
+
+
 .candidate-page-button,
 .hotplug-notification-item,
 .hotplug-resident-eject-button,
-.modal-dialog-button, .modal-dialog-button-box .button, .notification-button, .notification-icon-button, .hotplug-resident-mount {
+ .notification-button, .notification-icon-button, .hotplug-resident-mount {
   font-size: 1em;
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
   border-radius: 2px;
   text-shadow: 0 1px rgba(255, 255, 255, 0);
-  color: #BAC3CF;
+  color: #202020; /* #BAC3CF;*/
   border: 1px solid rgba(0, 0, 0, 0.35);
   background-color: rgba(102, 109, 132, 0.35); }
   .candidate-page-button:hover,
   .hotplug-notification-item:hover,
   .hotplug-resident-eject-button:hover,
-  .modal-dialog-button:hover, .modal-dialog-button-box .button:hover, .notification-button:hover, .notification-icon-button:hover, .hotplug-resident-mount:hover {
+ .notification-button:hover, .notification-icon-button:hover, .hotplug-resident-mount:hover {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: #BAC3CF;
     border: 1px solid rgba(0, 0, 0, 0.35);
@@ -114,12 +145,12 @@ stage {
   .candidate-page-button:focus,
   .hotplug-notification-item:focus,
   .hotplug-resident-eject-button:focus,
-  .modal-dialog-button:focus, .modal-dialog-button-box .button:focus, .notification-button:focus, .notification-icon-button:focus, .hotplug-resident-mount:focus {
+   .notification-button:focus, .notification-icon-button:focus, .hotplug-resident-mount:focus {
     color: #8eb300; }
   .candidate-page-button:active,
   .hotplug-notification-item:active,
   .hotplug-resident-eject-button:active,
-  .modal-dialog-button:active, .modal-dialog-button-box .button:active, .notification-button:active, .notification-icon-button:active, .hotplug-resident-mount:active {
+ .notification-button:active, .notification-icon-button:active, .hotplug-resident-mount:active {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: #ffffff;
     border: 1px solid #8eb300;
@@ -127,7 +158,7 @@ stage {
   .candidate-page-button:insensitive,
   .hotplug-notification-item:insensitive,
   .hotplug-resident-eject-button:insensitive,
-  .modal-dialog-button:insensitive, .modal-dialog-button-box .button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive, .hotplug-resident-mount:insensitive {
+ .notification-button:insensitive, .notification-icon-button:insensitive, .hotplug-resident-mount:insensitive {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
     color: #5d626e;
     border: 1px solid rgba(0, 0, 0, 0.35);
@@ -221,10 +252,11 @@ StScrollBar {
 .check-box:focus:checked StBin {
   background-image: url("light-assets/checkbox/checkbox-checked-focused.svg"); }
 
-/* .toggle-switch {
-  width: 50px;
-  height: 20px;
+.toggle-switch {
+  width: 72px;
+  height: 21px;
   background-size: contain;
+
   background-image: url("light-assets/switch/switch-off.svg"); }
   .toggle-switch:checked {
     background-image: url("light-assets/switch/switch-on.svg"); }
@@ -232,7 +264,7 @@ StScrollBar {
     background-image: url("common-assets/switch/switch-off-selected.svg"); }
     .popup-menu-item:active .toggle-switch:checked {
       background-image: url("common-assets/switch/switch-on-selected.svg"); }
-*/
+
 
 .shell-link {
   color: #2679db; }
@@ -250,17 +282,18 @@ StScrollBar {
 
 .modal-dialog {
   color: #5c616c;
-  background-color: purple; /* rgba(245, 246, 247, 0);*/
+  background-color: rgba(245, 246, 247, 0);
   border: none;
   border-image: url("light-assets/misc/modal.svg") 9 9 9 67;
   padding: 0 5px 6px 5px; }
   .modal-dialog > StBoxLayout:first-child {
-    padding: 20px 10px 10px 10px; }
+    padding: 20px 10px 10px 10px;
+	 background-color: #ffcc00; } /* Amarillo. Fondo de la ventana de dialogo de ejecutar comando, finalizar sesion, etc */
   .modal-dialog-button-box {
     spacing: 10px;
     margin: 0px;
     padding: 14px 10px;
-    background: none;
+/*    background: none;*/
     border: none;
     border-image: url("light-assets/misc/button-box.svg") 9 9 9 9; }
     .modal-dialog-button-box .button {
@@ -281,30 +314,34 @@ StScrollBar {
 .end-session-dialog-subject {
   font-size: 11pt;
   font-weight: bold;
-  color: #5c616c; }
+  color: #5c616c;
+/*	background-color: yellow;*/ }
 
 .end-session-dialog {
 	
   spacing: 42px; }
+
   .end-session-dialog-list {
-    padding-top: 20px; }
+    padding-top: 20px;}
   .end-session-dialog-layout {
-    padding-left: 17px; }
+    padding-left: 17px; 
+	background-color: #ffcc00;}
     .end-session-dialog-layout:rtl {
-      padding-right: 17px; }
+      padding-right: 17px; 
+	  background-color: #ffcc00;}
   .end-session-dialog-description {
-	background-color: yellow; /* TEST */
+/*	background-color: transparent;  TEST */
     width: 28em;
     padding-bottom: 10px; }
     .end-session-dialog-description:rtl {
-		background-color: yellow; /* TEST */
       text-align: right; }
   .end-session-dialog-warning {
     width: 28em;
     color: #F27835;
     padding-top: 6px; }
     .end-session-dialog-warning:rtl {
-      text-align: right; }
+      text-align: right; 
+background-color: red;}
   .end-session-dialog-logout-icon {
     border: 0px solid transparent;
     border-radius: 2px;
@@ -312,7 +349,7 @@ StScrollBar {
     height: 48px;
     background-size: contain; }
   .end-session-dialog-shutdown-icon {
-    color: #5c616c;
+    color: white; /* #5c616c;*/
     width: 48px;
     height: 48px; }
   .end-session-dialog-inhibitor-layout {
@@ -321,7 +358,8 @@ StScrollBar {
     padding-right: 10px;
     padding-left: 10px; }
   .end-session-dialog-session-list, .end-session-dialog-app-list {
-    spacing: 1em; }
+    spacing: 1em; 
+    background-color: red;}
   .end-session-dialog-list-header {
     font-weight: bold; }
     .end-session-dialog-list-header:rtl {
@@ -335,7 +373,7 @@ StScrollBar {
     font-size: 8pt; }
   .end-session-dialog .modal-dialog-button:last-child {
     color: #ffffff;
-    background-color: purple; /*#F04A50;*/
+    background-color:#F04A50;
     border-color: #F04A50; }
     .end-session-dialog .modal-dialog-button:last-child:hover {
       color: #ffffff;
@@ -1029,11 +1067,12 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
     width: 26px; }
 
 .window-close {
-  -shell-close-overlap: 11px; }
+  -shell-close-overlap: 25px; }
 
 .notification-close {
-  -shell-close-overlap-x: 8px;
-  -shell-close-overlap-y: -8px; }
+	-shell-close-overlap: 25px;
+/*  -shell-close-overlap-x: 18px;
+  -shell-close-overlap-y: -18px; */}
   .notification-close:rtl {
     -shell-close-overlap-x: -8px; }
 
@@ -1082,7 +1121,11 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
   spacing: 12px; }
 
 #overview {
-  spacing: 24px; }
+  spacing: 24px; 
+  background-color: #9da6b7;
+	background-image: url("common-assets/dash/fondo.svg");
+	background-repeat: repeat;
+}
 
 .overview-controls {
   padding-bottom: 32px; }
@@ -1097,8 +1140,8 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
     padding: 32px; }
 
 .window-clone-border {
-  border: 3px solid rgba(82, 148, 226, 0.8);
-  border-radius: 4px;
+  border: 3px solid #FFCC00; /* amarillo oscuro */
+  border-radius: 0px;
   box-shadow: inset 0px 0px 0px 1px rgba(82, 148, 226, 0); }
 
 .window-caption, .window-caption:hover {
@@ -1174,7 +1217,7 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 #dash {
   font-size: 1em;
   color: #BAC3CF;
-  background-color: rgba(102, 122, 148, 0.8); /* rgba(53, 57, 69, 0.95);*/
+  background-color: rgba(102, 122, 148, 0.8); /*  rgba(53, 57, 69, 0.95);*/
   border-color: rgba(0, 0, 0, 0.4);
   padding: 3px 0px 3px 0px;
   border-radius: 0 3px 3px 0; }
@@ -1221,11 +1264,11 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 .dash-item-container > .app-well-app > .overview-icon,
 .dash-item-container > .app-well-app:hover > .overview-icon,
 .dash-item-container > .app-well-app:active > .overview-icon {
-  background-color: transparent !important;
-  background-gradient-direction: none !important;
+  background-color:  transparent !important;
+  background-gradient-direction: none !important; 
   border: none !important;
   border-radius: 0 !important;
-  background: none !important; }
+  background: none !important;}
 
 #dash .app-well-app .overview-icon {
   padding: 10px;
@@ -1477,17 +1520,21 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 .workspace-thumbnails,
 .workspace-thumbnails-left:rtl {
   padding-right: 7px;
-  border-image: url("common-assets/dash/dash-right.svg") 9 9 9 9; }
+  /* border-image: url("common-assets/dash/dash-right.svg") 9 9 9 9; */
+	background-color: rgba(102, 122, 148, 0.8);
+  }
 
 .workspace-thumbnails:rtl,
 .workspace-thumbnails-left {
   padding-left: 7px;
-  border-image: url("common-assets/dash/dash-left.svg") 9 9 9 9; }
+/*  border-image: url("common-assets/dash/dash-left.svg") 9 9 9 9;*/
+	background-color: rgba(102, 122, 148, 0.8);
+  }
 
 .workspace-thumbnail-indicator {
-  border: 4px solid rgba(82, 148, 226, 0.8);
+  border: 1px solid rgba(82, 148, 226, 0.8);
   border-radius: 1px;
-  padding: 1px; }
+  padding: 3px; }
 
 .search-display > StBoxLayout,
 .all-apps,
@@ -1603,6 +1650,9 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
   padding: 12px 12px 12px 12px;
   spacing-rows: 4px;
   spacing-columns: 10px;
+  border: 3px;
+border-color: #ffcc00; /* Amarillo para empatar con icono de cerrar ventana */
+
   border-image: url("common-assets/misc/notification.svg") 9 9 9 9; }
   .notification.multi-line-notification {
     padding-bottom: 12px; }
@@ -1860,7 +1910,7 @@ StEntry.chat-response {
     .login-dialog .modal-dialog-button:default {
       text-shadow: 0 1px rgba(255, 255, 255, 0);
       color: #5c616c;
-      background-color: #fbfbfc;
+      background-color: #blue; /* #fbfbfc;*/
       border: 1px solid #cfd6e6;
       box-shadow: inset 0 2px 4px rgba(251, 251, 252, 0.05); }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
@@ -2028,14 +2078,14 @@ StEntry.chat-response {
   padding: 0px 0px 0px 12px; }
 
 #panel.lock-screen {
-  background-color: rgba(53, 57, 69, 0.5); }
+  background-color: #8eb300; /* rgba(53, 57, 69, 0.5);*/ }
 
 .screen-shield-background {
   background: black;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2e3436 url(misc/noise-texture.png);
+  background: #2e3436 url("common-assets/fondo.svg"); /*(misc/noise-texture.png);*/
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
