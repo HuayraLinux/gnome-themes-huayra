@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="50"
@@ -99,9 +100,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.2495794"
-     inkscape:cx="-2.2858532"
-     inkscape:cy="2.3994423"
+     inkscape:zoom="5.9279995"
+     inkscape:cx="39.172383"
+     inkscape:cy="-17.384211"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -110,10 +111,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1032"
+     inkscape:window-width="1914"
+     inkscape:window-height="1030"
      inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-y="26"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
      showguides="true"
@@ -125,7 +126,7 @@
     <inkscape:grid
        type="xygrid"
        id="grid3019"
-       empspacing="5"
+       empspacing="2"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
@@ -140,7 +141,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -150,7 +151,7 @@
      inkscape:groupmode="layer"
      transform="translate(-120,87.999997)">
     <g
-       transform="translate(-886,-418)"
+       transform="translate(-860,-440)"
        style="display:inline;opacity:1"
        id="switch-selected"
        inkscape:label="#g4820">
@@ -197,5 +198,53 @@
          id="path10839-9-8-2-2-5-7"
          style="color:#bebebe;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:0.6;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.78124988;marker:none;enable-background:new" />
     </g>
+    <rect
+       style="opacity:1;fill:#ff7f2a;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4162"
+       width="10"
+       height="10"
+       x="96"
+       y="-63" />
+    <image
+       y="-59.186741"
+       x="126"
+       id="image4226"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAABSCAYAAABTyippAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AkODysJM6+mkAAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl
+YXRlZCB3aXRoIEdJTVBkLmUHAAACfklEQVR42u3dzWoaUQCG4e+E1GmzcDM6JpsQRJMwi1m48Aaa
+NrcQyCX0Cno/vYLsnNq1GzcJBMIEFwUDQRyEIhZHmOmmtX9UKA7MUd93mYDEeTg/5nDQTCaTTLQR
+7fEIwCKwwCKwCCywCCwCCywCi8DayfbzfLHn52er3lx3fqBPC0dpZoodESbTRWmu6+OyPViSdH5+
+bg3W+/5IqQVnCmlm1J2/1DXT4KqHZNHfwprFBoPAoq3CStNUs9kMlU3Amk6nurm5QYVpECwCi8AC
+i8AisMCi3cMql8u6urpChZEFFoGV05sz2/Wgcz/Wf3h4sOYBXZQO9HHuKJMpHOpt6auk0lqvY7j5
+yDRIYIFFYBFYYBFYBBZYBBaBBRaBRWDtXrmeZ334/MWqO7yvS3bdSDk8PLQHq5sUf9Anfb/Dm7zS
+u+DYGqg8DmVznQZtgPoJtn1nqqxZYBFY7Abpz0ajkaIoUhzHkiTXdXV2dqZqtQqWTd3f32swGCgI
+ArVarSVer9dTo9GQ7/tg2TKiBoOBLi8v5TjO8ucnJyc6OjpSp9NRpVKR53msWUUXRZGCIPgN6keO
+4ygIAj0+PrLBsKE4jleOGs/zlusYWAWXZZmM+fcHe2OMsgI/bIP1S67rajwer1zTXNcFy4ZOT091
+e3urxWLx1++SJNHd3Z2azSZYNlSr1VSv1xWGoZ6enpQkiZIk0XA4VBiGqtfrqtVqbN1tyfd9VSoV
+RVGkfr+/nB7b7XZhW3awVuR5XuEwTIMbHli7imVkz4HfnjFbh5XrmvXGmdtzh/fFzKr7zbkMBu4U
+s2YRWGARWAQWWAQWgQUWWd/+/3z137pXVmi9+HfTBvUN2v64EZtv8wkAAAAASUVORK5CYII=
+"
+       preserveAspectRatio="none"
+       height="26.822432"
+       width="35" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#cccccc;stroke-width:0.49138689;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4229"
+       width="49.508617"
+       height="19.508614"
+       x="120.2457"
+       y="-87.754311" />
+    <rect
+       style="opacity:1;fill:#4ecae9;fill-opacity:1;stroke:none;stroke-width:0.49138689;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4229-2"
+       width="26"
+       height="20"
+       x="144"
+       y="-88" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#cccccc;stroke-width:0.48989797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 132,-82 0,8"
+       id="path4246"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
