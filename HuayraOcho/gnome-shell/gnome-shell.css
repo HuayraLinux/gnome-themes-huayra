@@ -699,8 +699,8 @@ background-color: red;}
   background-color: #9da6b7; /* transparent !important; */
 /*  background-gradient-direction: none !important;*/
   border-bottom: 0px !important;
-  /* border-image: url("common-assets/panel/panel.svg") 1 1 1 1 !important; } */
-}
+  border-image: url("common-assets/panel/panel.svg") 1 1 1 1 !important; }
+
   #panel.dynamic-top-bar-white-btn {
     border-image: none; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
@@ -1074,7 +1074,7 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 /*  -shell-close-overlap-x: 18px;
   -shell-close-overlap-y: -18px; */}
   .notification-close:rtl {
-    -shell-close-overlap-x: -8px; }
+    -shell-close-overlap-x: -25px; }
 
 .nm-dialog {
   max-height: 500px;
@@ -1647,11 +1647,10 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 .notification {
   font-size: 1em;
   color: #BAC3CF;
-  padding: 12px 12px 12px 12px;
+  padding: 0px; /* 12px 12px 12px 12px;*/
   spacing-rows: 4px;
   spacing-columns: 10px;
-  border: 3px;
-border-color: #ffcc00; /* Amarillo para empatar con icono de cerrar ventana */
+  
 
   border-image: url("common-assets/misc/notification.svg") 9 9 9 9; }
   .notification.multi-line-notification {
