@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.61) torbellino; urgency=medium
+
+  [Claudio "malefico" Andaur]
+  * Mas avances en tema Huayra Ocho
+
+ -- Iván Hoffmann <digital.h@gmail.com>  Tue, 20 Sep 2016 12:26:39 -0300
+
 gnome-themes-huayra (2.60) torbellino; urgency=medium
 
   * Agregando estilos para login y lock screen.
