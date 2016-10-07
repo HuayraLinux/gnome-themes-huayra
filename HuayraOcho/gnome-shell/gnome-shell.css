@@ -505,13 +505,13 @@ background-color: red;}
     box-shadow: none;
     background-gradient-direction: none !important;
 	background-color: #8eb300;
-    border-image: url("light-assets/menu/submenu.svg") 9 9 9 9; }
+/*    border-image: url("light-assets/menu/submenu.svg") 9 9 9 9;*/ }
   .popup-menu .popup-submenu-menu-item:open {
-    color: #5c616c;
+    color: #5c616c; 
    background: none !important;
     box-shadow: none;
-/*	background-color: #668000;*/
-    border-image: url("light-assets/menu/submenu-open.svg") 9 9 9 9; }
+	background-color: #668000;
+/*    border-image: url("light-assets/menu/submenu-open.svg") 9 9 9 9;*/ }
   .popup-menu .popup-menu-content {
     padding: 1em 0em 1em 0em; }
   .popup-menu .popup-menu-item {
@@ -521,9 +521,9 @@ background-color: red;}
     .popup-menu .popup-menu-item:rtl {
       padding: .4em 0em .4em 3em; }
     .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
-      color: #ffffff;
-/*	  background-color: #8eb300;*/
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1; }
+      color: white;
+	  background-color: #8eb300; /* Verde */
+      /*border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;*/ }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(92, 97, 108, 0.5);
       background: none; }
@@ -1647,7 +1647,7 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 .notification {
   font-size: 1em;
   color: #BAC3CF;
-  padding: 0px; /* 12px 12px 12px 12px;*/
+  padding: 12px 12px 12px 12px;
   spacing-rows: 4px;
   spacing-columns: 10px;
   
@@ -2186,3 +2186,5 @@ StEntry.chat-response {
   border: 1px solid grey;
   border-radius: 2px;
   padding: 6px; }
+
+
