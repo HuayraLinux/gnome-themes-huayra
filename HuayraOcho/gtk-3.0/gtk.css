@@ -20,6 +20,8 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color bg_color #efefef; 
 @define-color tooltip_bg_color #4ECAE9;
 
+/* Calculator */
+@define-color display #CACDB7;
 
 /* select  highlight-color ******************************************/
 @define-color selection_wood		#ac894b;

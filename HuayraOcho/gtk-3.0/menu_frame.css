@@ -1,7 +1,8 @@
 /*******************
- * menu Liso *
+ * menu Huayra Ocho *
  *
  *******************/
+
 .menu {
 	/* menu contextual */
     background-image: none;
@@ -47,6 +48,7 @@ DbusmenuGtkMenu .menu,
 
 .menu:selected {
     background-color: @theme_selected_bg_color;
+	color: white;
 }
 
 .menubar .menu.button:hover,
@@ -60,7 +62,7 @@ DbusmenuGtkMenu .menu,
 .primary-toolbar .menu.button:insensitive,
 .primary-toolbar .menu.button,
 .titlebar .menu.button {
-    background-color: shade (@theme_bg_dark_color, 1.07);
+    background-color: purple; /* shade (@theme_bg_dark_color, 1.07);*/
     background-image: none;
     border-radius: 0px;
     border-style: none;
@@ -110,7 +112,6 @@ DbusmenuGtkMenu .menu,
     text-shadow: none;
 	background-color: transparent; /* Fondo del texto de menu principal y submenues */
 }
-
 
 Genericmenuitem .menuitem,
 DbusmenuGtkMenu .menuitem,

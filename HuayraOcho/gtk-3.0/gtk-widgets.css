@@ -153,6 +153,10 @@ GtkWindow {
  * label *
  *********/
 
+GtkButton GtkLabel{
+	background-color: transparent;
+}
+
 GtkBox {
 	background-color: transparent; /* shade(@theme_bg_color, 0.97); las etiquetas normalmente estan contenidas dentro de una caja GtkBox */
 }
@@ -689,17 +693,17 @@ GtkScrolledWindow.frame {
 	background-color: transparent;
 	background-image: none;
 
-    color:  shade (@theme_fg_color, 0.6); /* texto de los botones Aceptar/Cancelar y cabeceras de treeview */
+    color: shade (@theme_fg_color, 1.6); /* texto de los botones Aceptar/Cancelar y cabeceras de treeview */
 	text-shadow: none; 
 }
 
 .button:hover {
-	background-color: @theme_selected_bg_color;
-	/* background-image: none; */
-	background-image: -gtk-gradient (linear,
+	background-color: @theme_selected_bg_color; /* Color de los botones al pasar el puntero */
+	background-image: none; 
+	/* background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (mix(@theme_selected_bg_color, @theme_bg_color, 0.18)),
-                                     to   (mix(@theme_selected_bg_color, @theme_bg_color, 0.18))); 
+                                     to   (mix(@theme_selected_bg_color, @theme_bg_color, 0.18))); */
 
     border-color: mix(@theme_selected_bg_color, @theme_bg_color, 0.18);
     
@@ -711,14 +715,15 @@ GtkScrolledWindow.frame {
 .button:hover:active {
 
 	background-image: none;
-	background-color: shade(@theme_selected_bg_color, 0.6);
+	background-color: shade(@theme_selected_bg_color, 0.8);
     border-color: shade(@theme_selected_bg_color, 1.00);
 
-    color: shade(@theme_selected_fg_color, 0.6); 
+    color: @theme_selected_fg_color; 
 	text-shadow: none; 
 
 
 }
+
 
 GtkToggleButton.button:checked,
 .button:checked,
@@ -730,9 +735,23 @@ GtkToggleButton.button:checked,
 }
 
 GtkToggleButton.button:checked:insensitive {
-	background-color: shade(@insensitive_bg_color, 0.9);
+	background-color: transparent; /* shade(@insensitive_bg_color, 0.9);*/
 	border-color: @insensitive_bg_color;
 }
+
+
+GtkToggleButton.button GtkLabel {
+	background-color: transparent;
+}
+GtkToggleButton.button:hover GtkLabel {
+	color: white;
+}
+
+/*
+GtkToggleButton.button:checked.GtkLabel {
+	background-color: red;
+}
+*/
 
 .cell:insensitive,
 .button:insensitive {
@@ -746,7 +765,6 @@ GtkToggleButton.button:checked:insensitive {
 }
 
 .cell:insensitive,
-
 .button *:insensitive {
 	color: @insensitive_fg_color;
 	text-shadow: none;
@@ -754,12 +772,12 @@ GtkToggleButton.button:checked:insensitive {
 
 /* botones de decoracion de ventana */
 
-.titlebar .linked.raised .button,
-.titlebar .linked.raised .button:active {
+/*
+.titlebar .linked.raised .button,.titlebar .linked.raised .button:active {
+	background-color: purple;
 	padding: 5px 8px 6px;
 }
-
-
+*/
 /********
 
 * List-Row *
@@ -779,9 +797,13 @@ GtkToggleButton.button:checked:insensitive {
   border-radius: 0;
   box-shadow: none; }
   .list-row.button:hover {
-    background-color: rgba(0, 0, 0, 0.05); }
+    background-color: shade(@theme_selected_bg_color, 0.9); }
   .list-row.button:active {
-    color: #5c616c; }
+    color: white; }
+  .list-row.button:selected {
+	background-color: @selected_bg_color;
+    color: @selected_fg_color; }
+
   .list-row.button:selected:active {
     color: #ffffff; }
   .list-row.button:selected:hover {
@@ -790,8 +812,7 @@ GtkToggleButton.button:checked:insensitive {
     color: rgba(255, 255, 255, 0.7);
     background-color: rgba(82, 148, 226, 0.7); }
     .list-row.button:selected:insensitive GtkLabel {
-      color: inherit; }
-
+      color:  inherit; }
 .list-row, list-row.button {
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .list-row:hover, list-row.button:hover {
@@ -850,7 +871,7 @@ GtkComboBox .button {
     padding: 1px 3px 1px 6px;
 }
 
-GtkComboBox .button *:prelight {
+GtkComboBox .button *:hover {
     color: @theme_selected_fg_color;
 	background-color: @theme_selected_bg_color;
 
@@ -1067,7 +1088,8 @@ GtkComboBox.combobox-entry .button *:prelight {
 
 	border-color: @theme_bg_dark_color;
     border-image: none;
-
+	background-color: blue;
+	background-image: none;
     /* background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade (@theme_bg_dark_color, 0.70)),
@@ -1129,6 +1151,7 @@ GtkComboBox.combobox-entry .button *:prelight {
 
 }
 
+/* Botones junto a la search-bar entry, cuando se activa en nautilus */
 .toolbar .raised .button,
 .toolbar .raised.button {
     padding: 2px 6px;
@@ -1139,11 +1162,12 @@ GtkComboBox.combobox-entry .button *:prelight {
 	border-color:  @theme_bg_dark_color;
     border-image: none;
 	box-shadow: none;
-
-    background-image: -gtk-gradient (linear,
+	background-image: none;
+	background-color: transparent;
+/*    background-image:  -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade (@button_raised_gradient_color_a, 1.00)),
-                     to   (shade (@button_raised_gradient_color_a, 1.00)));
+                     to   (shade (@button_raised_gradient_color_a, 1.00)));*/
 
     -GtkWidget-focus-line-width: 1;	
 	/* -unico-focus-border-color: alpha (shade(@focused_entry_border, 1.1), 0.6); */
@@ -1165,10 +1189,13 @@ GtkComboBox.combobox-entry .button *:prelight {
 .toolbar .raised.button:hover {
 	border-color:  @theme_bg_dark_color;
     border-image: none;
-    background-image: -gtk-gradient (linear,
+	background-image: none;
+/*    background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade (@button_raised_gradient_color_a, 1.03)),
-                     to   (shade (@button_raised_gradient_color_a, 1.03)));
+                     to   (shade (@button_raised_gradient_color_a, 1.03)));*/
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 
 .toolbar .raised .button:active,
@@ -1178,10 +1205,12 @@ GtkComboBox.combobox-entry .button *:prelight {
 	border-color: @theme_bg_dark_color;
     border-image: none;
     /* invierte gradiente boton)   */ 
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade (@button_raised_gradient_color_a, 0.85)),
-                     to   (shade (@button_raised_gradient_color_a, 0.85)));
+                     to   (shade (@button_raised_gradient_color_a, 0.85)));*/
+	background-image: none;
+	background-color: shade(@selected_bg_color, 1.05);
     
 }
 
@@ -1305,6 +1334,7 @@ GtkComboBox.combobox-entry .button *:prelight {
 
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar .button:active:hover {
+	background-color: purple; /*@theme_bg_color;*/
 	background-image: none;
 /*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
@@ -1313,7 +1343,7 @@ GtkComboBox.combobox-entry .button *:prelight {
 }
 
 .inline-toolbar.toolbar .button:hover {
-    background-color: transparent; /* alpha(@theme_base_color, 0.0);*/
+    background-color: blue; /*@theme_bg_color;*/ /* alpha(@theme_base_color, 0.0);*/
     background-image: none;
 }
 
@@ -1404,7 +1434,7 @@ GtkScale.progressbar {
 }
 
 GtkSwitch.trough:active {
-	red; /* color: @switch_trough_active_color; */
+	color: shade(@theme_bg_color, 0.5); 
 }
 
 GtkSwitch.trough:active {  /* Fondo del switch en estado encendido */
@@ -1454,6 +1484,10 @@ GtkImage,
 GtkImage:insensitive {
 	/* ubuntu-12 */
     background-color: transparent;
+}
+
+GtkButton GtkImage {
+	background-color: transparent;
 }
 
 /****************
@@ -1643,7 +1677,7 @@ column-header .button:active:hover {
 column-header .button *:active,
 column-header .button *:hover:active {
 	color: @theme_text_color;
-	background-color: #ff0000;
+	background-color: shade(@theme_selected_bg_color, 1.2);
 	/* text-shadow: 0px 1px @theme_selected_shadow_color; */
 }
 
@@ -1746,11 +1780,11 @@ GtkCalendar.view {
 
 GtkCalendar.header {
     border-radius: 0px;
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
                                      left top,
                                      left bottom,
                                      from (shade (@theme_bg_color, 1.04)),
-                                     to (shade (@theme_bg_color, 0.89)));
+                                     to (shade (@theme_bg_color, 0.89)));*/
     border-width: 0px;
 }
 
@@ -1830,56 +1864,55 @@ TerminalScreen {
     -TerminalScreen-background-darkness: 0.45;
 }
 
+/* Gnome Calculator */
 
 MathWindow * {
-    background-color: white;
+    background-color: transparent;
 }
-/*
+
 MathWindow {
     color: @theme_fg_dark_color;    
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade (@theme_bg_dark_color, 0.58)),
-									 color-stop (0.05, shade(@theme_bg_dark_color, 0.50)),
-                                     to (shade (@theme_bg_dark_color, 0.65)));
+                                     from (shade (@theme_bg_color, 1.0)),
+                                     to (shade (@theme_bg_color, 0.85)));
 
 }
 
-*/
+
 MathDisplay {
 	/* Espacio (padding del frame) entre el display y su borde */
 	/* es necesario poner 'padding' para que el display no sobre-escriba el borde */
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_dark_color, 0.60)),
-                                     to (shade (@theme_bg_dark_color, 0.60)));
+                                     to (shade (@theme_bg_dark_color, 0.60)));*/
 }
 
 MathDisplay GtkTextView {
 	/* color del display */
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade (@theme_selected_bg_color, 1.00)),
-                                     to   (shade (@theme_selected_bg_color, 1.00)));
-
+	background-image: -gtk-gradient (linear, 
+									left top, left bottom, 
+									from (shade (@display, 1.00)), 
+									to (shade (@display, 0.99)));
 }
 
 MathDisplay GtkTextView.view {
 	/* color texto del display */
-	color: 	@theme_selected_fg_color;
+	color: 	shade(@theme_fg_color, 1.2);
 }
 
 MathWindow .frame {
 	/* Borde del display */
 	/* es necesario poner 'padding' porque sino el display sobre-escribe el borde */
-	/* padding: 1px;
+    padding: 1px;
     border-width: 1px;
-	border-radius: 0px;
+	border-radius: 5px;
     border-style: solid;
     border-image: -gtk-gradient (linear,
 				             left top, left bottom,
 				             from (shade (@button_border, 0.99)),
-				             to   (shade (@button_border, 1.10))); */
+				             to   (shade (@button_border, 1.10))); 
 
 }
 
@@ -1887,13 +1920,13 @@ MathWindow .button:active,
 MathWindow .button:active:hover,
 MathWindow .button:hover,
 MathWindow .button {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-radius: 0px;
-	border-color: transparent;
+    border-radius: 2px;
+	border-color: @button_border;
 }
 
-/*
+
 MathWindow .cell,
 MathWindow GtkLabel {
     color: @theme_fg_dark_color;
@@ -1905,7 +1938,7 @@ MathWindow GtkLabel:insensitive {
 	text-shadow: none;
 }
 
-*/
+
 RBSource .toolbar {
 	background-color: @theme_bg_color;
 	background-image: -gtk-gradient (linear,
@@ -1918,10 +1951,6 @@ RBSource .toolbar .button {
 	padding: 2px 4px;
 }
 
-NemoTrashBar.info,
-NemoXContentBar.info,
-NemoSearchBar.info,
-NemoQueryEditor.info,
 NautilusTrashBar.info,
 NautilusXContentBar.info,
 NautilusSearchBar.info,
@@ -1934,7 +1963,7 @@ NautilusQueryEditor.info {
                                      to (shade (@nautilus_cluebar_color, 1.00)));
 */
 	background-image: none;
-	background-color: red;
+	background-color: yellow;
 
     border-radius: 0px;
     border-width: 0px 0px 1px 0px;
@@ -1942,16 +1971,15 @@ NautilusQueryEditor.info {
     border-color: @theme_base_color;
 }
 
-NemoSearchBar .entry,
-NemoSearchBar .entry:focused,
 NautilusSearchBar .entry,
 NautilusSearchBar .entry:focused {
-
+	background-color: yellow;
 	padding: 3px 4px;
     -GtkEntry-inner-border: 1;
 }
 
 NautilusSearchBar .button {  /* TEST */
+	color: green;
 	background-color: blue;
 	background-image:none;
 
@@ -1978,7 +2006,7 @@ NautilusTrashBar .button:hover {
                                      left top, left bottom,
                                      from (shade (@nautilus_cluebar_color, 0.93)),
                                      to   (shade (@nautilus_cluebar_color, 0.93)));
-	border-color: shade (@nautilus_cluebar_color, 0.93);
+	border-color: green; /*shade (@nautilus_cluebar_color, 0.93);*/
     border-image: none;
 
 	color: shade(@theme_fg_color, 1.00);
