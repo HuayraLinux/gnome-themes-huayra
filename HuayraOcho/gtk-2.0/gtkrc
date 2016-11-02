@@ -1,4 +1,4 @@
-# Tema GTK2 Huayra Liso: Un tema flat.
+# Tema GTK2 Huayra Ocho: Un tema 8bit.
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
@@ -25,7 +25,7 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" ##6Ae7ea" # verde turquesa
 # Colores personalizados:
 
 gtk-color-scheme = "color_foco:#101010" # Gris oscuro para linea punteada de foco
-gtk-color-scheme = "naranja:#FF9543"
+gtk-color-scheme = "verde:#8eb300"
 gtk-color-scheme = "amarillo:#F5D923"
 gtk-color-scheme = "azul:#34A1BD"
 gtk-color-scheme = "verde:#A0CF00"
@@ -119,7 +119,7 @@ style "default" {
 	fg[NORMAL]		= shade(0.7, @selected_fg_color)
 #	fg[NORMAL]		= shade(0.5, @selected_fg_color)
 	fg[SELECTED]      = @selected_fg_color #color de letras en SYNAPSE @verde #shade( 0.9, @azul)
-    fg[ACTIVE]      = shade (0.4, @selected_fg_color)
+    fg[ACTIVE]      = @selected_fg_color
 	fg[PRELIGHT] 	= shade (1.3, @selected_fg_color)
 
 	text[NORMAL]      = @text_color
@@ -144,7 +144,7 @@ engine "murrine"
 		glazestyle          = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
 		gradient_shades     = {1.0,1.0,1.0,1.0} 
 		progressbarstyle    = 0
-		focus_color         = shade (1.2, @naranja) #naranjita claro
+		focus_color         = shade (1.2, @selected_bg_color) #verde claro
 		glowstyle	    	= 1
 		glow_shade          = 1.0 # valores mayores de 1 hacen que se vea un brillo sobre los controles cuando estan seleccionados. Lo mantengo asi para compatibilidad con estilo Flat
 		focusstyle			= 3
@@ -184,7 +184,7 @@ style "wider" {
 	ythickness = 3
 }
 
-style "liso-entry" {
+style "ocho-entry" {
 
 	xthickness = 3
 	ythickness = 3
@@ -198,13 +198,13 @@ style "liso-entry" {
 }
 
 
-style "liso-notebook" {
+style "ocho-notebook" {
 
-	fg[ACTIVE] = shade (1.5, @bg_color)
+	fg[ACTIVE] = shade (0.6, @bg_color)
 	fg[SELECTED] = shade (1.7, @bg_color)
 
-	bg[NORMAL]   = shade (1.15, @bg_color)
-	bg[ACTIVE]   = shade (0.90, @bg_color)
+	bg[NORMAL]   = shade (1.15, @bg_color) # Fondo de Tab activo
+	bg[ACTIVE]   = shade (0.9, @verde) # shade (0.90, @bg_color) Fondo de tab fuera de foco
 
 	engine "murrine" {
 		border_shades           = {0.7, 0.7}
@@ -214,7 +214,7 @@ style "liso-notebook" {
 	}
 }
 
-style "liso-notebook-layout" {
+style "ocho-notebook-layout" {
 	bg[NORMAL]   = shade (1.0, @bg_color)
 	bg[ACTIVE]   = shade (1.0, @bg_color)
 	fg[NORMAL] = shade(1.4, @bg_color)
@@ -225,7 +225,10 @@ style "liso-notebook-layout" {
 	}
 }
 
-style "liso-notebook-bg" = "liso-notebook" {
+style "ocho-notebook-bg" {
+	bg[NORMAL]   = shade (1.15, @bg_color) # Borde de tab
+	bg[ACTIVE]   = shade (0.90, @azul) # Fondo de tab fuera de foco
+	
 }
 
 style "spinbutton" {
@@ -401,7 +404,7 @@ style "menu_item" {
 
 }
 
-style "sliders-liso"
+style "sliders-ocho"
 # Estilo para los deslizadores de volumen
 {
 	xthickness = 2
@@ -417,13 +420,13 @@ style "sliders-liso"
 
 }
 
-style "scrollbar-liso" {
+style "scrollbar-ocho" {
 	bg[SELECTED]		= shade (1.3, @azul)		# color indicador
 	bg[NORMAL]			= shade (1.3, @azul)			# color borde indicador
 
     # color flechas (stepper)	
     fg[NORMAL]          = shade (0.4, @base_color)
-	fg[PRELIGHT]		= shade (1.20, @naranja)
+	fg[PRELIGHT]		= shade (1.20, @verde)
 	fg[ACTIVE]		    = shade (1.00, @azul)
     fg[SELECTED]        = shade (1.00, @base_color)
     fg[INSENSITIVE]     = shade (0.5, @base_color)
@@ -443,7 +446,7 @@ style "scrollbar-liso" {
 	}
 }
 
-style "botones-liso" {
+style "botones-ocho" {
 #Estilo para todos los botones de la interfaz
     xthickness = 4
     ythickness = 4
@@ -453,6 +456,9 @@ style "botones-liso" {
 	bg[ACTIVE] = shade(0.7, @selected_bg_color)
 	bg[SELECTED] = shade(0.8, @bg_color)
 	bg[PRELIGHT] = shade(1.05, @selected_bg_color)
+
+	fg[SELECTED] = @selected_fg_color
+	fg[ACTIVE] = @selected_fg_color
 
 	engine "murrine" {
 		border_shades           = {0.90, 0.90}
@@ -491,7 +497,7 @@ style "botones-combobox" {
 	fg[NORMAL] = shade(0.7, @fg_color)
 	fg[ACTIVE] = shade(0.9, @selected_fg_color)
 	fg[PRELIGHT] = shade(1.0, @selected_fg_color)
-	fg[SELECTED] = shade(0.2, @fg_color)
+	fg[SELECTED] = @selected_fg_color #shade(0.2, @fg_color)
 	fg[INSENSITIVE] = shade(0.85, @bg_color)
 
 	text[NORMAL]      = @text_color
@@ -506,7 +512,7 @@ style "botones-combobox" {
 
 }
 
-style "checkbox-liso" {
+style "checkbox-ocho" {
 
 	bg[NORMAL] = shade(1.0, @bg_color) #F1F1F1"
 	bg[INSENSITIVE] = shade(0.9, @bg_color)
@@ -515,16 +521,16 @@ style "checkbox-liso" {
 	bg[PRELIGHT] = shade(1.1, @selected_bg_color)
 
 	fg[NORMAL] = shade(0.7, @fg_color)
-	fg[ACTIVE] = shade(0.9, @selected_fg_color)
+	fg[ACTIVE] = shade(0.4, @selected_fg_color) #shade(0.9, @selected_fg_color)
 	fg[PRELIGHT] = shade(1.0, @selected_fg_color)
 	fg[SELECTED] = shade(0.2, @fg_color)
 	fg[INSENSITIVE] = shade(0.85, @bg_color)
 
 	text[NORMAL]      = @text_color
 	text[PRELIGHT]    = @text_color
-	text[SELECTED]    = @naranja #@selected_fg_color
+	text[SELECTED]    = @selected_fg_color
 	text[INSENSITIVE] = darker (@bg_color)
-	text[ACTIVE]      = @selected_fg_color
+	text[ACTIVE]      = shade(0.4, @selected_fg_color)
 
 	engine "murrine" {
 		border_shades           = {1.00, 1.00}
@@ -676,7 +682,7 @@ style "evo_new_button_workaround" {
 	}
 }
 
-style "expander-liso" {
+style "expander-ocho" {
 	fg[NORMAL]        = shade(0.5, @selected_fg_color)
 	fg[PRELIGHT]      = @selected_bg_color #@text_color
 	fg[SELECTED]      = @selected_fg_color
@@ -696,21 +702,21 @@ class "GtkLabel" style "default"
 class "GtkSeparator" style "wide"
 class "GtkFrame" style "wide"
 class "GtkCalendar" style "default"
-class "GtkEntry" style "liso-entry"
+class "GtkEntry" style "ocho-entry"
 class "GtkList" style "list"
 
 class "GtkSpinButton" style "botones-combobox" #"spinbutton"
-class "GtkScale" style "sliders-liso" #"scale"
+class "GtkScale" style "sliders-ocho" #"scale"
 class "GtkVScale" style "vscale"
 class "GtkHScale" style "hscale" 
-class "GtkScrollbar" style "scrollbar-liso" #"scrollbar"
-class "GtkHScrollbar" style "scrollbar-liso" #"hscrollbar"
-class "GtkVScrollbar" style "scrollbar-liso" #"vscrollbar"
+class "GtkScrollbar" style "scrollbar-ocho" #"scrollbar"
+class "GtkHScrollbar" style "scrollbar-ocho" #"hscrollbar"
+class "GtkVScrollbar" style "scrollbar-ocho" #"vscrollbar"
 class "GtkToolbar"   style "toolbar" 
 widget_class "*<GtkToolbar>.*.<GtkButton>*"     style "botones-toolbar" #"toolbar_button"
 class "GtkSeparatorToolItem"		            style "toolbar_separator"
 
-class "GtkExpander" style "expander-liso"
+class "GtkExpander" style "expander-ocho"
 
 #class "GtkHandleBox" style "toolbar" #Agregué para fixear Synaptic
 #class "GtkVBox" style "toolbar" # Fix 2
@@ -724,14 +730,15 @@ class "GtkExpander" style "expander-liso"
 
 # widget_class "*GtkToolbar*" style "toolbar"
 
-widget_class "*<GtkNotebook>*<GtkEventBox>" style "liso-notebook-bg"
-widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "liso-notebook-bg"
-widget_class "*<GtkNotebook>*<GtkLayout>" style "liso-notebook-bg"
-widget_class "*<GtkNotebook>*<GtkViewport>" style "liso-notebook-bg"
-widget_class "*<GtkNotebook>*<GtkScrolledWindow>" style "liso-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>" style "ocho-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "ocho-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkLayout>" style "ocho-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkViewport>" style "ocho-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkScrolledWindow>" style "ocho-notebook-bg"
 
-widget_class "*<GtkButton>" style "botones-liso" #Botones redondeados
-widget_class "*<GtkNotebook>" style "liso-notebook"
+widget_class "*<GtkButton>" style "botones-ocho" #Botones redondeados
+widget_class "*<GtkCheckButton>*" style "checkbox-ocho"
+widget_class "*<GtkNotebook>" style "ocho-notebook"
 widget_class "*<GtkStatusbar>*" style "statusbar"
 widget_class "*<GtkToggleButton>" style "botones-path"
 widget_class "*<GtkComboBoxEntry>*" style "wider"
@@ -743,7 +750,7 @@ widget_class "*<GtkMenu>*" style "menu"
 widget_class "*<GtkMenuItem>*" style "menu_item"
 widget_class "*<GtkSeparatorMenuItem>*" style "separator_menu_item"
 
-widget_class "*.<GtkFrame>" style "botones-liso"
+widget_class "*.<GtkFrame>" style "botones-ocho"
 widget_class "*.<GtkFrame>.<GtkLabel>" style "frame_title"
 widget_class "*.<GtkTreeView>*" style "treeview"
 
@@ -755,8 +762,8 @@ widget_class "*.<GtkCTree>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
 
-widget_class "*.<gtkmm__GtkFrame>.<gtkmm__GtkLabel>" style "botones-liso"
-widget_class "*<GtkExpander>.<GtkLabel>" style "expander-liso" # Listas expandibles son las que tienen un boton con forma de triangulo a la derecha Ej: Opciones Avanzadas en GIMP>New
+widget_class "*.<gtkmm__GtkFrame>.<gtkmm__GtkLabel>" style "botones-ocho"
+widget_class "*<GtkExpander>.<GtkLabel>" style "expander-ocho" # Listas expandibles son las que tienen un boton con forma de triangulo a la derecha Ej: Opciones Avanzadas en GIMP>New
 
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
@@ -779,7 +786,7 @@ widget_class "*.ETree.ECanvas" style "treeview_header"
 
 # Special case the nautilus-extra-view-widget
 # ToDo: A more generic approach for all applications that have a widget like this.
-widget "*.nautilus-extra-view-widget" style : highest "botones-liso"
+widget "*.nautilus-extra-view-widget" style : highest "botones-ocho"
 
 #widget "*.CajaHorizontalSplitter.GtkVBox.GtkHPaned.GtkVBox.GtkHBox" style "caja-path"
 
