@@ -38,7 +38,7 @@
 .radio row:selected:focused {
   	border-width: 		3px;
     border-style: 		solid; 
-	border-color: 		red;
+	border-color: 		shade(@theme_selected_bg_color, 1.2);
 }
 
 

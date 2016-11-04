@@ -1083,13 +1083,30 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
     height: 26px;
     width: 26px; }
 
+.notification-close {
+  background-image: url("common-assets/misc/noti-close.svg");
+  background-size: 26px;
+  height: 26px;
+  width: 26px; }
+ .notification-close:hover {
+    background-image: url("common-assets/misc/noti-close-hover.svg");
+    background-size: 26px;
+    height: 26px;
+    width: 26px; }
+ .notification-close:active {
+    background-image: url("common-assets/misc/noti-close-active.svg");
+    background-size: 26px;
+    height: 26px;
+    width: 26px; }
+
+
 .window-close {
   -shell-close-overlap: 25px; }
 
 .notification-close {
-	-shell-close-overlap: 25px;
-/*  -shell-close-overlap-x: 18px;
-  -shell-close-overlap-y: -18px; */}
+/*	-shell-close-overlap: -50px;*/
+  -shell-close-overlap-x: 0px;
+  -shell-close-overlap-y: 0px; }
   .notification-close:rtl {
     -shell-close-overlap-x: -25px; }
 
@@ -1139,7 +1156,7 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
 
 #overview {
   spacing: 24px; 
-  background-color: #9da6b7;
+  background-color: #9da6b7; /* Color de fondo para pantalla de Iconos */
 	background-image: url("common-assets/dash/fondo.svg");
 	background-repeat: repeat;
 }
@@ -1662,14 +1679,16 @@ es ignorado por la extension, pero se puede modificar manualmente en el menciona
   width: 34em; }
 
 .notification {
+	background-color: #9da6b7; /* Color loco */
+	background-image: url("common-assets/dash/fondo.svg"); /* fondo scanlines */
+	background-repeat: repeat;
   font-size: 1em;
-  color: #BAC3CF;
+  color: #E1EBF8; /*#BAC3CF;*/
   padding: 12px 12px 12px 12px;
   spacing-rows: 4px;
   spacing-columns: 10px;
   
-
-  border-image: url("common-assets/misc/notification.svg") 9 9 9 9; }
+  }
   .notification.multi-line-notification {
     padding-bottom: 12px; }
   .notification-unexpanded {

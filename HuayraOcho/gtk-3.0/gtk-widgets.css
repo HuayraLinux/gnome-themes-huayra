@@ -17,7 +17,7 @@
     -GtkMenu-vertical-padding: 2;  
     -GtkMenuBar-internal-padding: 3;
     -GtkMenuItem-arrow-scaling: 0.6;
-    -GtkNotebook-tab-overlap: 0px;
+    -GtkNotebook-tab-overlap: -1px;
     -GtkNotebook-tab-curvature:8px;
 	-GtkNotebook-initial-gap: 0;
 
@@ -742,6 +742,7 @@ GtkToggleButton.button:checked:insensitive {
 
 GtkToggleButton.button GtkLabel {
 	background-color: transparent;
+	
 }
 GtkToggleButton.button:hover GtkLabel {
 	color: white;
@@ -1607,6 +1608,7 @@ GtkTreeView:selected:focused {
 }
 
 .view:hover, 
+
 .view *:active:hover {
     background-color: red;  shade(@theme_tooltip_bg_color, 0.5);  shade(@theme_bg_color, 0.915); 
 	background-image: none;
