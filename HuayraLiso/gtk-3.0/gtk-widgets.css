@@ -206,8 +206,10 @@ GtkLabel:active:hover {
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 
+	color: shade(@theme_bg_color, 0.5);
+
 	border-bottom: 0px none;
-	border-style: solid;
+	border-style: none;
 	border-left-width: 1px;
 	border-right-width: 1px;
 	border-top-width: 1px;
@@ -229,8 +231,9 @@ GtkLabel:active:hover {
 }
 
 .titlebar .title {
-	font: Bold;
+	font: normal;
 }
+
 
 /*.titlebar :first-child {*/
 /*	padding: 5px 5px 6px 5px;*/
@@ -299,14 +302,28 @@ GtkLabel:active:hover {
     &:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-close-backdrop.png'),url('assets/titlebutton-close-backdrop@2.png')); }  
   }*/
 
+/******* Sombras para ventanas en GTK3 > 3.14 *******/
 
 .window-frame {
-	border-width: 1px;
-	border-radius: 7px 7px 0 0;
-	border-style: solid;
-	border-color: @theme_selected_bg_color;
-	margin: 10px;
-}
+  border-radius: 4px 4px 0 0;
+  border-width: 0px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px; }
+.window-frame:backdrop {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2); }
+.window-frame.tiled {
+    border-radius: 0; }
+.window-frame.popup {
+    box-shadow: none;
+    border-radius: 0; }
+.window-frame.csd.popup, .window-frame.csd.menu {
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+.window-frame.csd.tooltip {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
+.window-frame.csd.message-dialog {
+    border-radius: 3px; }
 
 
 /*************
@@ -1853,56 +1870,55 @@ TerminalScreen {
     -TerminalScreen-background-darkness: 0.45;
 }
 
+/* Gnome Calculator */
 
 MathWindow * {
-    background-color: white;
+    background-color: transparent;
 }
-/*
+
 MathWindow {
     color: @theme_fg_dark_color;    
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade (@theme_bg_dark_color, 0.58)),
-									 color-stop (0.05, shade(@theme_bg_dark_color, 0.50)),
-                                     to (shade (@theme_bg_dark_color, 0.65)));
+                                     from (shade (@theme_bg_color, 1.0)),
+                                     to (shade (@theme_bg_color, 0.85)));
 
 }
 
-*/
+
 MathDisplay {
 	/* Espacio (padding del frame) entre el display y su borde */
 	/* es necesario poner 'padding' para que el display no sobre-escriba el borde */
-    background-image: -gtk-gradient (linear,
+/*    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_bg_dark_color, 0.60)),
-                                     to (shade (@theme_bg_dark_color, 0.60)));
+                                     to (shade (@theme_bg_dark_color, 0.60)));*/
 }
 
 MathDisplay GtkTextView {
 	/* color del display */
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade (@theme_selected_bg_color, 1.00)),
-                                     to   (shade (@theme_selected_bg_color, 1.00)));
-
+	background-image: -gtk-gradient (linear, 
+									left top, left bottom, 
+									from (shade (@display, 1.00)), 
+									to (shade (@display, 0.99)));
 }
 
 MathDisplay GtkTextView.view {
 	/* color texto del display */
-	color: 	@theme_selected_fg_color;
+	color: 	shade(@theme_fg_color, 1.2);
 }
 
 MathWindow .frame {
 	/* Borde del display */
 	/* es necesario poner 'padding' porque sino el display sobre-escribe el borde */
-	/* padding: 1px;
+    padding: 1px;
     border-width: 1px;
-	border-radius: 0px;
+	border-radius: 5px;
     border-style: solid;
     border-image: -gtk-gradient (linear,
 				             left top, left bottom,
 				             from (shade (@button_border, 0.99)),
-				             to   (shade (@button_border, 1.10))); */
+				             to   (shade (@button_border, 1.10))); 
 
 }
 
@@ -1910,13 +1926,13 @@ MathWindow .button:active,
 MathWindow .button:active:hover,
 MathWindow .button:hover,
 MathWindow .button {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-radius: 0px;
-	border-color: transparent;
+    border-radius: 2px;
+	border-color: @button_border;
 }
 
-/*
+
 MathWindow .cell,
 MathWindow GtkLabel {
     color: @theme_fg_dark_color;
@@ -1928,7 +1944,8 @@ MathWindow GtkLabel:insensitive {
 	text-shadow: none;
 }
 
-*/
+
+
 RBSource .toolbar {
 	background-color: @theme_bg_color;
 	background-image: -gtk-gradient (linear,
