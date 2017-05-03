@@ -25,8 +25,8 @@
     color: @internal_element_color;
 
     border-image: none;
-    border-style: solid;
-	border-color: red;
+    border-style: none;
+	border-color: transparent;
 }
 
 .menu.button:hover {
@@ -69,7 +69,7 @@
 
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
-    /*background-image: none; */
+    background-image: none; 
 	background-image: linear-gradient(to bottom,
                                       shade(@selected_bg_color, 0.9),
                                       shade(@selected_bg_color, 1.1),
@@ -97,6 +97,7 @@
 .menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
+	border-radius: 6px;
 	background-color: @selected_bg_color;	
     background-image: linear-gradient(to bottom,
                                       shade(@selected_bg_color, 0.9),
@@ -219,11 +220,25 @@ GtkTreeMenu .menuitem:hover {
 GtkPopover, GtkPopover.background {
 
 	background-color: shade (@theme_bg_color, 1.1);
-	border-radius: 4px;
+	border-radius: 1px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: alpha (@theme_fg_color, 0.5);
 
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2); 
 }
 
+GtkPopover .menuitem {
+	border-style: none;
+
+}
+GtkPopover .menuitem:hover, GtkPopover .menuitem:active:hover {
+	border-radius: 6px;
+	background-image: linear-gradient(to bottom,
+                                      shade(@selected_bg_color, 0.8),
+                                      shade(@selected_bg_color, 0.9),
+									  shade(@selected_bg_color, 1.0),
+                                      shade(@selected_bg_color, 1.0));
+
+}
 

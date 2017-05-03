@@ -227,12 +227,15 @@
 /* Calculator */
 @define-color display #CACDB7;
 
-/* @import url("gtk-widgets-backgrounds.css");*/
+
 
 @import url("gtk-widgets.css"); 
-@import url("gtk-widgets-borders.css");
+/* @import url("gtk-widgets-ocho.css"); */
+/*@import url("gtk-widgets-borders.css");*/
+
+/*@import url("gtk-widgets-backgrounds.css");*/
 
 @import url("gtk-widgets-assets.css"); 
 /* @import url("gnome-applications.css"); */
 
-@import url("menues.css"); 
+@import url("menues.css");
