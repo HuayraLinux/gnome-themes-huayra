@@ -180,6 +180,10 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @define-color wm_highlight #ffffff;
 @define-color wm_title_highlight #ffffff;
 
+/* Colores para cabecera de ventana activa  */
+@define-color wm_top_color #f7f7f7;
+@define-color wm_bottom_color #efefef;
+
 @define-color wm_bg_a shade (@bg_color, 1.1);
 @define-color wm_bg_b @bg_color;
 
@@ -205,28 +209,10 @@ gtk-color-scheme = "tooltip_bg_color:#4ECAE9" # azul
 @import url("scrollbar.css");
 
 /* @import url("sidebar.css"); */
-@import url("gtk-widgets-assets.css");
+@import url("gtk-widgets-assets.css"); 
 /* @import url("gnome-panel.css"); */
 
-@import url("tabs.css");
+@import url("tabs.css"); 
 /*@import url("ventanas.css");*/
 
-/*  
-	There are 3 options for nautilus:
-	-----------------------------------
-
-	1.- nautilus sidebar and pathbar dark gray:
-		@import url("gnome-applications-gray.css");
-	OR
-	2.- nautilus sidebar and pathbar light:
-		@import url("gnome-applications-light.css"); 
-	OR
-	3.- nautilus sidebar dark gray and pathbar light:
-		@import url("gnome-applications-gray-light.css"); 
-	
-	(edit the line below according to the style of nautilus you want) 
-*/
-/* ---------------------------------------------------- */
-/* @import url("gnome-applications-gray.css");*/
-/* ---------------------------------------------------- */
 

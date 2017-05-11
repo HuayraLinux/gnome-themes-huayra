@@ -102,7 +102,7 @@ DbusmenuGtkMenu .menu,
  ************/
 .menuitem {
 	/* contextual menu-item */
-    -GtkMenuItem-arrow-scaling: 0.7;
+    -GtkMenuItem-arrow-scaling: 0.2;
 	border-radius: 0px;
     padding: 3px 4px;
 

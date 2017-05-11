@@ -27,7 +27,7 @@
 
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
-    background-color: transparent;
+    background-color: green;
     background-image: url("assets/checkbox-unchecked-insensitive-alt.png");
 }
 

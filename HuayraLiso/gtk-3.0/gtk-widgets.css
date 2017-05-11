@@ -136,13 +136,13 @@ GtkWindow {
 	border-width: 1px;
     border-style: 		solid;
 	border-radius: 0px;
-	border-color: 		shade(@theme_bg_color, 0.70);
-    background-color: 	@theme_tooltip_bg_color;
+	border-color: 		shade(@theme_bg_color, 0.10);
+    background-color: 	shade(@theme_tooltip_bg_color, 0.80);
     color: 				shade(@theme_tooltip_fg_color, 0.90);
 }
 
 .tooltip * {
-    background-color: @theme_tooltip_bg_color;
+    background-color: transparent; /* @theme_tooltip_bg_color;*/
 }
 
 .grip {
@@ -197,9 +197,9 @@ GtkLabel:active:hover {
  **********************************************************************/
 
 .titlebar {
-	background-image: none; /*linear-gradient(to bottom,
-	                  @theme_base_color,
-	                  @theme_bg_color);*/
+	background-image: linear-gradient(to bottom,
+	                  @wm_top_color,
+	                  @wm_bottom_color);
 	background-color: #efefef ; /* transparent;*/
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
@@ -865,6 +865,7 @@ GtkComboBox {
 
     -GtkComboBox-arrow-scaling: 0.5;
     -GtkComboBox-shadow-type: none;
+	background-color: purple;
 }
 
 GtkComboBox .cell {
@@ -1415,6 +1416,17 @@ GtkComboBox.combobox-entry .button *:prelight {
 .inline-toolbar.toolbar .button:active:nth-child(last) {
     box-shadow: none;
 }
+/******** Sidebar ********/
+/**** Barra lateral izquierda en Nautilus ******/
+
+.sidebar,
+.sidebar .view {
+    background-color: @sidebar_bg;
+}
+
+.sidebar .view:hover {
+	background-color: shade(@theme_selected_bg_color, 1.2);
+}
 
 /****************
  * GtkAssistant *
@@ -1574,9 +1586,10 @@ GtkTreeView:selected:focused {
 
 }
 
+
 .view:hover, 
 .view *:active:hover {
-    
+    background-color: alpha(@theme_selected_bg_color, 0.6); 
     color: shade (@theme_bg_color, 0.5);
 	text-shadow: none;
 
@@ -1648,14 +1661,20 @@ GtkTreeView {
 GtkTreeView row:nth-child(odd),
 GtkTreeView row:nth-child(odd):hover {
 
-	background-color: shade (@tooltip_bg_color, 1.61);
+	background-color: shade (@tooltip_bg_color, 1.54);
 	text-shadow: none;
 }
 
 GtkTreeView row:nth-child(even),
 GtkTreeView row:nth-child(even):hover  {	
-    background-color: shade (@tooltip_bg_color, 1.54);
+    background-color: shade (@tooltip_bg_color, 1.34);
 	text-shadow: none;
+}
+
+GtkTreeView row:nth-child(odd):hover,
+GtkTreeView row:nth-child(even):hover {
+	background-color: shade(@theme_selected_bg_color, 0.9);
+	color: @theme_selected_fg_color;
 }
 
 column-header {

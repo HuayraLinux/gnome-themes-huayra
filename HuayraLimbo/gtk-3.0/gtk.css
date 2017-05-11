@@ -73,7 +73,7 @@
 @define-color keyboard_focus_border_b #6794cf;
 
 /* @define-color sidebar_bg_color shade (@theme_bg_color, 1.02); */
-@define-color sidebar_bg shade (@theme_bg_color, 1.025);
+@define-color sidebar_bg alpha (@theme_selected_bg_color, 0.03);
 @define-color sidebar_bg_unfocused mix(@sidebar_bg, @theme_unfocused_base_color, 0.5);
 
 @define-color os_chrome_bg_color black;
@@ -201,7 +201,10 @@
 @define-color inset_light_color alpha(white, 0.45);
 @define-color inset_dark_color alpha(black, 0.07);
 
-@define-color wm_title @theme_fg_color;
+/* Colores para gradiente en cabecera de ventanas GTK3 */
+@define-color wm_titlebar_A #fafafa;
+@define-color wm_titlebar_B #f4f3f3;
+
 @define-color wm_unfocused_title @theme_unfocused_fg_color;
 @define-color wm_highlight #ffffff;
 @define-color wm_title_highlight_dark alpha(#ffffff, 0.0);
@@ -230,7 +233,7 @@
 
 
 @import url("gtk-widgets.css"); 
-/* @import url("gtk-widgets-ocho.css"); */
+
 /*@import url("gtk-widgets-borders.css");*/
 
 /*@import url("gtk-widgets-backgrounds.css");*/
