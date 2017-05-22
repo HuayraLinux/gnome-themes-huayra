@@ -1,3 +1,17 @@
+gnome-themes-huayra (2.66) unstable; urgency=medium
+
+  *Actualizacion de Huayra Limbo para Huayra 3.3 
+  *Fixes de Huayra Liso para Huayra 3.3.
+
+ -- malefico <malefico3d@gmail.com>  Wed, 17 May 2017 15:16:49 -0300
+
+gnome-themes-huayra (2.65) unstable; urgency=medium
+
+  * Actualizacion de Huayra Liso para Huayra 3.3.
+    Llevamos cambios en GTK3 hechos en Huayra Ocho
+
+ -- malefico <malefico3d@gmail.com>  Fri, 27 Jan 2017 15:33:16 -0300
+
 gnome-themes-huayra (2.64) unstable; urgency=medium
 
   * Actualización de tema Ocho.
