@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=HuayraQuatro	
+Comment=Tema Huayra Quatro
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=HuayraQuatro
+MetacityTheme=HuayraQuatro
+IconTheme=Huayra-4
+CursorTheme=Breeze-Huayra
+ButtonLayout=:minimize,maximize,close
+CursorSize=24
