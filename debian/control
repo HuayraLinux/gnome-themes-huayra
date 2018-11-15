@@ -1,9 +1,9 @@
 Source: gnome-themes-huayra
 Section: x11
 Priority: optional
-Maintainer: Iván Hoffmann <digital.h@gmail.com>
-Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.6
+Maintainer: Claudio Andaur <malefico3d@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
 
 Package: gnome-themes-huayra
 Depends: ${misc:Depends}, huayra-themes-all
@@ -111,4 +111,15 @@ Architecture: all
 Description: Tema de ventanas Ocho de gtk2, gtk3, metacity y gnome-shell para 
  Huayra GNU/Linux.
  En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
- GNOME Shell, Metacity, GTK-2 y GTK-3. Este es el tema por defecto de Huayra 4.
+ GNOME Shell, Metacity, GTK-2 y GTK-3. 
+
+Package: huayra-themes-quatro
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine, huayra-cursors-theme
+Recommends: dmz-cursor-theme
+Breaks: gnome-themes-huayra ( <= 2.14)
+Replaces: gnome-themes-huayra ( <= 2.14)
+Architecture: all
+Description: Tema Quatro para gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
+ Este es el tema por defecto de Huayra 4.
