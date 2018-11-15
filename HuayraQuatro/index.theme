@@ -7,7 +7,7 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=HuayraQuatro
 MetacityTheme=HuayraQuatro
-IconTheme=Huayra-4
+IconTheme=huayra-4
 CursorTheme=Breeze-Huayra
 ButtonLayout=:minimize,maximize,close
 CursorSize=24
