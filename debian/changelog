@@ -1,3 +1,23 @@
+gnome-themes-huayra (2.67d) unstable; urgency=medium
+
+  * Aumentando grosor de borde de ventana en HuayraQuatro.
+
+ -- Claudio Andaur <malefico3d@gmail.com>  Mon, 15 Jul 2019 15:18:25 -0300
+
+gnome-themes-huayra (2.67c) unstable; urgency=medium
+
+  * Eliminando warnings de Lintian
+
+ -- Claudio Andaur <malefico3d@gmail.com>  Thu, 15 Nov 2018 14:49:29 -0300
+
+gnome-themes-huayra (2.67b) unstable; urgency=medium
+
+  * Correcciones en debian/control y debian/copyright.
+  * Correciones en huayra-quatro.install para evitar copiar archivos 
+    de desarrollo.
+
+ -- Claudio Andaur <malefico3d@gmail.com>  Thu, 15 Nov 2018 14:31:25 -0300
+
 gnome-themes-huayra (2.67a) unstable; urgency=medium
 
   * Editado index.theme para que apunte a tema de icono con minuscula huayra-4.

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Greybird</name>
-	<author>Satyajit Sahoo</author>
+	<name>Huayra Quatro</name>
+	<author>Claudio Andaur</author>
 	<copyright>GPL-3.0+</copyright>
-	<date>July, 2012</date>
-	<description>Greybird Mutter theme</description>
+	<date>July, 2019</date>
+	<description>Huayra Quatro es un derivado de Greybird Metacity theme</description>
 </info>
 
 <!-- ::: CONSTANTS ::: -->
@@ -20,9 +20,9 @@
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="4" rounded_top_right="4">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="1" />
+	<distance name="left_width" value="2" />
+	<distance name="right_width" value="2" />
+	<distance name="bottom_height" value="2" />
 	<distance name="left_titlebar_edge" value="4" />
 	<distance name="right_titlebar_edge" value="4" />
 	<distance name="title_vertical_pad" value="2" />
@@ -40,11 +40,11 @@
 </frame_geometry>
 
 <frame_geometry name="tiled_left" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
-	<distance name="right_width" value="1" />
+	<distance name="right_width" value="2" />
 </frame_geometry>
 
 <frame_geometry name="tiled_right" title_scale="medium" rounded_top_left="false" rounded_top_right="false" parent="max">
-	<distance name="left_width" value="1" />
+	<distance name="left_width" value="2" />
 </frame_geometry>
 
 <frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="false" rounded_top_right="false">
