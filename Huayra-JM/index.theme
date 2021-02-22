@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Huayra-JM	
+Comment=Tema Huayra Juana Manso
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Huayra-JM
+MetacityTheme=Huayra-JM
+IconTheme=huayra-jm
+CursorTheme=Breeze-Huayra
+ButtonLayout=:minimize,maximize,close
+CursorSize=24
