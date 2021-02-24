@@ -1,3 +1,10 @@
+gnome-themes-huayra (2.68+nmu1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Agregado de theme Juan Manso
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Wed, 24 Feb 2021 14:26:12 -0300
+
 gnome-themes-huayra (2.67d) unstable; urgency=medium
 
   * Aumentando grosor de borde de ventana en HuayraQuatro.

@@ -122,4 +122,19 @@ Replaces: gnome-themes-huayra ( <= 2.14)
 Architecture: all
 Description: Tema Quatro para gtk2, gtk3, metacity y gnome-shell para 
  Huayra GNU/Linux.
- Este es el tema por defecto de Huayra 4.
+ En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
+ GNOME Shell, Metacity, GTK-2 y GTK-3. 
+
+Package: huayra-themes-jm
+Depends: ${misc:Depends}, gtk2-engines, gtk2-engines-pixbuf, 
+    gtk2-engines-murrine, huayra-cursors-theme
+Recommends: dmz-cursor-theme
+Breaks: gnome-themes-huayra ( <= 2.14)
+Replaces: gnome-themes-huayra ( <= 2.14)
+Architecture: all
+Description: Tema Juana Manso para gtk2, gtk3, metacity y gnome-shell para 
+ Huayra GNU/Linux.
+ En este paquete se encontraran los distintos temas de Huayra GNU/Linux para
+ GNOME Shell, Metacity, GTK-2 y GTK-3. 
+ Este es el tema por defecto de Huayra 5.
+
